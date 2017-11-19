@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="alexaVerifyID" content="tHZTfJpU56tqERN4vjth74jHqBM"/>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="./../xmlrpc.php">
+<!-- <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'> -->
+<link rel="shortcut icon" href="./../wp-content/uploads/2014/02/favicon.ico" type="image/x-icon">
+<meta name="keywords" content="Javascript, HTML5, CSS3, ES6, Ecmascript, Hybrid Apps, Mobile Web Development, Desktop Apps, Apps, Arvind R, Arvind Ravulavaru, The Jackal of Javascript">
+<link rel="icon" href="./../wp-content/uploads/2014/02/favicon.ico" type="image/x-icon">
+<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'> -->
+<link rel="stylesheet" type="text/css" href="./../wp-content/cache/wpfc-minified/61cc3c87f2aa625d55d3026ecc452e96/1511014149index.css" media="all"/>
+<!-- Performance scores of this site is tuned by WP Performance Score Booster plugin v1.5 - http://wordpress.org/plugins/wp-performance-score-booster -->
+<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="1QBi99oBZzn4xisTyRUgPd4BXjQ-6Tu09iK6V_bviIY" />
+<meta name="msvalidate.01" content="33E048D3C4E943B6450230EA909E12C6" />
+<meta name="p:domain_verify" content="662a829c1b5ccc13015f1cc5d00ec7e4" />
+<!-- This site is optimized with the Yoast SEO plugin v3.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Getting Started with Angular 2.0 | The Jackal of Javascript</title>
+<meta name="description" content="Recently Angularjs team has launched a 5 mins quick start tutorial on getting started with Angular 2.0. I have taken the same tutorial (with minor changes)"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="./index.html" />
+<link rel="publisher" href="https://plus.google.com/ArvindRavulavaru"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Getting Started with Angular 2.0 | The Jackal of Javascript" />
+<meta property="og:description" content="Recently Angularjs team has launched a 5 mins quick start tutorial on getting started with Angular 2.0. I have taken the same tutorial (with minor changes)" />
+<meta property="og:url" content="./getting-started-with-angular-2-0/" />
+<meta property="og:site_name" content="The Jackal of Javascript" />
+<meta property="article:publisher" content="https://www.facebook.com/arvindravulavaru" />
+<meta property="article:section" content="Angular 2.0" />
+<meta property="article:published_time" content="2015-03-23T12:07:56+05:30" />
+<meta property="article:modified_time" content="2015-03-23T12:14:16+05:30" />
+<meta property="og:updated_time" content="2015-03-23T12:14:16+05:30" />
+<meta property="og:image" content="./wp-content/uploads/2015/03/Screen-Shot-2015-03-23-at-11.37.56-347x300.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Recently Angularjs team has launched a 5 mins quick start tutorial on getting started with Angular 2.0. I have taken the same tutorial (with minor changes)" />
+<meta name="twitter:title" content="Getting Started with Angular 2.0 | The Jackal of Javascript" />
+<meta name="twitter:site" content="@arvindr21" />
+<meta name="twitter:image" content="./wp-content/uploads/2015/03/Screen-Shot-2015-03-23-at-11.37.56-347x300.png" />
+<meta name="twitter:creator" content="@arvindr21" />
+<!-- / Yoast SEO plugin. -->
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js"}};
+!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='savrix-style.css-css'  href='./wp-content/plugins/savrix-android-market/savrix-style-only-play.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='validate-engine-css-css'  href='./wp-content/plugins/wysija-newsletters/css/validationEngine.jquery.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='crayon-css'  href='./wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='crayon-theme-arduino-ide-css'  href='./wp-content/plugins/crayon-syntax-highlighter/themes/arduino-ide/arduino-ide.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='crayon-font-droid-sans-mono-css'  href='./wp-content/plugins/crayon-syntax-highlighter/fonts/droid-sans-mono.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='orgseries-default-css-css'  href='./wp-content/plugins/organize-series/orgSeries.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='responsive-lightbox-prettyphoto-css'  href='./wp-content/plugins/responsive-lightbox/assets/prettyphoto/css/prettyPhoto.css' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./../wp-content/cache/wpfc-minified/9f9f3b5f286a1b327e6bb0fdb1185c24/1511014149index.css" media="all"/>
+<link rel='stylesheet' id='font-awesome-css'  href='//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css' type='text/css' media='screen' />
+<!-- <link rel='stylesheet' id='ssbaFont-css'  href='//fonts.googleapis.com/css?family=Indie+Flower&#038;ver=4.2.16' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='wpfront-notification-bar-css'  href='./wp-content/plugins/wpfront-notification-bar/css/wpfront-notification-bar.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-style-css'  href='./wp-content/themes/sorbet/style.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-source-sans-pro-css'  href='http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext&#038;ver=4.2.16' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-pt-serif-css'  href='http://fonts.googleapis.com/css?family=PT+Serif%3A400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext&#038;ver=4.2.16' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-genericons-css'  href='./wp-content/themes/sorbet/genericons/genericons.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='easy_table_style-css'  href='./wp-content/plugins/easy-table/themes/default/style.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='upprev-css-css'  href='./wp-content/plugins/upprev/styles/upprev.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='jetpack_css-css'  href='./wp-content/plugins/jetpack/css/jetpack.css' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./../wp-content/cache/wpfc-minified/3af13bcd925b3eaa358c8ad5070bb07b/1511014148index.css" media="all"/>
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.6 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+__gaTracker('create', 'UA-47881846-1', 'auto');
+__gaTracker('set', 'forceSSL', true);
+__gaTracker('require', 'displayfeatures');
+__gaTracker('send','pageview');
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type="text/javascript">
+var iworks_upprev = { animation: 'flyout', position: 'right', offset_percent: 75, offset_element: '#comments', css_width: 360, css_side: 5, compare: 'simple', url_new_window: 0, ga_track_views: 1, ga_track_clicks: 1, ga_opt_noninteraction: 1, title: 'Getting Started with Angular 2.0' };
+</script>
+<script src='./../wp-content/cache/wpfc-minified/1f21a7a8ca343ebb57ffeb4ab24afbd9/1511014152index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='./wp-includes/js/jquery/jquery.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-includes/js/jquery/jquery-migrate.min.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/jetpack/modules/related-posts/related-posts.js'></script> -->
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":".\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script src='./../wp-content/cache/wpfc-minified/052c748258385b6c23fc6642e73a4285/1511014152index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='./wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/responsive-lightbox/assets/prettyphoto/js/jquery.prettyPhoto.js'></script> -->
+<script type='text/javascript'>
+/* <![CDATA[ */
+var rlArgs = {"script":"prettyphoto","selector":"lightbox","customEvents":"","activeGalleries":"1","animationSpeed":"normal","slideshow":"0","slideshowDelay":"5000","slideshowAutoplay":"0","opacity":"0.75","showTitle":"1","allowResize":"1","allowExpand":"1","width":"1080","height":"720","separator":"\/","theme":"pp_default","horizontalPadding":"20","hideFlash":"0","wmode":"opaque","videoAutoplay":"0","modal":"0","deeplinking":"0","overlayGallery":"1","keyboardShortcuts":"1","social":"0"};
+/* ]]> */
+</script>
+<script src='./../wp-content/cache/wpfc-minified/d57c91500961bea5aea0e849cf08f7e7/1511014151index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='./wp-content/plugins/responsive-lightbox/js/front.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/wpfront-notification-bar/jquery-plugins/jquery.c.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/wpfront-notification-bar/js/wpfront-notification-bar.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/upprev/scripts/upprev.js'></script> -->
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<meta name="generator" content="WordPress 4.2.16" />
+<style>
+.scroll-back-to-top-wrapper {
+position: fixed;
+opacity: 0;
+visibility: hidden;
+overflow: hidden;
+text-align: center;
+z-index: 99999999;
+background-color: #777777;
+color: #eeeeee;
+width: 50px;
+height: 48px;
+line-height: 48px;
+right: 30px;
+bottom: 30px;
+padding-top: 2px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+.scroll-back-to-top-wrapper:hover {
+background-color: #888888;
+color: #eeeeee;
+}
+.scroll-back-to-top-wrapper.show {
+visibility:visible;
+cursor:pointer;
+opacity: 1.0;
+}
+.scroll-back-to-top-wrapper i.fa {
+line-height: inherit;
+}
+.scroll-back-to-top-wrapper .fa-lg {
+vertical-align: 0;
+}
+</style><style type="text/css">	.ssba {
+}
+.ssba img
+{
+width: 35px !important;
+padding: 6px;
+border:  0;
+box-shadow: none !important;
+display: inline !important;
+vertical-align: middle;
+}
+.ssba, .ssba a
+{
+text-decoration:none;
+border:0;
+background: none;
+font-family: Indie Flower;
+font-size: 	20px;
+}.ssba_sharecount:after, .ssba_sharecount:before {
+right: 100%;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+}
+.ssba_sharecount:after {
+border-color: rgba(224, 221, 221, 0);
+border-right-color: #f5f5f5;
+border-width: 5px;
+top: 50%;
+margin-top: -5px;
+}
+.ssba_sharecount:before {
+border-color: rgba(85, 94, 88, 0);
+border-right-color: #e0dddd;
+border-width: 6px;
+top: 50%;
+margin-top: -6px;
+}
+.ssba_sharecount {
+font: 11px Arial, Helvetica, sans-serif;
+padding: 5px;
+-khtml-border-radius: 6px;
+-o-border-radius: 6px;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+position: relative;
+border: 1px solid #e0dddd;color: #555e58;
+background: #ffffff;
+}
+.ssba_sharecount:after {
+border-right-color: #ffffff;
+}</style><style id="popup-maker-themes"  type="text/css">/* Popup Theme 2995: Default Theme */
+.popmake-overlay.theme-2995, .popmake-overlay.theme-default-theme { background-color: rgba( 255, 255, 255, 1 ) } 
+.popmake.theme-2995, .popmake.theme-default-theme { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1 ) } 
+.popmake.theme-2995 .popmake-title, .popmake.theme-default-theme .popmake-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: inherit; font-size: 32px; font-style: normal; line-height: 36px } 
+.popmake.theme-2995 .popmake-content, .popmake.theme-default-theme .popmake-content { color: #8c8c8c; font-family: inherit; font-weight: inherit; font-style: normal } 
+.popmake.theme-2995 > .popmake-close, .popmake.theme-default-theme > .popmake-close { height: 20px; width: 20px; left: auto; right: 0px; bottom: auto; top: 0px; padding: 8px; color: #ffffff; font-family: inherit; font-weight: inherit; font-size: 12px; font-style: normal; line-height: 14px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1 ) } 
+</style>
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+<link rel='dns-prefetch' href='//widgets.wp.com'>
+<link rel='dns-prefetch' href='//s0.wp.com'>
+<link rel='dns-prefetch' href='//0.gravatar.com'>
+<link rel='dns-prefetch' href='//1.gravatar.com'>
+<link rel='dns-prefetch' href='//2.gravatar.com'>
+<style type="text/css">
+#upprev_box{bottom:5px;width:360px;right:5px;display:block;right:-415px;display:block;}
+</style>
+</head>
+<body class="single single-post postid-2865 single-format-standard right-sidebar">
+<div id="page" class="hfeed site">
+<header id="masthead" class="site-header" role="banner">
+<div class="site-header-wrapper">
+<div class="site-branding">
+<h1 class="site-title"><a href="./../index.html" rel="home">The Jackal of Javascript</a></h1>
+<h2 class="site-description">Knowing is different &amp; Doing is different</h2>
+</div>
+<div class="toggles">
+<div id="menu-toggle" class="toggle active" title="Menu"><span class="screen-reader-text">Menu</span></div>
+<div id="search-toggle" class="toggle" title="Search"><span class="screen-reader-text">Search</span></div>
+</div>
+</div>
+</header><!-- #masthead -->
+<div id="menu-toggle-nav" class="panel">
+<nav id="site-navigation" class="main-navigation" role="navigation">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<div class="menu-main-container"><ul id="menu-main" class="menu"><li id="menu-item-2579" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2579"><a href="./../index.html">Home</a></li>
+<li id="menu-item-2595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2595"><a href="./../portfolio/index.html">About  me</a></li>
+<li id="menu-item-2580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2580"><a href="./../history-of-the-web/index.html">History of the Web</a></li>
+<li id="menu-item-2726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2726"><a href="./../javascript-101/index.html">Javascript 101</a></li>
+<li id="menu-item-2581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2581"><a href="./../contact-request/index.html">Request</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+</div>
+<div id="search-toggle-nav" class="panel">
+<div class="search-wrapper">
+<form role="search" method="get" class="search-form" action="./../index.html">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+</label>
+<input type="submit" class="search-submit" value="Search">
+</form>
+</div>
+</div>
+<div id="content" class="site-content">
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<article id="post-2865" class="post-2865 post type-post status-publish format-standard hentry category-angular-2-0 category-es6 category-frameworks category-javascript category-quick-and-dirty category-setup category-tutorial">
+<header class="entry-header">
+<h1 class="entry-title">Getting Started with Angular 2.0</h1>	</header><!-- .entry-header -->
+<div class="entry-content">
+<!-- Simple Share Buttons Adder (6.1.5) simplesharebuttons.com --><div class="ssba ssba-wrap"><div style="text-align:left"><a href="http://twitter.com/share?url=./getting-started-with-angular-2-0/&amp;text=Getting+Started+with+Angular+2.0+From+The+Jackal+of+Javascript+by+%40arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://twitter.com/share?url=./getting-started-with-angular-2-0/&amp;text=Getting+Started+with+Angular+2.0+From+The+Jackal+of+Javascript+by+%40arvindr21', '');" data-site="" class="ssba_twitter_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /></noscript></a><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=./getting-started-with-angular-2-0/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.linkedin.com/shareArticle?mini=true&amp;url=./getting-started-with-angular-2-0/', '');" data-site="linkedin" class="ssba_linkedin_share ssba_share_link"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">14</span><a href="https://plus.google.com/share?url=./getting-started-with-angular-2-0/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://plus.google.com/share?url=./getting-started-with-angular-2-0/', '');" data-site="" class="ssba_google_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="http://reddit.com/submit?url=./getting-started-with-angular-2-0/&amp;title=Getting Started with Angular 2.0" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://reddit.com/submit?url=./getting-started-with-angular-2-0/&amp;title=Getting Started with Angular 2.0', '');" data-site="reddit" class="ssba_reddit_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="https://bufferapp.com/add?url=./getting-started-with-angular-2-0/&amp;text=From The Jackal of Javascript Getting Started with Angular 2.0" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://bufferapp.com/add?url=./getting-started-with-angular-2-0/&amp;text=From The Jackal of Javascript Getting Started with Angular 2.0', '');" data-site="buffer" class="ssba_buffer_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /></noscript></a><a href="https://flattr.com/submit/auto?user_id=arvindr21&amp;title=Getting Started with Angular 2.0&amp;url=https://flattr.com/profile/arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://flattr.com/submit/auto?user_id=arvindr21&amp;title=Getting Started with Angular 2.0&amp;url=https://flattr.com/profile/arvindr21', '');" data-site="flattr" class="ssba_flattr_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /></noscript></a><a data-site="email" class="ssba_email_share" href="./../cdn-cgi/l/email-protection/index.html#90afe3e5f2faf5f3e4add7f5e4e4f9fef7b0c3e4f1e2e4f5f4b0e7f9e4f8b0d1fef7e5fcf1e2b0a2bea0b6f1fde0abf2fff4e9add6e2fffdb0c4f8f5b0daf1f3fbf1fcb0fff6b0daf1e6f1e3f3e2f9e0e4b5a2a0f8e4e4e0aabfbfe4f8f5faf1f3fbf1fcfff6faf1e6f1e3f3e2f9e0e4bef3fffdbff7f5e4e4f9fef7bde3e4f1e2e4f5f4bde7f9e4f8bdf1fef7e5fcf1e2bda2bda0bf"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /></noscript></a><a data-site="print" class="ssba_print ssba_share_link" href="#" onclick="window.print()"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /></noscript></a></div></div><p>Recently Angularjs team has launched a 5 mins quick start tutorial on getting started with Angular 2.0. I have taken the same tutorial (<em>with minor changes</em>) and explained it below. There are a lot of blanks to be filled, but this is my first attempt at <a href="https://angular.io/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://angular.io', 'Angular 2.0');" title="Angular 2.0"  target="_blank">Angular 2.0</a>.</p>
+<p>You can find the source code for the Hello World app built in this post <a href="https://github.com/arvindr21/ng2" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/arvindr21/ng2', 'here');" title="ng2"  target="_blank">here</a>.</p>
+<p>So, let us get started with NG2.0.</p>
+<h2>What is Angular 2.0?</h2>
+<blockquote><p>AngularJS 2 is a framework for mobile apps.  It is for desktop as well, but mobile is the hard bit that we will get right first.  The AngularJS you know and, hopefully, love will still be there with data-binding, extensible HTML, and a focus on testability.</p></blockquote>
+<p>You can read more about <a href="https://angular.io/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://angular.io/', 'Angular 2.0');" title="Angular 2.0"  target="_blank">Angular 2.0</a> and its <em>proposed </em>features from <a href="http://angularjs.blogspot.in/2014/03/angular-20.html?view=timeslide" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://angularjs.blogspot.in/2014/03/angular-20.html?view=timeslide', 'here');" title="AngularJS 2.0"  target="_blank">here</a>.</p>
+<h2>5min Tutorial by Angular Team</h2>
+<p>Angular team has released a tutorial on how to get started, where they explain how to setup the project and run a simple Hello World example.</p>
+<p>We will follow the same here. The tutorial they have provided is quite self explanatory with some &#8220;Googling&#8221;.</p>
+<p>To get started, create a new folder named <em>ng2</em> and open a new terminal/prompt here.</p>
+<p>Make sure you have <a href="http://git-scm.com/downloads" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://git-scm.com/downloads', 'Git');" title="Git download"  target="_blank">Git</a> installed, and run</p>
+<p style="text-align: center;">
+<span id="crayon-5a10494d17631749543873" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-r">clone</span><span class="crayon-h"> </span><span class="crayon-v">https</span><span class="crayon-o">:</span><span class="crayon-c">//github.com/angular/quickstart.git hello2ng2</span></span></span></p>
+<p>This will clone the quick start project to <em>hello2ng2</em> folder.</p>
+<p>The project consists of the following libs (<em>as of today</em>)</p>
+<blockquote>
+<ul>
+<li>Pre-built ES5 version of <a href="https://www.npmjs.com/package/angular2" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.npmjs.com/package/angular2', 'Angular 2');" title="angular2"  target="_blank">Angular 2</a> alpha-11</li>
+<li>Pre-built ES5 version of <a href="https://www.npmjs.com/package/rtts-assert" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.npmjs.com/package/rtts-assert', 'rtts-assert');" title="rtts-assert"  target="_blank">rtts-assert</a> alpha-6</li>
+<li>The es6-shim, which includes Traceur, ES6 Module Loader, System, Zone, and Traceur options for meta-data annotations.</li>
+</ul>
+</blockquote>
+<p>Do notice the directory structure</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a10494d1764d010627173" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">Dir structure</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Shell</span></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+.
+├── angular2
+│   └── src
+│       ├── change_detection
+│       │   ├── parser
+│       │   └── pipes
+│       ├── core
+│       │   ├── annotations
+│       │   ├── compiler
+│       │   │   ├── pipeline
+│       │   │   ├── shadow_dom_emulation
+│       │   │   └── xhr
+│       │   ├── dom
+│       │   ├── events
+│       │   ├── life_cycle
+│       │   └── zone
+│       ├── di
+│       ├── directives
+│       ├── dom
+│       ├── facade
+│       ├── forms
+│       ├── mock
+│       ├── reflection
+│       └── test_lib
+├── dist
+└── rtts_assert
+└── src</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a10494d1764d010627173-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1764d010627173-2">2</div><div class="crayon-num" data-line="crayon-5a10494d1764d010627173-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1764d010627173-4">4</div><div class="crayon-num" data-line="crayon-5a10494d1764d010627173-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1764d010627173-6">6</div><div class="crayon-num" data-line="crayon-5a10494d1764d010627173-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1764d010627173-8">8</div><div class="crayon-num" data-line="crayon-5a10494d1764d010627173-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1764d010627173-10">10</div><div class="crayon-num" data-line="crayon-5a10494d1764d010627173-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1764d010627173-12">12</div><div class="crayon-num" data-line="crayon-5a10494d1764d010627173-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1764d010627173-14">14</div><div class="crayon-num" data-line="crayon-5a10494d1764d010627173-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1764d010627173-16">16</div><div class="crayon-num" data-line="crayon-5a10494d1764d010627173-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1764d010627173-18">18</div><div class="crayon-num" data-line="crayon-5a10494d1764d010627173-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1764d010627173-20">20</div><div class="crayon-num" data-line="crayon-5a10494d1764d010627173-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1764d010627173-22">22</div><div class="crayon-num" data-line="crayon-5a10494d1764d010627173-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1764d010627173-24">24</div><div class="crayon-num" data-line="crayon-5a10494d1764d010627173-25">25</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1764d010627173-26">26</div><div class="crayon-num" data-line="crayon-5a10494d1764d010627173-27">27</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a10494d1764d010627173-1"><span class="crayon-sy">.</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1764d010627173-2">├──<span class="crayon-h"> </span><span class="crayon-i">angular2</span></div><div class="crayon-line" id="crayon-5a10494d1764d010627173-3">│  <span class="crayon-h"> </span>└──<span class="crayon-h"> </span><span class="crayon-i">src</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1764d010627173-4">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>├──<span class="crayon-h"> </span><span class="crayon-v">change</span><span class="crayon-sy">_</span>detection</div><div class="crayon-line" id="crayon-5a10494d1764d010627173-5">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>│  <span class="crayon-h"> </span>├──<span class="crayon-h"> </span><span class="crayon-i">parser</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1764d010627173-6">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>│  <span class="crayon-h"> </span>└──<span class="crayon-h"> </span><span class="crayon-i">pipes</span></div><div class="crayon-line" id="crayon-5a10494d1764d010627173-7">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>├──<span class="crayon-h"> </span><span class="crayon-i">core</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1764d010627173-8">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>│  <span class="crayon-h"> </span>├──<span class="crayon-h"> </span><span class="crayon-i">annotations</span></div><div class="crayon-line" id="crayon-5a10494d1764d010627173-9">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>│  <span class="crayon-h"> </span>├──<span class="crayon-h"> </span><span class="crayon-i">compiler</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1764d010627173-10">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>│  <span class="crayon-h"> </span>│  <span class="crayon-h"> </span>├──<span class="crayon-h"> </span><span class="crayon-i">pipeline</span></div><div class="crayon-line" id="crayon-5a10494d1764d010627173-11">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>│  <span class="crayon-h"> </span>│  <span class="crayon-h"> </span>├──<span class="crayon-h"> </span><span class="crayon-v">shadow_dom</span><span class="crayon-sy">_</span>emulation</div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1764d010627173-12">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>│  <span class="crayon-h"> </span>│  <span class="crayon-h"> </span>└──<span class="crayon-h"> </span><span class="crayon-i">xhr</span></div><div class="crayon-line" id="crayon-5a10494d1764d010627173-13">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>│  <span class="crayon-h"> </span>├──<span class="crayon-h"> </span><span class="crayon-i">dom</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1764d010627173-14">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>│  <span class="crayon-h"> </span>├──<span class="crayon-h"> </span><span class="crayon-i">events</span></div><div class="crayon-line" id="crayon-5a10494d1764d010627173-15">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>│  <span class="crayon-h"> </span>├──<span class="crayon-h"> </span><span class="crayon-v">life</span><span class="crayon-sy">_</span>cycle</div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1764d010627173-16">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>│  <span class="crayon-h"> </span>└──<span class="crayon-h"> </span><span class="crayon-i">zone</span></div><div class="crayon-line" id="crayon-5a10494d1764d010627173-17">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>├──<span class="crayon-h"> </span><span class="crayon-i">di</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1764d010627173-18">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>├──<span class="crayon-h"> </span><span class="crayon-i">directives</span></div><div class="crayon-line" id="crayon-5a10494d1764d010627173-19">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>├──<span class="crayon-h"> </span><span class="crayon-i">dom</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1764d010627173-20">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>├──<span class="crayon-h"> </span><span class="crayon-i">facade</span></div><div class="crayon-line" id="crayon-5a10494d1764d010627173-21">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>├──<span class="crayon-h"> </span><span class="crayon-i">forms</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1764d010627173-22">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>├──<span class="crayon-h"> </span><span class="crayon-i">mock</span></div><div class="crayon-line" id="crayon-5a10494d1764d010627173-23">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>├──<span class="crayon-h"> </span><span class="crayon-i">reflection</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1764d010627173-24">│  <span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp; </span>└──<span class="crayon-h"> </span><span class="crayon-v">test</span><span class="crayon-sy">_</span>lib</div><div class="crayon-line" id="crayon-5a10494d1764d010627173-25">├──<span class="crayon-h"> </span><span class="crayon-i">dist</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1764d010627173-26">└──<span class="crayon-h"> </span><span class="crayon-v">rtts</span><span class="crayon-sy">_</span>assert</div><div class="crayon-line" id="crayon-5a10494d1764d010627173-27"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span>└──<span class="crayon-h"> </span><span class="crayon-v">src</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0066 seconds] -->
+<p>At the root of the directory you have a Gulpfile that consist of simple build tasks to download Angular 2.0 and its dependencies using the <em>ng2build.sh</em>.</p>
+<p>To try this out, you need to have <a title="Hello Node" href="./../hello-node/index.html" target="_blank">Nodejs installed</a>. And Gulp should be installed globally. To install Gulp globally, run</p>
+<p style="text-align: center;">
+<span id="crayon-5a10494d17659114997125" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">npm </span><span class="crayon-v">install</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">g</span><span class="crayon-h"> </span><span class="crayon-v">gulp</span></span></span></p>
+<p>And then, We will install the dependencies for this project. Run</p>
+<p style="text-align: center;">
+<span id="crayon-5a10494d17660434463734" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">npm </span><span class="crayon-v">install</span></span></span></p>
+<p style="text-align: left;">Now to regenerate Angular and its dependencies, run</p>
+<p style="text-align: center;">
+<span id="crayon-5a10494d17667292894967" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">gulp</span></span></span></p>
+<p style="text-align: left;">And you can see the dependencies being removed and added again. This is incase you have messed up anything while going through the source code of Angular2.</p>
+<h3 style="text-align: left;">EcmaScript 6</h3>
+<p style="text-align: left;">Before we go further, I would recommend having a knowledge of<a href="http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts', ' EcmaScript 6');" title="ES6"  target="_blank"> EcmaScript 6</a>. One of the resource that helped me get started was <a href="https://github.com/lukehoban/es6features" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/lukehoban/es6features', 'es6features');" title="Overview of ECMAScript 6 features"  target="_blank">es6features</a> repo. Simple and lucid explanations of ES6 features.</p>
+<p style="text-align: left;">This knowledge is quite essential as Angular 2.0 is written for ES6 and to support ES5. When we build the Hello World Example, I will point you to the required resources.</p>
+<h3 style="text-align: left;">Build the App</h3>
+<p>The Angular tutorial suggests to create the project related files at the root of the directory. With so much going on at the root of the directory, I found it easy to maintain the files inside a folder named <em>app</em>. This situation is temporary till Angular 2.0 moves to a stable release.</p>
+<p>So, create a new folder named <em>app</em> at the root of the project. Create a file named <em>index.html</em> inside the <em>app </em>folder.<em> </em>And update it as below</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a10494d17672050156748" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">hello2ng2/app/index.html</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-mixed-highlight" title="Contains Mixed Languages"></span><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Angular 2 Hello World!&lt;/title&gt;
+&lt;script src="/dist/es6-shim.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;my-app&gt;&lt;/my-app&gt;
+&lt;script&gt;
+// Rewrite the paths to load the files
+System.paths = {
+'angular2/*': '/angular2/*.js', // Angular
+'rtts_assert/*': '/rtts_assert/*.js', // Runtime assertions
+'app': 'app.es6' // The my-app component
+};
+// Kick off the application
+System.import('app');
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a10494d17672050156748-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17672050156748-2">2</div><div class="crayon-num" data-line="crayon-5a10494d17672050156748-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17672050156748-4">4</div><div class="crayon-num" data-line="crayon-5a10494d17672050156748-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17672050156748-6">6</div><div class="crayon-num" data-line="crayon-5a10494d17672050156748-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17672050156748-8">8</div><div class="crayon-num" data-line="crayon-5a10494d17672050156748-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17672050156748-10">10</div><div class="crayon-num" data-line="crayon-5a10494d17672050156748-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17672050156748-12">12</div><div class="crayon-num" data-line="crayon-5a10494d17672050156748-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17672050156748-14">14</div><div class="crayon-num" data-line="crayon-5a10494d17672050156748-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17672050156748-16">16</div><div class="crayon-num" data-line="crayon-5a10494d17672050156748-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17672050156748-18">18</div><div class="crayon-num" data-line="crayon-5a10494d17672050156748-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17672050156748-20">20</div><div class="crayon-num" data-line="crayon-5a10494d17672050156748-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17672050156748-22">22</div><div class="crayon-num" data-line="crayon-5a10494d17672050156748-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17672050156748-24">24</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a10494d17672050156748-1"><span class="crayon-o">&lt;</span><span class="crayon-e">html</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17672050156748-2">&nbsp;</div><div class="crayon-line" id="crayon-5a10494d17672050156748-3"><span class="crayon-o">&lt;</span><span class="crayon-e">head</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17672050156748-4"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-e">title</span><span class="crayon-o">&gt;</span><span class="crayon-e">Angular</span><span class="crayon-h"> </span><span class="crayon-cn">2</span><span class="crayon-h"> </span><span class="crayon-e">Hello</span><span class="crayon-h"> </span><span class="crayon-e">World</span><span class="crayon-o">!</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-e">title</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5a10494d17672050156748-5"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-ta">&lt;script </span><span class="crayon-e">src</span><span class="crayon-o">=</span><span class="crayon-s">"/dist/es6-shim.js"</span><span class="crayon-o">&gt;</span><span class="crayon-ta">&lt;/script&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17672050156748-6"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-e">head</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5a10494d17672050156748-7">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17672050156748-8"><span class="crayon-o">&lt;</span><span class="crayon-e">body</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5a10494d17672050156748-9"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17672050156748-10"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-e">my</span><span class="crayon-o">-</span><span class="crayon-e">app</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-e">my</span><span class="crayon-o">-</span><span class="crayon-e">app</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5a10494d17672050156748-11"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-ta">&lt;script&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17672050156748-12"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">// Rewrite the paths to load the files</span></div><div class="crayon-line" id="crayon-5a10494d17672050156748-13"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">System</span><span class="crayon-sy">.</span><span class="crayon-v">paths</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17672050156748-14"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-s">'angular2/*'</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">'/angular2/*.js'</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-c">// Angular</span></div><div class="crayon-line" id="crayon-5a10494d17672050156748-15"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-s">'rtts_assert/*'</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">'/rtts_assert/*.js'</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-c">// Runtime assertions</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17672050156748-16"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-s">'app'</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">'app.es6'</span><span class="crayon-h"> </span><span class="crayon-c">// The my-app component</span></div><div class="crayon-line" id="crayon-5a10494d17672050156748-17"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17672050156748-18">&nbsp;</div><div class="crayon-line" id="crayon-5a10494d17672050156748-19"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">// Kick off the application</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17672050156748-20"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">System</span><span class="crayon-sy">.</span><span class="crayon-e">import</span><span class="crayon-sy">(</span><span class="crayon-s">'app'</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5a10494d17672050156748-21"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-ta">&lt;/script&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17672050156748-22"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">body</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5a10494d17672050156748-23">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17672050156748-24"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">html</span><span class="crayon-o">&gt;</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0177 seconds] -->
+<p>Things to notice</p>
+<p>Line 5 : We load up the <em>es6-shim.js</em> from the <em>dist</em> folder to work with ES6 in current browsers.</p>
+<p>Line 10 : We created a new <strong>component</strong> named <em>my-app</em>. We will talk about components soon.</p>
+<p>Line 13 : ES6 comes with <a href="https://github.com/lukehoban/es6features#modules" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/lukehoban/es6features#modules', 'Modules');" title="Modules"  target="_blank">Modules</a> and<a href="https://github.com/lukehoban/es6features#module-loaders" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/lukehoban/es6features#module-loaders', ' Module Loaders');" title="Module Loader"  target="_blank"> Module Loaders</a>. This makes on demand importing very easy. If you have used Requirejs or the Commonjs module system while working with Nodejs, this will look very familiar.</p>
+<p>Line 14 : We refer Angular 2.0</p>
+<p>Line 15 : We refer <a href="https://www.npmjs.com/package/rtts-assert" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.npmjs.com/package/rtts-assert', 'Runtime assertions');" title="Runtime assertions"  target="_blank">Runtime assertions</a> library</p>
+<p>Line 16 : We load a file named <em>app.es6</em> that we will be creating next. This file will consist the definition for 
+<span id="crayon-5a10494d1767d399606429" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-o">&lt;</span><span class="crayon-v">my</span><span class="crayon-o">-</span><span class="crayon-v">app</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">my</span><span class="crayon-o">-</span><span class="crayon-v">app</span><span class="crayon-o">&gt;</span></span></span>.</p>
+<p>Line 20 : We kick off the <em>app.</em></p>
+<p>Next, create a new file named <em>app.es6</em>. The <em>es6</em> extension indicates that you are loading a file with EcmaScript 6 syntax. (<em>This is more for your text editor to show syntax </em><i>highlighting. You can js extension as well if you feel that too much is changing</i>).</p>
+<p>Update <i>app.es6</i> file as below</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a10494d17684454363894" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">hello2ng2/app/app.es6</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">JavaScript</span></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+import {Component, Template, bootstrap} from 'angular2/angular2';
+// Annotation section
+@Component({
+selector: 'my-app'
+})
+@Template({
+inline: '&lt;h1&gt;Hello {{ name }}&lt;/h1&gt;'
+})
+// Component controller
+class MyAppComponent {
+constructor() {
+this.name = 'World!';
+}
+}
+bootstrap(MyAppComponent);</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a10494d17684454363894-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17684454363894-2">2</div><div class="crayon-num" data-line="crayon-5a10494d17684454363894-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17684454363894-4">4</div><div class="crayon-num" data-line="crayon-5a10494d17684454363894-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17684454363894-6">6</div><div class="crayon-num" data-line="crayon-5a10494d17684454363894-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17684454363894-8">8</div><div class="crayon-num" data-line="crayon-5a10494d17684454363894-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17684454363894-10">10</div><div class="crayon-num" data-line="crayon-5a10494d17684454363894-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17684454363894-12">12</div><div class="crayon-num" data-line="crayon-5a10494d17684454363894-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17684454363894-14">14</div><div class="crayon-num" data-line="crayon-5a10494d17684454363894-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17684454363894-16">16</div><div class="crayon-num" data-line="crayon-5a10494d17684454363894-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17684454363894-18">18</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a10494d17684454363894-1"><span class="crayon-e">import</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-v">Component</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">Template</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">bootstrap</span><span class="crayon-sy">}</span><span class="crayon-h"> </span><span class="crayon-i">from</span><span class="crayon-h"> </span><span class="crayon-s">'angular2/angular2'</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17684454363894-2">&nbsp;</div><div class="crayon-line" id="crayon-5a10494d17684454363894-3"><span class="crayon-c">// Annotation section</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17684454363894-4"><span class="crayon-sy">@</span><span class="crayon-e">Component</span><span class="crayon-sy">(</span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5a10494d17684454363894-5"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">selector</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">'my-app'</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17684454363894-6"><span class="crayon-sy">}</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5a10494d17684454363894-7"><span class="crayon-sy">@</span><span class="crayon-e">Template</span><span class="crayon-sy">(</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17684454363894-8"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">inline</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">'&lt;h1&gt;Hello {{ name }}&lt;/h1&gt;'</span></div><div class="crayon-line" id="crayon-5a10494d17684454363894-9"><span class="crayon-sy">}</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17684454363894-10">&nbsp;</div><div class="crayon-line" id="crayon-5a10494d17684454363894-11"><span class="crayon-c">// Component controller</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17684454363894-12"><span class="crayon-t">class</span><span class="crayon-h"> </span><span class="crayon-e">MyAppComponent</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5a10494d17684454363894-13"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-r">constructor</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17684454363894-14"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">this</span><span class="crayon-sy">.</span><span class="crayon-e">name</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">'World!'</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5a10494d17684454363894-15"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17684454363894-16"><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5a10494d17684454363894-17">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17684454363894-18"><span class="crayon-e">bootstrap</span><span class="crayon-sy">(</span><span class="crayon-v">MyAppComponent</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0078 seconds] -->
+<p>I was overwhelmed as well as confused when I first saw the code. Learning Angular 2.0 is a challenge in itself and adding ES6 touch to that makes this a bit tricky.</p>
+<p>Let&#8217;s see what we have in this file</p>
+<p>Line 1 : If you have already gone through the <a href="https://github.com/lukehoban/es6features#modules" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/lukehoban/es6features#modules', 'modules');" title="Modules"  target="_blank">modules</a> feature, you should understand this syntax. All we are doing here is importing the required components from angular2 to be used in the current file.</p>
+<p>Line 4 : The &#8220;@&#8221; is an annotation. Angular 2.0 uses a library called <em>AtScript</em> (<em>@ script</em>).<em> </em></p>
+<h4>AtScript</h4>
+<blockquote><p>JavaScript, the de facto language of the browser, has a large, thriving community. However, it is missing some features which would make it much more manageable for large-scale application development. The goal of AtScript is to enhance the language with these missing features without infringing upon its current capabilities.</p></blockquote>
+<p>You can read more about it : <a href="https://docs.google.com/document/d/11YUzC-1d0V1-Q3V0fQ7KSit97HnZoKVygDxpWzEYW0U/edit#heading=h.c5wfaadh5aor" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://docs.google.com/document/d/11YUzC-1d0V1-Q3V0fQ7KSit97HnZoKVygDxpWzEYW0U/edit#heading=h.c5wfaadh5aor', 'AtScript Primer');" title="AtScript Primer"  target="_blank">AtScript Primer</a>. As far as I have understood (<em>I could be totally wrong here</em>), AtScript simplifies the syntax of ES6 in its own way. Taking an example from the primer</p>
+<p>ES6</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a10494d1768f028601301" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">ES6 - Metadata Annotations</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">JavaScript</span></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+import * as rtts from 'rtts';
+class MyClass {
+constructor(name, list) { }
+}
+MyClass.parameters = [
+{is: rtts.string}, 
+{is: Array}
+];</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a10494d1768f028601301-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1768f028601301-2">2</div><div class="crayon-num" data-line="crayon-5a10494d1768f028601301-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1768f028601301-4">4</div><div class="crayon-num" data-line="crayon-5a10494d1768f028601301-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1768f028601301-6">6</div><div class="crayon-num" data-line="crayon-5a10494d1768f028601301-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1768f028601301-8">8</div><div class="crayon-num" data-line="crayon-5a10494d1768f028601301-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d1768f028601301-10">10</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a10494d1768f028601301-1"><span class="crayon-v">import</span><span class="crayon-h"> </span><span class="crayon-o">*</span><span class="crayon-h"> </span><span class="crayon-st">as</span><span class="crayon-h"> </span><span class="crayon-e">rtts </span><span class="crayon-i">from</span><span class="crayon-h"> </span><span class="crayon-s">'rtts'</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1768f028601301-2">&nbsp;</div><div class="crayon-line" id="crayon-5a10494d1768f028601301-3"><span class="crayon-t">class</span><span class="crayon-h"> </span><span class="crayon-e">MyClass</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1768f028601301-4"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-r">constructor</span><span class="crayon-sy">(</span><span class="crayon-r">name</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">list</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h"> </span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5a10494d1768f028601301-5"><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1768f028601301-6">&nbsp;</div><div class="crayon-line" id="crayon-5a10494d1768f028601301-7"><span class="crayon-v">MyClass</span><span class="crayon-sy">.</span><span class="crayon-v">parameters</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-sy">[</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1768f028601301-8"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">{</span><span class="crayon-st">is</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">rtts</span><span class="crayon-sy">.</span><span class="crayon-t">string</span><span class="crayon-sy">}</span><span class="crayon-sy">,</span><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5a10494d1768f028601301-9"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">{</span><span class="crayon-st">is</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-t">Array</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d1768f028601301-10"><span class="crayon-sy">]</span><span class="crayon-sy">;</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0021 seconds] -->
+<p>AtScript</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a10494d17696702057395" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">AtScript - Metadata Annotations</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">JavaScript</span></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+class MyClass {
+constructor(name:string, list:Array) {}
+}</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a10494d17696702057395-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10494d17696702057395-2">2</div><div class="crayon-num" data-line="crayon-5a10494d17696702057395-3">3</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a10494d17696702057395-1"><span class="crayon-t">class</span><span class="crayon-h"> </span><span class="crayon-e">MyClass</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10494d17696702057395-2"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-r">constructor</span><span class="crayon-sy">(</span><span class="crayon-v">name</span><span class="crayon-o">:</span><span class="crayon-t">string</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">list</span><span class="crayon-o">:</span><span class="crayon-t">Array</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5a10494d17696702057395-3"><span class="crayon-sy">}</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0009 seconds] -->
+<p>You can read more about <a href="https://github.com/lukehoban/es6features#classes" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/lukehoban/es6features#classes', 'ES6 classes');" title="Classes"  target="_blank">ES6 classes</a> for better clarity.</p>
+<p>Though Angular team does not force the users to use AtScript, but it definitely looks like an advantage working with it.</p>
+<p>Getting back, As per the docs, Angular 2 works with a concept of components. And a component consist of 2 parts</p>
+<ol>
+<li>The Annotation Section &#8211; This consist of the meta data (component selector, template) for that component</li>
+<li>The Component Controller Section &#8211; This is a ES6 Class, from which the template would be reading the properties that are interpolated (<em>{{&#8230;}}</em>) inside it .</li>
+</ol>
+<p>So, (<em>referring to app.es6</em>)</p>
+<p>Line 5 : Identify the selector on page that would be the base for our component</p>
+<p>Line 8 : The template to be injected. Notice 
+<span id="crayon-5a10494d1769e859686524" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-sy">{</span><span class="crayon-sy">{</span><span class="crayon-h"> </span><span class="crayon-i">name</span><span class="crayon-h"> </span><span class="crayon-sy">}</span><span class="crayon-sy">}</span></span></span></p>
+<p>Line 14 : Declare the values to be used in the template. In our case it is <em>World!</em></p>
+<p>And finally on line 19, we bootstrap the component. As per my understanding, this is similar to exporting the main object from this file (<em>analogous to module.exports</em>) but instantiating it before exporting.</p>
+<p>That is all we need to build a Hello World app using Angular 2.0.</p>
+<h2>Launch and test the App</h2>
+<p>You can use any static server to launch the app. If you have python already installed, you can run</p>
+<div class="table-responsive"><table  style="width:100%; "  class="easy-table easy-table-default" border="0">
+<thead>
+<tr><th >Windows</th>
+<th > *nix</th>
+</tr>
+</thead>
+<tbody>
+<tr><td >
+<span id="crayon-5a10494d176a6317331876" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">python</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">m</span><span class="crayon-h"> </span><span class="crayon-v">http</span><span class="crayon-sy">.</span><span class="crayon-v">server</span></span></span> </td>
+<td > 
+<span id="crayon-5a10494d176ac868711213" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">python</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">m</span><span class="crayon-h"> </span><span class="crayon-v">SimpleHTTPServer</span></span></span></td>
+</tr>
+</tbody></table></div>
+<p>from inside the <em>hello2ng2 </em>folder or you can use a node module named <a href="https://www.npmjs.com/package/http-server" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.npmjs.com/package/http-server', 'http-server');" title="http-server"  target="_blank">http-server</a> to do the same. You can install the same using the below command</p>
+<p style="text-align: center;">
+<span id="crayon-5a10494d176b3123749565" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">npm </span><span class="crayon-e">install </span><span class="crayon-v">http</span><span class="crayon-o">-</span><span class="crayon-v">server</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">g</span></span></span></p>
+<p>And then you can launch the static server by running</p>
+<p style="text-align: center;">
+<span id="crayon-5a10494d176b9751474652" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">http</span><span class="crayon-o">-</span><span class="crayon-v">server</span></span></span></p>
+<p>from inside the <em>hello2ng2 </em>folder. And then navigate to 
+<span id="crayon-5a10494d176bf382903910" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">http</span><span class="crayon-o">:</span><span class="crayon-c">//localhost:8080/app/</span></span></span> you should see</p>
+<p><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/03/Screen-Shot-2015-03-23-at-11.37.56.png" data-rel="lightbox-0" title=""><img class="size-medium wp-image-2869 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/03/Screen-Shot-2015-03-23-at-11.37.56-347x300.png?resize=347%2C300" alt="Screen Shot 2015-03-23 at 11.37.56" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2869 aligncenter" src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/03/Screen-Shot-2015-03-23-at-11.37.56-347x300.png?resize=347%2C300" alt="Screen Shot 2015-03-23 at 11.37.56" data-recalc-dims="1" /></noscript></a></p>
+<h2>Next Steps</h2>
+<p>There are quite a lot of things going on with Angular 2.0 and I think it would take another 3 &#8211; 4 months to get a fair idea on where Angular 2.0 is headed to.</p>
+<p>You can track the progress <a href="https://github.com/angular/angular/commits/master" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/angular/angular/commits/master', 'here');" title="Commits"  target="_blank">here</a> and Angular 2.0 milestones <a href="https://github.com/angular/angular/milestones" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/angular/angular/milestones', 'here');" title="milestones"  target="_blank">here</a>.</p>
+<p>You can also checkout the <a href="https://angular.io/docs/js/latest/resources.html" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://angular.io/docs/js/latest/resources.html', 'resources page');" title="Resources"  target="_blank">resources page</a>, which has a few but helpful links on Angular 2.0.</p>
+<hr />
+<p>Thanks for reading! Do comment.<br />
+@arvindr21</p>
+<p>&nbsp;</p>
+<!-- Simple Share Buttons Adder (6.1.5) simplesharebuttons.com --><div class="ssba ssba-wrap"><div style="text-align:left"><a href="http://twitter.com/share?url=./getting-started-with-angular-2-0/&amp;text=Getting+Started+with+Angular+2.0+From+The+Jackal+of+Javascript+by+%40arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://twitter.com/share?url=./getting-started-with-angular-2-0/&amp;text=Getting+Started+with+Angular+2.0+From+The+Jackal+of+Javascript+by+%40arvindr21', '');" data-site="" class="ssba_twitter_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /></noscript></a><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=./getting-started-with-angular-2-0/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.linkedin.com/shareArticle?mini=true&amp;url=./getting-started-with-angular-2-0/', '');" data-site="linkedin" class="ssba_linkedin_share ssba_share_link"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">14</span><a href="https://plus.google.com/share?url=./getting-started-with-angular-2-0/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://plus.google.com/share?url=./getting-started-with-angular-2-0/', '');" data-site="" class="ssba_google_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="http://reddit.com/submit?url=./getting-started-with-angular-2-0/&amp;title=Getting Started with Angular 2.0" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://reddit.com/submit?url=./getting-started-with-angular-2-0/&amp;title=Getting Started with Angular 2.0', '');" data-site="reddit" class="ssba_reddit_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="https://bufferapp.com/add?url=./getting-started-with-angular-2-0/&amp;text=From The Jackal of Javascript Getting Started with Angular 2.0" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://bufferapp.com/add?url=./getting-started-with-angular-2-0/&amp;text=From The Jackal of Javascript Getting Started with Angular 2.0', '');" data-site="buffer" class="ssba_buffer_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /></noscript></a><a href="https://flattr.com/submit/auto?user_id=arvindr21&amp;title=Getting Started with Angular 2.0&amp;url=https://flattr.com/profile/arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://flattr.com/submit/auto?user_id=arvindr21&amp;title=Getting Started with Angular 2.0&amp;url=https://flattr.com/profile/arvindr21', '');" data-site="flattr" class="ssba_flattr_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /></noscript></a><a data-site="email" class="ssba_email_share" href="./../cdn-cgi/l/email-protection/index.html#f1ce8284939b949285ccb6948585989f96d1a2859083859495d186988599d1b09f96849d9083d1c3dfc1d7909c81ca939e9588ccb7839e9cd1a59994d1bb90929a909dd19e97d1bb908790829283988185d4c3c199858581cbdede8599949b90929a909d9e979b908790829283988185df929e9cde96948585989f96dc82859083859495dc86988599dc909f96849d9083dcc3dcc1de"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /></noscript></a><a data-site="print" class="ssba_print ssba_share_link" href="#" onclick="window.print()"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /></noscript></a></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-70838519-2865-5a10494e28653' data-src='//widgets.wp.com/likes/#blog_id=70838519&amp;post_id=2865&amp;origin=thejackalofjavascript.com&amp;obj_id=70838519-2865-5a10494e28653' data-name='like-post-frame-70838519-2865-5a10494e28653'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>
+<div class="entry-content">
+</div><!-- .entry-content -->
+<footer class="entry-meta">
+<span class="post-date"><a href="./index.html" title="12:07 pm" rel="bookmark"><time class="entry-date" datetime="2015-03-23T12:07:56+00:00">March 23, 2015</time></a></span><span class="byline"><span class="author vcard"><a class="url fn n" href="./../author/arvind-ravulavaru/index.html" title="View all posts by Arvind Ravulavaru" rel="author">Arvind Ravulavaru</a></span></span>					</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+<nav class="navigation post-navigation" role="navigation">
+<h1 class="screen-reader-text">Post navigation</h1>
+<div class="nav-links">
+<div class="nav-previous"><a href="./../getting-started-with-ngcordova/index.html" rel="prev"><span class="meta-nav screen-reader-text">&larr;</span></a></div><div class="nav-next"><a href="./../ionic-framework-cordova-and-file-api-a-media-player-app/index.html" rel="next"><span class="meta-nav screen-reader-text">&rarr;</span></a></div>		</div><!-- .nav-links -->
+</nav><!-- .navigation -->
+<div id="disqus_thread">
+<div id="dsq-content">
+<ul id="dsq-comments">
+<li class="comment even thread-even depth-1" id="dsq-comment-3363">
+<div id="dsq-comment-header-3363" class="dsq-comment-header">
+<cite id="dsq-cite-3363">
+<span id="dsq-author-user-3363">you</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3363" class="dsq-comment-body">
+<div id="dsq-comment-message-3363" class="dsq-comment-message"><p>this shit is insane man ! insane<br />
+la chalitaaaaaaa</p>
+<p>@Injectable()<br />
+export class AutocompleteService {</p>
+<p>    private autocompleteObserver: any;<br />
+public autocomplete: any;</p>
+<p>    constructor(&#8230;) {<br />
+this.autocompleteObserver = null;</p>
+<p>        this.autocomplete = Observable.create(observer =&gt; {<br />
+this.autocompleteObserver = observer;<br />
+});<br />
+}</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-3362">
+<div id="dsq-comment-header-3362" class="dsq-comment-header">
+<cite id="dsq-cite-3362">
+<span id="dsq-author-user-3362">you</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3362" class="dsq-comment-body">
+<div id="dsq-comment-message-3362" class="dsq-comment-message"><p>shaaa naa que ver wm la volaaa</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="dsq-comment-3341">
+<div id="dsq-comment-header-3341" class="dsq-comment-header">
+<cite id="dsq-cite-3341">
+<span id="dsq-author-user-3341">Mack</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3341" class="dsq-comment-body">
+<div id="dsq-comment-message-3341" class="dsq-comment-message"><p>first problem with this tutorial is after git clone the directory structure looks nothing like what is shown here. 2nd problem maybe related to the first is the install of gulp doesn&#8217;t work either.<br />
+That&#8217;s all the time I&#8217;m gonna waste on this.<br />
+Not sure why you created this tutorial as it only serves as a time waster.<br />
+Either get it right or don&#8217;t post it. Sheesh.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-3290">
+<div id="dsq-comment-header-3290" class="dsq-comment-header">
+<cite id="dsq-cite-3290">
+<span id="dsq-author-user-3290">razorree</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3290" class="dsq-comment-body">
+<div id="dsq-comment-message-3290" class="dsq-comment-message"><p>a big mess&#8230;.. AngularJS2 mixed with JS (JS on a server side ??? )&#8230; where is the backend ?  how to use AngularJS2 with a backend stuff (like Java) ?</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="dsq-comment-3281">
+<div id="dsq-comment-header-3281" class="dsq-comment-header">
+<cite id="dsq-cite-3281">
+<span id="dsq-author-user-3281">bradykelly</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3281" class="dsq-comment-body">
+<div id="dsq-comment-message-3281" class="dsq-comment-message"><p>Your directory structure cloned by Git looks nothing like your diagram, and, more importantly, it contains no gulpfile.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-3103">
+<div id="dsq-comment-header-3103" class="dsq-comment-header">
+<cite id="dsq-cite-3103">
+<span id="dsq-author-user-3103">Code Self Study</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3103" class="dsq-comment-body">
+<div id="dsq-comment-message-3103" class="dsq-comment-message"><p>I think that these commands are the same on Windows, Linux, and Mac. The difference is in Python versions.</p>
+<p>Python 3:<br />
+python -m http.server</p>
+<p>Python 2:<br />
+python -m SimpleHTTPServer</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="dsq-comment-3093">
+<div id="dsq-comment-header-3093" class="dsq-comment-header">
+<cite id="dsq-cite-3093">
+<span id="dsq-author-user-3093">Andrei</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3093" class="dsq-comment-body">
+<div id="dsq-comment-message-3093" class="dsq-comment-message"><p>Gulp fails &#8211; error in plugin run-sequence</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-3028">
+<div id="dsq-comment-header-3028" class="dsq-comment-header">
+<cite id="dsq-cite-3028">
+<span id="dsq-author-user-3028">Rachit Bhasin</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3028" class="dsq-comment-body">
+<div id="dsq-comment-message-3028" class="dsq-comment-message"><p>I&#8217;m getting error &#8216;cannot find module &#8220;gulp-traceur&#8221; &#8216; when I run the gulp command. So I ran &#8216;npm install &#8211;save gulp-traceur&#8217;. Now i&#8217;m getting &#8216;cannot find module &#8220;gulp-sourcemaps&#8221; &#8216;. Is there something that I&#8217;m missing? Or i&#8217;ll have to install each module one at a time.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="dsq-comment-3003">
+<div id="dsq-comment-header-3003" class="dsq-comment-header">
+<cite id="dsq-cite-3003">
+<span id="dsq-author-user-3003">Ramachandran</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3003" class="dsq-comment-body">
+<div id="dsq-comment-message-3003" class="dsq-comment-message"><p>on top of that how come there is NO MATERIAL AVAILABLE ON THE SYSTEM UNDEFINED ERROR issue that comes up? There is no information in the net and it is strange most of them who actually try this code get this error but the poeple who write this article dont get this error? I tried 3 different variations of the same code but it just does not work in any browser at all. What we need is an answer for the RefernceError: System is not defined &#8211; how to take care of that</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-3002">
+<div id="dsq-comment-header-3002" class="dsq-comment-header">
+<cite id="dsq-cite-3002">
+<span id="dsq-author-user-3002">Ramachandran</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3002" class="dsq-comment-body">
+<div id="dsq-comment-message-3002" class="dsq-comment-message"><p>There is something wrong really however i do it i keep getting the system error.. i even went and downloaded es6-shim,js and put it in the folder still get the same error</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="dsq-comment-2930">
+<div id="dsq-comment-header-2930" class="dsq-comment-header">
+<cite id="dsq-cite-2930">
+<span id="dsq-author-user-2930">Jadoti</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2930" class="dsq-comment-body">
+<div id="dsq-comment-message-2930" class="dsq-comment-message"><p>I did a fresh pull of the quickstart repository, and when I run gulp it fails on the whole rebuilding of angular2 and such..  It&#8217;s throwing errors out of angular2.map and es5build.map&#8230; Repulled the repo to make sure it wasn&#8217;t anything I did and sure enough it&#8217;s the same error&#8230; Has something changed since you wrote this article?</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-2906">
+<div id="dsq-comment-header-2906" class="dsq-comment-header">
+<cite id="dsq-cite-2906">
+<span id="dsq-author-user-2906">Ajay</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2906" class="dsq-comment-body">
+<div id="dsq-comment-message-2906" class="dsq-comment-message"><p>I am familiar with AngularJS <a href="http://www.techstrikers.com/" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.techstrikers.com', 'http://www.techstrikers.com');" rel="nofollow">http://www.techstrikers.com</a> , part-2 is new for me it&#8217;s really good..</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="dsq-comment-2808">
+<div id="dsq-comment-header-2808" class="dsq-comment-header">
+<cite id="dsq-cite-2808">
+<span id="dsq-author-user-2808">Stevo</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2808" class="dsq-comment-body">
+<div id="dsq-comment-message-2808" class="dsq-comment-message"><p>Does not work in Safari 8. Javascript console says &#8220;SyntaxError: Cannot use initialiser syntax in a strict mode enumeration.&#8221; in es6-shim.js line 4941</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-2730">
+<div id="dsq-comment-header-2730" class="dsq-comment-header">
+<cite id="dsq-cite-2730">
+http://www.syntaxsuccess.com/                <span id="dsq-author-user-2730">Torgeir</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2730" class="dsq-comment-body">
+<div id="dsq-comment-message-2730" class="dsq-comment-message"><p>I have added some Angular 2.0 sample components here as well if you are interested: <a href="http://www.syntaxsuccess.com/viewarticle/angular-2.0-examples" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.syntaxsuccess.com/viewarticle/angular-2.0-examples', 'http://www.syntaxsuccess.com/viewarticle/angular-2.0-examples');" rel="nofollow">http://www.syntaxsuccess.com/viewarticle/angular-2.0-examples</a></p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-2731">
+<div id="dsq-comment-header-2731" class="dsq-comment-header">
+<cite id="dsq-cite-2731">
+./                <span id="dsq-author-user-2731">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2731" class="dsq-comment-body">
+<div id="dsq-comment-message-2731" class="dsq-comment-message"><p>Thanks for sharing. The components look good. </p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="dsq-comment-2704">
+<div id="dsq-comment-header-2704" class="dsq-comment-header">
+<cite id="dsq-cite-2704">
+<span id="dsq-author-user-2704">Nicky Lenaers</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2704" class="dsq-comment-body">
+<div id="dsq-comment-message-2704" class="dsq-comment-message"><p>Great article really! I think it&#8217;s a lot clearer than the 5min tutorial on the angular website. What I&#8217;m not getting: what is the purpose of runtime assertion? And what is actually happening behind the scenes at runtime? How does it perform compared to static loading? I would really like to know! Thanks man!</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-2551">
+<div id="dsq-comment-header-2551" class="dsq-comment-header">
+<cite id="dsq-cite-2551">
+<span id="dsq-author-user-2551">Akshay Pingle</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2551" class="dsq-comment-body">
+<div id="dsq-comment-message-2551" class="dsq-comment-message"><p>I found Error &#8220;Uncaught ReferenceError: System is not defined&#8221; in index.html</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-2" id="dsq-comment-2560">
+<div id="dsq-comment-header-2560" class="dsq-comment-header">
+<cite id="dsq-cite-2560">
+./                <span id="dsq-author-user-2560">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2560" class="dsq-comment-body">
+<div id="dsq-comment-message-2560" class="dsq-comment-message"><p>Is es6-shim js file loaded in your page?</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="dsq-comment-2431">
+<div id="dsq-comment-header-2431" class="dsq-comment-header">
+<cite id="dsq-cite-2431">
+http://www.tablokar.ir                <span id="dsq-author-user-2431">tablokar.ir</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2431" class="dsq-comment-body">
+<div id="dsq-comment-message-2431" class="dsq-comment-message"><p>nice post &#8211; im trying to translate this and share on my own web site at <a href="http://tablokar.ir/" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://tablokar.ir', 'http://tablokar.ir');" rel="nofollow">http://tablokar.ir</a></p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-2" id="dsq-comment-2432">
+<div id="dsq-comment-header-2432" class="dsq-comment-header">
+<cite id="dsq-cite-2432">
+./                <span id="dsq-author-user-2432">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2432" class="dsq-comment-body">
+<div id="dsq-comment-message-2432" class="dsq-comment-message"><p>Sure. Don&#8217;t forget to share a link here when done. I will update the post as well. Thanks.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-2419">
+<div id="dsq-comment-header-2419" class="dsq-comment-header">
+<cite id="dsq-cite-2419">
+<span id="dsq-author-user-2419">Rune Jeppesen</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2419" class="dsq-comment-body">
+<div id="dsq-comment-message-2419" class="dsq-comment-message"><p>I think you should call it Typescript! Your own Atscript primer link, links to <a href="http://blogs.msdn.com/b/typescript/archive/2015/03/05/angular-2-0-built-on-typescript.aspx" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://blogs.msdn.com/b/typescript/archive/2015/03/05/angular-2-0-built-on-typescript.aspx', 'http://blogs.msdn.com/b/typescript/archive/2015/03/05/angular-2-0-built-on-typescript.aspx');" rel="nofollow">http://blogs.msdn.com/b/typescript/archive/2015/03/05/angular-2-0-built-on-typescript.aspx</a><br />
+From <a href="http://blogs.msdn.com/b/typescript/archive/2015/03/05/angular-2-0-built-on-typescript.aspx" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://blogs.msdn.com/b/typescript/archive/2015/03/05/angular-2-0-built-on-typescript.aspx', 'http://blogs.msdn.com/b/typescript/archive/2015/03/05/angular-2-0-built-on-typescript.aspx');" rel="nofollow">http://blogs.msdn.com/b/typescript/archive/2015/03/05/angular-2-0-built-on-typescript.aspx</a>:<br />
+&#8216;Engineering Director Brad Green yesterday told the community “we’re happy to announce that we’re going to retire the term AtScript and we’re just going to call it TypeScript from here on out.”&#8217;</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-2" id="dsq-comment-2422">
+<div id="dsq-comment-header-2422" class="dsq-comment-header">
+<cite id="dsq-cite-2422">
+./                <span id="dsq-author-user-2422">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2422" class="dsq-comment-body">
+<div id="dsq-comment-message-2422" class="dsq-comment-message"><p>Ah! Good to know! Thanks. Did not follow that news. </p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="dsq-comment-2364">
+<div id="dsq-comment-header-2364" class="dsq-comment-header">
+<cite id="dsq-cite-2364">
+<span id="dsq-author-user-2364">Lars Jeppesen</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2364" class="dsq-comment-body">
+<div id="dsq-comment-message-2364" class="dsq-comment-message"><p>Another great article &#8211; thanks. I&#8217;m really looking forward to the Angular2 progress &#8211; looks like it&#8217;s going to be amazing!</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-2" id="dsq-comment-2365">
+<div id="dsq-comment-header-2365" class="dsq-comment-header">
+<cite id="dsq-cite-2365">
+./                <span id="dsq-author-user-2365">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2365" class="dsq-comment-body">
+<div id="dsq-comment-message-2365" class="dsq-comment-message"><p>Thanks Lars. Yes, indeed. Can&#8217;t comment anything on it though till will see a beta version of it. </p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul>
+</div>
+</div>
+<script src="./../cdn-cgi/scripts/0e574bed/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+var disqus_url = './getting-started-with-angular-2-0/';
+var disqus_identifier = '2865 ./?p=2865';
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = 'thejackalofjavascriptcom';
+var disqus_title = "Getting Started with Angular 2.0";
+var disqus_config_custom = window.disqus_config;
+var disqus_config = function () {
+/*
+All currently supported events:
+onReady: fires when everything is ready,
+onNewComment: fires when a new comment is posted,
+onIdentify: fires when user is authenticated
+*/
+this.language = '';
+this.callbacks.onReady.push(function () {
+// sync comments in the background so we don't block the page
+var script = document.createElement('script');
+script.async = true;
+script.src = '?cf_action=sync_comments&post_id=2865';
+var firstScript = document.getElementsByTagName('script')[0];
+firstScript.parentNode.insertBefore(script, firstScript);
+});
+if (disqus_config_custom) {
+disqus_config_custom.call(this);
+}
+};
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+</main><!-- #main -->
+</div><!-- #primary -->
+<div id="secondary" class="widget-area" role="complementary">
+<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="./../index.html">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+</label>
+<input type="submit" class="search-submit" value="Search">
+</form>
+</aside><aside id="text-2" class="widget widget_text"><h1 class="widget-title">This is me!!</h1>			<div class="textwidget"><style>
+.socl-btn
+{
+padding: 3px;
+background: #f45145;
+border-radius: 3px;
+color: rgba(255, 255, 255, 0.6) !important;
+margin-top: 9px;
+display: inline-block;
+text-align: center;
+width:100%;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+.socl-btn:hover{
+color:#fff !important;
+}
+.lkdin{
+background-image: url(./../wp-content/uploads/2014/08/l.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+.gplus{
+background-image: url(./../wp-content/uploads/2014/08/g.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+.mongodir{
+background-image: url(./../wp-content/uploads/2014/08/m.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+.sitept{
+background-image: url(./../wp-content/uploads/2014/08/s.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+</style>
+<img src="./../wp-content/uploads/2014/02/030a49b.jpg" alt="Arvind Ravulavaru" style="width: 81px; margin: 0px auto;display: block;border-radius: 45px;"/>
+<br/>
+<label>
+Hello.. I am Arvind Ravulavaru a Full Stack Consultant based out of Hyderabad, India. This blog is my way of giving back to the Javascript Community!</label>
+<br/>
+<div style="text-align:center;" ><a  href="./../portfolio/index.html">Know more about me</a></div>
+<br/>
+<div  style="text-align:center;">
+<a href="https://twitter.com/arvindr21" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://twitter.com/arvindr21', 'Follow @arvindr21');" class="twitter-follow-button" data-show-count="false">Follow @arvindr21</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+<iframe src="http://ghbtns.com/github-btn.html?user=arvindr21&type=follow"
+allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe><br/><br/>
+<a href="http://in.linkedin.com/in/arvindravulavaru" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://in.linkedin.com/in/arvindravulavaru', 'Linked In');" target="_blank"  class="socl-btn lkdin">Linked In</a>
+<a href="https://plus.google.com/+ArvindRavulavaru" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://plus.google.com/+ArvindRavulavaru', 'Google Plus');" target="_blank"  class="socl-btn gplus">Google Plus</a><br/>
+<a href="http://blog.mongodirector.com/author/arvindr" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/author/arvindr', 'Mongo Director');" target="_blank"  class="socl-btn mongodir">Mongo Director</a> <a href="http://www.sitepoint.com/author/aravulavaru/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/author/aravulavaru/', 'Site Point');" target="_blank"  class="socl-btn sitept">Site Point</a> <br/><br/>
+<a href="https://paper.li/arvindr21/1409328222#!headlines/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://paper.li/arvindr21/1409328222#!headlines/', 'Chronicles of the Jackal of Javascript');" target="_blank"  class="socl-btn">Chronicles of the Jackal of Javascript</a>
+</div></div>
+</aside><aside id="text-5" class="widget widget_text">			<div class="textwidget"><style>
+.crm-app, .crm-ext
+{
+padding: 9px;
+background: #787878;
+border-radius: 45px;
+color: #EFEFEE !important;
+margin-top: 9px;
+display: inline-block;
+text-align: center;
+}
+</style>
+<a href="https://chrome.google.com/webstore/detail/the-jackal-of-javascript/oiaebkkgbicadojhdipjajkhjkeencdm" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://chrome.google.com/webstore/detail/the-jackal-of-javascript/oiaebkkgbicadojhdipjajkhjkeencdm', 'Chrome App');" target ="_blank" class="crm-app">Chrome App</a>
+<a href="https://chrome.google.com/webstore/detail/the-jackal-of-javascript/dokdjofgoglghfljkpmmkgfpipgcmjme" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://chrome.google.com/webstore/detail/the-jackal-of-javascript/dokdjofgoglghfljkpmmkgfpipgcmjme', 'Chrome Extension');" target ="_blank" class="crm-ext">Chrome Extension</a></div>
+</aside><aside id="text-7" class="widget widget_text"><h1 class="widget-title">Workshops</h1>			<div class="textwidget"><ul>
+<li><a href="http://mean-workshop.herokuapp.com/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://mean-workshop.herokuapp.com', 'o/ M.E.A.N. Workshop');" target="_blank">\o/ M.E.A.N. Workshop</a>
+</li>
+</ul></div>
+</aside><aside id="text-6" class="widget widget_text"><h1 class="widget-title">Presentations</h1>			<div class="textwidget"><ul>
+<li><a href="http://arvindr21.github.io/ng-overview" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/ng-overview', 'Overview of Angularjs');" target="_blank">Overview of Angularjs</a>
+</li>
+<li><a href="http://arvindr21.github.io/howBrowserWorks" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/howBrowserWorks', 'How Browser Works');" target="_blank">How Browser Works</a>
+</li>
+<li><a href="http://arvindr21.github.io/WebComponents" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/WebComponents', 'Web Components');" target="_blank">Web Components</a>
+</li>
+<li><a href="http://arvindr21.github.io/building-n-Scaffolding" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/building-n-Scaffolding', 'Modern UI Build Systems and Scaffolding Tools');" target="_blank">Modern UI Build Systems and Scaffolding Tools</a>
+</li>
+<li><a href="http://arvindr21.github.io/backbonejs" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/backbonejs', 'Backbonejs');" target="_blank">Backbonejs</a>
+</li>
+<li><a href="http://arvindr21.github.io/rwd" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/rwd', 'Responsive Web Design');" target="_blank">Responsive Web Design</a>
+</li>
+</ul></div>
+</aside><aside id="text-3" class="widget widget_text"><h1 class="widget-title">Projects</h1>			<div class="textwidget"><ul><li><a href="./../rotten-tomatoes-jquery-rest-client/index.html" target="_blank">Rotten Tomatoes jQuery Rest Client</a>
+</li>
+<li>
+<a href="./../uploading-files-made-fun/index.html" target="_blank">blueimp-file-upload-expressjs</a> - A Node Package
+</li>
+<li>
+<a href="http://arvindr21.github.io/lazyboy/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/lazyboy/', 'lazyboy');" target="_blank">lazyboy</a> - Command line laziness redefined
+</li>
+<li>
+<a href="http://arvindr21.github.io/diskDB/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/diskDB/', 'diskDB');" target="_blank">diskDB</a> - A Light Weight Disk based JSON Database - A Node Package
+</li>
+<li>
+<a href="https://github.com/search?utf8=%E2%9C%93&q=user%3Aarvindr21+slush&type=Repositories&ref=searchresults" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/search?utf8=%E2%9C%93&amp;q=user%3Aarvindr21+slush&amp;type=Repositories&amp;ref=searchresults', 'My Slush Generators');" target="_blank">My Slush Generators</a>
+</li>
+<li>
+<a href="https://github.com/search?utf8=%E2%9C%93&q=user%3Aarvindr21+yeoman&type=Repositories&ref=searchresults" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/search?utf8=%E2%9C%93&amp;q=user%3Aarvindr21+yeoman&amp;type=Repositories&amp;ref=searchresults', 'My Yeoman Generators');" target="_blank">My Yeoman Generators</a>
+</li>
+<li>
+<a href="https://github.com/arvindr21/myWebComponents#mywebcomponents" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/arvindr21/myWebComponents#mywebcomponents', 'My Web Components');" target="_blank">My Web Components</a>
+</li>
+<li>
+<a href="http://bower.io/search/?q=owner:arvindr21" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://bower.io/search/?q=owner:arvindr21', 'My Bower Packages');" target="_blank">My Bower Packages</a>
+</li>
+</ul></div>
+</aside><aside id="latestseries-2" class="widget widget_latestseries"><h1 class="widget-title">Series</h1>			<ul>
+<div class="latest-series"><ul><li><a href="./../series/a-reminder-app/index.html" class="series-145" title="Ionic, Twilio and Node Scheduler – A Reminder App">Ionic, Twilio and Node Scheduler – A Reminder App</a></li><li><a href="./../series/node-webkit-apps/index.html" class="series-150" title="Node Webkit Apps">Node Webkit Apps</a></li><li><a href="./../series/rpi/index.html" class="series-148" title="Raspberry Pi">Raspberry Pi</a></li></ul></div>			</ul>
+</aside><aside id="text-4" class="widget widget_text"><h1 class="widget-title">Guest Posts</h1>			<div class="textwidget"><ul>
+<li><a href="http://www.sitepoint.com/building-chat-app-node-webkit-firebase-angularjs/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/building-chat-app-node-webkit-firebase-angularjs/', 'Building a Chat App with node-webkit, Firebase, and AngularJS');" target="_blank">Building a Chat App with node-webkit, Firebase, and AngularJS</a></li>
+<li><a href="http://www.sitepoint.com/creating-sentiment-analysis-application-using-node-js/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/creating-sentiment-analysis-application-using-node-js/', 'Creating a Sentiment Analysis Application Using Node.js');" target="_blank">Creating a Sentiment Analysis Application Using Node.js</a></li>
+<li><a href="http://blog.mongodirector.com/implementing-pagination-with-mongodb-express-js-slush/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/implementing-pagination-with-mongodb-express-js-slush/', 'Implementing pagination with MongoDB, Express.js &amp; Slush');" target="_blank">Implementing pagination with MongoDB, Express.js & Slush</a></li>
+<li><a href="http://www.sitepoint.com/creating-firebase-powered-end-end-ionic-application/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/creating-firebase-powered-end-end-ionic-application/', 'Creating a Firebase Powered End to End Ionic Application');" target="_blank">Creating a Firebase Powered End to End Ionic Application</a></li>
+<li><a href="http://blog.mongodirector.com/getting-started-with-mongodb-and-mongoose/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/getting-started-with-mongodb-and-mongoose/', 'Getting started with MongoDB and Mongoose');" target="_blank">Getting started with MongoDB and Mongoose</a></li>
+<li><a href="http://blog.mongodirector.com/yeoman-mongoose-and-mongodb/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/yeoman-mongoose-and-mongodb/', 'Yeoman, Mongoose and MongoDB');" target="_blank">Yeoman, Mongoose and MongoDB</a></li>
+</ul></div>
+</aside><aside id="views-2" class="widget widget_views"><h1 class="widget-title">Top5 Posts</h1><ul>
+<li><a href="./../architecting-a-restful-node-js-app/index.html"  title="Architecting a Secure RESTful Node.js app">Architecting a Secure RESTful Node.js app</a> - 215,322 views</li><li><a href="./index.html"  title="Getting Started with Angular 2.0">Getting Started with Angular 2.0</a> - 177,582 views</li><li><a href="./../developing-a-mean-app-with-angular-2-0/index.html"  title="Developing a MEAN app with Angular 2.0">Developing a MEAN app with Angular 2.0</a> - 149,713 views</li><li><a href="./../getting-started-with-node-webkit-apps/index.html"  title="Node Webkit &ndash; Build Desktop Apps with Node and Web Technologies">Node Webkit &ndash; Build Desktop Apps with Node and Web Technologies</a> - 93,571 views</li><li><a href="./../rpi-live-streaming/index.html"  title="Raspberry Pi, Camera and Node.js &ndash; Live Streaming with Websockets #IoT">Raspberry Pi, Camera and Node.js &ndash; Live Streaming with Websockets #IoT</a> - 91,975 views</li></ul>
+</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h1 class="widget-title">Recent Posts</h1>		<ul>
+<li>
+<a href="./../learning-ionic/index.html">Learning Ionic</a>
+</li>
+<li>
+<a href="./../electron-wordpress-angular-material-an-offline-viewer/index.html">Electron, WordPress &#038; Angular Material &#8211; An Offline Viewer</a>
+</li>
+<li>
+<a href="./../developing-a-mean-app-with-angular-2-0/index.html">Developing a MEAN app with Angular 2.0</a>
+</li>
+<li>
+<a href="./../pushbots-and-cordova/index.html">Pushbots and Cordova &#8211; Easy Push Notifications for your app</a>
+</li>
+<li>
+<a href="./../getting-started-with-client-side-storage/index.html">Getting Started with Client Side Storage</a>
+</li>
+</ul>
+</aside><aside id="categories-2" class="widget widget_categories"><h1 class="widget-title">Categories</h1>		<ul>
+<li class="cat-item cat-item-141"><a href="./../architecture/index.html" >Architecture</a> (8)
+</li>
+<li class="cat-item cat-item-3"><a href="./../css/index.html" >CSS</a> (9)
+<ul class='children'>
+<li class="cat-item cat-item-5"><a href="./../css/css3/index.html" >CSS3</a> (6)
+</li>
+<li class="cat-item cat-item-26"><a href="./../css/less/index.html" >LESS</a> (3)
+</li>
+<li class="cat-item cat-item-55"><a href="./../css/sass/index.html" >SASS</a> (1)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-117"><a href="./../database/index.html" >Database</a> (17)
+<ul class='children'>
+<li class="cat-item cat-item-136"><a href="./../database/disk-db/index.html" >Disk DB</a> (6)
+</li>
+<li class="cat-item cat-item-131"><a href="./../database/firebase/index.html" >Firebase</a> (4)
+</li>
+<li class="cat-item cat-item-118"><a href="./../database/mongodb/index.html" >MongoDB</a> (8)
+<ul class='children'>
+<li class="cat-item cat-item-119"><a href="./../database/mongodb/mongolab/index.html" >MongoLab</a> (3)
+</li>
+<li class="cat-item cat-item-123"><a href="./../database/mongodb/monk/index.html" >Monk</a> (1)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-125"><a href="./../deployments/index.html" >Deployments</a> (4)
+<ul class='children'>
+<li class="cat-item cat-item-126"><a href="./../deployments/heroku/index.html" >Heroku</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-135"><a href="./../desktop-apps/index.html" >Desktop Apps</a> (8)
+</li>
+<li class="cat-item cat-item-155"><a href="./../dna-analysis/index.html" >DNA Analysis</a> (1)
+</li>
+<li class="cat-item cat-item-112"><a href="./../es6/index.html" >ECMAScript 6</a> (3)
+</li>
+<li class="cat-item cat-item-162"><a href="./../electron-atom-shell/index.html" >Electron (atom shell)</a> (1)
+</li>
+<li class="cat-item cat-item-25"><a href="./../frameworks/index.html" >Frameworks</a> (42)
+<ul class='children'>
+<li class="cat-item cat-item-160"><a href="./../frameworks/angular-2-0/index.html" >Angular 2.0</a> (2)
+</li>
+<li class="cat-item cat-item-108"><a href="./../frameworks/angularjs/index.html" >Angularjs</a> (21)
+</li>
+<li class="cat-item cat-item-132"><a href="./../frameworks/backbonejs/index.html" >Backbonejs</a> (1)
+</li>
+<li class="cat-item cat-item-105"><a href="./../frameworks/bootstrap/index.html" >Bootstrap</a> (9)
+</li>
+<li class="cat-item cat-item-159"><a href="./../frameworks/emberjs/index.html" >Emberjs</a> (1)
+</li>
+<li class="cat-item cat-item-56"><a href="./../frameworks/foundation/index.html" >Foundation</a> (3)
+</li>
+<li class="cat-item cat-item-110"><a href="./../frameworks/framework7/index.html" >Framework7</a> (1)
+</li>
+<li class="cat-item cat-item-107"><a href="./../frameworks/ionic/index.html" >Ionic</a> (11)
+</li>
+<li class="cat-item cat-item-157"><a href="./../frameworks/lumx/index.html" >Lumx</a> (1)
+</li>
+<li class="cat-item cat-item-138"><a href="./../frameworks/mean/index.html" >MEAN</a> (4)
+</li>
+<li class="cat-item cat-item-116"><a href="./../frameworks/meteorjs/index.html" >Meteorjs</a> (1)
+</li>
+<li class="cat-item cat-item-122"><a href="./../frameworks/onsen-ui/index.html" >Onsen UI</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-101"><a href="./../git/index.html" >Git</a> (12)
+<ul class='children'>
+<li class="cat-item cat-item-102"><a href="./../git/github/index.html" >GitHub</a> (10)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-2"><a href="./../html/index.html" >HTML</a> (22)
+<ul class='children'>
+<li class="cat-item cat-item-4"><a href="./../html/html5/index.html" >HTML5</a> (21)
+<ul class='children'>
+<li class="cat-item cat-item-158"><a href="./../html/html5/webrtc/index.html" >WebRTC</a> (1)
+</li>
+<li class="cat-item cat-item-106"><a href="./../html/html5/websockets/index.html" >WebSockets</a> (6)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-137"><a href="./../intels-app-ui/index.html" >Intel&#039;s App UI</a> (1)
+</li>
+<li class="cat-item cat-item-143"><a href="./../iot/index.html" >IoT</a> (6)
+</li>
+<li class="cat-item cat-item-1"><a href="./../javascript/index.html" >Javascript</a> (75)
+<ul class='children'>
+<li class="cat-item cat-item-6"><a href="./../javascript/jquery/index.html" >jQuery</a> (14)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-151"><a href="./../material-design/index.html" >Material Design</a> (3)
+</li>
+<li class="cat-item cat-item-99"><a href="./../mobile/index.html" >Mobile</a> (21)
+<ul class='children'>
+<li class="cat-item cat-item-103"><a href="./../mobile/android/index.html" >Android</a> (15)
+</li>
+<li class="cat-item cat-item-113"><a href="./../mobile/firefox-os/index.html" >Firefox OS</a> (2)
+</li>
+<li class="cat-item cat-item-104"><a href="./../mobile/ios/index.html" >iOS</a> (11)
+</li>
+<li class="cat-item cat-item-100"><a href="./../mobile/phonegap/index.html" >PhoneGap</a> (16)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-149"><a href="./../mqtt/index.html" >MQTT</a> (1)
+</li>
+<li class="cat-item cat-item-163"><a href="./../my-books/index.html" >My Books</a> (1)
+</li>
+<li class="cat-item cat-item-45"><a href="./../node/index.html" >Node</a> (60)
+<ul class='children'>
+<li class="cat-item cat-item-152"><a href="./../node/cli/index.html" >CLI</a> (3)
+</li>
+<li class="cat-item cat-item-121"><a href="./../node/expressjs/index.html" >Expressjs</a> (18)
+</li>
+<li class="cat-item cat-item-156"><a href="./../node/genome/index.html" >Genome</a> (1)
+</li>
+<li class="cat-item cat-item-62"><a href="./../node/grunt/index.html" >Grunt</a> (8)
+</li>
+<li class="cat-item cat-item-124"><a href="./../node/koa/index.html" >Koa</a> (1)
+</li>
+<li class="cat-item cat-item-134"><a href="./../node/node-webkit/index.html" >Node Webkit</a> (7)
+</li>
+<li class="cat-item cat-item-54"><a href="./../node/npm/index.html" >NPM</a> (15)
+</li>
+<li class="cat-item cat-item-120"><a href="./../node/restify/index.html" >Restify</a> (3)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-161"><a href="./../push-notifications/index.html" >Push Notifications</a> (1)
+</li>
+<li class="cat-item cat-item-59"><a href="./../quick-and-dirty/index.html" >Quick and Dirty</a> (42)
+</li>
+<li class="cat-item cat-item-142"><a href="./../raspberry-pi/index.html" >Raspberry Pi</a> (9)
+</li>
+<li class="cat-item cat-item-60"><a href="./../setup/index.html" >Setup</a> (60)
+</li>
+<li class="cat-item cat-item-61"><a href="./../testing/index.html" >Testing</a> (5)
+<ul class='children'>
+<li class="cat-item cat-item-129"><a href="./../testing/jasmine/index.html" >Jasmine</a> (1)
+</li>
+<li class="cat-item cat-item-128"><a href="./../testing/protractor/index.html" >Protractor</a> (1)
+</li>
+<li class="cat-item cat-item-98"><a href="./../testing/test-automation/index.html" >Test Automation</a> (1)
+</li>
+<li class="cat-item cat-item-41"><a href="./../testing/tdd/index.html" >Test Driven Developement</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-139"><a href="./../third-party-products/index.html" >Third Party Products</a> (4)
+<ul class='children'>
+<li class="cat-item cat-item-140"><a href="./../third-party-products/twilio/index.html" >Twilio</a> (4)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-58"><a href="./../tutorial/index.html" >Tutorial</a> (79)
+</li>
+<li class="cat-item cat-item-130"><a href="./../performance-analysis/index.html" >UI Performance</a> (1)
+</li>
+<li class="cat-item cat-item-109"><a href="./../web-components/index.html" >Web Components</a> (3)
+</li>
+<li class="cat-item cat-item-133"><a href="./../google-web-starter-kit/index.html" >Web Starter Kit</a> (1)
+</li>
+</ul>
+</aside><aside id="archives-2" class="widget widget_archive"><h1 class="widget-title">Archives</h1>		<ul>
+<li><a href='./../2015/07/index.html'>July 2015</a></li>
+<li><a href='./../2015/05/index.html'>May 2015</a></li>
+<li><a href='./../2015/04/index.html'>April 2015</a></li>
+<li><a href='./../2015/03/index.html'>March 2015</a></li>
+<li><a href='./../2015/02/index.html'>February 2015</a></li>
+<li><a href='./../2015/01/index.html'>January 2015</a></li>
+<li><a href='./../2014/12/index.html'>December 2014</a></li>
+<li><a href='./../2014/11/index.html'>November 2014</a></li>
+<li><a href='./../2014/10/index.html'>October 2014</a></li>
+<li><a href='./../2014/09/index.html'>September 2014</a></li>
+<li><a href='./../2014/08/index.html'>August 2014</a></li>
+<li><a href='./../2014/07/index.html'>July 2014</a></li>
+<li><a href='./../2014/06/index.html'>June 2014</a></li>
+<li><a href='./../2014/05/index.html'>May 2014</a></li>
+<li><a href='./../2014/04/index.html'>April 2014</a></li>
+<li><a href='./../2014/03/index.html'>March 2014</a></li>
+<li><a href='./../2014/02/index.html'>February 2014</a></li>
+</ul>
+</aside><aside id="wysija-3" class="widget widget_wysija"><h1 class="widget-title">Inform me about new posts</h1><div class="widget_wysija_cont"><div id="msg-form-wysija-3" class="wysija-msg ajax"></div><form id="form-wysija-3" method="post" action="#wysija" class="widget_wysija">
+<p class="wysija-paragraph">
+<label>Email <span class="wysija-required">*</span></label>
+<input type="text" name="wysija[user][email]" class="wysija-input validate[required,custom[email]]" title="Email"  value="" />
+<span class="abs-req">
+<input type="text" name="wysija[user][abs][email]" class="wysija-input validated[abs][email]" value="" />
+</span>
+</p>
+<input class="wysija-submit wysija-submit-field" type="submit" value="Subscribe!" />
+<input type="hidden" name="form_id" value="1" />
+<input type="hidden" name="action" value="save" />
+<input type="hidden" name="controller" value="subscribers" />
+<input type="hidden" value="1" name="wysija-page" />
+<input type="hidden" name="wysija[user_list][list_ids]" value="3" />
+</form></div></aside>	</div><!-- #secondary -->
+	<script>
+var _prum = [['id', '544090ababe53d0e3e76d6ce'],
+['mark', 'firstbyte', (new Date()).getTime()]];
+(function() {
+var s = document.getElementsByTagName('script')[0]
+, p = document.createElement('script');
+p.async = 'async';
+p.src = '//rum-static.pingdom.net/prum.min.js';
+s.parentNode.insertBefore(p, s);
+})();
+</script>
+</div><!-- #content -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info">
+All Rights Reserved
+<span class="sep"> | </span>
+The Jackal of Javascript
+</div><!-- .site-info -->
+<div class="rnd-circle" style="background: black;width: 10px;height: 10px;border-radius: 50%;"></div>
+</footer><!-- #colophon -->
+</div><!-- #page -->
+<script type='text/javascript'><!--
+var seriesdropdown = document.getElementById("orgseries_dropdown");
+if (seriesdropdown) {
+function onSeriesChange() {
+if ( seriesdropdown.options[seriesdropdown.selectedIndex].value != ( 0 || -1 ) ) {
+location.href = "./series/"+seriesdropdown.options[seriesdropdown.selectedIndex].value;
+}
+}
+seriesdropdown.onchange = onSeriesChange;
+}
+--></script>
+<script type="text/javascript">
+// <![CDATA[
+var disqus_shortname = 'thejackalofjavascriptcom';
+(function () {
+var nodes = document.getElementsByTagName('span');
+for (var i = 0, url; i < nodes.length; i++) {
+if (nodes[i].className.indexOf('dsq-postid') != -1) {
+nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+url = nodes[i].parentNode.href.split('#', 1);
+if (url.length == 1) { url = url[0]; }
+else { url = url[1]; }
+nodes[i].parentNode.href = url + '#disqus_thread';
+}
+}
+var s = document.createElement('script'); 
+s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+// ]]>
+</script>
+<div class="scroll-back-to-top-wrapper">
+<span class="scroll-back-to-top-inner">
+<i class="fa fa-2x fa-arrow-circle-up"></i>
+</span>
+</div>
+<style type="text/css">
+#wpfront-notification-bar 
+{
+background: #242d36;
+background: -moz-linear-gradient(top, #242d36 0%, #242d36 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#242d36), color-stop(100%,#242d36));
+background: -webkit-linear-gradient(top, #242d36 0%,#242d36 100%);
+background: -o-linear-gradient(top, #242d36 0%,#242d36 100%);
+background: -ms-linear-gradient(top, #242d36 0%,#242d36 100%);
+background: linear-gradient(to bottom, #242d36 0%, #242d36 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242d36', endColorstr='#242d36',GradientType=0 );
+}
+#wpfront-notification-bar div.wpfront-message
+{
+color: #ffffff;
+}
+#wpfront-notification-bar a.wpfront-button
+{
+background: #f45145;
+background: -moz-linear-gradient(top, #f45145 0%, #f45145 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f45145), color-stop(100%,#f45145));
+background: -webkit-linear-gradient(top, #f45145 0%,#f45145 100%);
+background: -o-linear-gradient(top, #f45145 0%,#f45145 100%);
+background: -ms-linear-gradient(top, #f45145 0%,#f45145 100%);
+background: linear-gradient(to bottom, #f45145 0%, #f45145 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f45145', endColorstr='#f45145',GradientType=0 );
+color: #ffffff;
+}
+#wpfront-notification-bar-open-button
+{
+background-color: #00b7ea;
+}
+#wpfront-notification-bar  div.wpfront-close 
+{
+border: 1px solid #555555;
+background-color: #555555;
+color: #000000;
+}
+#wpfront-notification-bar  div.wpfront-close:hover 
+{
+border: 1px solid #aaaaaa;
+background-color: #aaaaaa;
+}
+</style>
+<div id="wpfront-notification-bar-spacer"  style="display: none;">
+<div id="wpfront-notification-bar-open-button" class="top wpfront-bottom-shadow"></div>
+<div id="wpfront-notification-bar" class="wpfront-fixed">
+<div class="wpfront-close">X</div>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<div class="wpfront-message">
+Learn your way around Ionic framework. Check out Learning Ionic!                     </div>
+<div>
+<a class="wpfront-button" href="https://www.packtpub.com/application-development/learning-ionic/?utm_source=Jkthejackalofjavascript&utm_medium=referral&utm_campaign=1783552603"  target="_blank" >Buy</a>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<style type="text/css">
+.wpfront-message{line-height:27px; vertical-align:baseline !important;}</style>
+<script type="text/javascript">if(typeof wpfront_notification_bar == "function") wpfront_notification_bar({"position":1,"height":0,"fixed_position":"on","animate_delay":0.5,"close_button":true,"button_action_close_bar":false,"auto_close_after":0,"display_after":1,"is_admin_bar_showing":false,"display_open_button":false,"keep_closed":"on","keep_closed_for":1,"position_offset":0,"display_scroll":"on","display_scroll_offset":100});</script><script type='text/javascript' src='./../wp-content/plugins/jetpack/modules/photon/photon.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var scrollBackToTop = {"scrollDuration":"500","fadeDuration":"0.5"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./../wp-content/plugins/scroll-back-to-top/assets/js/scroll-back-to-top.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/simple-share-buttons-adder/js/ssba.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var viewsCacheL10n = {"admin_ajax_url":".\/wp-admin\/admin-ajax.php","post_id":"2865"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./../wp-content/plugins/wp-postviews/postviews-cache.js'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js'></script>
+<script type='text/javascript' src='./../wp-content/themes/sorbet/js/menus.js'></script>
+<script type='text/javascript' src='./../wp-content/themes/sorbet/js/skip-link-focus-fix.js'></script>
+<script type='text/javascript' src='./../wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/lazy-load/js/jquery.sonar.min.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/lazy-load/js/lazy-load.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/jetpack/_inc/postmessage.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/jetpack/_inc/jquery.jetpack-resize.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/jetpack/_inc/jquery.inview.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/jetpack/modules/likes/queuehandler.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/wysija-newsletters/js/validate/languages/jquery.validationEngine-en.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/wysija-newsletters/js/validate/jquery.validationEngine.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wysijaAJAX = {"action":"wysija_ajax","controller":"subscribers","ajaxurl":".\/wp-admin\/admin-ajax.php","loadingTrans":"Loading...","is_rtl":""};
+var wysijaAJAX = {"action":"wysija_ajax","controller":"subscribers","ajaxurl":".\/wp-admin\/admin-ajax.php","loadingTrans":"Loading...","is_rtl":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./../wp-content/plugins/wysija-newsletters/js/front-subscribers.js'></script>
+<iframe src='http://widgets.wp.com/likes/master.html?ver=20141028#ver=20141028' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+<script type="text/javascript">
+jQuery.noConflict();
+(function( $ ) {
+$(function() {
+// More code using $ as alias to jQuery
+$("area[href*=#],a[href*=#]:not([href=#]):not([href^='#tab']):not([href^='#quicktab']):not([href^='#pane'])").click(function() {
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+var target = $(this.hash);
+target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+if (target.length) {
+$('html,body').animate({
+scrollTop: target.offset().top - 20  
+},900 ,'easeOutQuint');
+return false;
+}
+}
+});
+});
+})(jQuery);	
+</script>				
+<script type='text/javascript' src='http://stats.wp.com/e-201746.js' async defer></script>
+<script type='text/javascript'>
+_stq = window._stq || [];
+_stq.push([ 'view', {v:'ext',j:'1:3.7',blog:'70838519',post:'2865',tz:'5.5',srv:'thejackalofjavascript.com'} ]);
+_stq.push([ 'clickTrackerInit', '70838519', '2865' ]);
+</script>
+<div id="upprev_box"><h6>Read previous post:</h6><div class="upprev_excerpt"><h5><a href="./../getting-started-with-ngcordova/index.html" rel="Getting Started with Angular 2.0">Getting Started with ngCordova</a></h5><p>In this post, we will take a quick dip into ngCordova and Ionic Framework. We will take a look at...</p></div><a id="upprev_close" href="#" rel="close">Close</a></div><script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-47881846-1', 'auto');
+ga('send', 'pageview');
+</script>
+<a style="display:none;" href="http://www.alexa.com/siteinfo/./"><script type="text/javascript" src="http://xslt.alexa.com/site_stats/js/t/a?url=./"></script></a>
+</body>
+</html><script>if(document.getElementById('to-contents') == null){ } else {var a = document.getElementById('to-contents').getElementsByTagName('a'); for(var i=0; i< a.length;i++){var b = a[i].getAttribute('href').split('#');if(b.length >=2)a[i].setAttribute('href', '#'+b[1]);}}</script>
+<script>if(typeof jQuery == 'function'){jQuery('.widgetGuts.shortcode h3').html('Inform Me About New Posts')}</script><!-- WP Fastest Cache file was created in 4.48284602165 seconds, on 18-11-17 14:53:04 -->

@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="alexaVerifyID" content="tHZTfJpU56tqERN4vjth74jHqBM"/>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="./../xmlrpc.php">
+<!-- <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'> -->
+<link rel="shortcut icon" href="./../wp-content/uploads/2014/02/favicon.ico" type="image/x-icon">
+<meta name="keywords" content="Javascript, HTML5, CSS3, ES6, Ecmascript, Hybrid Apps, Mobile Web Development, Desktop Apps, Apps, Arvind R, Arvind Ravulavaru, The Jackal of Javascript">
+<link rel="icon" href="./../wp-content/uploads/2014/02/favicon.ico" type="image/x-icon">
+<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'> -->
+<link rel="stylesheet" type="text/css" href="./../wp-content/cache/wpfc-minified/61cc3c87f2aa625d55d3026ecc452e96/1511014149index.css" media="all"/>
+<!-- Performance scores of this site is tuned by WP Performance Score Booster plugin v1.5 - http://wordpress.org/plugins/wp-performance-score-booster -->
+<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="1QBi99oBZzn4xisTyRUgPd4BXjQ-6Tu09iK6V_bviIY" />
+<meta name="msvalidate.01" content="33E048D3C4E943B6450230EA909E12C6" />
+<meta name="p:domain_verify" content="662a829c1b5ccc13015f1cc5d00ec7e4" />
+<!-- This site is optimized with the Yoast SEO plugin v3.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Getting Started with Raspberry pi and Node.js | The Jackal of Javascript</title>
+<meta name="description" content="Getting Started with Raspberry pi and Node.js Did you know that there will be 6.18 billion devices connected to the internet by the end of 2014 and a whoop"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="./index.html" />
+<link rel="publisher" href="https://plus.google.com/ArvindRavulavaru"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Getting Started with Raspberry pi and Node.js | The Jackal of Javascript" />
+<meta property="og:description" content="Getting Started with Raspberry pi and Node.js Did you know that there will be 6.18 billion devices connected to the internet by the end of 2014 and a whoop" />
+<meta property="og:url" content="./getting-started-raspberry-pi-node-js/" />
+<meta property="og:site_name" content="The Jackal of Javascript" />
+<meta property="article:publisher" content="https://www.facebook.com/arvindravulavaru" />
+<meta property="article:section" content="Node" />
+<meta property="article:published_time" content="2014-10-02T17:53:20+05:30" />
+<meta property="article:modified_time" content="2014-10-19T17:43:42+05:30" />
+<meta property="og:updated_time" content="2014-10-19T17:43:42+05:30" />
+<meta property="og:image" content="./wp-content/uploads/2014/10/Ethernet-Cable-300x300.jpg" />
+<meta property="og:image" content="./wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.20.46-pm-321x300.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.21.12-pm-368x300.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.25.36-pm-451x96.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.30.01-pm-451x155.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.42.15-pm-451x281.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.57.25-pm-451x283.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-3.21.27-pm.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-5.46.31-pm.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Getting Started with Raspberry pi and Node.js Did you know that there will be 6.18 billion devices connected to the internet by the end of 2014 and a whoop" />
+<meta name="twitter:title" content="Getting Started with Raspberry pi and Node.js | The Jackal of Javascript" />
+<meta name="twitter:site" content="@arvindr21" />
+<meta name="twitter:image" content="./wp-content/uploads/2014/10/Ethernet-Cable-300x300.jpg" />
+<meta name="twitter:creator" content="@arvindr21" />
+<!-- / Yoast SEO plugin. -->
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js"}};
+!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='savrix-style.css-css'  href='./wp-content/plugins/savrix-android-market/savrix-style-only-play.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='validate-engine-css-css'  href='./wp-content/plugins/wysija-newsletters/css/validationEngine.jquery.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='crayon-css'  href='./wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='crayon-theme-arduino-ide-css'  href='./wp-content/plugins/crayon-syntax-highlighter/themes/arduino-ide/arduino-ide.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='crayon-font-droid-sans-mono-css'  href='./wp-content/plugins/crayon-syntax-highlighter/fonts/droid-sans-mono.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='orgseries-default-css-css'  href='./wp-content/plugins/organize-series/orgSeries.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='responsive-lightbox-prettyphoto-css'  href='./wp-content/plugins/responsive-lightbox/assets/prettyphoto/css/prettyPhoto.css' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./../wp-content/cache/wpfc-minified/9f9f3b5f286a1b327e6bb0fdb1185c24/1511014149index.css" media="all"/>
+<link rel='stylesheet' id='font-awesome-css'  href='//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css' type='text/css' media='screen' />
+<!-- <link rel='stylesheet' id='ssbaFont-css'  href='//fonts.googleapis.com/css?family=Indie+Flower&#038;ver=4.2.16' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='wpfront-notification-bar-css'  href='./wp-content/plugins/wpfront-notification-bar/css/wpfront-notification-bar.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-style-css'  href='./wp-content/themes/sorbet/style.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-source-sans-pro-css'  href='http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext&#038;ver=4.2.16' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-pt-serif-css'  href='http://fonts.googleapis.com/css?family=PT+Serif%3A400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext&#038;ver=4.2.16' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-genericons-css'  href='./wp-content/themes/sorbet/genericons/genericons.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='easy_table_style-css'  href='./wp-content/plugins/easy-table/themes/default/style.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='upprev-css-css'  href='./wp-content/plugins/upprev/styles/upprev.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='jetpack_css-css'  href='./wp-content/plugins/jetpack/css/jetpack.css' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./../wp-content/cache/wpfc-minified/3af13bcd925b3eaa358c8ad5070bb07b/1511014148index.css" media="all"/>
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.6 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+__gaTracker('create', 'UA-47881846-1', 'auto');
+__gaTracker('set', 'forceSSL', true);
+__gaTracker('require', 'displayfeatures');
+__gaTracker('send','pageview');
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type="text/javascript">
+var iworks_upprev = { animation: 'flyout', position: 'right', offset_percent: 75, offset_element: '#comments', css_width: 360, css_side: 5, compare: 'simple', url_new_window: 0, ga_track_views: 1, ga_track_clicks: 1, ga_opt_noninteraction: 1, title: 'Getting Started with Raspberry pi and Node.js' };
+</script>
+<script src='./../wp-content/cache/wpfc-minified/1f21a7a8ca343ebb57ffeb4ab24afbd9/1511014152index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='./wp-includes/js/jquery/jquery.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-includes/js/jquery/jquery-migrate.min.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/jetpack/modules/related-posts/related-posts.js'></script> -->
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":".\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script src='./../wp-content/cache/wpfc-minified/052c748258385b6c23fc6642e73a4285/1511014152index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='./wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/responsive-lightbox/assets/prettyphoto/js/jquery.prettyPhoto.js'></script> -->
+<script type='text/javascript'>
+/* <![CDATA[ */
+var rlArgs = {"script":"prettyphoto","selector":"lightbox","customEvents":"","activeGalleries":"1","animationSpeed":"normal","slideshow":"0","slideshowDelay":"5000","slideshowAutoplay":"0","opacity":"0.75","showTitle":"1","allowResize":"1","allowExpand":"1","width":"1080","height":"720","separator":"\/","theme":"pp_default","horizontalPadding":"20","hideFlash":"0","wmode":"opaque","videoAutoplay":"0","modal":"0","deeplinking":"0","overlayGallery":"1","keyboardShortcuts":"1","social":"0"};
+/* ]]> */
+</script>
+<script src='./../wp-content/cache/wpfc-minified/d57c91500961bea5aea0e849cf08f7e7/1511014151index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='./wp-content/plugins/responsive-lightbox/js/front.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/wpfront-notification-bar/jquery-plugins/jquery.c.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/wpfront-notification-bar/js/wpfront-notification-bar.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/upprev/scripts/upprev.js'></script> -->
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<meta name="generator" content="WordPress 4.2.16" />
+<style>
+.scroll-back-to-top-wrapper {
+position: fixed;
+opacity: 0;
+visibility: hidden;
+overflow: hidden;
+text-align: center;
+z-index: 99999999;
+background-color: #777777;
+color: #eeeeee;
+width: 50px;
+height: 48px;
+line-height: 48px;
+right: 30px;
+bottom: 30px;
+padding-top: 2px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+.scroll-back-to-top-wrapper:hover {
+background-color: #888888;
+color: #eeeeee;
+}
+.scroll-back-to-top-wrapper.show {
+visibility:visible;
+cursor:pointer;
+opacity: 1.0;
+}
+.scroll-back-to-top-wrapper i.fa {
+line-height: inherit;
+}
+.scroll-back-to-top-wrapper .fa-lg {
+vertical-align: 0;
+}
+</style><style type="text/css">	.ssba {
+}
+.ssba img
+{
+width: 35px !important;
+padding: 6px;
+border:  0;
+box-shadow: none !important;
+display: inline !important;
+vertical-align: middle;
+}
+.ssba, .ssba a
+{
+text-decoration:none;
+border:0;
+background: none;
+font-family: Indie Flower;
+font-size: 	20px;
+}.ssba_sharecount:after, .ssba_sharecount:before {
+right: 100%;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+}
+.ssba_sharecount:after {
+border-color: rgba(224, 221, 221, 0);
+border-right-color: #f5f5f5;
+border-width: 5px;
+top: 50%;
+margin-top: -5px;
+}
+.ssba_sharecount:before {
+border-color: rgba(85, 94, 88, 0);
+border-right-color: #e0dddd;
+border-width: 6px;
+top: 50%;
+margin-top: -6px;
+}
+.ssba_sharecount {
+font: 11px Arial, Helvetica, sans-serif;
+padding: 5px;
+-khtml-border-radius: 6px;
+-o-border-radius: 6px;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+position: relative;
+border: 1px solid #e0dddd;color: #555e58;
+background: #ffffff;
+}
+.ssba_sharecount:after {
+border-right-color: #ffffff;
+}</style><style id="popup-maker-themes"  type="text/css">/* Popup Theme 2995: Default Theme */
+.popmake-overlay.theme-2995, .popmake-overlay.theme-default-theme { background-color: rgba( 255, 255, 255, 1 ) } 
+.popmake.theme-2995, .popmake.theme-default-theme { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1 ) } 
+.popmake.theme-2995 .popmake-title, .popmake.theme-default-theme .popmake-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: inherit; font-size: 32px; font-style: normal; line-height: 36px } 
+.popmake.theme-2995 .popmake-content, .popmake.theme-default-theme .popmake-content { color: #8c8c8c; font-family: inherit; font-weight: inherit; font-style: normal } 
+.popmake.theme-2995 > .popmake-close, .popmake.theme-default-theme > .popmake-close { height: 20px; width: 20px; left: auto; right: 0px; bottom: auto; top: 0px; padding: 8px; color: #ffffff; font-family: inherit; font-weight: inherit; font-size: 12px; font-style: normal; line-height: 14px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1 ) } 
+</style>
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+<link rel='dns-prefetch' href='//widgets.wp.com'>
+<link rel='dns-prefetch' href='//s0.wp.com'>
+<link rel='dns-prefetch' href='//0.gravatar.com'>
+<link rel='dns-prefetch' href='//1.gravatar.com'>
+<link rel='dns-prefetch' href='//2.gravatar.com'>
+<style type="text/css">
+#upprev_box{bottom:5px;width:360px;right:5px;display:block;right:-415px;display:block;}
+</style>
+</head>
+<body class="single single-post postid-2162 single-format-standard right-sidebar">
+<div id="page" class="hfeed site">
+<header id="masthead" class="site-header" role="banner">
+<div class="site-header-wrapper">
+<div class="site-branding">
+<h1 class="site-title"><a href="./../index.html" rel="home">The Jackal of Javascript</a></h1>
+<h2 class="site-description">Knowing is different &amp; Doing is different</h2>
+</div>
+<div class="toggles">
+<div id="menu-toggle" class="toggle active" title="Menu"><span class="screen-reader-text">Menu</span></div>
+<div id="search-toggle" class="toggle" title="Search"><span class="screen-reader-text">Search</span></div>
+</div>
+</div>
+</header><!-- #masthead -->
+<div id="menu-toggle-nav" class="panel">
+<nav id="site-navigation" class="main-navigation" role="navigation">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<div class="menu-main-container"><ul id="menu-main" class="menu"><li id="menu-item-2579" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2579"><a href="./../index.html">Home</a></li>
+<li id="menu-item-2595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2595"><a href="./../portfolio/index.html">About  me</a></li>
+<li id="menu-item-2580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2580"><a href="./../history-of-the-web/index.html">History of the Web</a></li>
+<li id="menu-item-2726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2726"><a href="./../javascript-101/index.html">Javascript 101</a></li>
+<li id="menu-item-2581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2581"><a href="./../contact-request/index.html">Request</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+</div>
+<div id="search-toggle-nav" class="panel">
+<div class="search-wrapper">
+<form role="search" method="get" class="search-form" action="./../index.html">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+</label>
+<input type="submit" class="search-submit" value="Search">
+</form>
+</div>
+</div>
+<div id="content" class="site-content">
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<article id="post-2162" class="post-2162 post type-post status-publish format-standard hentry category-node category-quick-and-dirty category-raspberry-pi category-setup category-tutorial series-rpi">
+<header class="entry-header">
+<h1 class="entry-title">Getting Started with Raspberry pi and Node.js</h1>	</header><!-- .entry-header -->
+<div class="entry-content">
+<div class="seriesmeta" style="background:#4F5256; padding:5px;margin-bottom:5px;font-size:15px;color:white;padding-left: 20px;border-radius:3px;">This post is part 1 of 9 in the series <a href="./../series/rpi/index.html" class="series-148" title="Raspberry Pi">Raspberry Pi</a></div><!-- Simple Share Buttons Adder (6.1.5) simplesharebuttons.com --><div class="ssba ssba-wrap"><div style="text-align:left"><a href="http://twitter.com/share?url=./getting-started-raspberry-pi-node-js/&amp;text=Getting+Started+with+Raspberry+pi+and+Node.js+From+The+Jackal+of+Javascript+by+%40arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://twitter.com/share?url=./getting-started-raspberry-pi-node-js/&amp;text=Getting+Started+with+Raspberry+pi+and+Node.js+From+The+Jackal+of+Javascript+by+%40arvindr21', '');" data-site="" class="ssba_twitter_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /></noscript></a><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=./getting-started-raspberry-pi-node-js/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.linkedin.com/shareArticle?mini=true&amp;url=./getting-started-raspberry-pi-node-js/', '');" data-site="linkedin" class="ssba_linkedin_share ssba_share_link"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="https://plus.google.com/share?url=./getting-started-raspberry-pi-node-js/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://plus.google.com/share?url=./getting-started-raspberry-pi-node-js/', '');" data-site="" class="ssba_google_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="http://reddit.com/submit?url=./getting-started-raspberry-pi-node-js/&amp;title=Getting Started with Raspberry pi and Node.js" onclick="__gaTracker('send', 'event', 'download', 'http://reddit.com/submit?url=./getting-started-raspberry-pi-node-js/&amp;title=Getting Started with Raspberry pi and Node.js');" data-site="reddit" class="ssba_reddit_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="https://bufferapp.com/add?url=./getting-started-raspberry-pi-node-js/&amp;text=From The Jackal of Javascript Getting Started with Raspberry pi and Node.js" onclick="__gaTracker('send', 'event', 'download', 'https://bufferapp.com/add?url=./getting-started-raspberry-pi-node-js/&amp;text=From The Jackal of Javascript Getting Started with Raspberry pi and Node.js');" data-site="buffer" class="ssba_buffer_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /></noscript></a><a href="https://flattr.com/submit/auto?user_id=arvindr21&amp;title=Getting Started with Raspberry pi and Node.js&amp;url=https://flattr.com/profile/arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://flattr.com/submit/auto?user_id=arvindr21&amp;title=Getting Started with Raspberry pi and Node.js&amp;url=https://flattr.com/profile/arvindr21', '');" data-site="flattr" class="ssba_flattr_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /></noscript></a><a data-site="email" class="ssba_email_share" href="./../cdn-cgi/l/email-protection/index.html#b08fc3c5d2dad5d3c48df7d5c4c4d9ded790e3c4d1c2c4d5d490c7d9c4d890e2d1c3c0d2d5c2c2c990c0d990d1ded490fedfd4d59edac396d1ddc08bd2dfd4c98df6c2dfdd90e4d8d590fad1d3dbd1dc90dfd690fad1c6d1c3d3c2d9c0c4958280d8c4c4c08a9f9fc4d8d5dad1d3dbd1dcdfd6dad1c6d1c3d3c2d9c0c49ed3dfdd9fd7d5c4c4d9ded79dc3c4d1c2c4d5d49dc2d1c3c0d2d5c2c2c99dc0d99ddedfd4d59ddac39f"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /></noscript></a><a data-site="print" class="ssba_print ssba_share_link" href="#" onclick="window.print()"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /></noscript></a></div></div><h1 class="disp-none">Getting Started with Raspberry pi and Node.js</h1>
+<p>Did you know that there will be <a href="https://gigaom.com/2014/02/13/step-aside-6-billion-new-devices-will-connect-to-the-internet-in-2014/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://gigaom.com/2014/02/13/step-aside-6-billion-new-devices-will-connect-to-the-internet-in-2014/', '6.18 billion devices');" title="Step aside: 6 billion new devices will connect to the internet in 2014"  target="_blank">6.18 billion devices</a> connected to the internet by the end of 2014 and a whooping 19.42 billion devices between 2015 and 2017. Imagine the fight for bandwidth!</p>
+<p>With so many devices connected to the Internet, the next big thing for us is the &#8220;Internet of Things&#8221; or the <em>IoT</em>.  If you do not already know what Internet of Things is, check out this video</p>
+<p style="text-align: center;">
+<!-- iframe plugin v.4.2 wordpress.org/plugins/iframe/ -->
+<iframe width="560" height="315" src="//www.youtube.com/embed/6AQMMx4OkjM?rel=0" frameborder="0" 0="allowfullscreen" scrolling="yes" class="iframe-class"></iframe>
+</p>
+<p>So what can we really do with IoT, take a look at this</p>
+<p style="text-align: center;">
+<!-- iframe plugin v.4.2 wordpress.org/plugins/iframe/ -->
+<iframe width="560" height="315" src="//www.youtube.com/embed/jzLYh3j6xn8?rel=0" frameborder="0" 0="allowfullscreen" scrolling="yes" class="iframe-class"></iframe>
+</p>
+<p style="text-align: center;">Awesome right! A piece of hardware, some internet and a world full of opportunities.</p>
+<p>This post marks the beginning of a bunch of posts that are targeted at integrating Hardware/embedded devices like sensors and motors with the internet and build meaningful and smart apps that would know and do things as per your instructions taking us one step closer to pure Artificial Intelligence!</p>
+<p>In this post, we will take the first few tiny steps towards IoT. For most of the experiments, I am going to use <a href="http://www.raspberrypi.org/products/model-b-plus/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.raspberrypi.org/products/model-b-plus/', 'Raspberry Pi B+');" title="MODEL B+"  target="_blank">Raspberry Pi B+</a>. And as you might have guessed, all the programming we are going to do will be in Javascript.</p>
+<p>First we will take a look at connecting our pi to our computer and next, we will install Node.js.</p>
+<p>So, let us get started</p>
+<h2><span id="more-2162"></span></h2>
+<h2>What is Raspberry pi?</h2>
+<p style="text-align: center;">
+<!-- iframe plugin v.4.2 wordpress.org/plugins/iframe/ -->
+<iframe width="560" height="315" src="//www.youtube.com/embed/e0wkVVVLvR8?rel=0" frameborder="0" 0="allowfullscreen" scrolling="yes" class="iframe-class"></iframe>
+</p>
+<h2>Purchasing a Pi</h2>
+<p>I am not going to provide links on where and how you can purchase Raspberry pi. But if you have issues locating one in your neighbourhood, do drop a comment and I can help you.</p>
+<h2>Connecting Pi to your Computer</h2>
+<p>We will take a look at connecting the pi to both a Mac as well as Windows machines. There are numerous ways out there how you can connect your pi with your computer. I found the below method to be the easiest.</p>
+<p>To connect the pi with your computer, we will be using an Ethernet cable.</p>
+<p style="text-align: center;"><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Ethernet-Cable.jpg" data-rel="lightbox-0" title=""><img class="size-medium wp-image-2167 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Ethernet-Cable-300x300.jpg?resize=300%2C300" alt="Ethernet-Cable" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2167 aligncenter" src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Ethernet-Cable-300x300.jpg?resize=300%2C300" alt="Ethernet-Cable" data-recalc-dims="1" /></noscript></a><a href="http://www.eagle.co.za/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.eagle.co.za', 'source');" title="source"  target="_blank">source</a></p>
+<p>The assumption is that you are using a wifi connection to connect your computer to the internet.</p>
+<p>As long as we are not detaching the pi from your computer, this way to connect to the pi should work fine. When required, I will put out instructions to connect your pi via a USB wifi dongle.</p>
+<h3>Setup Pi on your mac</h3>
+<p><strong>Step 1</strong> :  Insert the SD card into place on your Raspberry pi</p>
+<p><strong>Step 2</strong> : Connect the power cable to the pi. You should see a red light blinking on the board</p>
+<p><strong>Step 3</strong> : Connect one end of the ethernet cable to your pi and connect the other end to your mac</p>
+<p><strong>Step 4</strong> : We will setup a shared network between your Mac and the pi. The Mac will share its network with pi over the ethernet cable.</p>
+<p>For that, on your Mac, open <em>System Preferences</em>.</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.20.46-pm.png" data-rel="lightbox-1" title=""><img class="size-medium wp-image-2168 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.20.46-pm-321x300.png?resize=321%2C300" alt="Screen Shot 2014-10-02 at 2.20.46 pm" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2168 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.20.46-pm-321x300.png?resize=321%2C300" alt="Screen Shot 2014-10-02 at 2.20.46 pm" data-recalc-dims="1" /></noscript></a></p>
+<p>Click on sharing and enable Internet sharing from the left tree as show below.</p>
+<p><a href="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.21.12-pm.png" data-rel="lightbox-2" title=""><img class="size-medium wp-image-2169 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.21.12-pm-368x300.png?resize=368%2C300" alt="Screen Shot 2014-10-02 at 2.21.12 pm" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2169 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.21.12-pm-368x300.png?resize=368%2C300" alt="Screen Shot 2014-10-02 at 2.21.12 pm" data-recalc-dims="1" /></noscript></a></p>
+<p>On the right hand side, select Ethernet. This will now enable  Internet sharing between your Mac and any device you connect on your ethernet port.</p>
+<p><strong>Step 5</strong> : Now, Open a new terminal and run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1041554fb65217996092" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">arp</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-v">a</span></span></span></p>
+<p>And you should see something like</p>
+<p><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.25.36-pm.png" data-rel="lightbox-3" title=""><img class="size-medium wp-image-2170 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.25.36-pm-451x96.png?resize=451%2C96" alt="Screen Shot 2014-10-02 at 2.25.36 pm" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2170 aligncenter" src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.25.36-pm-451x96.png?resize=451%2C96" alt="Screen Shot 2014-10-02 at 2.25.36 pm" data-recalc-dims="1" /></noscript></a></p>
+<p>Note : If you do not see any devices listed after you enable the ethernet sharing, switch off the pi wait for 10 seconds and start it back on. Now run the above command again and you should see the list of ip addresses.</p>
+<p>One of the above listed ip addresses belongs to your pi. I do not have a sure shot way of telling which one. So we will be taking each ip address and running the below command</p>
+<p style="text-align: center;">
+<span id="crayon-5a1041554fb84422736781" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">ssh </span><span class="crayon-v">pi</span><span class="crayon-sy">@</span><span class="crayon-cn">192.168.1.101</span> </span></span></p>
+<p>After testing out all, I came to know my pi&#8217;s ip address is 
+<span id="crayon-5a1041554fb90209906124" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-cn">192.168.2.2</span></span></span> . So, when I run 
+<span id="crayon-5a1041554fb9a323759507" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">ssh </span><span class="crayon-v">pi</span><span class="crayon-sy">@</span><span class="crayon-cn">192.168.2.2</span></span></span>, it will ask for my password.</p>
+<p>The password for your pi is <em>raspberry</em>. And once you are successfully authenticated, you should see this</p>
+<p><a href="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.30.01-pm.png" data-rel="lightbox-4" title=""><img class="size-medium wp-image-2171 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.30.01-pm-451x155.png?resize=451%2C155" alt="Screen Shot 2014-10-02 at 2.30.01 pm" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2171 aligncenter" src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.30.01-pm-451x155.png?resize=451%2C155" alt="Screen Shot 2014-10-02 at 2.30.01 pm" data-recalc-dims="1" /></noscript></a></p>
+<p>Now, you are successfully connected to you pi!</p>
+<p><strong>Step 6</strong> : Connect to the pi&#8217;s GUI. From the command prompt shell (which we established above), run</p>
+<p class="p1" style="text-align: center;">
+<span id="crayon-5a1041554fba7544507795" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">sudo </span><span class="crayon-v">apt</span><span class="crayon-o">-</span><span class="crayon-e">get </span><span class="crayon-e">install </span><span class="crayon-v">tightvncserver</span></span></span></p>
+<p>This will install tightvncserver on the pi. Using this, we can interact with the pi&#8217;s gui using our mac&#8217;s keyboard and mouse.</p>
+<p>After <em>tightvncserver</em> is setup, we need to setup a password run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1041554fbb1063789029" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">tightvncserver</span></span></span></p>
+<p>Now, to enable sharing your pi&#8217;s GUI, run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1041554fbbb026913324" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">vncserver</span><span class="crayon-h"> </span><span class="crayon-o">:</span><span class="crayon-cn">0</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">geometry</span><span class="crayon-h"> </span><span class="crayon-cn">1920x1080</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">depth</span><span class="crayon-h"> </span><span class="crayon-cn">24</span></span></span></p>
+<p>This will start vnc sharing. Now, on you Mac, open up safari and navigate to</p>
+<p style="text-align: center;">
+<span id="crayon-5a1041554fbc5928210625" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">vnc</span><span class="crayon-o">:</span><span class="crayon-c">//192.168.2.2</span></span></span></p>
+<p>from the address bar. This is the ip address of the Mac. Safari will prompt for the ip address again. Press enter and a screen sharing should start.</p>
+<p>Voila!! your Raspberry pi&#8217;s GUI from your Mac!</p>
+<p><a href="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.42.15-pm.png" data-rel="lightbox-5" title=""><img class="size-medium wp-image-2172 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.42.15-pm-451x281.png?resize=451%2C281" alt="Screen Shot 2014-10-02 at 2.42.15 pm" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2172 aligncenter" src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.42.15-pm-451x281.png?resize=451%2C281" alt="Screen Shot 2014-10-02 at 2.42.15 pm" data-recalc-dims="1" /></noscript></a>The above process is simple but the only problem is, we need to run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1041554fbd1725341549" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">vncserver</span><span class="crayon-h"> </span><span class="crayon-o">:</span><span class="crayon-cn">0</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">geometry</span><span class="crayon-h"> </span><span class="crayon-cn">1920x1080</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">depth</span><span class="crayon-h"> </span><span class="crayon-cn">24</span></span></span></p>
+<p>every time we restart the pi.</p>
+<p>To work around that, we will add this command to the list of boot tasks. So as soon the pi boots, the vncserver will start.</p>
+<p>For that let us go back to the ssh shell.</p>
+<p>run the following commands in sequence</p>
+<p style="text-align: center;">
+<span id="crayon-5a1041554fbdb447345539" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">sudo </span><span class="crayon-v">su</span></span></span></p>
+<p>This will switch to superuser</p>
+<p style="text-align: center;">
+<span id="crayon-5a1041554fbe5130724530" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">cd</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-v">etc</span><span class="crayon-o">/</span><span class="crayon-v">init</span><span class="crayon-sy">.</span><span class="crayon-v">d</span><span class="crayon-o">/</span></span></span></p>
+<p>Next, we will create a new file named vncboot. Run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1041554fbef954906489" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">nano </span><span class="crayon-v">vncboot</span></span></span></p>
+<p>Copy everything from below and paste it in the window</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a1041554fbf8338539693" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">vncboot</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Shell</span></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+### BEGIN INIT INFO
+# Provides: vncboot
+# Required-Start: $remote_fs $syslog
+# Required-Stop: $remote_fs $syslog
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: Start VNC Server at boot time
+# Description: Start VNC Server at boot time.
+### END INIT INFO
+#! /bin/sh
+# /etc/init.d/vncboot
+USER=root
+HOME=/root
+export USER HOME
+case "$1" in
+start)
+echo "Starting VNC Server"
+#Insert your favoured settings for a VNC session
+/usr/bin/vncserver :0 -geometry 1280x800 -depth 16 -pixelformat rgb565
+;;
+stop)
+echo "Stopping VNC Server"
+/usr/bin/vncserver -kill :0
+;;
+*)
+echo "Usage: /etc/init.d/vncboot {start|stop}"
+exit 1
+;;
+esac
+exit 0</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-2">2</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-4">4</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-6">6</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-8">8</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-10">10</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-12">12</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-14">14</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-16">16</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-18">18</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-20">20</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-22">22</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-24">24</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-25">25</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-26">26</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-27">27</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-28">28</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-29">29</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-30">30</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-31">31</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-32">32</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-33">33</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-34">34</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-35">35</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fbf8338539693-36">36</div><div class="crayon-num" data-line="crayon-5a1041554fbf8338539693-37">37</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a1041554fbf8338539693-1"><span class="crayon-c">### BEGIN INIT INFO</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-2"><span class="crayon-c"># Provides: vncboot</span></div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-3"><span class="crayon-c"># Required-Start: $remote_fs $syslog</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-4"><span class="crayon-c"># Required-Stop: $remote_fs $syslog</span></div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-5"><span class="crayon-c"># Default-Start: 2 3 4 5</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-6"><span class="crayon-c"># Default-Stop: 0 1 6</span></div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-7"><span class="crayon-c"># Short-Description: Start VNC Server at boot time</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-8"><span class="crayon-c"># Description: Start VNC Server at boot time.</span></div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-9"><span class="crayon-c">### END INIT INFO</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-10">&nbsp;</div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-11"><span class="crayon-c">#! /bin/sh</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-12"><span class="crayon-c"># /etc/init.d/vncboot</span></div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-13">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-14"><span class="crayon-v">USER</span><span class="crayon-o">=</span><span class="crayon-e">root</span></div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-15"><span class="crayon-v">HOME</span><span class="crayon-o">=</span><span class="crayon-o">/</span><span class="crayon-e">root</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-16">&nbsp;</div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-17"><span class="crayon-e">export </span><span class="crayon-e">USER </span><span class="crayon-e">HOME</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-18">&nbsp;</div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-19"><span class="crayon-st">case</span><span class="crayon-h"> </span><span class="crayon-s">"$1"</span><span class="crayon-h"> </span><span class="crayon-st">in</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-20"><span class="crayon-h"> </span><span class="crayon-v">start</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-21"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-r">echo</span><span class="crayon-h"> </span><span class="crayon-s">"Starting VNC Server"</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-22"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">#Insert your favoured settings for a VNC session</span></div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-23"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">/</span><span class="crayon-v">usr</span><span class="crayon-o">/</span><span class="crayon-v">bin</span><span class="crayon-o">/</span><span class="crayon-v">vncserver</span><span class="crayon-h"> </span><span class="crayon-o">:</span><span class="crayon-cn">0</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">geometry</span><span class="crayon-h"> </span><span class="crayon-cn">1280x800</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">depth</span><span class="crayon-h"> </span><span class="crayon-cn">16</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-e">pixelformat </span><span class="crayon-i">rgb565</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-24"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">;</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-25">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-26"><span class="crayon-h"> </span><span class="crayon-v">stop</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-27"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-r">echo</span><span class="crayon-h"> </span><span class="crayon-s">"Stopping VNC Server"</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-28"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">/</span><span class="crayon-v">usr</span><span class="crayon-o">/</span><span class="crayon-v">bin</span><span class="crayon-o">/</span><span class="crayon-v">vncserver</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-r">kill</span><span class="crayon-h"> </span><span class="crayon-o">:</span><span class="crayon-cn">0</span></div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-29"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">;</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-30">&nbsp;</div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-31"><span class="crayon-h"> </span><span class="crayon-o">*</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-32"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-r">echo</span><span class="crayon-h"> </span><span class="crayon-s">"Usage: /etc/init.d/vncboot {start|stop}"</span></div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-33"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-r">exit</span><span class="crayon-h"> </span><span class="crayon-cn">1</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-34"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">;</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-35"><span class="crayon-st">esac</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fbf8338539693-36">&nbsp;</div><div class="crayon-line" id="crayon-5a1041554fbf8338539693-37"><span class="crayon-r">exit</span><span class="crayon-h"> </span><span class="crayon-cn">0</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0055 seconds] -->
+<p>and it should like</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.57.25-pm.png" data-rel="lightbox-6" title=""><img class="size-medium wp-image-2173 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.57.25-pm-451x283.png?resize=451%2C283" alt="Screen Shot 2014-10-02 at 2.57.25 pm" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2173 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-2.57.25-pm-451x283.png?resize=451%2C283" alt="Screen Shot 2014-10-02 at 2.57.25 pm" data-recalc-dims="1" /></noscript></a></p>
+<p>Now press ctrl + x and you will be asked to save the file (<em>bottom of the screen</em>). Press Y and you will be asked for the file name. Name it <em>vncboot</em>. Press enter and you should be out of the nano editor.</p>
+<p>Now, we will set up permissions to make this file executable. Run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1041554fc06038244939" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-i">chmod</span><span class="crayon-h"> </span><span class="crayon-cn">755</span><span class="crayon-h"> </span><span class="crayon-v">vncboot</span></span></span></p>
+<p>Finally we will enable dependency based boot sequencing. Run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1041554fc10653955483" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">update</span><span class="crayon-o">-</span><span class="crayon-v">rc</span><span class="crayon-sy">.</span><span class="crayon-i">d</span><span class="crayon-h"> </span><span class="crayon-e">vncboot </span><span class="crayon-v">defaults</span></span></span></p>
+<p>And you should see a console out like</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a1041554fc19545137740" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">console out</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Shell</span></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+update-rc.d: using dependency based boot sequencing</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a1041554fc19545137740-1">1</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a1041554fc19545137740-1"><span class="crayon-v">update</span><span class="crayon-o">-</span><span class="crayon-v">rc</span><span class="crayon-e">.d</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-e">using </span><span class="crayon-e">dependency </span><span class="crayon-e">based </span><span class="crayon-e">boot </span><span class="crayon-v">sequencing</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0012 seconds] -->
+<p>Now, we will test this out by rebooting pi. Back to the ssh terminal run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1041554fc23229927985" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">reboot</span></span></span></p>
+<p>And you should see a log like</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a1041554fc2b457282555" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Shell</span></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+Broadcast message from root@raspberrypi (pts/0) (Thu Oct  2 09:40:06 2014):
+The system is going down for reboot NOW!
+root@raspberrypi:/home/pi# Connection to 192.168.2.2 closed by remote host.
+Connection to 192.168.2.2 closed.</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a1041554fc2b457282555-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fc2b457282555-2">2</div><div class="crayon-num" data-line="crayon-5a1041554fc2b457282555-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fc2b457282555-4">4</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a1041554fc2b457282555-1"><span class="crayon-e">Broadcast </span><span class="crayon-e">message </span><span class="crayon-e">from </span><span class="crayon-v">root</span><span class="crayon-sy">@</span><span class="crayon-e">raspberrypi</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">pts</span><span class="crayon-o">/</span><span class="crayon-cn">0</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-e">Thu </span><span class="crayon-i">Oct</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-cn">2</span><span class="crayon-h"> </span><span class="crayon-cn">09</span><span class="crayon-o">:</span><span class="crayon-cn">40</span><span class="crayon-o">:</span><span class="crayon-cn">06</span><span class="crayon-h"> </span><span class="crayon-cn">2014</span><span class="crayon-sy">)</span><span class="crayon-o">:</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fc2b457282555-2"><span class="crayon-e">The </span><span class="crayon-e">system </span><span class="crayon-st">is</span><span class="crayon-h"> </span><span class="crayon-e">going </span><span class="crayon-e">down </span><span class="crayon-st">for</span><span class="crayon-h"> </span><span class="crayon-e">reboot </span><span class="crayon-v">NOW</span><span class="crayon-o">!</span></div><div class="crayon-line" id="crayon-5a1041554fc2b457282555-3"><span class="crayon-v">root</span><span class="crayon-sy">@</span><span class="crayon-v">raspberrypi</span><span class="crayon-o">:</span><span class="crayon-o">/</span><span class="crayon-v">home</span><span class="crayon-o">/</span><span class="crayon-v">pi</span><span class="crayon-c"># Connection to 192.168.2.2 closed by remote host.</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fc2b457282555-4"><span class="crayon-e">Connection </span><span class="crayon-st">to</span><span class="crayon-h"> </span><span class="crayon-cn">192.168.2.2</span><span class="crayon-h"> </span><span class="crayon-v">closed</span><span class="crayon-sy">.</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0028 seconds] -->
+<p>And the connection will be terminated. Lets  give ~30 seconds time for the pi to reboot.</p>
+<p>Back to Safari, we will launch a new vnc connection as we did earlier and you should see the pi desktop.</p>
+<p>If you see a message like</p>
+<p><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-3.21.27-pm.png" data-rel="lightbox-7" title=""><img class="size-full wp-image-2174 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-3.21.27-pm.png?resize=418%2C180" alt="Screen Shot 2014-10-02 at 3.21.27 pm" data-recalc-dims="1" /><noscript><img class="size-full wp-image-2174 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-3.21.27-pm.png?resize=418%2C180" alt="Screen Shot 2014-10-02 at 3.21.27 pm" data-recalc-dims="1" /></noscript></a> ssh into your pi and run the following commands</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a1041554fc36551815901" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">set password</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Shell</span></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+$ sudo su
+$ cd /etc/init.d/
+$ ./vncboot start</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a1041554fc36551815901-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1041554fc36551815901-2">2</div><div class="crayon-num" data-line="crayon-5a1041554fc36551815901-3">3</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a1041554fc36551815901-1"><span class="crayon-sy">$</span><span class="crayon-h"> </span><span class="crayon-e">sudo </span><span class="crayon-i">su</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1041554fc36551815901-2"><span class="crayon-sy">$</span><span class="crayon-h"> </span><span class="crayon-r">cd</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-v">etc</span><span class="crayon-o">/</span><span class="crayon-v">init</span><span class="crayon-e">.d</span><span class="crayon-o">/</span></div><div class="crayon-line" id="crayon-5a1041554fc36551815901-3"><span class="crayon-sy">$</span><span class="crayon-h"> </span><span class="crayon-sy">.</span><span class="crayon-o">/</span><span class="crayon-e">vncboot </span><span class="crayon-v">start</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0008 seconds] -->
+<p>Now setup the password. Reboot the pi and you should be able to connect to your pi using vnc on bootup.</p>
+<p>Note : All the above instruction are taken from <a href="http://www.raspberrypi.org/documentation/remote-access/vnc/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.raspberrypi.org/documentation/remote-access/vnc/', 'here');" title="VNC (VIRTUAL NETWORK COMPUTING)"  target="_blank">here</a>.</p>
+<h3>Setup Pi on your Windows</h3>
+<p><strong>Step 1</strong> :  Insert the SD card into place on your Raspberry pi</p>
+<p><strong>Step 2</strong> : Connect the power cable to the pi. You should see a red light blinking on the board</p>
+<p><strong>Step 3</strong> : Connect one end of the ethernet cable to your pi and connect the other end to your PC</p>
+<p>You can follow this easy to set up video to connect your pi to your windows machine</p>
+<p style="text-align: center;">
+<!-- iframe plugin v.4.2 wordpress.org/plugins/iframe/ -->
+<iframe width="560" height="315" src="//www.youtube.com/embed/hnSLtgHIIM8?rel=0" frameborder="0" 0="allowfullscreen" scrolling="yes" class="iframe-class"></iframe>
+</p>
+<p>Once you get the ip address, please follow step 6 from above. Instead of using Safari, we will use tightvnc software to view the screen on windows.</p>
+<p>You can find all the instruction to run Tightvnc on windows <a href="http://www.raspberrypi.org/documentation/remote-access/vnc/windows.md" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.raspberrypi.org/documentation/remote-access/vnc/windows.md', 'here');" title="CONNECTING TO A PI OVER VNC USING WINDOWS"  target="_blank">here</a>.</p>
+<p>If you want to interact with the pi over command line, you can install putty and then tunnel through to the pi.</p>
+<p>Now that we have connected pi to our computed, we will go ahead and install Node.js on pi.</p>
+<h2>Installing Node.js on pi</h2>
+<p>If you are new to Node.js, I would recommend going through the following posts</p>
+<ol>
+<li>
+<p class="p1"><a title="What is Nodejs" href="./../nodejs/index.html" target="_blank">What is Nodejs?</a></p>
+</li>
+<li>
+<p class="p1"><a title="Hello Node" href="./../hello-node/index.html" target="_blank">Hello Node</a></p>
+</li>
+<li>
+<p class="p1"><a title="Node.js Design Patterns" href="./../node-js-design-patterns/index.html" target="_blank">Node.js Design Patterns</a></p>
+</li>
+</ol>
+<p>You can run the below steps over ssh or you can run it using xterminal (as root) from the GUI. I will be running the below steps from the terminal (ssh on Mac/putty on windows). This will take comparatively less time when working with a GUI.</p>
+<p>First we will update and upgrade our pi. Run</p>
+<p class="p1" style="text-align: center;">
+<span id="crayon-5a1041554fc45392468452" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">sudo </span><span class="crayon-v">apt</span><span class="crayon-o">-</span><span class="crayon-e">get </span><span class="crayon-v">update</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">y</span><span class="crayon-h"> </span><span class="crayon-o">&amp;&amp;</span><span class="crayon-h"> </span><span class="crayon-e">sudo </span><span class="crayon-v">apt</span><span class="crayon-o">-</span><span class="crayon-e">get </span><span class="crayon-v">upgrade</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">y</span></span></span></p>
+<p><em>This will take quite some time, if you are running this for the first time. (~ 1 hour)</em></p>
+<p>Next, we will download the latest version of Node-ARM</p>
+<p style="text-align: center;">
+<span id="crayon-5a1041554fc4f687360746" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">wget </span><span class="crayon-v">http</span><span class="crayon-o">:</span><span class="crayon-c">//node-arm.herokuapp.com/node_latest_armhf.deb</span></span></span></p>
+<p style="text-align: left;">Install it by running</p>
+<p style="text-align: center;">
+<span id="crayon-5a1041554fc6e907264125" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">sudo </span><span class="crayon-v">dpkg</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">i</span><span class="crayon-h"> </span><span class="crayon-v">node_latest_armhf</span><span class="crayon-sy">.</span><span class="crayon-v">deb</span></span></span></p>
+<p style="text-align: left;">If everything works fine without issues, you can run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1041554fc79557960038" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">node</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">v</span></span></span></p>
+<p style="text-align: left;">and you should see the installed Node&#8217;s version.</p>
+<p style="text-align: left;">You can also start off a Node REPL and log something like</p>
+<p style="text-align: left;"><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-5.46.31-pm.png" data-rel="lightbox-8" title=""><img class="size-full wp-image-2178 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-5.46.31-pm.png?resize=312%2C65" alt="Screen Shot 2014-10-02 at 5.46.31 pm" data-recalc-dims="1" /><noscript><img class="size-full wp-image-2178 aligncenter" src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-02-at-5.46.31-pm.png?resize=312%2C65" alt="Screen Shot 2014-10-02 at 5.46.31 pm" data-recalc-dims="1" /></noscript></a></p>
+<p style="text-align: left;">Hope this post gave you a decent idea as how to setup Node.js on the Pi. If you think there is a more easy way of connecting the Pi to a computer, please do share.</p>
+<hr />
+<p>Thanks for reading! Do comment.<br />
+@arvindr21</p>
+<fieldset><legend>Series Navigation</legend><span class="series-nav-left"></span><span class="series-nav-right"><a href="./../raspberry-pi-node-js-led-emit-morse-code/index.html" title="Raspberry Pi, Node.js and a LED &#8211; Emit Morse Code &gt;&gt;">Raspberry Pi, Node.js and a LED &#8211; Emit Morse Code &gt;&gt;</a></span></fieldset><!-- Simple Share Buttons Adder (6.1.5) simplesharebuttons.com --><div class="ssba ssba-wrap"><div style="text-align:left"><a href="http://twitter.com/share?url=./getting-started-raspberry-pi-node-js/&amp;text=Getting+Started+with+Raspberry+pi+and+Node.js+From+The+Jackal+of+Javascript+by+%40arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://twitter.com/share?url=./getting-started-raspberry-pi-node-js/&amp;text=Getting+Started+with+Raspberry+pi+and+Node.js+From+The+Jackal+of+Javascript+by+%40arvindr21', '');" data-site="" class="ssba_twitter_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /></noscript></a><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=./getting-started-raspberry-pi-node-js/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.linkedin.com/shareArticle?mini=true&amp;url=./getting-started-raspberry-pi-node-js/', '');" data-site="linkedin" class="ssba_linkedin_share ssba_share_link"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="https://plus.google.com/share?url=./getting-started-raspberry-pi-node-js/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://plus.google.com/share?url=./getting-started-raspberry-pi-node-js/', '');" data-site="" class="ssba_google_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="http://reddit.com/submit?url=./getting-started-raspberry-pi-node-js/&amp;title=Getting Started with Raspberry pi and Node.js" onclick="__gaTracker('send', 'event', 'download', 'http://reddit.com/submit?url=./getting-started-raspberry-pi-node-js/&amp;title=Getting Started with Raspberry pi and Node.js');" data-site="reddit" class="ssba_reddit_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="https://bufferapp.com/add?url=./getting-started-raspberry-pi-node-js/&amp;text=From The Jackal of Javascript Getting Started with Raspberry pi and Node.js" onclick="__gaTracker('send', 'event', 'download', 'https://bufferapp.com/add?url=./getting-started-raspberry-pi-node-js/&amp;text=From The Jackal of Javascript Getting Started with Raspberry pi and Node.js');" data-site="buffer" class="ssba_buffer_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /></noscript></a><a href="https://flattr.com/submit/auto?user_id=arvindr21&amp;title=Getting Started with Raspberry pi and Node.js&amp;url=https://flattr.com/profile/arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://flattr.com/submit/auto?user_id=arvindr21&amp;title=Getting Started with Raspberry pi and Node.js&amp;url=https://flattr.com/profile/arvindr21', '');" data-site="flattr" class="ssba_flattr_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /></noscript></a><a data-site="email" class="ssba_email_share" href="./../cdn-cgi/l/email-protection/index.html#3e014d4b5c545b5d4a03795b4a4a5750591e6d4a5f4c4a5b5a1e49574a561e6c5f4d4e5c5b4c4c471e4e571e5f505a1e70515a5b10544d185f534e055c515a4703784c51531e6a565b1e745f5d555f521e51581e745f485f4d5d4c574e4a1b0c0e564a4a4e0411114a565b545f5d555f525158545f485f4d5d4c574e4a105d515311595b4a4a575059134d4a5f4c4a5b5a134c5f4d4e5c5b4c4c47134e571350515a5b13544d11"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /></noscript></a><a data-site="print" class="ssba_print ssba_share_link" href="#" onclick="window.print()"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /></noscript></a></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-70838519-2162-5a10415626dc1' data-src='//widgets.wp.com/likes/#blog_id=70838519&amp;post_id=2162&amp;origin=thejackalofjavascript.com&amp;obj_id=70838519-2162-5a10415626dc1' data-name='like-post-frame-70838519-2162-5a10415626dc1'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>
+<div class="entry-content">
+</div><!-- .entry-content -->
+<footer class="entry-meta">
+<span class="post-date"><a href="./index.html" title="5:53 pm" rel="bookmark"><time class="entry-date" datetime="2014-10-02T17:53:20+00:00">October 2, 2014</time></a></span><span class="byline"><span class="author vcard"><a class="url fn n" href="./../author/arvind-ravulavaru/index.html" title="View all posts by Arvind Ravulavaru" rel="author">Arvind Ravulavaru</a></span></span>					</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+<nav class="navigation post-navigation" role="navigation">
+<h1 class="screen-reader-text">Post navigation</h1>
+<div class="nav-links">
+<div class="nav-previous"><a href="./../ionic-twilio-and-node-scheduler-part-1/index.html" rel="prev"><span class="meta-nav screen-reader-text">&larr;</span></a></div><div class="nav-next"><a href="./../raspberry-pi-node-js-led-emit-morse-code/index.html" rel="next"><span class="meta-nav screen-reader-text">&rarr;</span></a></div>		</div><!-- .nav-links -->
+</nav><!-- .navigation -->
+<div id="disqus_thread">
+<div id="dsq-content">
+<ul id="dsq-comments">
+<li class="comment even thread-even depth-1" id="dsq-comment-3321">
+<div id="dsq-comment-header-3321" class="dsq-comment-header">
+<cite id="dsq-cite-3321">
+<span id="dsq-author-user-3321">Rahul Yennu</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3321" class="dsq-comment-body">
+<div id="dsq-comment-message-3321" class="dsq-comment-message"><p>if you got error while unpacking &#8220;sudo dpkg -i node_latest_armhf.deb&#8221; try these steps<br />
+1)sudo apt-get remove nodered<br />
+2)sudo apt-get remove nodejs nodejs-legacy<br />
+3)sudo apt-get remove npm<br />
+4)curl -sL <a href="https://deb.nodesource.com/setup_4.x" onclick="__gaTracker('send', 'event', 'outbound-comment', 'https://deb.nodesource.com/setup_4.x', 'https://deb.nodesource.com/setup_4.x');" rel="nofollow">https://deb.nodesource.com/setup_4.x</a> | sudo bash &#8211;<br />
+5) sudo apt-get install -y build-essential python-dev nodejs npm<br />
+6)sudo dpkg -i node_latest_armhf.deb</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-3237">
+<div id="dsq-comment-header-3237" class="dsq-comment-header">
+<cite id="dsq-cite-3237">
+<span id="dsq-author-user-3237">Magdalena Patronska</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3237" class="dsq-comment-body">
+<div id="dsq-comment-message-3237" class="dsq-comment-message"><p>Any suggestions on the following error:</p>
+<p>dpkg: regarding node_latest_armhf.deb containing node:</p>
+<p> nodejs-legacy conflicts with node</p>
+<p>  node (version 4.2.1-1) is to be installed.</p>
+<p>  node provides node and is to be installed.</p>
+<p>dpkg: error processing archive node_latest_armhf.deb (&#8211;install):</p>
+<p> conflicting packages &#8211; not installing node</p>
+<p>Errors were encountered while processing:</p>
+<p> node_latest_armhf.deb</p>
+<p>Thanks.</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-3238">
+<div id="dsq-comment-header-3238" class="dsq-comment-header">
+<cite id="dsq-cite-3238">
+<span id="dsq-author-user-3238">Magdalena Patronska</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3238" class="dsq-comment-body">
+<div id="dsq-comment-message-3238" class="dsq-comment-message"><p>Ok, able to install using:<br />
+curl -sL <a href="https://deb.nodesource.com/setup_4.x" onclick="__gaTracker('send', 'event', 'outbound-comment', 'https://deb.nodesource.com/setup_4.x', 'https://deb.nodesource.com/setup_4.x');" rel="nofollow">https://deb.nodesource.com/setup_4.x</a> | sudo bash &#8211;<br />
+sudo apt-get install nodejs<br />
+node -v -&gt; v4.4.5</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="dsq-comment-3207">
+<div id="dsq-comment-header-3207" class="dsq-comment-header">
+<cite id="dsq-cite-3207">
+<span id="dsq-author-user-3207">Bob Johnson</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3207" class="dsq-comment-body">
+<div id="dsq-comment-message-3207" class="dsq-comment-message"><p>my installation seems to quit at &#8220;Processing main triggers for man-db &#8230;&#8221; any Idea how to fix</p>
+<p>thx<br />
+Bob</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-3239">
+<div id="dsq-comment-header-3239" class="dsq-comment-header">
+<cite id="dsq-cite-3239">
+<span id="dsq-author-user-3239">Magdalena Patronska</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3239" class="dsq-comment-body">
+<div id="dsq-comment-message-3239" class="dsq-comment-message"><p>Try<br />
+rm -rf /var/cache/man/hr/index.db<br />
+<a href="https://www.raspberrypi.org/forums/viewtopic.php?t=47516&#038;p=373069" onclick="__gaTracker('send', 'event', 'outbound-comment', 'https://www.raspberrypi.org/forums/viewtopic.php?t=47516&amp;p=373069', 'https://www.raspberrypi.org/forums/viewtopic.php?t=47516&amp;p=373069');" rel="nofollow">https://www.raspberrypi.org/forums/viewtopic.php?t=47516&#038;p=373069</a></p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-3083">
+<div id="dsq-comment-header-3083" class="dsq-comment-header">
+<cite id="dsq-cite-3083">
+<span id="dsq-author-user-3083">yuvraj upadhyay</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3083" class="dsq-comment-body">
+<div id="dsq-comment-message-3083" class="dsq-comment-message"><p>it was good but atleast one example should have been discussed over here perfectly i mean wd all the steps  one by one so that even the beginners could get it at first instance</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="dsq-comment-3031">
+<div id="dsq-comment-header-3031" class="dsq-comment-header">
+<cite id="dsq-cite-3031">
+<span id="dsq-author-user-3031">dhananjay shantaram janorkar</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3031" class="dsq-comment-body">
+<div id="dsq-comment-message-3031" class="dsq-comment-message"><p>Circumference of Circle / Diameter = Goba, 6283185306 /<br />
+2000000000 = 3.141592653 Constant of Goba is RATIONAL NUMBER.</p>
+<p>Reference: </p>
+<p>Editorial of International Journal of Shantaram Janorkar<br />
+Foundation of Mathematics, Science and Spiritual. – Edition – 1, 15 September,<br />
+2015, Volume – 1, Issue – 1, ISO 9001:2008, ISSN (P): 2454-5236, ISSN (O):<br />
+2454-633X, Title Code: MAHBIL06980/13/1/2014-TC / For Books &#8211; ISO 9001:2008,<br />
+ISBN: 978-81-930845-0-2, (English and Marathi). (FREE DOWNLOAD from<br />
+<a href="http://www.sbjanorkar.com/" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.sbjanorkar.com', 'http://www.sbjanorkar.com');" rel="nofollow">http://www.sbjanorkar.com</a>) </p>
+<p>(i) (Circumference of a Circle / Diameter = Goba, 6283185306 /<br />
+2000000000 = 3.141592653 Constant of Goba). The Self &#8211; Proving<br />
+Theorem of Goba and its Explanation on the Basis of a Formula.</p>
+<p>(ii) E=Mm² Which means Energy = Mass x (Speed of Mass)², Speed of Light =<br />
+22,32,00,00,000 Mile/Second. (Twenty two Hundred and Thirty two Cores Mile/per Second).</p>
+<p>(iii) 504,866,505,707,712,000 (Mile)³/Second The Extent of solar system. </p>
+<p>(iv) The Theorem of the Formula for the<br />
+Explanation for the Creation of the Cosmos in the Large Hadron Collider<br />
+Machine. </p>
+<p>(v) Point &#8211; The Theorem<br />
+of Existence of Point and its Aspect. </p>
+<p>(vi) The Distance Between<br />
+Shining Lightening as well as Thundering Cloud and The Earth. </p>
+<p>(vii) To do Research on the Research Done by Shantaram Bapurao<br />
+Janorkar we Expect to Operation from World Educational Institute, Universities,<br />
+Scholars, Scientists. </p>
+<p>Note:<br />
+Hon. Sir, Please share this all of us.</p>
+<p>Link for Free Online International Journal ISO 9001:2008, ISSN<br />
+(Print &amp; Online):- <a href="http://www.sbjanorkar.com/Gernoul.html" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.sbjanorkar.com/Gernoul.html', 'http://www.sbjanorkar.com/Gernoul.html');" rel="nofollow">http://www.sbjanorkar.com/Gernoul.html</a></p>
+<p>Link for Free Online Books ISO 9001:2008, ISBN: &#8211; </p>
+<p><a href="http://www.sbjanorkar.com/booksd.html" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.sbjanorkar.com/booksd.html', 'http://www.sbjanorkar.com/booksd.html');" rel="nofollow">http://www.sbjanorkar.com/booksd.html</a> </p>
+<p>Respected Sir /<br />
+Madam,</p>
+<p>This international journal has been launched in memory of my<br />
+father and researcher late Mr. Shantaram Bapurao Janorkar by “Shantaram<br />
+Janorakar Foundation of Mathematics” to scientifically establish the research carried out by him on<br />
+the various topics of Mathematics and I have put my best efforts in this work<br />
+disregarding my family and my children’s future. This is the biggest sacrifice<br />
+made by me and this sacrifice has been done by me for my country. This<br />
+sacrifice has been done for the students all over the whole world to enable<br />
+them to achieve the true and real knowledge. I have been doing my research work<br />
+at different levels for the last 18 years. To really establish this research,<br />
+on 11 December, 2011, I received valuable guidance from Hon.Prof.Dr.T.M.Karade<br />
+(D.Sc., D.Sc., Ex. Vice-Chancellor, Indiana University, Raipur, Ex. Dean,<br />
+Faculty of Science, Nagpur University, Nagpur) and to scientifically establish this<br />
+research I am also receiving valuable guidance from Hon.Prof.Dr.Shriram<br />
+B.Patil (Ex. Head, Department of Mathematics, Ex. Chairman, Board of Studies in<br />
+Mathematics, Ex. Dean, Faculty of Science, Mumbai University, Mumbai) Through this<br />
+guidance, I found many ways about how I should scientifically establish all<br />
+this research and by this Institute I have launched the journal “International<br />
+Journal of Shantaram Janorkar Foundation of Mathematics, Science and<br />
+Spiritual.” Through this medium I have been preparing various papers on<br />
+this research in English and Marathi languages and publishing them serially in<br />
+this journal. I have prepared the papers on this research and I have tried to<br />
+convert them into scientific and mathematical language without leaving the basic<br />
+core of the research topics which were invented by my father and researcher<br />
+late Mr. Shantaram Bapurao Janorkar and keeping intact the meaning of his<br />
+thoughts through scientific approach, I have compiled the theorems on various<br />
+subjects and prepared research papers on these theorems. I have prepared these<br />
+research papers by using various systematic methods and I have tried to explain<br />
+everything and made use of methods which are easy and quick to understand for<br />
+you. In case you do further studies on this research and prepare papers on the<br />
+same we shall certainly publish them in this journal free of charge and you<br />
+will be honored with a citation and award. I desire to publish this journal in<br />
+all regional, national and international languages.</p>
+<p>          This journal is in ‘Print/CD-ROM/Online’ formats. I have<br />
+been trying to deliver this journal to the scholars and scientists of 511<br />
+universities of India and to the scholars and scientists of 10,877 universities<br />
+all over the world. I sincerely request to honorable scholars and scientists to<br />
+continue further my present work. There is such a great extent of knowledge in<br />
+this research work that the yet to be in completed research will be completed<br />
+with this research and logic and the world will get to know the real and true<br />
+knowledge and you can put new theorems before the world created through this<br />
+research. To<br />
+help this real and true knowledge put forward before the world is the very<br />
+primary objective of my efforts. It is said that time and tide waits for none; ‘Death’ is the<br />
+eternal truth for all living beings on earth. Hence, it is utmost essential to<br />
+put forth my research paper in front of the world. I feel, after my death,<br />
+there will be nobody to put forth or present this research paper in front of<br />
+the world.                    </p>
+<p>Om Purnamadah: Purnamidam Purnat Purnamudachyate I Purnasya<br />
+Purnamadaya Purna Mevavashisyate II </p>
+<p>          In Geometry, the<br />
+symbol of measurement accepted (World Official) by the world community of<br />
+scientist is degree and this same degree is the root, evidence, origin and base<br />
+of the entire research done by my father late Mr. Shantaram Bapurao Janorkar.<br />
+The base of this entire research is measure of circle of 36 Degree.<br />
+By transforming this research which is originally in Marathi language, into<br />
+scientific and mathematical language I am publishing serially all the papers on<br />
+this research in an international journals. To begin with, I have first<br />
+prepared the papers on the theorems: </p>
+<p>® The Self &#8211; Proving Theorem of Goba and its Explanation on the<br />
+Basis of a Formula (Circumference of a Circle / Diameter = Goba, 6283185306 /<br />
+2000000000 = 3.141592653 Constant of Goba). (Goba Cha Swayamshidha Sidhanta Wa Sutracha Aadharacha Spastikaran<br />
+(Wartul Parigh / Wyas = Goba, 6283185306 / 2000000000 = 3.141592653 Goba Cha<br />
+Sthirank), (In Marathi). </p>
+<p>® Point &#8211; The Theorem of Existence of Point and its Aspect. (Bindu – Binducha<br />
+Asthitwachi Shidhatha Wa Swarup, (In Marathi). </p>
+<p>® E = Mm² Which means Energy = Mass x (Speed of Mass)², Speed of Light = 22,32,00,00,000 Mile/per Second. (Twenty two<br />
+Hundred and Thirty two Cores Mile/per Second). (E=Mm² Mhanajhach Shakati = Wastuman x<br />
+Wastumanacha Wegacha Varga, Prakashacha Wega = 22,32,00,00,000 Mail / Prati Second (Bavis Abja Batish Koti Mail / Prati Second, (In Marathi). </p>
+<p>® The Distance Between Shining Lightening as well as Thundering Cloud and<br />
+The Earth. (Chakaknari<br />
+Wig Aani Gadgadnara Megha yanche Pruthavi Pasun Aantar, (In Marathi), </p>
+<p>® The Theorem of the Formula for the Explanation for<br />
+the Creation of the Cosmos in the Large Hadron Collider Machine. </p>
+<p>® The Theorem of the Extent of the Solar systems. (Surya malecha wyapacha shidhanta, (In<br />
+Marathi). </p>
+<p>® A Personality called Shantaram Bapurao Janorkar. (Shantaram Bapurao<br />
+Janorkar Yak Wyaktimahatava, (In Marathi),</p>
+<p>® The Establishment of Shantaram Janorkar Foundation of<br />
+Mathematics to Create a New History in Mathematics, Science, Philosophy  &amp; Spiritual. (Ganit, Vidhyan, Thatvadhyan Vaa Adhyatma Madhye<br />
+Yek Navin Etihas Ghadavinya Karita Shantaram Janorkar Foundation<br />
+of Mathematics Chi Sthapana, (In Marathi), </p>
+<p>® To do Research on the Research Done by Shantaram Bapurao<br />
+Janorkar we Expect to Operation from World Educational Institute, Universities,<br />
+Scholars, Scientists. (Shantaram Bapurao Janorkar Yancha Sanshodhanavar Sanshodhan<br />
+Honyakarita Vishavatil Shaishanik Savunstha, Vidhyapithe, Scholars,<br />
+Shastradhyan Kadun Sahakaryachi Aaphekasha, (In Marathi), in mathematical language and in the transforming<br />
+the research papers on “Goba” in mathematical language by making some<br />
+modifications, Hon.Prof.D.T.Solanke has helped me while in the translation work of this research<br />
+work from Marathi to English, I received cooperation from Hon.Mr.Vikram K.<br />
+More<br />
+and Hon.Prof.Dr.T.M.Karade provided me the<br />
+guidance on how  should the first<br />
+paragraph of the research paper on “Goba” be read. The paragraph reads like<br />
+this The value of an irrational number pi<br />
+is determined from the ancient times up to the modern super computer era. In<br />
+this paper author Late Shri Shantaram Bapurao Janorkar has conjunctured the<br />
+rational number      , Christened “GOBA”<br />
+by introducing some concept with references to a circle is nomenclature is like<br />
+π (Pi), but it is not an irrational number. Its value is computed as 3.141592653</p>
+<p>          If you look at this research with the<br />
+unselfish vision of a scholar, scientist (researcher) and if you carefully read<br />
+the work published in this publication, you will easily understand the research<br />
+work and ways for further research on this work can be found. In this research<br />
+many new theorems have been established, different new methods have been found<br />
+and in the same way many new theorems and methods will be found. I have made a<br />
+deep study on this research and while deciding on which methods should be<br />
+included in this paper and which methods are easier, I have came across some<br />
+theorems in addition to this theorem and they follow as: For example, </p>
+<p>® The Theorem of the Evolution or Creation of the Cosmos and Speed. (Wishavachi uttapathi kinva nirmiti vaa vegacha shidhanta, (In<br />
+Marathi). </p>
+<p>® The theorem of the Evolution or<br />
+Creation of the Radius, straight radius, arc radius and<br />
+diameter of Circle and the<br />
+Circumference of Circle. (Wartul vaa wartul<br />
+parighachi thrigha, saral thrigha, kauns thrigha Aani wyasacha uttapathi kinva<br />
+nirmiti cha shidhanta, (In Marathi). </p>
+<p>® The Theorem of the total number of planets-stars,<br />
+solar systems and galaxies in the cosmos. (Wishava madhil<br />
+graha-tare, Surya mala Aani Aakashagaangan<br />
+&#8211; cha shidhanta, (In Marathi). </p>
+<p>® The Theorem of the Extent of the Cosmos. (Wishavacha vyapacha shidhanta, (In Marathi). </p>
+<p>® The Theorem of the definite Period taken by the Creation of the entire<br />
+Cosmos (Saampurna<br />
+Wishava nirmitila lagalelya nishyit welyecha shidhanta, (In Marathi). </p>
+<p>® The Theorem of the Extent of the Black Hole in the Centre of Galaxies. (Aakashagaangan<br />
+chya Madhya bhagi Aaslelya krushan vivaracha vyapacha shidhanta, (In Marathi). </p>
+<p>® The Theorem of the Mental Speed (Manachya vegacha shidhanta,<br />
+(In Marathi). </p>
+<p>® The Theorems of the Numbers, Vedic 16<br />
+Vowels, Vedic 36 Consonants and Their Symbolic Signs. (Aanka,<br />
+vaidik 16 Swar, vaidik 36 vyanjane vaa thyanchya syanketik chinhyancha<br />
+shidhanta, (In Marathi). With this, </p>
+<p>® Squarization of a Circle = 5605 x 5605 = 31416025 / 10000000<br />
+= 3.14160250 (Wartulache chaurasikaran = 5605 x 5605 = 31416025/10000000 = 3.14160250,<br />
+(In Marathi). In spirituality on the basis of mathematical rules, </p>
+<p>® Om &#8211; The Scientific Verification of Om<br />
+and its Aspect. (Om &#8211; Om Che Wiadhyanik Drustya Shidhatha Wa Swarup, (In<br />
+Marathi). </p>
+<p>® Soul-The Verification of the Existence of Soul, Its Aspect and<br />
+Nomenclature. (Aatmaa &#8211; Aatmaaya Chya Asthitwachi Shidhatha, Swarup Wa Namkaran,<br />
+(In Marathi). </p>
+<p>I<br />
+will try to publish in the next issue the further papers on this theorem. Hon.Mr.Dr.T.M.Karade,<br />
+Prof.Dr.Shriram B.Patil, Prof.Dr.Kishor S.Adhav, Prof.Dr.S.D.Katore,  Prof.Mr. D.T.Solanke have been<br />
+regularly providing valuable guidance to me and therefore, I am very much<br />
+grateful to them and I shall remain grateful to them forever. In case you find<br />
+any difficulty in understanding the research papers published in this journals<br />
+please send your queries in writing on the editorial address, I shall sincerely<br />
+strive to solve them. You can contact me round the clock on phone or in person.<br />
+This journal is being published by Om Publications, Mahan and it is ISSN, ISBN,<br />
+RNI and ISO 9001:2008 certified.</p>
+<p>          All the people, schools, colleges, educational institutes,<br />
+educational boards, mathematical institutes, scientific institutes,<br />
+universities, and the universities listed in the QS (Quacquarelli Symonds) scholars, scientists, researchers all over the world<br />
+can subscribe annually free of charge from the web site <a href="http://www.sbjanorkar.com/" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.sbjanorkar.com', 'http://www.sbjanorkar.com');" rel="nofollow">http://www.sbjanorkar.com</a>. You can download the e-copy of this international journal in<br />
+PDF format from the web site <a href="http://www.sbjanorkar.com/" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.sbjanorkar.com', 'http://www.sbjanorkar.com');" rel="nofollow">http://www.sbjanorkar.com</a> and I sincerely<br />
+request you cooperate me in sharing it with your friends, teachers, students,<br />
+schools, colleges, education institutes, education boards, mathematical<br />
+institutes, scientific institutes, all the students of an university and people<br />
+through your email as well as social sites such as Facebook, Google Plus,<br />
+WhatsUp, Twitter, LinkedIn. I dedicate the first issue of this journal to the memory of my<br />
+father and the researcher of this entire work, late Mr. Shantaram Bapurao<br />
+Janorkar, the valuable research done by him, his trust in education.                                        </p>
+<p>® Mr.Dhananjay<br />
+S.Janorkar (Chief Editor)</p>
+<p>The<br />
+Function of Publication and Dedication to the World of the International<br />
+Journal through Organization of Shantaram Janorkar Foundation of Mathamatics,<br />
+Mahan </p>
+<p>On the occasion of the birth Anniversary of Late Mr. Shantaram<br />
+Bapurao Janorkar, an International Journal of Shantaram Janorkar Foundation of<br />
+Mathematics, Science and Spiritual, was published through Organization of<br />
+Shantaram Janorkar Foundation of Mathamatics, Village MAHAN &#8211; 444 405 Tq. Barshitakli<br />
+Dist. Akola, (Maharashtra State), India. On 15/09/2015 at evening 5.00 P.m. at<br />
+Mahan at the hands of Hon. Professor Dr. Kishor Aadhav, D.Sc., (Head,<br />
+Department of Mathematics, Sant Gadage Baba Amaravati University, Amaravati)<br />
+and dedication of this International Journal to the World was performed at the<br />
+hands of Hon. Professor Dr. S. D. Katore, (Chairman, Board of Studies in<br />
+Mathematics, Sant Gadage Baba Amaravati University, Amaravati), Chief Guest was<br />
+Hon. Professor Mr. D. T. Solanke, (Department of Mathematics, Sudhakar Naik<br />
+&amp; Umashankar Khetan College, Akola), The President of this function was Mr.<br />
+Dhananjay S. Janorkar, (Founder President, Shantaram Janorkar Foundation of<br />
+Mathamatics).</p>
+<p>Along with this international journal, Mr. Dhananjay Shantaram<br />
+Janorkar has determined 504,866,505,707,712,000 (Mile)³/Second The Extent of solar system and<br />
+160,704,000,000,000,000 (Mile)³/Second as diameter as per the principle of<br />
+solar system invented by them. Along with this, numerous principle invention<br />
+papers has been kept before the world through this International Journal and to<br />
+investigate on this invention Mr. Dhananjay Shantaram Janorkar has created a<br />
+new rostrum for global scholars like Ph. D. holders in respect of the same. The<br />
+said international journal/Books can be downloaded free of cost at <a href="http://www.sbjanorkar.com/" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.sbjanorkar.com', 'http://www.sbjanorkar.com');" rel="nofollow">http://www.sbjanorkar.com</a><br />
+on this web site. In the said programme Deputy Sarpanch of Mahan, Mr. Pramod<br />
+Bhadange, Smt. Sulbhabai Shantaram Janorkar, Ex-Chairman, Panchayat Samati<br />
+Barshitakli also Secretary of organization Mrs. Jija Dhananjay Janorkar, Mr.<br />
+Dilip Lande Guruji, Mr. Sanjay Ambarkar, Mr. Prabhakar Janorkar, Mr. Uday<br />
+Janorkar, Mr. Suvarnesh Janorkar, Dr. Nitin Janorkar, Mayur Jangle, Rishikesh<br />
+Janorkar, Jay Janorkar and Janorkar family were present at the function.  </p>
+<p>Shantaram Janorkar<br />
+Foundation of Mathematics,</p>
+<p>Village MAHAN &#8211; 444 405 Tq. Barshitakli Dist. Akola</p>
+<p>Head Offices:- C/o R.T.Patil House, Near Saraswati</p>
+<p>Vidyalaya, Nityanand Nagar, Gorakshan Road,</p>
+<p>Akola &#8211; 444 404, (Maharashtra State), India.</p>
+<p>Phone (Mob): 09021607450, 09226442256</p>
+<p>E-mail: <a href="./../cdn-cgi/l/email-protection/index.html#d0a3bab6bfbdb9beb4b9b190b7bdb1b9bcfeb3bfbd"><span class="__cf_email__" data-cfemail="e89b828e878581868c8189a88f85898184c68b8785">[email&#160;protected]</span></a>, <a href="./../cdn-cgi/l/email-protection/index.html#8ae3e0e5f9e0ece5e7f9f9caede7ebe3e6a4e9e5e7"><span class="__cf_email__" data-cfemail="046d6e6b776e626b697777446369656d682a676b69">[email&#160;protected]</span></a></p>
+<p><a href="http://www.sbjanorkar.com/" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.sbjanorkar.com', 'http://www.sbjanorkar.com');" rel="nofollow">http://www.sbjanorkar.com</a></p>
+<p>Note:<br />
+Hon. Sir, Please share this all of us.</p>
+<p>Link for<br />
+Free Online International Journal ISO 9001:2008, ISSN (Print &amp; Online):- <a href="http://www.sbjanorkar.com/Gernoul.html" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.sbjanorkar.com/Gernoul.html', 'http://www.sbjanorkar.com/Gernoul.html');" rel="nofollow">http://www.sbjanorkar.com/Gernoul.html</a></p>
+<p>Link for<br />
+Free Online Books ISO 9001:2008, ISBN: &#8211; </p>
+<p><a href="http://www.sbjanorkar.com/booksd.html" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.sbjanorkar.com/booksd.html', 'http://www.sbjanorkar.com/booksd.html');" rel="nofollow">http://www.sbjanorkar.com/booksd.html</a></p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-2773">
+<div id="dsq-comment-header-2773" class="dsq-comment-header">
+<cite id="dsq-cite-2773">
+<span id="dsq-author-user-2773">Karthik Naidu</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2773" class="dsq-comment-body">
+<div id="dsq-comment-message-2773" class="dsq-comment-message"><p>I want to say Thank you&#8230;but i feel its not enough&#8230;I want to say something more which I don&#8217;t have words&#8230; For now #respect, #inspiration</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-2774">
+<div id="dsq-comment-header-2774" class="dsq-comment-header">
+<cite id="dsq-cite-2774">
+./                <span id="dsq-author-user-2774">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2774" class="dsq-comment-body">
+<div id="dsq-comment-message-2774" class="dsq-comment-message"><p>Thanks Karthik. Very happy that the post was helpful! </p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="dsq-comment-2728">
+<div id="dsq-comment-header-2728" class="dsq-comment-header">
+<cite id="dsq-cite-2728">
+<span id="dsq-author-user-2728">thethundering1</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2728" class="dsq-comment-body">
+<div id="dsq-comment-message-2728" class="dsq-comment-message"><p>Hi Aravind, Nice article.<br />
+Can you tell me where to buy this device.</p>
+<p>Thanks<br />
+Srinivas</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-2729">
+<div id="dsq-comment-header-2729" class="dsq-comment-header">
+<cite id="dsq-cite-2729">
+./                <span id="dsq-author-user-2729">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2729" class="dsq-comment-body">
+<div id="dsq-comment-message-2729" class="dsq-comment-message"><p>Thanks Srinivas. You can buy a pi online quite  easily. Try eBay. </p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-2398">
+<div id="dsq-comment-header-2398" class="dsq-comment-header">
+<cite id="dsq-cite-2398">
+<span id="dsq-author-user-2398">Marc</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2398" class="dsq-comment-body">
+<div id="dsq-comment-message-2398" class="dsq-comment-message"><p>Aravind, all the code snippets is not in there anymore <img src="./../wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br />
+Thanks for your awesome blog!!</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-2403">
+<div id="dsq-comment-header-2403" class="dsq-comment-header">
+<cite id="dsq-cite-2403">
+./                <span id="dsq-author-user-2403">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2403" class="dsq-comment-body">
+<div id="dsq-comment-message-2403" class="dsq-comment-message"><p>Thanks.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="dsq-comment-2392">
+<div id="dsq-comment-header-2392" class="dsq-comment-header">
+<cite id="dsq-cite-2392">
+<span id="dsq-author-user-2392">Thiruanvukkarasu Muthuswamy</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2392" class="dsq-comment-body">
+<div id="dsq-comment-message-2392" class="dsq-comment-message"><p>Hi Aravind &#8211; Thanks for the post. It really helps <img src="./../wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Between i got pi connected to the windows as mentioned in the video. But i unable to access the internet which is connected to my host computer. How should i resolve that ?</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-2404">
+<div id="dsq-comment-header-2404" class="dsq-comment-header">
+<cite id="dsq-cite-2404">
+./                <span id="dsq-author-user-2404">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2404" class="dsq-comment-body">
+<div id="dsq-comment-message-2404" class="dsq-comment-message"><p>Can you let me know what error you are facing? And at which step?</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-3" id="dsq-comment-2469">
+<div id="dsq-comment-header-2469" class="dsq-comment-header">
+<cite id="dsq-cite-2469">
+<span id="dsq-author-user-2469">Thiruanvukkarasu Muthuswamy</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2469" class="dsq-comment-body">
+<div id="dsq-comment-message-2469" class="dsq-comment-message"><p>Hello Aravind &#8211; Sorry for the delayed reply and  still the problem persists. I&#8217;m connecting my raspberry pi with my windows laptop where i have wifi connection working. I would like to share that wifi connection of laptop of pi.</p>
+<p>Ping log:-</p>
+<p>Using username &#8220;pi&#8221;.</p>
+<p><a href="./../cdn-cgi/l/email-protection/index.html#d7a7be97e6eee5f9e6e1eff9e5f9e6e7e7"><span class="__cf_email__" data-cfemail="9aeaf3daaba3a8b4abaca2b4a8b4abaaaa">[email&#160;protected]</span></a>&#8216;s password:</p>
+<p>Linux raspberrypi 3.18.7+ #755 PREEMPT Thu Feb 12 17:14:31 GMT 2015 armv6l</p>
+<p>Last login: Wed Apr  1 10:18:24 2015 from 192.168.2.1</p>
+<p><a href="./../cdn-cgi/l/email-protection/index.html" class="__cf_email__" data-cfemail="afdfc6efddcedcdfcdcaddddd6dfc6">[email&#160;protected]</a> ~ $ ping <a href="http://www.google.com/" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.google.com', 'http://www.google.com');" rel="nofollow">http://www.google.com</a></p>
+<p>ping: unknown host <a href="http://www.google.com/" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.google.com', 'http://www.google.com');" rel="nofollow">http://www.google.com</a></p>
+<p>I tried some of the options mentioned in the post, but nothing seems to be working in my case.</p>
+<p><a href="https://anwaarullah.wordpress.com/2013/08/12/sharing-wifi-internet-connection-with-raspberry-pi-through-lanethernet-headless-mode/" onclick="__gaTracker('send', 'event', 'outbound-comment', 'https://anwaarullah.wordpress.com/2013/08/12/sharing-wifi-internet-connection-with-raspberry-pi-through-lanethernet-headless-mode/', 'https://anwaarullah.wordpress.com/2013/08/12/sharing-wifi-internet-connection-with-raspberry-pi-through-lanethernet-headless-mode/');" rel="nofollow">https://anwaarullah.wordpress.com/2013/08/12/sharing-wifi-internet-connection-with-raspberry-pi-through-lanethernet-headless-mode/</a></p>
+<p>Any ideas to get resolved ?</p>
+<p>Thanks!</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-4" id="dsq-comment-2474">
+<div id="dsq-comment-header-2474" class="dsq-comment-header">
+<cite id="dsq-cite-2474">
+./                <span id="dsq-author-user-2474">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2474" class="dsq-comment-body">
+<div id="dsq-comment-message-2474" class="dsq-comment-message"><p>Can you check if you have bridged the connection in your network preferences?</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-5" id="dsq-comment-2516">
+<div id="dsq-comment-header-2516" class="dsq-comment-header">
+<cite id="dsq-cite-2516">
+<span id="dsq-author-user-2516">Thiruanvukkarasu Muthuswamy</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2516" class="dsq-comment-body">
+<div id="dsq-comment-message-2516" class="dsq-comment-message"><p>Finally it worked Aravind <img src="./../wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Thanks !</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even depth-5" id="dsq-comment-2521">
+<div id="dsq-comment-header-2521" class="dsq-comment-header">
+<cite id="dsq-cite-2521">
+./                <span id="dsq-author-user-2521">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2521" class="dsq-comment-body">
+<div id="dsq-comment-message-2521" class="dsq-comment-message"><p>Cool! What was the issue?</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul>
+</div>
+</div>
+<script src="./../cdn-cgi/scripts/0e574bed/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+var disqus_url = './getting-started-raspberry-pi-node-js/';
+var disqus_identifier = '2162 ./?p=2162';
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = 'thejackalofjavascriptcom';
+var disqus_title = "Getting Started with Raspberry pi and Node.js";
+var disqus_config_custom = window.disqus_config;
+var disqus_config = function () {
+/*
+All currently supported events:
+onReady: fires when everything is ready,
+onNewComment: fires when a new comment is posted,
+onIdentify: fires when user is authenticated
+*/
+this.language = '';
+this.callbacks.onReady.push(function () {
+// sync comments in the background so we don't block the page
+var script = document.createElement('script');
+script.async = true;
+script.src = '?cf_action=sync_comments&post_id=2162';
+var firstScript = document.getElementsByTagName('script')[0];
+firstScript.parentNode.insertBefore(script, firstScript);
+});
+if (disqus_config_custom) {
+disqus_config_custom.call(this);
+}
+};
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+</main><!-- #main -->
+</div><!-- #primary -->
+<div id="secondary" class="widget-area" role="complementary">
+<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="./../index.html">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+</label>
+<input type="submit" class="search-submit" value="Search">
+</form>
+</aside><aside id="text-2" class="widget widget_text"><h1 class="widget-title">This is me!!</h1>			<div class="textwidget"><style>
+.socl-btn
+{
+padding: 3px;
+background: #f45145;
+border-radius: 3px;
+color: rgba(255, 255, 255, 0.6) !important;
+margin-top: 9px;
+display: inline-block;
+text-align: center;
+width:100%;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+.socl-btn:hover{
+color:#fff !important;
+}
+.lkdin{
+background-image: url(./../wp-content/uploads/2014/08/l.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+.gplus{
+background-image: url(./../wp-content/uploads/2014/08/g.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+.mongodir{
+background-image: url(./../wp-content/uploads/2014/08/m.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+.sitept{
+background-image: url(./../wp-content/uploads/2014/08/s.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+</style>
+<img src="./../wp-content/uploads/2014/02/030a49b.jpg" alt="Arvind Ravulavaru" style="width: 81px; margin: 0px auto;display: block;border-radius: 45px;"/>
+<br/>
+<label>
+Hello.. I am Arvind Ravulavaru a Full Stack Consultant based out of Hyderabad, India. This blog is my way of giving back to the Javascript Community!</label>
+<br/>
+<div style="text-align:center;" ><a  href="./../portfolio/index.html">Know more about me</a></div>
+<br/>
+<div  style="text-align:center;">
+<a href="https://twitter.com/arvindr21" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://twitter.com/arvindr21', 'Follow @arvindr21');" class="twitter-follow-button" data-show-count="false">Follow @arvindr21</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+<iframe src="http://ghbtns.com/github-btn.html?user=arvindr21&type=follow"
+allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe><br/><br/>
+<a href="http://in.linkedin.com/in/arvindravulavaru" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://in.linkedin.com/in/arvindravulavaru', 'Linked In');" target="_blank"  class="socl-btn lkdin">Linked In</a>
+<a href="https://plus.google.com/+ArvindRavulavaru" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://plus.google.com/+ArvindRavulavaru', 'Google Plus');" target="_blank"  class="socl-btn gplus">Google Plus</a><br/>
+<a href="http://blog.mongodirector.com/author/arvindr" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/author/arvindr', 'Mongo Director');" target="_blank"  class="socl-btn mongodir">Mongo Director</a> <a href="http://www.sitepoint.com/author/aravulavaru/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/author/aravulavaru/', 'Site Point');" target="_blank"  class="socl-btn sitept">Site Point</a> <br/><br/>
+<a href="https://paper.li/arvindr21/1409328222#!headlines/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://paper.li/arvindr21/1409328222#!headlines/', 'Chronicles of the Jackal of Javascript');" target="_blank"  class="socl-btn">Chronicles of the Jackal of Javascript</a>
+</div></div>
+</aside><aside id="text-5" class="widget widget_text">			<div class="textwidget"><style>
+.crm-app, .crm-ext
+{
+padding: 9px;
+background: #787878;
+border-radius: 45px;
+color: #EFEFEE !important;
+margin-top: 9px;
+display: inline-block;
+text-align: center;
+}
+</style>
+<a href="https://chrome.google.com/webstore/detail/the-jackal-of-javascript/oiaebkkgbicadojhdipjajkhjkeencdm" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://chrome.google.com/webstore/detail/the-jackal-of-javascript/oiaebkkgbicadojhdipjajkhjkeencdm', 'Chrome App');" target ="_blank" class="crm-app">Chrome App</a>
+<a href="https://chrome.google.com/webstore/detail/the-jackal-of-javascript/dokdjofgoglghfljkpmmkgfpipgcmjme" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://chrome.google.com/webstore/detail/the-jackal-of-javascript/dokdjofgoglghfljkpmmkgfpipgcmjme', 'Chrome Extension');" target ="_blank" class="crm-ext">Chrome Extension</a></div>
+</aside><aside id="text-7" class="widget widget_text"><h1 class="widget-title">Workshops</h1>			<div class="textwidget"><ul>
+<li><a href="http://mean-workshop.herokuapp.com/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://mean-workshop.herokuapp.com', 'o/ M.E.A.N. Workshop');" target="_blank">\o/ M.E.A.N. Workshop</a>
+</li>
+</ul></div>
+</aside><aside id="text-6" class="widget widget_text"><h1 class="widget-title">Presentations</h1>			<div class="textwidget"><ul>
+<li><a href="http://arvindr21.github.io/ng-overview" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/ng-overview', 'Overview of Angularjs');" target="_blank">Overview of Angularjs</a>
+</li>
+<li><a href="http://arvindr21.github.io/howBrowserWorks" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/howBrowserWorks', 'How Browser Works');" target="_blank">How Browser Works</a>
+</li>
+<li><a href="http://arvindr21.github.io/WebComponents" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/WebComponents', 'Web Components');" target="_blank">Web Components</a>
+</li>
+<li><a href="http://arvindr21.github.io/building-n-Scaffolding" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/building-n-Scaffolding', 'Modern UI Build Systems and Scaffolding Tools');" target="_blank">Modern UI Build Systems and Scaffolding Tools</a>
+</li>
+<li><a href="http://arvindr21.github.io/backbonejs" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/backbonejs', 'Backbonejs');" target="_blank">Backbonejs</a>
+</li>
+<li><a href="http://arvindr21.github.io/rwd" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/rwd', 'Responsive Web Design');" target="_blank">Responsive Web Design</a>
+</li>
+</ul></div>
+</aside><aside id="text-3" class="widget widget_text"><h1 class="widget-title">Projects</h1>			<div class="textwidget"><ul><li><a href="./../rotten-tomatoes-jquery-rest-client/index.html" target="_blank">Rotten Tomatoes jQuery Rest Client</a>
+</li>
+<li>
+<a href="./../uploading-files-made-fun/index.html" target="_blank">blueimp-file-upload-expressjs</a> - A Node Package
+</li>
+<li>
+<a href="http://arvindr21.github.io/lazyboy/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/lazyboy/', 'lazyboy');" target="_blank">lazyboy</a> - Command line laziness redefined
+</li>
+<li>
+<a href="http://arvindr21.github.io/diskDB/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/diskDB/', 'diskDB');" target="_blank">diskDB</a> - A Light Weight Disk based JSON Database - A Node Package
+</li>
+<li>
+<a href="https://github.com/search?utf8=%E2%9C%93&q=user%3Aarvindr21+slush&type=Repositories&ref=searchresults" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/search?utf8=%E2%9C%93&amp;q=user%3Aarvindr21+slush&amp;type=Repositories&amp;ref=searchresults', 'My Slush Generators');" target="_blank">My Slush Generators</a>
+</li>
+<li>
+<a href="https://github.com/search?utf8=%E2%9C%93&q=user%3Aarvindr21+yeoman&type=Repositories&ref=searchresults" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/search?utf8=%E2%9C%93&amp;q=user%3Aarvindr21+yeoman&amp;type=Repositories&amp;ref=searchresults', 'My Yeoman Generators');" target="_blank">My Yeoman Generators</a>
+</li>
+<li>
+<a href="https://github.com/arvindr21/myWebComponents#mywebcomponents" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/arvindr21/myWebComponents#mywebcomponents', 'My Web Components');" target="_blank">My Web Components</a>
+</li>
+<li>
+<a href="http://bower.io/search/?q=owner:arvindr21" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://bower.io/search/?q=owner:arvindr21', 'My Bower Packages');" target="_blank">My Bower Packages</a>
+</li>
+</ul></div>
+</aside><aside id="latestseries-2" class="widget widget_latestseries"><h1 class="widget-title">Series</h1>			<ul>
+<div class="latest-series"><ul><li><a href="./../series/a-reminder-app/index.html" class="series-145" title="Ionic, Twilio and Node Scheduler – A Reminder App">Ionic, Twilio and Node Scheduler – A Reminder App</a></li><li><a href="./../series/node-webkit-apps/index.html" class="series-150" title="Node Webkit Apps">Node Webkit Apps</a></li><li><a href="./../series/rpi/index.html" class="series-148" title="Raspberry Pi">Raspberry Pi</a></li></ul></div>			</ul>
+</aside><aside id="text-4" class="widget widget_text"><h1 class="widget-title">Guest Posts</h1>			<div class="textwidget"><ul>
+<li><a href="http://www.sitepoint.com/building-chat-app-node-webkit-firebase-angularjs/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/building-chat-app-node-webkit-firebase-angularjs/', 'Building a Chat App with node-webkit, Firebase, and AngularJS');" target="_blank">Building a Chat App with node-webkit, Firebase, and AngularJS</a></li>
+<li><a href="http://www.sitepoint.com/creating-sentiment-analysis-application-using-node-js/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/creating-sentiment-analysis-application-using-node-js/', 'Creating a Sentiment Analysis Application Using Node.js');" target="_blank">Creating a Sentiment Analysis Application Using Node.js</a></li>
+<li><a href="http://blog.mongodirector.com/implementing-pagination-with-mongodb-express-js-slush/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/implementing-pagination-with-mongodb-express-js-slush/', 'Implementing pagination with MongoDB, Express.js &amp; Slush');" target="_blank">Implementing pagination with MongoDB, Express.js & Slush</a></li>
+<li><a href="http://www.sitepoint.com/creating-firebase-powered-end-end-ionic-application/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/creating-firebase-powered-end-end-ionic-application/', 'Creating a Firebase Powered End to End Ionic Application');" target="_blank">Creating a Firebase Powered End to End Ionic Application</a></li>
+<li><a href="http://blog.mongodirector.com/getting-started-with-mongodb-and-mongoose/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/getting-started-with-mongodb-and-mongoose/', 'Getting started with MongoDB and Mongoose');" target="_blank">Getting started with MongoDB and Mongoose</a></li>
+<li><a href="http://blog.mongodirector.com/yeoman-mongoose-and-mongodb/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/yeoman-mongoose-and-mongodb/', 'Yeoman, Mongoose and MongoDB');" target="_blank">Yeoman, Mongoose and MongoDB</a></li>
+</ul></div>
+</aside><aside id="views-2" class="widget widget_views"><h1 class="widget-title">Top5 Posts</h1><ul>
+<li><a href="./../architecting-a-restful-node-js-app/index.html"  title="Architecting a Secure RESTful Node.js app">Architecting a Secure RESTful Node.js app</a> - 215,319 views</li><li><a href="./../getting-started-with-angular-2-0/index.html"  title="Getting Started with Angular 2.0">Getting Started with Angular 2.0</a> - 177,582 views</li><li><a href="./../developing-a-mean-app-with-angular-2-0/index.html"  title="Developing a MEAN app with Angular 2.0">Developing a MEAN app with Angular 2.0</a> - 149,713 views</li><li><a href="./../getting-started-with-node-webkit-apps/index.html"  title="Node Webkit &ndash; Build Desktop Apps with Node and Web Technologies">Node Webkit &ndash; Build Desktop Apps with Node and Web Technologies</a> - 93,571 views</li><li><a href="./../rpi-live-streaming/index.html"  title="Raspberry Pi, Camera and Node.js &ndash; Live Streaming with Websockets #IoT">Raspberry Pi, Camera and Node.js &ndash; Live Streaming with Websockets #IoT</a> - 91,974 views</li></ul>
+</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h1 class="widget-title">Recent Posts</h1>		<ul>
+<li>
+<a href="./../learning-ionic/index.html">Learning Ionic</a>
+</li>
+<li>
+<a href="./../electron-wordpress-angular-material-an-offline-viewer/index.html">Electron, WordPress &#038; Angular Material &#8211; An Offline Viewer</a>
+</li>
+<li>
+<a href="./../developing-a-mean-app-with-angular-2-0/index.html">Developing a MEAN app with Angular 2.0</a>
+</li>
+<li>
+<a href="./../pushbots-and-cordova/index.html">Pushbots and Cordova &#8211; Easy Push Notifications for your app</a>
+</li>
+<li>
+<a href="./../getting-started-with-client-side-storage/index.html">Getting Started with Client Side Storage</a>
+</li>
+</ul>
+</aside><aside id="categories-2" class="widget widget_categories"><h1 class="widget-title">Categories</h1>		<ul>
+<li class="cat-item cat-item-141"><a href="./../architecture/index.html" >Architecture</a> (8)
+</li>
+<li class="cat-item cat-item-3"><a href="./../css/index.html" >CSS</a> (9)
+<ul class='children'>
+<li class="cat-item cat-item-5"><a href="./../css/css3/index.html" >CSS3</a> (6)
+</li>
+<li class="cat-item cat-item-26"><a href="./../css/less/index.html" >LESS</a> (3)
+</li>
+<li class="cat-item cat-item-55"><a href="./../css/sass/index.html" >SASS</a> (1)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-117"><a href="./../database/index.html" >Database</a> (17)
+<ul class='children'>
+<li class="cat-item cat-item-136"><a href="./../database/disk-db/index.html" >Disk DB</a> (6)
+</li>
+<li class="cat-item cat-item-131"><a href="./../database/firebase/index.html" >Firebase</a> (4)
+</li>
+<li class="cat-item cat-item-118"><a href="./../database/mongodb/index.html" >MongoDB</a> (8)
+<ul class='children'>
+<li class="cat-item cat-item-119"><a href="./../database/mongodb/mongolab/index.html" >MongoLab</a> (3)
+</li>
+<li class="cat-item cat-item-123"><a href="./../database/mongodb/monk/index.html" >Monk</a> (1)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-125"><a href="./../deployments/index.html" >Deployments</a> (4)
+<ul class='children'>
+<li class="cat-item cat-item-126"><a href="./../deployments/heroku/index.html" >Heroku</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-135"><a href="./../desktop-apps/index.html" >Desktop Apps</a> (8)
+</li>
+<li class="cat-item cat-item-155"><a href="./../dna-analysis/index.html" >DNA Analysis</a> (1)
+</li>
+<li class="cat-item cat-item-112"><a href="./../es6/index.html" >ECMAScript 6</a> (3)
+</li>
+<li class="cat-item cat-item-162"><a href="./../electron-atom-shell/index.html" >Electron (atom shell)</a> (1)
+</li>
+<li class="cat-item cat-item-25"><a href="./../frameworks/index.html" >Frameworks</a> (42)
+<ul class='children'>
+<li class="cat-item cat-item-160"><a href="./../frameworks/angular-2-0/index.html" >Angular 2.0</a> (2)
+</li>
+<li class="cat-item cat-item-108"><a href="./../frameworks/angularjs/index.html" >Angularjs</a> (21)
+</li>
+<li class="cat-item cat-item-132"><a href="./../frameworks/backbonejs/index.html" >Backbonejs</a> (1)
+</li>
+<li class="cat-item cat-item-105"><a href="./../frameworks/bootstrap/index.html" >Bootstrap</a> (9)
+</li>
+<li class="cat-item cat-item-159"><a href="./../frameworks/emberjs/index.html" >Emberjs</a> (1)
+</li>
+<li class="cat-item cat-item-56"><a href="./../frameworks/foundation/index.html" >Foundation</a> (3)
+</li>
+<li class="cat-item cat-item-110"><a href="./../frameworks/framework7/index.html" >Framework7</a> (1)
+</li>
+<li class="cat-item cat-item-107"><a href="./../frameworks/ionic/index.html" >Ionic</a> (11)
+</li>
+<li class="cat-item cat-item-157"><a href="./../frameworks/lumx/index.html" >Lumx</a> (1)
+</li>
+<li class="cat-item cat-item-138"><a href="./../frameworks/mean/index.html" >MEAN</a> (4)
+</li>
+<li class="cat-item cat-item-116"><a href="./../frameworks/meteorjs/index.html" >Meteorjs</a> (1)
+</li>
+<li class="cat-item cat-item-122"><a href="./../frameworks/onsen-ui/index.html" >Onsen UI</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-101"><a href="./../git/index.html" >Git</a> (12)
+<ul class='children'>
+<li class="cat-item cat-item-102"><a href="./../git/github/index.html" >GitHub</a> (10)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-2"><a href="./../html/index.html" >HTML</a> (22)
+<ul class='children'>
+<li class="cat-item cat-item-4"><a href="./../html/html5/index.html" >HTML5</a> (21)
+<ul class='children'>
+<li class="cat-item cat-item-158"><a href="./../html/html5/webrtc/index.html" >WebRTC</a> (1)
+</li>
+<li class="cat-item cat-item-106"><a href="./../html/html5/websockets/index.html" >WebSockets</a> (6)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-137"><a href="./../intels-app-ui/index.html" >Intel&#039;s App UI</a> (1)
+</li>
+<li class="cat-item cat-item-143"><a href="./../iot/index.html" >IoT</a> (6)
+</li>
+<li class="cat-item cat-item-1"><a href="./../javascript/index.html" >Javascript</a> (75)
+<ul class='children'>
+<li class="cat-item cat-item-6"><a href="./../javascript/jquery/index.html" >jQuery</a> (14)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-151"><a href="./../material-design/index.html" >Material Design</a> (3)
+</li>
+<li class="cat-item cat-item-99"><a href="./../mobile/index.html" >Mobile</a> (21)
+<ul class='children'>
+<li class="cat-item cat-item-103"><a href="./../mobile/android/index.html" >Android</a> (15)
+</li>
+<li class="cat-item cat-item-113"><a href="./../mobile/firefox-os/index.html" >Firefox OS</a> (2)
+</li>
+<li class="cat-item cat-item-104"><a href="./../mobile/ios/index.html" >iOS</a> (11)
+</li>
+<li class="cat-item cat-item-100"><a href="./../mobile/phonegap/index.html" >PhoneGap</a> (16)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-149"><a href="./../mqtt/index.html" >MQTT</a> (1)
+</li>
+<li class="cat-item cat-item-163"><a href="./../my-books/index.html" >My Books</a> (1)
+</li>
+<li class="cat-item cat-item-45"><a href="./../node/index.html" >Node</a> (60)
+<ul class='children'>
+<li class="cat-item cat-item-152"><a href="./../node/cli/index.html" >CLI</a> (3)
+</li>
+<li class="cat-item cat-item-121"><a href="./../node/expressjs/index.html" >Expressjs</a> (18)
+</li>
+<li class="cat-item cat-item-156"><a href="./../node/genome/index.html" >Genome</a> (1)
+</li>
+<li class="cat-item cat-item-62"><a href="./../node/grunt/index.html" >Grunt</a> (8)
+</li>
+<li class="cat-item cat-item-124"><a href="./../node/koa/index.html" >Koa</a> (1)
+</li>
+<li class="cat-item cat-item-134"><a href="./../node/node-webkit/index.html" >Node Webkit</a> (7)
+</li>
+<li class="cat-item cat-item-54"><a href="./../node/npm/index.html" >NPM</a> (15)
+</li>
+<li class="cat-item cat-item-120"><a href="./../node/restify/index.html" >Restify</a> (3)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-161"><a href="./../push-notifications/index.html" >Push Notifications</a> (1)
+</li>
+<li class="cat-item cat-item-59"><a href="./../quick-and-dirty/index.html" >Quick and Dirty</a> (42)
+</li>
+<li class="cat-item cat-item-142"><a href="./../raspberry-pi/index.html" >Raspberry Pi</a> (9)
+</li>
+<li class="cat-item cat-item-60"><a href="./../setup/index.html" >Setup</a> (60)
+</li>
+<li class="cat-item cat-item-61"><a href="./../testing/index.html" >Testing</a> (5)
+<ul class='children'>
+<li class="cat-item cat-item-129"><a href="./../testing/jasmine/index.html" >Jasmine</a> (1)
+</li>
+<li class="cat-item cat-item-128"><a href="./../testing/protractor/index.html" >Protractor</a> (1)
+</li>
+<li class="cat-item cat-item-98"><a href="./../testing/test-automation/index.html" >Test Automation</a> (1)
+</li>
+<li class="cat-item cat-item-41"><a href="./../testing/tdd/index.html" >Test Driven Developement</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-139"><a href="./../third-party-products/index.html" >Third Party Products</a> (4)
+<ul class='children'>
+<li class="cat-item cat-item-140"><a href="./../third-party-products/twilio/index.html" >Twilio</a> (4)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-58"><a href="./../tutorial/index.html" >Tutorial</a> (79)
+</li>
+<li class="cat-item cat-item-130"><a href="./../performance-analysis/index.html" >UI Performance</a> (1)
+</li>
+<li class="cat-item cat-item-109"><a href="./../web-components/index.html" >Web Components</a> (3)
+</li>
+<li class="cat-item cat-item-133"><a href="./../google-web-starter-kit/index.html" >Web Starter Kit</a> (1)
+</li>
+</ul>
+</aside><aside id="archives-2" class="widget widget_archive"><h1 class="widget-title">Archives</h1>		<ul>
+<li><a href='./../2015/07/index.html'>July 2015</a></li>
+<li><a href='./../2015/05/index.html'>May 2015</a></li>
+<li><a href='./../2015/04/index.html'>April 2015</a></li>
+<li><a href='./../2015/03/index.html'>March 2015</a></li>
+<li><a href='./../2015/02/index.html'>February 2015</a></li>
+<li><a href='./../2015/01/index.html'>January 2015</a></li>
+<li><a href='./../2014/12/index.html'>December 2014</a></li>
+<li><a href='./../2014/11/index.html'>November 2014</a></li>
+<li><a href='./../2014/10/index.html'>October 2014</a></li>
+<li><a href='./../2014/09/index.html'>September 2014</a></li>
+<li><a href='./../2014/08/index.html'>August 2014</a></li>
+<li><a href='./../2014/07/index.html'>July 2014</a></li>
+<li><a href='./../2014/06/index.html'>June 2014</a></li>
+<li><a href='./../2014/05/index.html'>May 2014</a></li>
+<li><a href='./../2014/04/index.html'>April 2014</a></li>
+<li><a href='./../2014/03/index.html'>March 2014</a></li>
+<li><a href='./../2014/02/index.html'>February 2014</a></li>
+</ul>
+</aside><aside id="wysija-3" class="widget widget_wysija"><h1 class="widget-title">Inform me about new posts</h1><div class="widget_wysija_cont"><div id="msg-form-wysija-3" class="wysija-msg ajax"></div><form id="form-wysija-3" method="post" action="#wysija" class="widget_wysija">
+<p class="wysija-paragraph">
+<label>Email <span class="wysija-required">*</span></label>
+<input type="text" name="wysija[user][email]" class="wysija-input validate[required,custom[email]]" title="Email"  value="" />
+<span class="abs-req">
+<input type="text" name="wysija[user][abs][email]" class="wysija-input validated[abs][email]" value="" />
+</span>
+</p>
+<input class="wysija-submit wysija-submit-field" type="submit" value="Subscribe!" />
+<input type="hidden" name="form_id" value="1" />
+<input type="hidden" name="action" value="save" />
+<input type="hidden" name="controller" value="subscribers" />
+<input type="hidden" value="1" name="wysija-page" />
+<input type="hidden" name="wysija[user_list][list_ids]" value="3" />
+</form></div></aside>	</div><!-- #secondary -->
+	<script>
+var _prum = [['id', '544090ababe53d0e3e76d6ce'],
+['mark', 'firstbyte', (new Date()).getTime()]];
+(function() {
+var s = document.getElementsByTagName('script')[0]
+, p = document.createElement('script');
+p.async = 'async';
+p.src = '//rum-static.pingdom.net/prum.min.js';
+s.parentNode.insertBefore(p, s);
+})();
+</script>
+</div><!-- #content -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info">
+All Rights Reserved
+<span class="sep"> | </span>
+The Jackal of Javascript
+</div><!-- .site-info -->
+<div class="rnd-circle" style="background: black;width: 10px;height: 10px;border-radius: 50%;"></div>
+</footer><!-- #colophon -->
+</div><!-- #page -->
+<script type='text/javascript'><!--
+var seriesdropdown = document.getElementById("orgseries_dropdown");
+if (seriesdropdown) {
+function onSeriesChange() {
+if ( seriesdropdown.options[seriesdropdown.selectedIndex].value != ( 0 || -1 ) ) {
+location.href = "./series/"+seriesdropdown.options[seriesdropdown.selectedIndex].value;
+}
+}
+seriesdropdown.onchange = onSeriesChange;
+}
+--></script>
+<script type="text/javascript">
+// <![CDATA[
+var disqus_shortname = 'thejackalofjavascriptcom';
+(function () {
+var nodes = document.getElementsByTagName('span');
+for (var i = 0, url; i < nodes.length; i++) {
+if (nodes[i].className.indexOf('dsq-postid') != -1) {
+nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+url = nodes[i].parentNode.href.split('#', 1);
+if (url.length == 1) { url = url[0]; }
+else { url = url[1]; }
+nodes[i].parentNode.href = url + '#disqus_thread';
+}
+}
+var s = document.createElement('script'); 
+s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+// ]]>
+</script>
+<div class="scroll-back-to-top-wrapper">
+<span class="scroll-back-to-top-inner">
+<i class="fa fa-2x fa-arrow-circle-up"></i>
+</span>
+</div>
+<style type="text/css">
+#wpfront-notification-bar 
+{
+background: #242d36;
+background: -moz-linear-gradient(top, #242d36 0%, #242d36 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#242d36), color-stop(100%,#242d36));
+background: -webkit-linear-gradient(top, #242d36 0%,#242d36 100%);
+background: -o-linear-gradient(top, #242d36 0%,#242d36 100%);
+background: -ms-linear-gradient(top, #242d36 0%,#242d36 100%);
+background: linear-gradient(to bottom, #242d36 0%, #242d36 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242d36', endColorstr='#242d36',GradientType=0 );
+}
+#wpfront-notification-bar div.wpfront-message
+{
+color: #ffffff;
+}
+#wpfront-notification-bar a.wpfront-button
+{
+background: #f45145;
+background: -moz-linear-gradient(top, #f45145 0%, #f45145 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f45145), color-stop(100%,#f45145));
+background: -webkit-linear-gradient(top, #f45145 0%,#f45145 100%);
+background: -o-linear-gradient(top, #f45145 0%,#f45145 100%);
+background: -ms-linear-gradient(top, #f45145 0%,#f45145 100%);
+background: linear-gradient(to bottom, #f45145 0%, #f45145 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f45145', endColorstr='#f45145',GradientType=0 );
+color: #ffffff;
+}
+#wpfront-notification-bar-open-button
+{
+background-color: #00b7ea;
+}
+#wpfront-notification-bar  div.wpfront-close 
+{
+border: 1px solid #555555;
+background-color: #555555;
+color: #000000;
+}
+#wpfront-notification-bar  div.wpfront-close:hover 
+{
+border: 1px solid #aaaaaa;
+background-color: #aaaaaa;
+}
+</style>
+<div id="wpfront-notification-bar-spacer"  style="display: none;">
+<div id="wpfront-notification-bar-open-button" class="top wpfront-bottom-shadow"></div>
+<div id="wpfront-notification-bar" class="wpfront-fixed">
+<div class="wpfront-close">X</div>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<div class="wpfront-message">
+Learn your way around Ionic framework. Check out Learning Ionic!                     </div>
+<div>
+<a class="wpfront-button" href="https://www.packtpub.com/application-development/learning-ionic/?utm_source=Jkthejackalofjavascript&utm_medium=referral&utm_campaign=1783552603"  target="_blank" >Buy</a>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<style type="text/css">
+.wpfront-message{line-height:27px; vertical-align:baseline !important;}</style>
+<script type="text/javascript">if(typeof wpfront_notification_bar == "function") wpfront_notification_bar({"position":1,"height":0,"fixed_position":"on","animate_delay":0.5,"close_button":true,"button_action_close_bar":false,"auto_close_after":0,"display_after":1,"is_admin_bar_showing":false,"display_open_button":false,"keep_closed":"on","keep_closed_for":1,"position_offset":0,"display_scroll":"on","display_scroll_offset":100});</script><script type='text/javascript' src='./../wp-content/plugins/jetpack/modules/photon/photon.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var scrollBackToTop = {"scrollDuration":"500","fadeDuration":"0.5"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./../wp-content/plugins/scroll-back-to-top/assets/js/scroll-back-to-top.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/simple-share-buttons-adder/js/ssba.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var viewsCacheL10n = {"admin_ajax_url":".\/wp-admin\/admin-ajax.php","post_id":"2162"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./../wp-content/plugins/wp-postviews/postviews-cache.js'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js'></script>
+<script type='text/javascript' src='./../wp-content/themes/sorbet/js/menus.js'></script>
+<script type='text/javascript' src='./../wp-content/themes/sorbet/js/skip-link-focus-fix.js'></script>
+<script type='text/javascript' src='./../wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/lazy-load/js/jquery.sonar.min.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/lazy-load/js/lazy-load.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/jetpack/_inc/postmessage.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/jetpack/_inc/jquery.jetpack-resize.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/jetpack/_inc/jquery.inview.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/jetpack/modules/likes/queuehandler.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/wysija-newsletters/js/validate/languages/jquery.validationEngine-en.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/wysija-newsletters/js/validate/jquery.validationEngine.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wysijaAJAX = {"action":"wysija_ajax","controller":"subscribers","ajaxurl":".\/wp-admin\/admin-ajax.php","loadingTrans":"Loading...","is_rtl":""};
+var wysijaAJAX = {"action":"wysija_ajax","controller":"subscribers","ajaxurl":".\/wp-admin\/admin-ajax.php","loadingTrans":"Loading...","is_rtl":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./../wp-content/plugins/wysija-newsletters/js/front-subscribers.js'></script>
+<iframe src='http://widgets.wp.com/likes/master.html?ver=20141028#ver=20141028' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+<script type="text/javascript">
+jQuery.noConflict();
+(function( $ ) {
+$(function() {
+// More code using $ as alias to jQuery
+$("area[href*=#],a[href*=#]:not([href=#]):not([href^='#tab']):not([href^='#quicktab']):not([href^='#pane'])").click(function() {
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+var target = $(this.hash);
+target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+if (target.length) {
+$('html,body').animate({
+scrollTop: target.offset().top - 20  
+},900 ,'easeOutQuint');
+return false;
+}
+}
+});
+});
+})(jQuery);	
+</script>				
+<script type='text/javascript' src='http://stats.wp.com/e-201746.js' async defer></script>
+<script type='text/javascript'>
+_stq = window._stq || [];
+_stq.push([ 'view', {v:'ext',j:'1:3.7',blog:'70838519',post:'2162',tz:'5.5',srv:'thejackalofjavascript.com'} ]);
+_stq.push([ 'clickTrackerInit', '70838519', '2162' ]);
+</script>
+<div id="upprev_box"><h6>Read previous post:</h6><div class="upprev_excerpt"><h5><a href="./../ionic-twilio-and-node-scheduler-part-1/index.html" rel="Getting Started with Raspberry pi and Node.js">Ionic, Twilio and Node Scheduler &#8211; A Reminder App &#8211; Part I [Server]</a></h5><p>Ionic, Twilio and Node Scheduler - A Reminder App - Part I [Server] In this post, we will take a...</p></div><a id="upprev_close" href="#" rel="close">Close</a></div><script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-47881846-1', 'auto');
+ga('send', 'pageview');
+</script>
+<a style="display:none;" href="http://www.alexa.com/siteinfo/./"><script type="text/javascript" src="http://xslt.alexa.com/site_stats/js/t/a?url=./"></script></a>
+</body>
+</html><script>if(document.getElementById('to-contents') == null){ } else {var a = document.getElementById('to-contents').getElementsByTagName('a'); for(var i=0; i< a.length;i++){var b = a[i].getAttribute('href').split('#');if(b.length >=2)a[i].setAttribute('href', '#'+b[1]);}}</script>
+<script>if(typeof jQuery == 'function'){jQuery('.widgetGuts.shortcode h3').html('Inform Me About New Posts')}</script><!-- WP Fastest Cache file was created in 3.95160198212 seconds, on 18-11-17 14:19:05 -->

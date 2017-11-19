@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="alexaVerifyID" content="tHZTfJpU56tqERN4vjth74jHqBM"/>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="./../xmlrpc.php">
+<!-- <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'> -->
+<link rel="shortcut icon" href="./../wp-content/uploads/2014/02/favicon.ico" type="image/x-icon">
+<meta name="keywords" content="Javascript, HTML5, CSS3, ES6, Ecmascript, Hybrid Apps, Mobile Web Development, Desktop Apps, Apps, Arvind R, Arvind Ravulavaru, The Jackal of Javascript">
+<link rel="icon" href="./../wp-content/uploads/2014/02/favicon.ico" type="image/x-icon">
+<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'> -->
+<link rel="stylesheet" type="text/css" href="./../wp-content/cache/wpfc-minified/61cc3c87f2aa625d55d3026ecc452e96/1511014149index.css" media="all"/>
+<!-- Performance scores of this site is tuned by WP Performance Score Booster plugin v1.5 - http://wordpress.org/plugins/wp-performance-score-booster -->
+<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="1QBi99oBZzn4xisTyRUgPd4BXjQ-6Tu09iK6V_bviIY" />
+<meta name="msvalidate.01" content="33E048D3C4E943B6450230EA909E12C6" />
+<meta name="p:domain_verify" content="662a829c1b5ccc13015f1cc5d00ec7e4" />
+<!-- This site is optimized with the Yoast SEO plugin v3.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Pushbots and Cordova - Easy Push Notifications for your app | The Jackal of Javascript</title>
+<meta name="description" content="A few days ago Francisco Merino requested a post for implementing push notifications for a Phonegap/Cordova app. He was looking for a simple solution to st"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="./index.html" />
+<link rel="publisher" href="https://plus.google.com/ArvindRavulavaru"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Pushbots and Cordova - Easy Push Notifications for your app | The Jackal of Javascript" />
+<meta property="og:description" content="A few days ago Francisco Merino requested a post for implementing push notifications for a Phonegap/Cordova app. He was looking for a simple solution to st" />
+<meta property="og:url" content="./pushbots-and-cordova/" />
+<meta property="og:site_name" content="The Jackal of Javascript" />
+<meta property="article:publisher" content="https://www.facebook.com/arvindravulavaru" />
+<meta property="article:section" content="Android" />
+<meta property="article:published_time" content="2015-04-27T15:42:07+05:30" />
+<meta property="article:modified_time" content="2015-04-27T17:14:46+05:30" />
+<meta property="og:updated_time" content="2015-04-27T17:14:46+05:30" />
+<meta property="og:image" content="./wp-content/uploads/2015/04/Screen-Shot-2015-04-20-at-9.42.10-am-451x230.png" />
+<meta property="og:image" content="./wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-10.36.30-am-451x280.png" />
+<meta property="og:image" content="./wp-content/uploads/2015/04/Screen-Shot-2015-04-20-at-10.37.01-am-201x300.png" />
+<meta property="og:image" content="./wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-10.40.46-am-451x205.png" />
+<meta property="og:image" content="./wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-10.42.33-am-451x243.png" />
+<meta property="og:image" content="./wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-10.51.57-am-451x137.png" />
+<meta property="og:image" content="./wp-content/uploads/2015/04/Screenshot_2015-04-27-10-53-18-169x300.png" />
+<meta property="og:image" content="./wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-11.04.34-am-451x270.png" />
+<meta property="og:image" content="./wp-content/uploads/2015/04/Screenshot_2015-04-27-11-04-58-169x300.png" />
+<meta property="og:image" content="./wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-11.19.55-am-451x208.png" />
+<meta property="og:image" content="./wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-11.17.55-am-451x68.png" />
+<meta property="og:image" content="./wp-content/uploads/2015/04/Screenshot_2015-04-27-11-15-37-169x300.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="A few days ago Francisco Merino requested a post for implementing push notifications for a Phonegap/Cordova app. He was looking for a simple solution to st" />
+<meta name="twitter:title" content="Pushbots and Cordova - Easy Push Notifications for your app | The Jackal of Javascript" />
+<meta name="twitter:site" content="@arvindr21" />
+<meta name="twitter:image" content="./wp-content/uploads/2015/04/Screen-Shot-2015-04-20-at-9.42.10-am-451x230.png" />
+<meta name="twitter:creator" content="@arvindr21" />
+<!-- / Yoast SEO plugin. -->
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js"}};
+!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='savrix-style.css-css'  href='./wp-content/plugins/savrix-android-market/savrix-style-only-play.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='validate-engine-css-css'  href='./wp-content/plugins/wysija-newsletters/css/validationEngine.jquery.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='crayon-css'  href='./wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='crayon-theme-arduino-ide-css'  href='./wp-content/plugins/crayon-syntax-highlighter/themes/arduino-ide/arduino-ide.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='crayon-font-droid-sans-mono-css'  href='./wp-content/plugins/crayon-syntax-highlighter/fonts/droid-sans-mono.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='orgseries-default-css-css'  href='./wp-content/plugins/organize-series/orgSeries.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='responsive-lightbox-prettyphoto-css'  href='./wp-content/plugins/responsive-lightbox/assets/prettyphoto/css/prettyPhoto.css' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./../wp-content/cache/wpfc-minified/9f9f3b5f286a1b327e6bb0fdb1185c24/1511014149index.css" media="all"/>
+<link rel='stylesheet' id='font-awesome-css'  href='//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css' type='text/css' media='screen' />
+<!-- <link rel='stylesheet' id='ssbaFont-css'  href='//fonts.googleapis.com/css?family=Indie+Flower&#038;ver=4.2.16' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='wpfront-notification-bar-css'  href='./wp-content/plugins/wpfront-notification-bar/css/wpfront-notification-bar.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-style-css'  href='./wp-content/themes/sorbet/style.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-source-sans-pro-css'  href='http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext&#038;ver=4.2.16' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-pt-serif-css'  href='http://fonts.googleapis.com/css?family=PT+Serif%3A400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext&#038;ver=4.2.16' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-genericons-css'  href='./wp-content/themes/sorbet/genericons/genericons.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='easy_table_style-css'  href='./wp-content/plugins/easy-table/themes/default/style.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='upprev-css-css'  href='./wp-content/plugins/upprev/styles/upprev.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='jetpack_css-css'  href='./wp-content/plugins/jetpack/css/jetpack.css' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./../wp-content/cache/wpfc-minified/3af13bcd925b3eaa358c8ad5070bb07b/1511014148index.css" media="all"/>
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.6 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+__gaTracker('create', 'UA-47881846-1', 'auto');
+__gaTracker('set', 'forceSSL', true);
+__gaTracker('require', 'displayfeatures');
+__gaTracker('send','pageview');
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type="text/javascript">
+var iworks_upprev = { animation: 'flyout', position: 'right', offset_percent: 75, offset_element: '#comments', css_width: 360, css_side: 5, compare: 'simple', url_new_window: 0, ga_track_views: 1, ga_track_clicks: 1, ga_opt_noninteraction: 1, title: 'Pushbots and Cordova &#8211; Easy Push Notifications for your app' };
+</script>
+<script src='./../wp-content/cache/wpfc-minified/1f21a7a8ca343ebb57ffeb4ab24afbd9/1511014152index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='./wp-includes/js/jquery/jquery.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-includes/js/jquery/jquery-migrate.min.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/jetpack/modules/related-posts/related-posts.js'></script> -->
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":".\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script src='./../wp-content/cache/wpfc-minified/052c748258385b6c23fc6642e73a4285/1511014152index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='./wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/responsive-lightbox/assets/prettyphoto/js/jquery.prettyPhoto.js'></script> -->
+<script type='text/javascript'>
+/* <![CDATA[ */
+var rlArgs = {"script":"prettyphoto","selector":"lightbox","customEvents":"","activeGalleries":"1","animationSpeed":"normal","slideshow":"0","slideshowDelay":"5000","slideshowAutoplay":"0","opacity":"0.75","showTitle":"1","allowResize":"1","allowExpand":"1","width":"1080","height":"720","separator":"\/","theme":"pp_default","horizontalPadding":"20","hideFlash":"0","wmode":"opaque","videoAutoplay":"0","modal":"0","deeplinking":"0","overlayGallery":"1","keyboardShortcuts":"1","social":"0"};
+/* ]]> */
+</script>
+<script src='./../wp-content/cache/wpfc-minified/d57c91500961bea5aea0e849cf08f7e7/1511014151index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='./wp-content/plugins/responsive-lightbox/js/front.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/wpfront-notification-bar/jquery-plugins/jquery.c.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/wpfront-notification-bar/js/wpfront-notification-bar.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/upprev/scripts/upprev.js'></script> -->
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<meta name="generator" content="WordPress 4.2.16" />
+<style>
+.scroll-back-to-top-wrapper {
+position: fixed;
+opacity: 0;
+visibility: hidden;
+overflow: hidden;
+text-align: center;
+z-index: 99999999;
+background-color: #777777;
+color: #eeeeee;
+width: 50px;
+height: 48px;
+line-height: 48px;
+right: 30px;
+bottom: 30px;
+padding-top: 2px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+.scroll-back-to-top-wrapper:hover {
+background-color: #888888;
+color: #eeeeee;
+}
+.scroll-back-to-top-wrapper.show {
+visibility:visible;
+cursor:pointer;
+opacity: 1.0;
+}
+.scroll-back-to-top-wrapper i.fa {
+line-height: inherit;
+}
+.scroll-back-to-top-wrapper .fa-lg {
+vertical-align: 0;
+}
+</style><style type="text/css">	.ssba {
+}
+.ssba img
+{
+width: 35px !important;
+padding: 6px;
+border:  0;
+box-shadow: none !important;
+display: inline !important;
+vertical-align: middle;
+}
+.ssba, .ssba a
+{
+text-decoration:none;
+border:0;
+background: none;
+font-family: Indie Flower;
+font-size: 	20px;
+}.ssba_sharecount:after, .ssba_sharecount:before {
+right: 100%;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+}
+.ssba_sharecount:after {
+border-color: rgba(224, 221, 221, 0);
+border-right-color: #f5f5f5;
+border-width: 5px;
+top: 50%;
+margin-top: -5px;
+}
+.ssba_sharecount:before {
+border-color: rgba(85, 94, 88, 0);
+border-right-color: #e0dddd;
+border-width: 6px;
+top: 50%;
+margin-top: -6px;
+}
+.ssba_sharecount {
+font: 11px Arial, Helvetica, sans-serif;
+padding: 5px;
+-khtml-border-radius: 6px;
+-o-border-radius: 6px;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+position: relative;
+border: 1px solid #e0dddd;color: #555e58;
+background: #ffffff;
+}
+.ssba_sharecount:after {
+border-right-color: #ffffff;
+}</style><style id="popup-maker-themes"  type="text/css">/* Popup Theme 2995: Default Theme */
+.popmake-overlay.theme-2995, .popmake-overlay.theme-default-theme { background-color: rgba( 255, 255, 255, 1 ) } 
+.popmake.theme-2995, .popmake.theme-default-theme { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1 ) } 
+.popmake.theme-2995 .popmake-title, .popmake.theme-default-theme .popmake-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: inherit; font-size: 32px; font-style: normal; line-height: 36px } 
+.popmake.theme-2995 .popmake-content, .popmake.theme-default-theme .popmake-content { color: #8c8c8c; font-family: inherit; font-weight: inherit; font-style: normal } 
+.popmake.theme-2995 > .popmake-close, .popmake.theme-default-theme > .popmake-close { height: 20px; width: 20px; left: auto; right: 0px; bottom: auto; top: 0px; padding: 8px; color: #ffffff; font-family: inherit; font-weight: inherit; font-size: 12px; font-style: normal; line-height: 14px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1 ) } 
+</style>
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+<link rel='dns-prefetch' href='//widgets.wp.com'>
+<link rel='dns-prefetch' href='//s0.wp.com'>
+<link rel='dns-prefetch' href='//0.gravatar.com'>
+<link rel='dns-prefetch' href='//1.gravatar.com'>
+<link rel='dns-prefetch' href='//2.gravatar.com'>
+<style type="text/css">
+#upprev_box{bottom:5px;width:360px;right:5px;display:block;right:-415px;display:block;}
+</style>
+</head>
+<body class="single single-post postid-2909 single-format-standard right-sidebar">
+<div id="page" class="hfeed site">
+<header id="masthead" class="site-header" role="banner">
+<div class="site-header-wrapper">
+<div class="site-branding">
+<h1 class="site-title"><a href="./../index.html" rel="home">The Jackal of Javascript</a></h1>
+<h2 class="site-description">Knowing is different &amp; Doing is different</h2>
+</div>
+<div class="toggles">
+<div id="menu-toggle" class="toggle active" title="Menu"><span class="screen-reader-text">Menu</span></div>
+<div id="search-toggle" class="toggle" title="Search"><span class="screen-reader-text">Search</span></div>
+</div>
+</div>
+</header><!-- #masthead -->
+<div id="menu-toggle-nav" class="panel">
+<nav id="site-navigation" class="main-navigation" role="navigation">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<div class="menu-main-container"><ul id="menu-main" class="menu"><li id="menu-item-2579" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2579"><a href="./../index.html">Home</a></li>
+<li id="menu-item-2595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2595"><a href="./../portfolio/index.html">About  me</a></li>
+<li id="menu-item-2580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2580"><a href="./../history-of-the-web/index.html">History of the Web</a></li>
+<li id="menu-item-2726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2726"><a href="./../javascript-101/index.html">Javascript 101</a></li>
+<li id="menu-item-2581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2581"><a href="./../contact-request/index.html">Request</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+</div>
+<div id="search-toggle-nav" class="panel">
+<div class="search-wrapper">
+<form role="search" method="get" class="search-form" action="./../index.html">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+</label>
+<input type="submit" class="search-submit" value="Search">
+</form>
+</div>
+</div>
+<div id="content" class="site-content">
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<article id="post-2909" class="post-2909 post type-post status-publish format-standard hentry category-android category-javascript category-mobile category-node category-phonegap category-push-notifications category-quick-and-dirty category-setup category-tutorial">
+<header class="entry-header">
+<h1 class="entry-title">Pushbots and Cordova &#8211; Easy Push Notifications for your app</h1>	</header><!-- .entry-header -->
+<div class="entry-content">
+<!-- Simple Share Buttons Adder (6.1.5) simplesharebuttons.com --><div class="ssba ssba-wrap"><div style="text-align:left"><a href="http://twitter.com/share?url=./pushbots-and-cordova/&amp;text=Pushbots+and+Cordova+%E2%80%93+Easy+Push+Notifications+for+your+app+From+The+Jackal+of+Javascript+by+%40arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://twitter.com/share?url=./pushbots-and-cordova/&amp;text=Pushbots+and+Cordova+%E2%80%93+Easy+Push+Notifications+for+your+app+From+The+Jackal+of+Javascript+by+%40arvindr21', '');" data-site="" class="ssba_twitter_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /></noscript></a><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=./pushbots-and-cordova/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.linkedin.com/shareArticle?mini=true&amp;url=./pushbots-and-cordova/', '');" data-site="linkedin" class="ssba_linkedin_share ssba_share_link"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="https://plus.google.com/share?url=./pushbots-and-cordova/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://plus.google.com/share?url=./pushbots-and-cordova/', '');" data-site="" class="ssba_google_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="http://reddit.com/submit?url=./pushbots-and-cordova/&amp;title=Pushbots and Cordova &#8211; Easy Push Notifications for your app" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://reddit.com/submit?url=./pushbots-and-cordova/&amp;title=Pushbots and Cordova &#8211; Easy Push Notifications for your app', '');" data-site="reddit" class="ssba_reddit_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="https://bufferapp.com/add?url=./pushbots-and-cordova/&amp;text=From The Jackal of Javascript Pushbots and Cordova &#8211; Easy Push Notifications for your app" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://bufferapp.com/add?url=./pushbots-and-cordova/&amp;text=From The Jackal of Javascript Pushbots and Cordova &#8211; Easy Push Notifications for your app', '');" data-site="buffer" class="ssba_buffer_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /></noscript></a><a href="https://flattr.com/submit/auto?user_id=arvindr21&amp;title=Pushbots and Cordova &#8211; Easy Push Notifications for your app&amp;url=https://flattr.com/profile/arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://flattr.com/submit/auto?user_id=arvindr21&amp;title=Pushbots and Cordova &#8211; Easy Push Notifications for your app&amp;url=https://flattr.com/profile/arvindr21', '');" data-site="flattr" class="ssba_flattr_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /></noscript></a><a data-site="email" class="ssba_email_share" href="./../cdn-cgi/l/email-protection/index.html#211e5254434b4442551c71545249434e555201404f4501624e53454e57400104131702191310101a01644052580171545249016f4e55484748424055484e4f5201474e5301584e54530140515107404c511a434e45581c67534e4c01754944016b40424a404d014e47016b405740524253485155041311495555511b0e0e5549444b40424a404d4e474b4057405242534851550f424e4c0e51545249434e55520c404f450c424e53454e57400e"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /></noscript></a><a data-site="print" class="ssba_print ssba_share_link" href="#" onclick="window.print()"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /></noscript></a></div></div><p>A few days ago Francisco Merino requested a post for implementing push notifications for a Phonegap/Cordova app. He was looking for a simple solution to start off. So, here is the post.</p>
+<p>In this post, we will be sending push notifications to a device using the Pushbots dashboard as well from its Nodejs API.</p>
+<p>Pushbots&#8217;s notification service is pretty simple to use and is one of the best solution if you are planning to send notification to all the devices at once. You can read more about pushbots <a href="https://pushbots.com/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://pushbots.com/', 'here');" target="_blank">here</a>.</p>
+<p>A quick demo of the app we are building</p>
+<p style="text-align: center;"><span style="font-size: 18px;">
+<!-- iframe plugin v.4.2 wordpress.org/plugins/iframe/ -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AS_Kr6Kz73k?rel=0" frameborder="0" allowfullscreen scrolling="yes" class="iframe-class"></iframe>
+</span></p>
+<p style="text-align: left;"><span style="font-size: 18px;">You can find the completed code </span><a href="https://github.com/arvindr21/pushbots-cordova" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/arvindr21/pushbots-cordova', 'here');" style="font-size: 18px;"  target="_blank">here</a><span style="font-size: 18px;">.</span></p>
+<p>So, let us get started.</p>
+<h2>What is a Push Notification?</h2>
+<p>If you are new to push notifications, take a look at this</p>
+<p style="text-align: center;">
+<!-- iframe plugin v.4.2 wordpress.org/plugins/iframe/ -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ATYhOlK11QM" frameborder="0" allowfullscreen scrolling="yes" class="iframe-class"></iframe>
+</p>
+<h2>Setup Pushbots</h2>
+<p>Navigate to the <a href="https://pushbots.com/auth/register" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://pushbots.com/auth/register', 'Pushbots Signup page');" title="register"  target="_blank">Pushbots Signup page</a> and create an account. You will be sent an activation mail and once you activate your account, you can login. You will be taken to your dashboard, and it should look something like</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-20-at-9.42.10-am.png" data-rel="lightbox-0" title=""><img class="size-medium wp-image-2910 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-20-at-9.42.10-am-451x230.png?resize=451%2C230" alt="Screen Shot 2015-04-20 at 9.42.10 am" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2910 aligncenter" src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-20-at-9.42.10-am-451x230.png?resize=451%2C230" alt="Screen Shot 2015-04-20 at 9.42.10 am" data-recalc-dims="1" /></noscript></a></p>
+<p>From the bottom of this page, create a new app. Let is calls it <em>testPushApp</em> and hit the return key. This will create a new project.</p>
+<p>Next, we need to obtain the Apple Push Certificate and Android&#8217;s GCM API Key. You can follow the step by step guide below</p>
+<ul>
+<li><a href="https://pushbots.com/developer/docs/phonegap#Android" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://pushbots.com/developer/docs/phonegap#Android', 'Android GCM setup');" title="GCM"  target="_blank">Android GCM setup</a></li>
+<li><a href="https://pushbots.com/developer/docs/phonegap#iOS" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://pushbots.com/developer/docs/phonegap#iOS', 'Apple&#8217;s Push Certificate');" title="Apple's Push Certificate"  target="_blank">Apple&#8217;s Push Certificate</a></li>
+</ul>
+<p>After you have obtained the GMC API key and the Apple&#8217;s Push certificate, you need to head back to your app on Pushbots, Click on settings and update the same inside the Platforms&#8217;s Tab</p>
+<p><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-10.36.30-am.png" data-rel="lightbox-1" title=""><img class="size-medium wp-image-2914 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-10.36.30-am-451x280.png?resize=451%2C280" alt="Screen Shot 2015-04-27 at 10.36.30 am" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2914 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-10.36.30-am-451x280.png?resize=451%2C280" alt="Screen Shot 2015-04-27 at 10.36.30 am" data-recalc-dims="1" /></noscript></a></p>
+<h3>Develop the App</h3>
+<p>Once you have the GCM sender ID and API Key or Apple&#8217;s Push Certificate, we will scaffold a new Cordova app. For this post, I will be using only Android&#8217;s GCM values.</p>
+<p>Create a new folder named <em>testPushApp</em>. Now, scaffold a new Cordova project. Open a new terminal/prompt inside the <em>testPushApp </em>folder and run</p>
+<p style="text-align: center;">
+<span id="crayon-5a104842eea43693973105" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">cordova </span><span class="crayon-e">create </span><span class="crayon-e">myApp </span><span class="crayon-v">com</span><span class="crayon-sy">.</span><span class="crayon-v">push</span><span class="crayon-sy">.</span><span class="crayon-v">notif</span><span class="crayon-sy">.</span><span class="crayon-e">app </span><span class="crayon-v">testPushApp</span></span></span></p>
+<p>Note : Make sure you have Nodejs installed and then Cordova installed globally before executing the above statement. If you run into any issues refer <a title="PhoneGap 3 CLI Setup on Mac &amp; Windows" href="./../phonegap-3-cli-setup-mac-windows/index.html" target="_blank">PhoneGap 3 CLI Setup on Mac &amp; Windows</a>.</p>
+<p>The above command will create a new Cordova project. To test the scaffolded app, CD into <em>myApp</em> folder and run</p>
+<p style="text-align: center;">
+<span id="crayon-5a104842eea59904371219" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">cordova </span><span class="crayon-e">platform </span><span class="crayon-e">add </span><span class="crayon-v">browser</span></span></span></p>
+<p style="text-align: left;">Next, we will run the app.</p>
+<p class="p1" style="text-align: center;">
+<span id="crayon-5a104842eea64413243959" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">cordova </span><span class="crayon-v">run</span></span></span></p>
+<p>and you should the app launch in you browser and it should look like</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-20-at-10.37.01-am.png" data-rel="lightbox-2" title=""><img class="size-medium wp-image-2911 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-20-at-10.37.01-am-201x300.png?resize=201%2C300" alt="Screen Shot 2015-04-20 at 10.37.01 am" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2911 aligncenter" src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-20-at-10.37.01-am-201x300.png?resize=201%2C300" alt="Screen Shot 2015-04-20 at 10.37.01 am" data-recalc-dims="1" /></noscript></a></p>
+<p>Next, we will add Android and iOS platforms.</p>
+<p style="text-align: center;">
+<span id="crayon-5a104842eea6d476100696" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">cordova </span><span class="crayon-e">platform </span><span class="crayon-e">add </span><span class="crayon-v">android</span></span></span></p>
+<p>and</p>
+<p style="text-align: center;">
+<span id="crayon-5a104842eea73414339046" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">cordova </span><span class="crayon-e">platform </span><span class="crayon-e">add </span><span class="crayon-v">ios</span></span></span></p>
+<p>After that we will add the pushbots Cordova plugin.</p>
+<p style="text-align: center;">
+<span id="crayon-5a104842eea7a622065133" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">cordova </span><span class="crayon-e">plugin </span><span class="crayon-e">add </span><span class="crayon-v">com</span><span class="crayon-sy">.</span><span class="crayon-v">pushbots</span><span class="crayon-sy">.</span><span class="crayon-v">push</span></span></span></p>
+<p>Once the plugin is installed, open <em>www/js/index.js</em> and update the 
+<span id="crayon-5a104842eea85632884373" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">onDeviceReady</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></span></span> as shown below</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a104842eea8e736898749" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">/www/js/index.js</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">JavaScript</span></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+//... snipp
+onDeviceReady: function() {
+app.receivedEvent('deviceready');
+if (PushbotsPlugin.isAndroid()) {
+PushbotsPlugin.initializeAndroid('55347ccb17795958748b457c', '145091056519');
+} else if (PushbotsPlugin.isiOS()) {
+PushbotsPlugin.initializeiOS('55347ccb17795958748b457c');
+}
+},
+//... snipp</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a104842eea8e736898749-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eea8e736898749-2">2</div><div class="crayon-num" data-line="crayon-5a104842eea8e736898749-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eea8e736898749-4">4</div><div class="crayon-num" data-line="crayon-5a104842eea8e736898749-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eea8e736898749-6">6</div><div class="crayon-num" data-line="crayon-5a104842eea8e736898749-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eea8e736898749-8">8</div><div class="crayon-num" data-line="crayon-5a104842eea8e736898749-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eea8e736898749-10">10</div><div class="crayon-num" data-line="crayon-5a104842eea8e736898749-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eea8e736898749-12">12</div><div class="crayon-num" data-line="crayon-5a104842eea8e736898749-13">13</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a104842eea8e736898749-1"><span class="crayon-c">//... snipp</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eea8e736898749-2">&nbsp;</div><div class="crayon-line" id="crayon-5a104842eea8e736898749-3"><span class="crayon-v">onDeviceReady</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eea8e736898749-4"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">app</span><span class="crayon-sy">.</span><span class="crayon-e">receivedEvent</span><span class="crayon-sy">(</span><span class="crayon-s">'deviceready'</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5a104842eea8e736898749-5">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eea8e736898749-6"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">PushbotsPlugin</span><span class="crayon-sy">.</span><span class="crayon-e">isAndroid</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5a104842eea8e736898749-7"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">PushbotsPlugin</span><span class="crayon-sy">.</span><span class="crayon-e">initializeAndroid</span><span class="crayon-sy">(</span><span class="crayon-s">'55347ccb17795958748b457c'</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">'145091056519'</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eea8e736898749-8"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span><span class="crayon-h"> </span><span class="crayon-st">else</span><span class="crayon-h"> </span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">PushbotsPlugin</span><span class="crayon-sy">.</span><span class="crayon-e">isiOS</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5a104842eea8e736898749-9"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">PushbotsPlugin</span><span class="crayon-sy">.</span><span class="crayon-e">initializeiOS</span><span class="crayon-sy">(</span><span class="crayon-s">'55347ccb17795958748b457c'</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eea8e736898749-10"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5a104842eea8e736898749-11"><span class="crayon-sy">}</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eea8e736898749-12">&nbsp;</div><div class="crayon-line" id="crayon-5a104842eea8e736898749-13"><span class="crayon-c">//... snipp</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0105 seconds] -->
+<p>Things to notice</p>
+<p>55347ccb17795958748b457c &#8211; is the application id from your Pushbots dashboard</p>
+<p><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-10.40.46-am.png" data-rel="lightbox-3" title=""><img class="size-medium wp-image-2915 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-10.40.46-am-451x205.png?resize=451%2C205" alt="Screen Shot 2015-04-27 at 10.40.46 am" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2915 aligncenter" src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-10.40.46-am-451x205.png?resize=451%2C205" alt="Screen Shot 2015-04-27 at 10.40.46 am" data-recalc-dims="1" /></noscript></a></p>
+<p>145091056519 &#8211; is the GCM project Number from your Google developer console</p>
+<p><a href="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-10.42.33-am.png" data-rel="lightbox-4" title=""><img class="size-medium wp-image-2916 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-10.42.33-am-451x243.png?resize=451%2C243" alt="Screen Shot 2015-04-27 at 10.42.33 am" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2916 aligncenter" src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-10.42.33-am-451x243.png?resize=451%2C243" alt="Screen Shot 2015-04-27 at 10.42.33 am" data-recalc-dims="1" /></noscript></a>This all the setup you would need to integrate Pushbots with your Cordova App for iOS. For Android there is one more step.</p>
+<p>After you have added Android platform to the current project and installed the pushbots plugin, a new file named <em>pushbots.xml</em> will be created at <em>/platforms/android/res/values/pushbots.xml. </em>Open that file and update it as below</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a104842eea9b688547903" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">/platforms/android/res/values/pushbots.xml</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-mixed-highlight" title="Contains Mixed Languages"></span><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;resources&gt;
+&lt;!-- Pushbots Application ID --&gt;
+&lt;string name="pb_appid"&gt;55347ccb17795958748b457c&lt;/string&gt;
+&lt;!-- GCM Project ID --&gt;
+&lt;string name="pb_senderid"&gt;145091056519&lt;/string&gt;
+&lt;!-- Pushbots Log Level --&gt;
+&lt;string name="pb_logLevel"&gt;DEBUG&lt;/string&gt;
+&lt;/resources&gt;</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a104842eea9b688547903-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eea9b688547903-2">2</div><div class="crayon-num" data-line="crayon-5a104842eea9b688547903-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eea9b688547903-4">4</div><div class="crayon-num" data-line="crayon-5a104842eea9b688547903-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eea9b688547903-6">6</div><div class="crayon-num" data-line="crayon-5a104842eea9b688547903-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eea9b688547903-8">8</div><div class="crayon-num" data-line="crayon-5a104842eea9b688547903-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eea9b688547903-10">10</div><div class="crayon-num" data-line="crayon-5a104842eea9b688547903-11">11</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a104842eea9b688547903-1"><span class="crayon-ta">&lt;?</span><span class="crayon-e">xml </span><span class="crayon-i">version</span><span class="crayon-o">=</span><span class="crayon-s">"1.0"</span><span class="crayon-h"> </span><span class="crayon-i">encoding</span><span class="crayon-o">=</span><span class="crayon-s">"utf-8"</span><span class="crayon-ta">?&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eea9b688547903-2"><span class="crayon-o">&lt;</span><span class="crayon-v">resources</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5a104842eea9b688547903-3"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-o">!</span><span class="crayon-o">--</span><span class="crayon-h"> </span><span class="crayon-e">Pushbots </span><span class="crayon-e">Application </span><span class="crayon-v">ID</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eea9b688547903-4"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-t">string</span><span class="crayon-h"> </span><span class="crayon-v">name</span><span class="crayon-o">=</span><span class="crayon-s">"pb_appid"</span><span class="crayon-o">&gt;</span><span class="crayon-cn">55347ccb17795958748b457c</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-t">string</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5a104842eea9b688547903-5">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eea9b688547903-6"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-o">!</span><span class="crayon-o">--</span><span class="crayon-h"> </span><span class="crayon-e">GCM </span><span class="crayon-e">Project </span><span class="crayon-v">ID</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5a104842eea9b688547903-7"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-t">string</span><span class="crayon-h"> </span><span class="crayon-v">name</span><span class="crayon-o">=</span><span class="crayon-s">"pb_senderid"</span><span class="crayon-o">&gt;</span><span class="crayon-cn">145091056519</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-t">string</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eea9b688547903-8">&nbsp;</div><div class="crayon-line" id="crayon-5a104842eea9b688547903-9"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-o">!</span><span class="crayon-o">--</span><span class="crayon-h"> </span><span class="crayon-e">Pushbots </span><span class="crayon-e">Log </span><span class="crayon-v">Level</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eea9b688547903-10"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-t">string</span><span class="crayon-h"> </span><span class="crayon-v">name</span><span class="crayon-o">=</span><span class="crayon-s">"pb_logLevel"</span><span class="crayon-o">&gt;</span><span class="crayon-v">DEBUG</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-t">string</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5a104842eea9b688547903-11"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">resources</span><span class="crayon-o">&gt;</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0309 seconds] -->
+<p>You can get the values from the previous step.</p>
+<p>That is it!!! Now, we can test the app.</p>
+<h2>Test the App</h2>
+<p>I am going to deploy this app on to my Android phone by running</p>
+<p style="text-align: center;">
+<span id="crayon-5a104842eeaa5774216613" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">cordova </span><span class="crayon-v">prepare</span></span></span></p>
+<p style="text-align: center;">
+<span id="crayon-5a104842eeab2827296862" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">cordova </span><span class="crayon-e">run </span><span class="crayon-v">android</span></span></span></p>
+<p>This will install the app on my device. Now if I head back to the Pushbots dashboard, and select the testPushApp you should see the number of devices updated</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-10.51.57-am.png" data-rel="lightbox-5" title=""><img class="size-medium wp-image-2917 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-10.51.57-am-451x137.png?resize=451%2C137" alt="Screen Shot 2015-04-27 at 10.51.57 am" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2917 aligncenter" src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-10.51.57-am-451x137.png?resize=451%2C137" alt="Screen Shot 2015-04-27 at 10.51.57 am" data-recalc-dims="1" /></noscript></a></p>
+<p>Now, click on Send a push link and you can enter a text and send it to all devices or only to devices you wish to target (<em>using the segmentation button below the message box</em>).</p>
+<p>When the notification is sent, you can checkout the same on your device</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screenshot_2015-04-27-10-53-18.png" data-rel="lightbox-6" title=""><img class="size-medium wp-image-2918 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screenshot_2015-04-27-10-53-18-169x300.png?resize=169%2C300" alt="Screenshot_2015-04-27-10-53-18" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2918 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screenshot_2015-04-27-10-53-18-169x300.png?resize=169%2C300" alt="Screenshot_2015-04-27-10-53-18" data-recalc-dims="1" /></noscript></a></p>
+<p>Simple and sweet!</p>
+<p>And if you want to launch a webpage when the user clicks on the notification, it is as simple as adding a custom field named openURL and the value is the link.</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-11.04.34-am.png" data-rel="lightbox-7" title=""><img class="size-medium wp-image-2919 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-11.04.34-am-451x270.png?resize=451%2C270" alt="Screen Shot 2015-04-27 at 11.04.34 am" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2919 aligncenter" src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-11.04.34-am-451x270.png?resize=451%2C270" alt="Screen Shot 2015-04-27 at 11.04.34 am" data-recalc-dims="1" /></noscript></a></p>
+<p>And when you send this notification,</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screenshot_2015-04-27-11-04-58.png" data-rel="lightbox-8" title=""><img class="size-medium wp-image-2920 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screenshot_2015-04-27-11-04-58-169x300.png?resize=169%2C300" alt="Screenshot_2015-04-27-11-04-58" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2920 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screenshot_2015-04-27-11-04-58-169x300.png?resize=169%2C300" alt="Screenshot_2015-04-27-11-04-58" data-recalc-dims="1" /></noscript></a>When the user clicks on the notification, a web page with that link would be opened.</p>
+<h2>Implementing Notifications from a Nodejs App</h2>
+<p>So far, we have used the Pushbots dashboard to send the notification. Now, we are going to send push notification programatically, thanks to the NPM module named <a href="https://github.com/pushbots/pushbots-nodejs" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/pushbots/pushbots-nodejs', 'pushbots');" target="_blank">pushbots</a>.</p>
+<p>Inside the <em>testPushApp</em> folder, create another folder named <em>myNodeApp</em>, which is at the same level as <em>myApp</em> (<em>Cordova app</em>). Open a terminal/prompt here and run</p>
+<p style="text-align: center;">
+<span id="crayon-5a104842eeac0757238322" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">npm </span><span class="crayon-v">init</span></span></span></p>
+<p>This will create a <em>package.json</em> file and should look something like</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a104842eeac6270477853" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">myNodeApp/package.json</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">JavaScript</span></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+{
+"name": "myNodeApp",
+"version": "0.1.0",
+"description": "Nodejs Pushbots App",
+"main": "index.js",
+"scripts": {
+"test": "echo \"Error: no test specified\" &amp;&amp; exit 1"
+},
+"author": "Arvind Ravulavaru",
+"license": "MIT"
+}</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a104842eeac6270477853-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eeac6270477853-2">2</div><div class="crayon-num" data-line="crayon-5a104842eeac6270477853-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eeac6270477853-4">4</div><div class="crayon-num" data-line="crayon-5a104842eeac6270477853-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eeac6270477853-6">6</div><div class="crayon-num" data-line="crayon-5a104842eeac6270477853-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eeac6270477853-8">8</div><div class="crayon-num" data-line="crayon-5a104842eeac6270477853-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eeac6270477853-10">10</div><div class="crayon-num" data-line="crayon-5a104842eeac6270477853-11">11</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a104842eeac6270477853-1"><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eeac6270477853-2"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-s">"name"</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">"myNodeApp"</span><span class="crayon-sy">,</span></div><div class="crayon-line" id="crayon-5a104842eeac6270477853-3"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-s">"version"</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">"0.1.0"</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eeac6270477853-4"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-s">"description"</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">"Nodejs Pushbots App"</span><span class="crayon-sy">,</span></div><div class="crayon-line" id="crayon-5a104842eeac6270477853-5"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-s">"main"</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">"index.js"</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eeac6270477853-6"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-s">"scripts"</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5a104842eeac6270477853-7"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-s">"test"</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eeac6270477853-8"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">}</span><span class="crayon-sy">,</span></div><div class="crayon-line" id="crayon-5a104842eeac6270477853-9"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-s">"author"</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">"Arvind Ravulavaru"</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eeac6270477853-10"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-s">"license"</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">"MIT"</span></div><div class="crayon-line" id="crayon-5a104842eeac6270477853-11"><span class="crayon-sy">}</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0086 seconds] -->
+<p>Next, we will add pushbots module to our project and save it in <em>package.json</em>. Run</p>
+<p style="text-align: center;">
+<span id="crayon-5a104842eeace831913153" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">npm </span><span class="crayon-e">install </span><span class="crayon-v">pushbots</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-v">save</span></span></span></p>
+<p>Create a new file named <em>index.js</em> at the root of the <em>myNodeApp</em> folder. And add the below code.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a104842eead4009080357" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">myNodeApp/index.js</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">JavaScript</span></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+// API : https://pushbots.com/developer/api/1
+var pushbots = require('pushbots');
+var Pushbots = new pushbots.api({
+id: '55347ccb17795958748b457c',
+secret: 'a19284bc88df42391091e2f595ad95d1'
+});
+Pushbots.setMessage("Hello from pushbots node module", 1);
+Pushbots.customFields({
+"openURL": "./"
+});
+Pushbots.push(function(response) {
+console.log('Push Response : ', response);
+});</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a104842eead4009080357-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eead4009080357-2">2</div><div class="crayon-num" data-line="crayon-5a104842eead4009080357-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eead4009080357-4">4</div><div class="crayon-num" data-line="crayon-5a104842eead4009080357-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eead4009080357-6">6</div><div class="crayon-num" data-line="crayon-5a104842eead4009080357-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eead4009080357-8">8</div><div class="crayon-num" data-line="crayon-5a104842eead4009080357-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eead4009080357-10">10</div><div class="crayon-num" data-line="crayon-5a104842eead4009080357-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104842eead4009080357-12">12</div><div class="crayon-num" data-line="crayon-5a104842eead4009080357-13">13</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a104842eead4009080357-1"><span class="crayon-c">// API : https://pushbots.com/developer/api/1</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eead4009080357-2"><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">pushbots</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">require</span><span class="crayon-sy">(</span><span class="crayon-s">'pushbots'</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5a104842eead4009080357-3"><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">Pushbots</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-v">pushbots</span><span class="crayon-sy">.</span><span class="crayon-e">api</span><span class="crayon-sy">(</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eead4009080357-4"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">id</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">'55347ccb17795958748b457c'</span><span class="crayon-sy">,</span></div><div class="crayon-line" id="crayon-5a104842eead4009080357-5"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">secret</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">'a19284bc88df42391091e2f595ad95d1'</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eead4009080357-6"><span class="crayon-sy">}</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5a104842eead4009080357-7"><span class="crayon-v">Pushbots</span><span class="crayon-sy">.</span><span class="crayon-e">setMessage</span><span class="crayon-sy">(</span><span class="crayon-s">"Hello from pushbots node module"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">1</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eead4009080357-8"><span class="crayon-v">Pushbots</span><span class="crayon-sy">.</span><span class="crayon-e">customFields</span><span class="crayon-sy">(</span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5a104842eead4009080357-9"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-s">"openURL"</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">"./"</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eead4009080357-10"><span class="crayon-sy">}</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5a104842eead4009080357-11"><span class="crayon-v">Pushbots</span><span class="crayon-sy">.</span><span class="crayon-e">push</span><span class="crayon-sy">(</span><span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-v">response</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104842eead4009080357-12"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">console</span><span class="crayon-sy">.</span><span class="crayon-e">log</span><span class="crayon-sy">(</span><span class="crayon-s">'Push Response : '</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">response</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5a104842eead4009080357-13"><span class="crayon-sy">}</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0105 seconds] -->
+<p>Things to notice</p>
+<p>Line 4, 5 : You can get the ID and secret from the Pushbots dashboard, key&#8217;s tab</p>
+<p><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-11.19.55-am.png" data-rel="lightbox-9" title=""><img class="size-medium wp-image-2921 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-11.19.55-am-451x208.png?resize=451%2C208" alt="Screen Shot 2015-04-27 at 11.19.55 am" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2921 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-11.19.55-am-451x208.png?resize=451%2C208" alt="Screen Shot 2015-04-27 at 11.19.55 am" data-recalc-dims="1" /></noscript></a>Line 7 : The message you would like to send. 1 as the last argument indicates an Android device and 0 an iOS device. You read more about the API <a href="https://pushbots.com/developer/api/1" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://pushbots.com/developer/api/1', 'API V1');" target="_blank">API V1</a>.</p>
+<p>Line 8 : The custom field property, to open a URL</p>
+<p>Line 11 : Send the push notification.</p>
+<p>If you save the file and run</p>
+<p style="text-align: center;">
+<span id="crayon-5a104842eeade483902965" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">node </span><span class="crayon-v">index</span><span class="crayon-sy">.</span><span class="crayon-v">js</span></span></span></p>
+<p>You should see</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-11.17.55-am.png" data-rel="lightbox-10" title=""><img class="size-medium wp-image-2922 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-11.17.55-am-451x68.png?resize=451%2C68" alt="Screen Shot 2015-04-27 at 11.17.55 am" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2922 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-27-at-11.17.55-am-451x68.png?resize=451%2C68" alt="Screen Shot 2015-04-27 at 11.17.55 am" data-recalc-dims="1" /></noscript></a></p>
+<p>And on your device</p>
+<p><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screenshot_2015-04-27-11-15-37.png" data-rel="lightbox-11" title=""><img class="size-medium wp-image-2923 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screenshot_2015-04-27-11-15-37-169x300.png?resize=169%2C300" alt="Screenshot_2015-04-27-11-15-37" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2923 aligncenter" src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/04/Screenshot_2015-04-27-11-15-37-169x300.png?resize=169%2C300" alt="Screenshot_2015-04-27-11-15-37" data-recalc-dims="1" /></noscript></a></p>
+<p>Hope this post gave you an idea on how to implement Push Notifications. Do remember, this same logic can be ported to any Cordova app, be it Ionic or Framework7.</p>
+<p>Another widely used push notification service is <a href="https://github.com/phonegap-build/PushPlugin" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/phonegap-build/PushPlugin', 'PushPlugin');" target="_blank">PushPlugin</a> from the Phongap team. You can check out that too.</p>
+<p>PS : The API keys&#8217;s and ID&#8217;s shown in the video or the code would not work for you, as I have already deleted those projects.</p>
+<hr />
+<p>Thanks for reading! Do comment.<br />
+@arvindr21</p>
+<!-- Simple Share Buttons Adder (6.1.5) simplesharebuttons.com --><div class="ssba ssba-wrap"><div style="text-align:left"><a href="http://twitter.com/share?url=./pushbots-and-cordova/&amp;text=Pushbots+and+Cordova+%E2%80%93+Easy+Push+Notifications+for+your+app+From+The+Jackal+of+Javascript+by+%40arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://twitter.com/share?url=./pushbots-and-cordova/&amp;text=Pushbots+and+Cordova+%E2%80%93+Easy+Push+Notifications+for+your+app+From+The+Jackal+of+Javascript+by+%40arvindr21', '');" data-site="" class="ssba_twitter_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /></noscript></a><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=./pushbots-and-cordova/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.linkedin.com/shareArticle?mini=true&amp;url=./pushbots-and-cordova/', '');" data-site="linkedin" class="ssba_linkedin_share ssba_share_link"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="https://plus.google.com/share?url=./pushbots-and-cordova/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://plus.google.com/share?url=./pushbots-and-cordova/', '');" data-site="" class="ssba_google_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="http://reddit.com/submit?url=./pushbots-and-cordova/&amp;title=Pushbots and Cordova &#8211; Easy Push Notifications for your app" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://reddit.com/submit?url=./pushbots-and-cordova/&amp;title=Pushbots and Cordova &#8211; Easy Push Notifications for your app', '');" data-site="reddit" class="ssba_reddit_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="https://bufferapp.com/add?url=./pushbots-and-cordova/&amp;text=From The Jackal of Javascript Pushbots and Cordova &#8211; Easy Push Notifications for your app" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://bufferapp.com/add?url=./pushbots-and-cordova/&amp;text=From The Jackal of Javascript Pushbots and Cordova &#8211; Easy Push Notifications for your app', '');" data-site="buffer" class="ssba_buffer_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /></noscript></a><a href="https://flattr.com/submit/auto?user_id=arvindr21&amp;title=Pushbots and Cordova &#8211; Easy Push Notifications for your app&amp;url=https://flattr.com/profile/arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://flattr.com/submit/auto?user_id=arvindr21&amp;title=Pushbots and Cordova &#8211; Easy Push Notifications for your app&amp;url=https://flattr.com/profile/arvindr21', '');" data-site="flattr" class="ssba_flattr_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /></noscript></a><a data-site="email" class="ssba_email_share" href="./../cdn-cgi/l/email-protection/index.html#9ba4e8eef9f1fef8efa6cbeee8f3f9f4efe8bbfaf5ffbbd8f4e9fff4edfabbbea9adb8a3a9aaaaa0bbdefae8e2bbcbeee8f3bbd5f4eff2fdf2f8faeff2f4f5e8bbfdf4e9bbe2f4eee9bbfaebebbdfaf6eba0f9f4ffe2a6dde9f4f6bbcff3febbd1faf8f0faf7bbf4fdbbd1faedfae8f8e9f2ebefbea9abf3efefeba1b4b4eff3fef1faf8f0faf7f4fdf1faedfae8f8e9f2ebefb5f8f4f6b4ebeee8f3f9f4efe8b6faf5ffb6f8f4e9fff4edfab4"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /></noscript></a><a data-site="print" class="ssba_print ssba_share_link" href="#" onclick="window.print()"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /></noscript></a></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-70838519-2909-5a104843b6c47' data-src='//widgets.wp.com/likes/#blog_id=70838519&amp;post_id=2909&amp;origin=thejackalofjavascript.com&amp;obj_id=70838519-2909-5a104843b6c47' data-name='like-post-frame-70838519-2909-5a104843b6c47'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>
+<div class="entry-content">
+</div><!-- .entry-content -->
+<footer class="entry-meta">
+<span class="post-date"><a href="./index.html" title="3:42 pm" rel="bookmark"><time class="entry-date" datetime="2015-04-27T15:42:07+00:00">April 27, 2015</time></a></span><span class="byline"><span class="author vcard"><a class="url fn n" href="./../author/arvind-ravulavaru/index.html" title="View all posts by Arvind Ravulavaru" rel="author">Arvind Ravulavaru</a></span></span>					</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+<nav class="navigation post-navigation" role="navigation">
+<h1 class="screen-reader-text">Post navigation</h1>
+<div class="nav-links">
+<div class="nav-previous"><a href="./../getting-started-with-client-side-storage/index.html" rel="prev"><span class="meta-nav screen-reader-text">&larr;</span></a></div><div class="nav-next"><a href="./../developing-a-mean-app-with-angular-2-0/index.html" rel="next"><span class="meta-nav screen-reader-text">&rarr;</span></a></div>		</div><!-- .nav-links -->
+</nav><!-- .navigation -->
+<div id="disqus_thread">
+<div id="dsq-content">
+<ul id="dsq-comments">
+<li class="comment even thread-even depth-1" id="dsq-comment-3123">
+<div id="dsq-comment-header-3123" class="dsq-comment-header">
+<cite id="dsq-cite-3123">
+<span id="dsq-author-user-3123">Musah Idriss Kofi</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3123" class="dsq-comment-body">
+<div id="dsq-comment-message-3123" class="dsq-comment-message"><p>Hi</p>
+<p>My name is Musah and i have a pushbots account called &#8211; RISING AFRICA</p>
+<p>I&#8217;m trying to send push notification that will open directly to the post when clicked.</p>
+<p>I tried the openURL custom field but that opens with a browser</p>
+<p>Also i did articleid, article_id and post_id but all didn&#8217;t work.</p>
+<p>I have seen all your videos but i&#8217;m still stuck.</p>
+<p>How do i fix it</p>
+<p>A notification that when clicked opens the article directly.</p>
+<p>Thank you</p>
+<p>Musah</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-3092">
+<div id="dsq-comment-header-3092" class="dsq-comment-header">
+<cite id="dsq-cite-3092">
+<span id="dsq-author-user-3092">Vinicius KBÇA</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3092" class="dsq-comment-body">
+<div id="dsq-comment-message-3092" class="dsq-comment-message"><p>it is possible to perform the direct command in the application (JS code), or only via the command line as in the example. Sorry for the english I&#8217;m from Brazil, thank you!</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="dsq-comment-3075">
+<div id="dsq-comment-header-3075" class="dsq-comment-header">
+<cite id="dsq-cite-3075">
+<span id="dsq-author-user-3075">Niklas</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3075" class="dsq-comment-body">
+<div id="dsq-comment-message-3075" class="dsq-comment-message"><p>Hello<br />
+I have done exakly what it says on the tutorials.<br />
+I have retype the code and api many times..</p>
+<p>But no device is register&#8230;</p>
+<p>Please, what can i do !!!!</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-3001">
+<div id="dsq-comment-header-3001" class="dsq-comment-header">
+<cite id="dsq-cite-3001">
+<span id="dsq-author-user-3001">f1lander</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3001" class="dsq-comment-body">
+<div id="dsq-comment-message-3001" class="dsq-comment-message"><p>I have a problem with this plugin, i get this error when a I trying to build android in ionic project ERROR building one of the platforms: Error: /Users/desarrollo/checkApp_beta/platforms/android/cordova/build: Command failed with exit code 1</p>
+<p>You may not have the required environment or OS to build this project</p>
+<p>I have all sdk android installed, i founded an error like this, it&#8217;s about android.platform v4 related with push plugin facebook, I need your help because I need implement push notifications.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="dsq-comment-2995">
+<div id="dsq-comment-header-2995" class="dsq-comment-header">
+<cite id="dsq-cite-2995">
+<span id="dsq-author-user-2995">tridox</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2995" class="dsq-comment-body">
+<div id="dsq-comment-message-2995" class="dsq-comment-message"><p>Hello Arvind, Thanks for your good tutorial. I am new to phonegap . My first mobile that i am trying out is push notification. I searched your article in google and started developing pushnotification app using phonegap. I tried all the steps provided by in this article but still i am unable to see my device in pushbots dashboard. Kindly assist. I need my first app to be successful so that i can proceed further.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-2992">
+<div id="dsq-comment-header-2992" class="dsq-comment-header">
+<cite id="dsq-cite-2992">
+<span id="dsq-author-user-2992">Mufaddal</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2992" class="dsq-comment-body">
+<div id="dsq-comment-message-2992" class="dsq-comment-message"><p>thanks for the wonderful article, i was successfully able to build and publish the app to google play, until i changed the &#8220;cordova create myApp com.push.notif.app testPushApp&#8221; while creating app to &#8220;cordova create myApp com.mpw.apps.ljapp testPushApp&#8221;.</p>
+<p>the build and run works fine, but when i sign and upload to Google Play it gives following message</p>
+<p>Your APK needs to have the package name com.push.notif.app.</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-2993">
+<div id="dsq-comment-header-2993" class="dsq-comment-header">
+<cite id="dsq-cite-2993">
+<span id="dsq-author-user-2993">Mufaddal</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2993" class="dsq-comment-body">
+<div id="dsq-comment-message-2993" class="dsq-comment-message"><p>ok, i figured out the issue, i was trying to upload the apk with different package name on the play store where i had uploaded the com.push.notif.app</p>
+<p>so creating a new application worked fine.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="dsq-comment-2919">
+<div id="dsq-comment-header-2919" class="dsq-comment-header">
+<cite id="dsq-cite-2919">
+<span id="dsq-author-user-2919">Fabian Davidson</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2919" class="dsq-comment-body">
+<div id="dsq-comment-message-2919" class="dsq-comment-message"><p>PushbotsPlugin.initializeAndroid doesn&#8217;t seem to be registreing my device, I am able to get back a token using PushbotsPlugin.getToken , but  I don&#8217;t see the device registered on <a href="https://pushbots.com/dashboard" onclick="__gaTracker('send', 'event', 'outbound-comment', 'https://pushbots.com/dashboard', 'https://pushbots.com/dashboard');" rel="nofollow">https://pushbots.com/dashboard</a> . I have push notifications set up for 1 application so far , I&#8217;m not sure why this one is not working. Any ideas?</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-3344">
+<div id="dsq-comment-header-3344" class="dsq-comment-header">
+<cite id="dsq-cite-3344">
+<span id="dsq-author-user-3344">Munib mir</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3344" class="dsq-comment-body">
+<div id="dsq-comment-message-3344" class="dsq-comment-message"><p>Any solution for this issue, we facing the same issue</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-2905">
+<div id="dsq-comment-header-2905" class="dsq-comment-header">
+<cite id="dsq-cite-2905">
+<span id="dsq-author-user-2905">Srikanth Hugar</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2905" class="dsq-comment-body">
+<div id="dsq-comment-message-2905" class="dsq-comment-message"><p>I am using cordova: 5.1.1, ionic:1.0.1 &amp; pushbots:1.2.x.</p>
+<p>My pushbots works fine in android, but ios it fails. I hvae done all the configuration and alert is displayed in ios device related to user permission for push notifications. But when i go and check in the pushbots dashboard, device is not registered. What could be the issue here?</p>
+<p>I am trying to register the device with code.</p>
+<p>if (PushbotsPlugin.isiOS()) {<br />
+PushbotsPlugin.initializeiOS(&#8216;XXXXX_MY_APP_ID_XXXXX&#8217;);<br />
+}</p>
+<p>When i check the logs from xcode</p>
+<p>[Pushbots] You&#8217;ve to call :sharedInstanceWithAppId first.<br />
+[Pushbots] :sharedInstanceWithAppId XXXXXXXMY_APPA_ID_XXXXXX.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="dsq-comment-2798">
+<div id="dsq-comment-header-2798" class="dsq-comment-header">
+<cite id="dsq-cite-2798">
+<span id="dsq-author-user-2798">Fabricio Guedes</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2798" class="dsq-comment-body">
+<div id="dsq-comment-message-2798" class="dsq-comment-message"><p>Everything done just right , OS sends push But do not receive &#8230; in the test environment &#8230; paragraph IOS need to have an account paid Developer How ?</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-2763">
+<div id="dsq-comment-header-2763" class="dsq-comment-header">
+<cite id="dsq-cite-2763">
+<span id="dsq-author-user-2763">Lohith</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2763" class="dsq-comment-body">
+<div id="dsq-comment-message-2763" class="dsq-comment-message"><p>Hi,</p>
+<p>Thanks for the great post.</p>
+<p>I have done this and its working fine. I am able to send notification through pushbots.com now.</p>
+<p>I would like to send push notification from my android device using cordova app</p>
+<p>I have a simple app containing text box and submit button. I need to send the message as push notification whenever i submit the button to all those whoever using my app. How can i achieve this.</p>
+<p>i have done upto this much.<br />
+1) cordova create hello com.hello.test pushtest<br />
+2) cd hello<br />
+3) cordova platform add android<br />
+4) cordova build android<br />
+5) cordova plugin add C:UserslokiDocumentsPushPlugin-masterPushPlugin-master</p>
+<p>plugin added successfully…</p>
+<p>I don know how to proceed further. Could you please help me out in sending push notification on click of the submit button. ?</p>
+<p>Could you please help me that how i can proceed further.</p>
+<p>Eagerly waiting for your reply,</p>
+<p>thanks</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-2764">
+<div id="dsq-comment-header-2764" class="dsq-comment-header">
+<cite id="dsq-cite-2764">
+./                <span id="dsq-author-user-2764">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2764" class="dsq-comment-body">
+<div id="dsq-comment-message-2764" class="dsq-comment-message"><p>Why do you want to send a Push notification from a mobile? Any specific use case?</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-3" id="dsq-comment-2765">
+<div id="dsq-comment-header-2765" class="dsq-comment-header">
+<cite id="dsq-cite-2765">
+<span id="dsq-author-user-2765">Lohith</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2765" class="dsq-comment-body">
+<div id="dsq-comment-message-2765" class="dsq-comment-message"><p>Hi Aravind,</p>
+<p>yes i am trying to do a demo project so if it works means i will be able to show it to colleague that instead of using Android application we can go for cordova apps which is very helpful.</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-4" id="dsq-comment-2766">
+<div id="dsq-comment-header-2766" class="dsq-comment-header">
+<cite id="dsq-cite-2766">
+./                <span id="dsq-author-user-2766">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2766" class="dsq-comment-body">
+<div id="dsq-comment-message-2766" class="dsq-comment-message"><p>You mean Native Android (Java) vs. Cordova?</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-5" id="dsq-comment-2767">
+<div id="dsq-comment-header-2767" class="dsq-comment-header">
+<cite id="dsq-cite-2767">
+<span id="dsq-author-user-2767">Lohith</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2767" class="dsq-comment-body">
+<div id="dsq-comment-message-2767" class="dsq-comment-message"><p>yes&#8230; i just wanted to show Cordova is simple as people like me who know only html, css and basic copy cat java script person can learn this. so i have created a text box with submit button so when i click on it, it should send notification to all of my app users..</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even depth-5" id="dsq-comment-2777">
+<div id="dsq-comment-header-2777" class="dsq-comment-header">
+<cite id="dsq-cite-2777">
+./                <span id="dsq-author-user-2777">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2777" class="dsq-comment-body">
+<div id="dsq-comment-message-2777" class="dsq-comment-message"><p>You can try a socket based approach, where you can run a socket server &amp; send a message from your mobile phone to the socket. </p>
+<p>If you are not familiar with approach, checkout Firebase.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="dsq-comment-2702">
+<div id="dsq-comment-header-2702" class="dsq-comment-header">
+<cite id="dsq-cite-2702">
+<span id="dsq-author-user-2702">Carlos Cuamatzin</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2702" class="dsq-comment-body">
+<div id="dsq-comment-message-2702" class="dsq-comment-message"><p>I already have my iphone registered in pushbot dashboard, i sent a push notification but my device is not receiving it. What i can be doing wrong?</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-2720">
+<div id="dsq-comment-header-2720" class="dsq-comment-header">
+<cite id="dsq-cite-2720">
+./                <span id="dsq-author-user-2720">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2720" class="dsq-comment-body">
+<div id="dsq-comment-message-2720" class="dsq-comment-message"><p>Can you see your iPhone, I mean, is there only one iPhone on the dashboard? Also, did you update the Pushbots dashboard with certificate? </p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-2614">
+<div id="dsq-comment-header-2614" class="dsq-comment-header">
+<cite id="dsq-cite-2614">
+<span id="dsq-author-user-2614">Arvind Bhardwaj</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2614" class="dsq-comment-body">
+<div id="dsq-comment-message-2614" class="dsq-comment-message"><p>That was really quick and awesome. Can you please share an article of push notifications without using third partyu services.</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-2615">
+<div id="dsq-comment-header-2615" class="dsq-comment-header">
+<cite id="dsq-cite-2615">
+./                <span id="dsq-author-user-2615">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2615" class="dsq-comment-body">
+<div id="dsq-comment-message-2615" class="dsq-comment-message"><p>Thanks Arvind! What do you mean by without using third party services? You want to host your own Push notification server?</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-3" id="dsq-comment-2618">
+<div id="dsq-comment-header-2618" class="dsq-comment-header">
+<cite id="dsq-cite-2618">
+<span id="dsq-author-user-2618">Gurpreet Hanjra</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2618" class="dsq-comment-body">
+<div id="dsq-comment-message-2618" class="dsq-comment-message"><p>3rd party services like <a href="http://apigee.com/" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://apigee.com/', 'http://apigee.com/');" rel="nofollow">http://apigee.com/</a> and so on. Some of them are paid. Which provide API services for push notifications.</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-4" id="dsq-comment-2619">
+<div id="dsq-comment-header-2619" class="dsq-comment-header">
+<cite id="dsq-cite-2619">
+./                <span id="dsq-author-user-2619">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2619" class="dsq-comment-body">
+<div id="dsq-comment-message-2619" class="dsq-comment-message"><p>Okay. so you want to use other services for your push notifications?</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-5" id="dsq-comment-2625">
+<div id="dsq-comment-header-2625" class="dsq-comment-header">
+<cite id="dsq-cite-2625">
+<span id="dsq-author-user-2625">Arvind Bhardwaj</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2625" class="dsq-comment-body">
+<div id="dsq-comment-message-2625" class="dsq-comment-message"><p>I mean using push notifications without using pushbot or onesignal. However I found a great article here: <a href="http://devgirl.org/2013/07/17/tutorial-implement-push-notifications-in-your-phonegap-application/" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://devgirl.org/2013/07/17/tutorial-implement-push-notifications-in-your-phonegap-application/', 'http://devgirl.org/2013/07/17/tutorial-implement-push-notifications-in-your-phonegap-application/');" rel="nofollow">http://devgirl.org/2013/07/17/tutorial-implement-push-notifications-in-your-phonegap-application/</a><br />
+It does not uses any third party service for push notifications.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even depth-5" id="dsq-comment-2637">
+<div id="dsq-comment-header-2637" class="dsq-comment-header">
+<cite id="dsq-cite-2637">
+./                <span id="dsq-author-user-2637">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2637" class="dsq-comment-body">
+<div id="dsq-comment-message-2637" class="dsq-comment-message"><p>Check out <a href="https://www.npmjs.com/package/node-pushserver" onclick="__gaTracker('send', 'event', 'outbound-comment', 'https://www.npmjs.com/package/node-pushserver', 'node-pushserver');" rel="nofollow">node-pushserver</a>, this has support for both Android as well as iOS push notifications.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="dsq-comment-2565">
+<div id="dsq-comment-header-2565" class="dsq-comment-header">
+<cite id="dsq-cite-2565">
+<span id="dsq-author-user-2565">fredy</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2565" class="dsq-comment-body">
+<div id="dsq-comment-message-2565" class="dsq-comment-message"><p>Thanks a lot for share with us your work, I&#8217;m a fan of your articles!</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-2566">
+<div id="dsq-comment-header-2566" class="dsq-comment-header">
+<cite id="dsq-cite-2566">
+./                <span id="dsq-author-user-2566">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2566" class="dsq-comment-body">
+<div id="dsq-comment-message-2566" class="dsq-comment-message"><p>Thanks fredy! Glad I could be of help.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-2547">
+<div id="dsq-comment-header-2547" class="dsq-comment-header">
+<cite id="dsq-cite-2547">
+<span id="dsq-author-user-2547">Francisco Merino</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2547" class="dsq-comment-body">
+<div id="dsq-comment-message-2547" class="dsq-comment-message"><p>THANK YOU VERY MUCH Arvind! We are lucky to have<br />
+people like you on this planet! <img src="./../wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /> I´m going to follow your steps now, so I will<br />
+tell you later if I found any difficulty during the process. By the way, does it<br />
+differ a lot if I use a different push notifications provider like OneSignal<br />
+(this is all FREE!), Parse, etc.? THANKS!!!!</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-2548">
+<div id="dsq-comment-header-2548" class="dsq-comment-header">
+<cite id="dsq-cite-2548">
+./                <span id="dsq-author-user-2548">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2548" class="dsq-comment-body">
+<div id="dsq-comment-message-2548" class="dsq-comment-message"><p>Hello Francisco, NP at all! Glad I could be of help. And to answer your question, all the other Push notification services work on the same lines. </p>
+<p>For example, OneSignal you can follow the same steps as we did above</p>
+<p>1. Get a OneSignal Account ( <a href="https://onesignal.com/" onclick="__gaTracker('send', 'event', 'outbound-comment', 'https://onesignal.com/', 'https://onesignal.com/');" rel="nofollow">https://onesignal.com/</a> )<br />
+2. Create a Google Project and get the project ID ( <a href="http://documentation.onesignal.com/v2.0/docs/android-generating-a-gcm-push-notification-key" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://documentation.onesignal.com/v2.0/docs/android-generating-a-gcm-push-notification-key', 'http://documentation.onesignal.com/v2.0/docs/android-generating-a-gcm-push-notification-key');" rel="nofollow">http://documentation.onesignal.com/v2.0/docs/android-generating-a-gcm-push-notification-key</a> )<br />
+3. Configure the same in OneSignal Dashboard<br />
+4. Create a Cordova app ( <a href="https://cordova.apache.org/docs/en/4.0.0/guide_cli_index.md.html#create-the-app" onclick="__gaTracker('send', 'event', 'outbound-comment', 'https://cordova.apache.org/docs/en/4.0.0/guide_cli_index.md.html#create-the-app', 'https://cordova.apache.org/docs/en/4.0.0/guide_cli_index.md.html#create-the-app');" rel="nofollow">https://cordova.apache.org/docs/en/4.0.0/guide_cli_index.md.html#create-the-app</a> )<br />
+5. Add the OneSignal Code to your Cordova app ( <a href="http://documentation.onesignal.com/v2.0/docs/phonegap-sdk-installation" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://documentation.onesignal.com/v2.0/docs/phonegap-sdk-installation', 'http://documentation.onesignal.com/v2.0/docs/phonegap-sdk-installation');" rel="nofollow">http://documentation.onesignal.com/v2.0/docs/phonegap-sdk-installation</a> )</p>
+<p>and you are done!!  Now you can use OneSignal to send notifications! </p>
+<p>Do let me know if you run into any issues.</p>
+<p>Thanks.</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-3" id="dsq-comment-2569">
+<div id="dsq-comment-header-2569" class="dsq-comment-header">
+<cite id="dsq-cite-2569">
+<span id="dsq-author-user-2569">Lucky</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2569" class="dsq-comment-body">
+<div id="dsq-comment-message-2569" class="dsq-comment-message"><p>Wow Arvind this is nice, but is Pushbots Free?, because i was able to build my push service with php for Cordova</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-4" id="dsq-comment-2573">
+<div id="dsq-comment-header-2573" class="dsq-comment-header">
+<cite id="dsq-cite-2573">
+./                <span id="dsq-author-user-2573">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2573" class="dsq-comment-body">
+<div id="dsq-comment-message-2573" class="dsq-comment-message"><p>Nope Pushbots is not free but has a free plan but onesignal is completely free.</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-5" id="dsq-comment-2574">
+<div id="dsq-comment-header-2574" class="dsq-comment-header">
+<cite id="dsq-cite-2574">
+<span id="dsq-author-user-2574">Lucky</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2574" class="dsq-comment-body">
+<div id="dsq-comment-message-2574" class="dsq-comment-message"><p>Ok. Thanks</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="dsq-comment-2540">
+<div id="dsq-comment-header-2540" class="dsq-comment-header">
+<cite id="dsq-cite-2540">
+<span id="dsq-author-user-2540">Jonathan Obino</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2540" class="dsq-comment-body">
+<div id="dsq-comment-message-2540" class="dsq-comment-message"><p>Awesome! Are you planning to do some tutorial on react/ react-native?</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-2" id="dsq-comment-2541">
+<div id="dsq-comment-header-2541" class="dsq-comment-header">
+<cite id="dsq-cite-2541">
+./                <span id="dsq-author-user-2541">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2541" class="dsq-comment-body">
+<div id="dsq-comment-message-2541" class="dsq-comment-message"><p>Thanks! I don&#8217;t know. May be in a few days.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul>
+</div>
+</div>
+<script src="./../cdn-cgi/scripts/0e574bed/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+var disqus_url = './pushbots-and-cordova/';
+var disqus_identifier = '2909 ./?p=2909';
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = 'thejackalofjavascriptcom';
+var disqus_title = "Pushbots and Cordova &#8211; Easy Push Notifications for your app";
+var disqus_config_custom = window.disqus_config;
+var disqus_config = function () {
+/*
+All currently supported events:
+onReady: fires when everything is ready,
+onNewComment: fires when a new comment is posted,
+onIdentify: fires when user is authenticated
+*/
+this.language = '';
+this.callbacks.onReady.push(function () {
+// sync comments in the background so we don't block the page
+var script = document.createElement('script');
+script.async = true;
+script.src = '?cf_action=sync_comments&post_id=2909';
+var firstScript = document.getElementsByTagName('script')[0];
+firstScript.parentNode.insertBefore(script, firstScript);
+});
+if (disqus_config_custom) {
+disqus_config_custom.call(this);
+}
+};
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+</main><!-- #main -->
+</div><!-- #primary -->
+<div id="secondary" class="widget-area" role="complementary">
+<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="./../index.html">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+</label>
+<input type="submit" class="search-submit" value="Search">
+</form>
+</aside><aside id="text-2" class="widget widget_text"><h1 class="widget-title">This is me!!</h1>			<div class="textwidget"><style>
+.socl-btn
+{
+padding: 3px;
+background: #f45145;
+border-radius: 3px;
+color: rgba(255, 255, 255, 0.6) !important;
+margin-top: 9px;
+display: inline-block;
+text-align: center;
+width:100%;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+.socl-btn:hover{
+color:#fff !important;
+}
+.lkdin{
+background-image: url(./../wp-content/uploads/2014/08/l.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+.gplus{
+background-image: url(./../wp-content/uploads/2014/08/g.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+.mongodir{
+background-image: url(./../wp-content/uploads/2014/08/m.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+.sitept{
+background-image: url(./../wp-content/uploads/2014/08/s.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+</style>
+<img src="./../wp-content/uploads/2014/02/030a49b.jpg" alt="Arvind Ravulavaru" style="width: 81px; margin: 0px auto;display: block;border-radius: 45px;"/>
+<br/>
+<label>
+Hello.. I am Arvind Ravulavaru a Full Stack Consultant based out of Hyderabad, India. This blog is my way of giving back to the Javascript Community!</label>
+<br/>
+<div style="text-align:center;" ><a  href="./../portfolio/index.html">Know more about me</a></div>
+<br/>
+<div  style="text-align:center;">
+<a href="https://twitter.com/arvindr21" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://twitter.com/arvindr21', 'Follow @arvindr21');" class="twitter-follow-button" data-show-count="false">Follow @arvindr21</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+<iframe src="http://ghbtns.com/github-btn.html?user=arvindr21&type=follow"
+allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe><br/><br/>
+<a href="http://in.linkedin.com/in/arvindravulavaru" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://in.linkedin.com/in/arvindravulavaru', 'Linked In');" target="_blank"  class="socl-btn lkdin">Linked In</a>
+<a href="https://plus.google.com/+ArvindRavulavaru" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://plus.google.com/+ArvindRavulavaru', 'Google Plus');" target="_blank"  class="socl-btn gplus">Google Plus</a><br/>
+<a href="http://blog.mongodirector.com/author/arvindr" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/author/arvindr', 'Mongo Director');" target="_blank"  class="socl-btn mongodir">Mongo Director</a> <a href="http://www.sitepoint.com/author/aravulavaru/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/author/aravulavaru/', 'Site Point');" target="_blank"  class="socl-btn sitept">Site Point</a> <br/><br/>
+<a href="https://paper.li/arvindr21/1409328222#!headlines/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://paper.li/arvindr21/1409328222#!headlines/', 'Chronicles of the Jackal of Javascript');" target="_blank"  class="socl-btn">Chronicles of the Jackal of Javascript</a>
+</div></div>
+</aside><aside id="text-5" class="widget widget_text">			<div class="textwidget"><style>
+.crm-app, .crm-ext
+{
+padding: 9px;
+background: #787878;
+border-radius: 45px;
+color: #EFEFEE !important;
+margin-top: 9px;
+display: inline-block;
+text-align: center;
+}
+</style>
+<a href="https://chrome.google.com/webstore/detail/the-jackal-of-javascript/oiaebkkgbicadojhdipjajkhjkeencdm" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://chrome.google.com/webstore/detail/the-jackal-of-javascript/oiaebkkgbicadojhdipjajkhjkeencdm', 'Chrome App');" target ="_blank" class="crm-app">Chrome App</a>
+<a href="https://chrome.google.com/webstore/detail/the-jackal-of-javascript/dokdjofgoglghfljkpmmkgfpipgcmjme" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://chrome.google.com/webstore/detail/the-jackal-of-javascript/dokdjofgoglghfljkpmmkgfpipgcmjme', 'Chrome Extension');" target ="_blank" class="crm-ext">Chrome Extension</a></div>
+</aside><aside id="text-7" class="widget widget_text"><h1 class="widget-title">Workshops</h1>			<div class="textwidget"><ul>
+<li><a href="http://mean-workshop.herokuapp.com/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://mean-workshop.herokuapp.com', 'o/ M.E.A.N. Workshop');" target="_blank">\o/ M.E.A.N. Workshop</a>
+</li>
+</ul></div>
+</aside><aside id="text-6" class="widget widget_text"><h1 class="widget-title">Presentations</h1>			<div class="textwidget"><ul>
+<li><a href="http://arvindr21.github.io/ng-overview" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/ng-overview', 'Overview of Angularjs');" target="_blank">Overview of Angularjs</a>
+</li>
+<li><a href="http://arvindr21.github.io/howBrowserWorks" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/howBrowserWorks', 'How Browser Works');" target="_blank">How Browser Works</a>
+</li>
+<li><a href="http://arvindr21.github.io/WebComponents" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/WebComponents', 'Web Components');" target="_blank">Web Components</a>
+</li>
+<li><a href="http://arvindr21.github.io/building-n-Scaffolding" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/building-n-Scaffolding', 'Modern UI Build Systems and Scaffolding Tools');" target="_blank">Modern UI Build Systems and Scaffolding Tools</a>
+</li>
+<li><a href="http://arvindr21.github.io/backbonejs" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/backbonejs', 'Backbonejs');" target="_blank">Backbonejs</a>
+</li>
+<li><a href="http://arvindr21.github.io/rwd" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/rwd', 'Responsive Web Design');" target="_blank">Responsive Web Design</a>
+</li>
+</ul></div>
+</aside><aside id="text-3" class="widget widget_text"><h1 class="widget-title">Projects</h1>			<div class="textwidget"><ul><li><a href="./../rotten-tomatoes-jquery-rest-client/index.html" target="_blank">Rotten Tomatoes jQuery Rest Client</a>
+</li>
+<li>
+<a href="./../uploading-files-made-fun/index.html" target="_blank">blueimp-file-upload-expressjs</a> - A Node Package
+</li>
+<li>
+<a href="http://arvindr21.github.io/lazyboy/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/lazyboy/', 'lazyboy');" target="_blank">lazyboy</a> - Command line laziness redefined
+</li>
+<li>
+<a href="http://arvindr21.github.io/diskDB/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/diskDB/', 'diskDB');" target="_blank">diskDB</a> - A Light Weight Disk based JSON Database - A Node Package
+</li>
+<li>
+<a href="https://github.com/search?utf8=%E2%9C%93&q=user%3Aarvindr21+slush&type=Repositories&ref=searchresults" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/search?utf8=%E2%9C%93&amp;q=user%3Aarvindr21+slush&amp;type=Repositories&amp;ref=searchresults', 'My Slush Generators');" target="_blank">My Slush Generators</a>
+</li>
+<li>
+<a href="https://github.com/search?utf8=%E2%9C%93&q=user%3Aarvindr21+yeoman&type=Repositories&ref=searchresults" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/search?utf8=%E2%9C%93&amp;q=user%3Aarvindr21+yeoman&amp;type=Repositories&amp;ref=searchresults', 'My Yeoman Generators');" target="_blank">My Yeoman Generators</a>
+</li>
+<li>
+<a href="https://github.com/arvindr21/myWebComponents#mywebcomponents" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/arvindr21/myWebComponents#mywebcomponents', 'My Web Components');" target="_blank">My Web Components</a>
+</li>
+<li>
+<a href="http://bower.io/search/?q=owner:arvindr21" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://bower.io/search/?q=owner:arvindr21', 'My Bower Packages');" target="_blank">My Bower Packages</a>
+</li>
+</ul></div>
+</aside><aside id="latestseries-2" class="widget widget_latestseries"><h1 class="widget-title">Series</h1>			<ul>
+<div class="latest-series"><ul><li><a href="./../series/a-reminder-app/index.html" class="series-145" title="Ionic, Twilio and Node Scheduler – A Reminder App">Ionic, Twilio and Node Scheduler – A Reminder App</a></li><li><a href="./../series/node-webkit-apps/index.html" class="series-150" title="Node Webkit Apps">Node Webkit Apps</a></li><li><a href="./../series/rpi/index.html" class="series-148" title="Raspberry Pi">Raspberry Pi</a></li></ul></div>			</ul>
+</aside><aside id="text-4" class="widget widget_text"><h1 class="widget-title">Guest Posts</h1>			<div class="textwidget"><ul>
+<li><a href="http://www.sitepoint.com/building-chat-app-node-webkit-firebase-angularjs/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/building-chat-app-node-webkit-firebase-angularjs/', 'Building a Chat App with node-webkit, Firebase, and AngularJS');" target="_blank">Building a Chat App with node-webkit, Firebase, and AngularJS</a></li>
+<li><a href="http://www.sitepoint.com/creating-sentiment-analysis-application-using-node-js/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/creating-sentiment-analysis-application-using-node-js/', 'Creating a Sentiment Analysis Application Using Node.js');" target="_blank">Creating a Sentiment Analysis Application Using Node.js</a></li>
+<li><a href="http://blog.mongodirector.com/implementing-pagination-with-mongodb-express-js-slush/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/implementing-pagination-with-mongodb-express-js-slush/', 'Implementing pagination with MongoDB, Express.js &amp; Slush');" target="_blank">Implementing pagination with MongoDB, Express.js & Slush</a></li>
+<li><a href="http://www.sitepoint.com/creating-firebase-powered-end-end-ionic-application/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/creating-firebase-powered-end-end-ionic-application/', 'Creating a Firebase Powered End to End Ionic Application');" target="_blank">Creating a Firebase Powered End to End Ionic Application</a></li>
+<li><a href="http://blog.mongodirector.com/getting-started-with-mongodb-and-mongoose/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/getting-started-with-mongodb-and-mongoose/', 'Getting started with MongoDB and Mongoose');" target="_blank">Getting started with MongoDB and Mongoose</a></li>
+<li><a href="http://blog.mongodirector.com/yeoman-mongoose-and-mongodb/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/yeoman-mongoose-and-mongodb/', 'Yeoman, Mongoose and MongoDB');" target="_blank">Yeoman, Mongoose and MongoDB</a></li>
+</ul></div>
+</aside><aside id="views-2" class="widget widget_views"><h1 class="widget-title">Top5 Posts</h1><ul>
+<li><a href="./../architecting-a-restful-node-js-app/index.html"  title="Architecting a Secure RESTful Node.js app">Architecting a Secure RESTful Node.js app</a> - 215,322 views</li><li><a href="./../getting-started-with-angular-2-0/index.html"  title="Getting Started with Angular 2.0">Getting Started with Angular 2.0</a> - 177,582 views</li><li><a href="./../developing-a-mean-app-with-angular-2-0/index.html"  title="Developing a MEAN app with Angular 2.0">Developing a MEAN app with Angular 2.0</a> - 149,713 views</li><li><a href="./../getting-started-with-node-webkit-apps/index.html"  title="Node Webkit &ndash; Build Desktop Apps with Node and Web Technologies">Node Webkit &ndash; Build Desktop Apps with Node and Web Technologies</a> - 93,571 views</li><li><a href="./../rpi-live-streaming/index.html"  title="Raspberry Pi, Camera and Node.js &ndash; Live Streaming with Websockets #IoT">Raspberry Pi, Camera and Node.js &ndash; Live Streaming with Websockets #IoT</a> - 91,975 views</li></ul>
+</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h1 class="widget-title">Recent Posts</h1>		<ul>
+<li>
+<a href="./../learning-ionic/index.html">Learning Ionic</a>
+</li>
+<li>
+<a href="./../electron-wordpress-angular-material-an-offline-viewer/index.html">Electron, WordPress &#038; Angular Material &#8211; An Offline Viewer</a>
+</li>
+<li>
+<a href="./../developing-a-mean-app-with-angular-2-0/index.html">Developing a MEAN app with Angular 2.0</a>
+</li>
+<li>
+<a href="./index.html">Pushbots and Cordova &#8211; Easy Push Notifications for your app</a>
+</li>
+<li>
+<a href="./../getting-started-with-client-side-storage/index.html">Getting Started with Client Side Storage</a>
+</li>
+</ul>
+</aside><aside id="categories-2" class="widget widget_categories"><h1 class="widget-title">Categories</h1>		<ul>
+<li class="cat-item cat-item-141"><a href="./../architecture/index.html" >Architecture</a> (8)
+</li>
+<li class="cat-item cat-item-3"><a href="./../css/index.html" >CSS</a> (9)
+<ul class='children'>
+<li class="cat-item cat-item-5"><a href="./../css/css3/index.html" >CSS3</a> (6)
+</li>
+<li class="cat-item cat-item-26"><a href="./../css/less/index.html" >LESS</a> (3)
+</li>
+<li class="cat-item cat-item-55"><a href="./../css/sass/index.html" >SASS</a> (1)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-117"><a href="./../database/index.html" >Database</a> (17)
+<ul class='children'>
+<li class="cat-item cat-item-136"><a href="./../database/disk-db/index.html" >Disk DB</a> (6)
+</li>
+<li class="cat-item cat-item-131"><a href="./../database/firebase/index.html" >Firebase</a> (4)
+</li>
+<li class="cat-item cat-item-118"><a href="./../database/mongodb/index.html" >MongoDB</a> (8)
+<ul class='children'>
+<li class="cat-item cat-item-119"><a href="./../database/mongodb/mongolab/index.html" >MongoLab</a> (3)
+</li>
+<li class="cat-item cat-item-123"><a href="./../database/mongodb/monk/index.html" >Monk</a> (1)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-125"><a href="./../deployments/index.html" >Deployments</a> (4)
+<ul class='children'>
+<li class="cat-item cat-item-126"><a href="./../deployments/heroku/index.html" >Heroku</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-135"><a href="./../desktop-apps/index.html" >Desktop Apps</a> (8)
+</li>
+<li class="cat-item cat-item-155"><a href="./../dna-analysis/index.html" >DNA Analysis</a> (1)
+</li>
+<li class="cat-item cat-item-112"><a href="./../es6/index.html" >ECMAScript 6</a> (3)
+</li>
+<li class="cat-item cat-item-162"><a href="./../electron-atom-shell/index.html" >Electron (atom shell)</a> (1)
+</li>
+<li class="cat-item cat-item-25"><a href="./../frameworks/index.html" >Frameworks</a> (42)
+<ul class='children'>
+<li class="cat-item cat-item-160"><a href="./../frameworks/angular-2-0/index.html" >Angular 2.0</a> (2)
+</li>
+<li class="cat-item cat-item-108"><a href="./../frameworks/angularjs/index.html" >Angularjs</a> (21)
+</li>
+<li class="cat-item cat-item-132"><a href="./../frameworks/backbonejs/index.html" >Backbonejs</a> (1)
+</li>
+<li class="cat-item cat-item-105"><a href="./../frameworks/bootstrap/index.html" >Bootstrap</a> (9)
+</li>
+<li class="cat-item cat-item-159"><a href="./../frameworks/emberjs/index.html" >Emberjs</a> (1)
+</li>
+<li class="cat-item cat-item-56"><a href="./../frameworks/foundation/index.html" >Foundation</a> (3)
+</li>
+<li class="cat-item cat-item-110"><a href="./../frameworks/framework7/index.html" >Framework7</a> (1)
+</li>
+<li class="cat-item cat-item-107"><a href="./../frameworks/ionic/index.html" >Ionic</a> (11)
+</li>
+<li class="cat-item cat-item-157"><a href="./../frameworks/lumx/index.html" >Lumx</a> (1)
+</li>
+<li class="cat-item cat-item-138"><a href="./../frameworks/mean/index.html" >MEAN</a> (4)
+</li>
+<li class="cat-item cat-item-116"><a href="./../frameworks/meteorjs/index.html" >Meteorjs</a> (1)
+</li>
+<li class="cat-item cat-item-122"><a href="./../frameworks/onsen-ui/index.html" >Onsen UI</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-101"><a href="./../git/index.html" >Git</a> (12)
+<ul class='children'>
+<li class="cat-item cat-item-102"><a href="./../git/github/index.html" >GitHub</a> (10)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-2"><a href="./../html/index.html" >HTML</a> (22)
+<ul class='children'>
+<li class="cat-item cat-item-4"><a href="./../html/html5/index.html" >HTML5</a> (21)
+<ul class='children'>
+<li class="cat-item cat-item-158"><a href="./../html/html5/webrtc/index.html" >WebRTC</a> (1)
+</li>
+<li class="cat-item cat-item-106"><a href="./../html/html5/websockets/index.html" >WebSockets</a> (6)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-137"><a href="./../intels-app-ui/index.html" >Intel&#039;s App UI</a> (1)
+</li>
+<li class="cat-item cat-item-143"><a href="./../iot/index.html" >IoT</a> (6)
+</li>
+<li class="cat-item cat-item-1"><a href="./../javascript/index.html" >Javascript</a> (75)
+<ul class='children'>
+<li class="cat-item cat-item-6"><a href="./../javascript/jquery/index.html" >jQuery</a> (14)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-151"><a href="./../material-design/index.html" >Material Design</a> (3)
+</li>
+<li class="cat-item cat-item-99"><a href="./../mobile/index.html" >Mobile</a> (21)
+<ul class='children'>
+<li class="cat-item cat-item-103"><a href="./../mobile/android/index.html" >Android</a> (15)
+</li>
+<li class="cat-item cat-item-113"><a href="./../mobile/firefox-os/index.html" >Firefox OS</a> (2)
+</li>
+<li class="cat-item cat-item-104"><a href="./../mobile/ios/index.html" >iOS</a> (11)
+</li>
+<li class="cat-item cat-item-100"><a href="./../mobile/phonegap/index.html" >PhoneGap</a> (16)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-149"><a href="./../mqtt/index.html" >MQTT</a> (1)
+</li>
+<li class="cat-item cat-item-163"><a href="./../my-books/index.html" >My Books</a> (1)
+</li>
+<li class="cat-item cat-item-45"><a href="./../node/index.html" >Node</a> (60)
+<ul class='children'>
+<li class="cat-item cat-item-152"><a href="./../node/cli/index.html" >CLI</a> (3)
+</li>
+<li class="cat-item cat-item-121"><a href="./../node/expressjs/index.html" >Expressjs</a> (18)
+</li>
+<li class="cat-item cat-item-156"><a href="./../node/genome/index.html" >Genome</a> (1)
+</li>
+<li class="cat-item cat-item-62"><a href="./../node/grunt/index.html" >Grunt</a> (8)
+</li>
+<li class="cat-item cat-item-124"><a href="./../node/koa/index.html" >Koa</a> (1)
+</li>
+<li class="cat-item cat-item-134"><a href="./../node/node-webkit/index.html" >Node Webkit</a> (7)
+</li>
+<li class="cat-item cat-item-54"><a href="./../node/npm/index.html" >NPM</a> (15)
+</li>
+<li class="cat-item cat-item-120"><a href="./../node/restify/index.html" >Restify</a> (3)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-161"><a href="./../push-notifications/index.html" >Push Notifications</a> (1)
+</li>
+<li class="cat-item cat-item-59"><a href="./../quick-and-dirty/index.html" >Quick and Dirty</a> (42)
+</li>
+<li class="cat-item cat-item-142"><a href="./../raspberry-pi/index.html" >Raspberry Pi</a> (9)
+</li>
+<li class="cat-item cat-item-60"><a href="./../setup/index.html" >Setup</a> (60)
+</li>
+<li class="cat-item cat-item-61"><a href="./../testing/index.html" >Testing</a> (5)
+<ul class='children'>
+<li class="cat-item cat-item-129"><a href="./../testing/jasmine/index.html" >Jasmine</a> (1)
+</li>
+<li class="cat-item cat-item-128"><a href="./../testing/protractor/index.html" >Protractor</a> (1)
+</li>
+<li class="cat-item cat-item-98"><a href="./../testing/test-automation/index.html" >Test Automation</a> (1)
+</li>
+<li class="cat-item cat-item-41"><a href="./../testing/tdd/index.html" >Test Driven Developement</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-139"><a href="./../third-party-products/index.html" >Third Party Products</a> (4)
+<ul class='children'>
+<li class="cat-item cat-item-140"><a href="./../third-party-products/twilio/index.html" >Twilio</a> (4)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-58"><a href="./../tutorial/index.html" >Tutorial</a> (79)
+</li>
+<li class="cat-item cat-item-130"><a href="./../performance-analysis/index.html" >UI Performance</a> (1)
+</li>
+<li class="cat-item cat-item-109"><a href="./../web-components/index.html" >Web Components</a> (3)
+</li>
+<li class="cat-item cat-item-133"><a href="./../google-web-starter-kit/index.html" >Web Starter Kit</a> (1)
+</li>
+</ul>
+</aside><aside id="archives-2" class="widget widget_archive"><h1 class="widget-title">Archives</h1>		<ul>
+<li><a href='./../2015/07/index.html'>July 2015</a></li>
+<li><a href='./../2015/05/index.html'>May 2015</a></li>
+<li><a href='./../2015/04/index.html'>April 2015</a></li>
+<li><a href='./../2015/03/index.html'>March 2015</a></li>
+<li><a href='./../2015/02/index.html'>February 2015</a></li>
+<li><a href='./../2015/01/index.html'>January 2015</a></li>
+<li><a href='./../2014/12/index.html'>December 2014</a></li>
+<li><a href='./../2014/11/index.html'>November 2014</a></li>
+<li><a href='./../2014/10/index.html'>October 2014</a></li>
+<li><a href='./../2014/09/index.html'>September 2014</a></li>
+<li><a href='./../2014/08/index.html'>August 2014</a></li>
+<li><a href='./../2014/07/index.html'>July 2014</a></li>
+<li><a href='./../2014/06/index.html'>June 2014</a></li>
+<li><a href='./../2014/05/index.html'>May 2014</a></li>
+<li><a href='./../2014/04/index.html'>April 2014</a></li>
+<li><a href='./../2014/03/index.html'>March 2014</a></li>
+<li><a href='./../2014/02/index.html'>February 2014</a></li>
+</ul>
+</aside><aside id="wysija-3" class="widget widget_wysija"><h1 class="widget-title">Inform me about new posts</h1><div class="widget_wysija_cont"><div id="msg-form-wysija-3" class="wysija-msg ajax"></div><form id="form-wysija-3" method="post" action="#wysija" class="widget_wysija">
+<p class="wysija-paragraph">
+<label>Email <span class="wysija-required">*</span></label>
+<input type="text" name="wysija[user][email]" class="wysija-input validate[required,custom[email]]" title="Email"  value="" />
+<span class="abs-req">
+<input type="text" name="wysija[user][abs][email]" class="wysija-input validated[abs][email]" value="" />
+</span>
+</p>
+<input class="wysija-submit wysija-submit-field" type="submit" value="Subscribe!" />
+<input type="hidden" name="form_id" value="1" />
+<input type="hidden" name="action" value="save" />
+<input type="hidden" name="controller" value="subscribers" />
+<input type="hidden" value="1" name="wysija-page" />
+<input type="hidden" name="wysija[user_list][list_ids]" value="3" />
+</form></div></aside>	</div><!-- #secondary -->
+	<script>
+var _prum = [['id', '544090ababe53d0e3e76d6ce'],
+['mark', 'firstbyte', (new Date()).getTime()]];
+(function() {
+var s = document.getElementsByTagName('script')[0]
+, p = document.createElement('script');
+p.async = 'async';
+p.src = '//rum-static.pingdom.net/prum.min.js';
+s.parentNode.insertBefore(p, s);
+})();
+</script>
+</div><!-- #content -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info">
+All Rights Reserved
+<span class="sep"> | </span>
+The Jackal of Javascript
+</div><!-- .site-info -->
+<div class="rnd-circle" style="background: black;width: 10px;height: 10px;border-radius: 50%;"></div>
+</footer><!-- #colophon -->
+</div><!-- #page -->
+<script type='text/javascript'><!--
+var seriesdropdown = document.getElementById("orgseries_dropdown");
+if (seriesdropdown) {
+function onSeriesChange() {
+if ( seriesdropdown.options[seriesdropdown.selectedIndex].value != ( 0 || -1 ) ) {
+location.href = "./series/"+seriesdropdown.options[seriesdropdown.selectedIndex].value;
+}
+}
+seriesdropdown.onchange = onSeriesChange;
+}
+--></script>
+<script type="text/javascript">
+// <![CDATA[
+var disqus_shortname = 'thejackalofjavascriptcom';
+(function () {
+var nodes = document.getElementsByTagName('span');
+for (var i = 0, url; i < nodes.length; i++) {
+if (nodes[i].className.indexOf('dsq-postid') != -1) {
+nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+url = nodes[i].parentNode.href.split('#', 1);
+if (url.length == 1) { url = url[0]; }
+else { url = url[1]; }
+nodes[i].parentNode.href = url + '#disqus_thread';
+}
+}
+var s = document.createElement('script'); 
+s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+// ]]>
+</script>
+<div class="scroll-back-to-top-wrapper">
+<span class="scroll-back-to-top-inner">
+<i class="fa fa-2x fa-arrow-circle-up"></i>
+</span>
+</div>
+<style type="text/css">
+#wpfront-notification-bar 
+{
+background: #242d36;
+background: -moz-linear-gradient(top, #242d36 0%, #242d36 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#242d36), color-stop(100%,#242d36));
+background: -webkit-linear-gradient(top, #242d36 0%,#242d36 100%);
+background: -o-linear-gradient(top, #242d36 0%,#242d36 100%);
+background: -ms-linear-gradient(top, #242d36 0%,#242d36 100%);
+background: linear-gradient(to bottom, #242d36 0%, #242d36 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242d36', endColorstr='#242d36',GradientType=0 );
+}
+#wpfront-notification-bar div.wpfront-message
+{
+color: #ffffff;
+}
+#wpfront-notification-bar a.wpfront-button
+{
+background: #f45145;
+background: -moz-linear-gradient(top, #f45145 0%, #f45145 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f45145), color-stop(100%,#f45145));
+background: -webkit-linear-gradient(top, #f45145 0%,#f45145 100%);
+background: -o-linear-gradient(top, #f45145 0%,#f45145 100%);
+background: -ms-linear-gradient(top, #f45145 0%,#f45145 100%);
+background: linear-gradient(to bottom, #f45145 0%, #f45145 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f45145', endColorstr='#f45145',GradientType=0 );
+color: #ffffff;
+}
+#wpfront-notification-bar-open-button
+{
+background-color: #00b7ea;
+}
+#wpfront-notification-bar  div.wpfront-close 
+{
+border: 1px solid #555555;
+background-color: #555555;
+color: #000000;
+}
+#wpfront-notification-bar  div.wpfront-close:hover 
+{
+border: 1px solid #aaaaaa;
+background-color: #aaaaaa;
+}
+</style>
+<div id="wpfront-notification-bar-spacer"  style="display: none;">
+<div id="wpfront-notification-bar-open-button" class="top wpfront-bottom-shadow"></div>
+<div id="wpfront-notification-bar" class="wpfront-fixed">
+<div class="wpfront-close">X</div>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<div class="wpfront-message">
+Learn your way around Ionic framework. Check out Learning Ionic!                     </div>
+<div>
+<a class="wpfront-button" href="https://www.packtpub.com/application-development/learning-ionic/?utm_source=Jkthejackalofjavascript&utm_medium=referral&utm_campaign=1783552603"  target="_blank" >Buy</a>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<style type="text/css">
+.wpfront-message{line-height:27px; vertical-align:baseline !important;}</style>
+<script type="text/javascript">if(typeof wpfront_notification_bar == "function") wpfront_notification_bar({"position":1,"height":0,"fixed_position":"on","animate_delay":0.5,"close_button":true,"button_action_close_bar":false,"auto_close_after":0,"display_after":1,"is_admin_bar_showing":false,"display_open_button":false,"keep_closed":"on","keep_closed_for":1,"position_offset":0,"display_scroll":"on","display_scroll_offset":100});</script><script type='text/javascript' src='./../wp-content/plugins/jetpack/modules/photon/photon.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var scrollBackToTop = {"scrollDuration":"500","fadeDuration":"0.5"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./../wp-content/plugins/scroll-back-to-top/assets/js/scroll-back-to-top.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/simple-share-buttons-adder/js/ssba.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var viewsCacheL10n = {"admin_ajax_url":".\/wp-admin\/admin-ajax.php","post_id":"2909"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./../wp-content/plugins/wp-postviews/postviews-cache.js'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js'></script>
+<script type='text/javascript' src='./../wp-content/themes/sorbet/js/menus.js'></script>
+<script type='text/javascript' src='./../wp-content/themes/sorbet/js/skip-link-focus-fix.js'></script>
+<script type='text/javascript' src='./../wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/lazy-load/js/jquery.sonar.min.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/lazy-load/js/lazy-load.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/jetpack/_inc/postmessage.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/jetpack/_inc/jquery.jetpack-resize.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/jetpack/_inc/jquery.inview.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/jetpack/modules/likes/queuehandler.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/wysija-newsletters/js/validate/languages/jquery.validationEngine-en.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/wysija-newsletters/js/validate/jquery.validationEngine.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wysijaAJAX = {"action":"wysija_ajax","controller":"subscribers","ajaxurl":".\/wp-admin\/admin-ajax.php","loadingTrans":"Loading...","is_rtl":""};
+var wysijaAJAX = {"action":"wysija_ajax","controller":"subscribers","ajaxurl":".\/wp-admin\/admin-ajax.php","loadingTrans":"Loading...","is_rtl":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./../wp-content/plugins/wysija-newsletters/js/front-subscribers.js'></script>
+<iframe src='http://widgets.wp.com/likes/master.html?ver=20141028#ver=20141028' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+<script type="text/javascript">
+jQuery.noConflict();
+(function( $ ) {
+$(function() {
+// More code using $ as alias to jQuery
+$("area[href*=#],a[href*=#]:not([href=#]):not([href^='#tab']):not([href^='#quicktab']):not([href^='#pane'])").click(function() {
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+var target = $(this.hash);
+target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+if (target.length) {
+$('html,body').animate({
+scrollTop: target.offset().top - 20  
+},900 ,'easeOutQuint');
+return false;
+}
+}
+});
+});
+})(jQuery);	
+</script>				
+<script type='text/javascript' src='http://stats.wp.com/e-201746.js' async defer></script>
+<script type='text/javascript'>
+_stq = window._stq || [];
+_stq.push([ 'view', {v:'ext',j:'1:3.7',blog:'70838519',post:'2909',tz:'5.5',srv:'thejackalofjavascript.com'} ]);
+_stq.push([ 'clickTrackerInit', '70838519', '2909' ]);
+</script>
+<div id="upprev_box"><h6>Read previous post:</h6><div class="upprev_excerpt"><h5><a href="./../getting-started-with-client-side-storage/index.html" rel="Pushbots and Cordova &#8211; Easy Push Notifications for your app">Getting Started with Client Side Storage</a></h5><p>In this post, we will take a look at various client side storage solutions and how to work with them....</p></div><a id="upprev_close" href="#" rel="close">Close</a></div><script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-47881846-1', 'auto');
+ga('send', 'pageview');
+</script>
+<a style="display:none;" href="http://www.alexa.com/siteinfo/./"><script type="text/javascript" src="http://xslt.alexa.com/site_stats/js/t/a?url=./"></script></a>
+</body>
+</html><script>if(document.getElementById('to-contents') == null){ } else {var a = document.getElementById('to-contents').getElementsByTagName('a'); for(var i=0; i< a.length;i++){var b = a[i].getAttribute('href').split('#');if(b.length >=2)a[i].setAttribute('href', '#'+b[1]);}}</script>
+<script>if(typeof jQuery == 'function'){jQuery('.widgetGuts.shortcode h3').html('Inform Me About New Posts')}</script><!-- WP Fastest Cache file was created in 4.50338411331 seconds, on 18-11-17 14:48:39 -->

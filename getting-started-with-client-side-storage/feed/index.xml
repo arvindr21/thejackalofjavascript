@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:series="http://organizeseries.com/"
+	
+	>
+<channel>
+	<title>Comments on: Getting Started with Client Side Storage</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Knowing is different &#38; Doing is different</description>
+	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.16</generator>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-3354</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Sat, 25 Mar 2017 12:22:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2894#comment-3354</guid>
+		<description><![CDATA[Thanks for your support Lola. Glad I could be of help. 
+
+Private browsing persistent is always a challenge. In one of the applications I have designed for the web, we detected if local storage was available on page load, if not we threw an alert that either use the website in a &quot;non-private&quot; browsing mode or loose the privilege of persistence. 
+
+Ideally local storage should not be used as a database on the client side rather a lite weight storage till the application process stuff. 
+
+In a mobile app you can always go for sqlite instead of local storage. A more reliable way of storing information. 
+
+Thanks. ]]></description>
+		<content:encoded><![CDATA[<p>Thanks for your support Lola. Glad I could be of help. </p>
+<p>Private browsing persistent is always a challenge. In one of the applications I have designed for the web, we detected if local storage was available on page load, if not we threw an alert that either use the website in a &#8220;non-private&#8221; browsing mode or loose the privilege of persistence. </p>
+<p>Ideally local storage should not be used as a database on the client side rather a lite weight storage till the application process stuff. </p>
+<p>In a mobile app you can always go for sqlite instead of local storage. A more reliable way of storing information. </p>
+<p>Thanks. </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Lola</title>
+		<link>./../comment-page-1/index.html#comment-3353</link>
+		<dc:creator><![CDATA[Lola]]></dc:creator>
+		<pubDate>Sat, 25 Mar 2017 09:23:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2894#comment-3353</guid>
+		<description><![CDATA[Hi Arvind, great article!! You book &quot;learning ionic&quot; uses local storage in an example app which gives a good example using local storage in practice. The book is a amazing!! I&#039;ve been programming using ionic for more than a year now. I still read it from time to time.  I am pre-ordering the version 2. Regarding local storage,   I use local storage in my app as well to store user preferences and session storage to store access tokens(loaded from keychain at run phase). however, the biggest concern of using local Storage is if user uses private browsing. My app will fail. Any advice on persistent data in a more reliable way? Is using a local json a bad idea for example?
+Another question is in practice how to prefex items stored in local storage? If user try to use different accounts on one device, the items might get overwritten, am I correct?]]></description>
+		<content:encoded><![CDATA[<p>Hi Arvind, great article!! You book &#8220;learning ionic&#8221; uses local storage in an example app which gives a good example using local storage in practice. The book is a amazing!! I&#8217;ve been programming using ionic for more than a year now. I still read it from time to time.  I am pre-ordering the version 2. Regarding local storage,   I use local storage in my app as well to store user preferences and session storage to store access tokens(loaded from keychain at run phase). however, the biggest concern of using local Storage is if user uses private browsing. My app will fail. Any advice on persistent data in a more reliable way? Is using a local json a bad idea for example?<br />
+Another question is in practice how to prefex items stored in local storage? If user try to use different accounts on one device, the items might get overwritten, am I correct?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Sagar</title>
+		<link>./../comment-page-1/index.html#comment-3245</link>
+		<dc:creator><![CDATA[Sagar]]></dc:creator>
+		<pubDate>Thu, 09 Jun 2016 10:03:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2894#comment-3245</guid>
+		<description><![CDATA[hi ,please tell me how to have dropdown menu of ID&#039;s while fetching data from mongoDB,
+
+I need a code sample for it.
+
+I have 4 collections in my mongoDB database ,I need to have a dropdown menu of ID&#039;s and On selecting one I should be able to fetch data from that particular collection.
+
+Example: Collection_1,_2,_3,_4 are my 4 collections ID1,ID2,ID3,ID4 are names respectively in dropdown on selecting ID2 from dropdown and clickon submit I should be able to fetch data from collection_2.
+
+please help me in this matter]]></description>
+		<content:encoded><![CDATA[<p>hi ,please tell me how to have dropdown menu of ID&#8217;s while fetching data from mongoDB,</p>
+<p>I need a code sample for it.</p>
+<p>I have 4 collections in my mongoDB database ,I need to have a dropdown menu of ID&#8217;s and On selecting one I should be able to fetch data from that particular collection.</p>
+<p>Example: Collection_1,_2,_3,_4 are my 4 collections ID1,ID2,ID3,ID4 are names respectively in dropdown on selecting ID2 from dropdown and clickon submit I should be able to fetch data from collection_2.</p>
+<p>please help me in this matter</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: mugshepherd</title>
+		<link>./../comment-page-1/index.html#comment-3085</link>
+		<dc:creator><![CDATA[mugshepherd]]></dc:creator>
+		<pubDate>Fri, 11 Dec 2015 13:05:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2894#comment-3085</guid>
+		<description><![CDATA[Very helpful!]]></description>
+		<content:encoded><![CDATA[<p>Very helpful!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2596</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Wed, 06 May 2015 17:42:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2894#comment-2596</guid>
+		<description><![CDATA[Thanks Pierre! Very valid point. Added the changes to the code example.]]></description>
+		<content:encoded><![CDATA[<p>Thanks Pierre! Very valid point. Added the changes to the code example.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Pierre Grimaud</title>
+		<link>./../comment-page-1/index.html#comment-2595</link>
+		<dc:creator><![CDATA[Pierre Grimaud]]></dc:creator>
+		<pubDate>Wed, 06 May 2015 16:01:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2894#comment-2595</guid>
+		<description><![CDATA[I think you might want to update your LZString example to use &quot;compressToUTF16&quot; instead of &quot;compress&quot;. The &quot;compress&quot; method produces strings that are not valid UTF16 and thus cannot be stored and retrieved from localStorage in IE and Firefox.]]></description>
+		<content:encoded><![CDATA[<p>I think you might want to update your LZString example to use &#8220;compressToUTF16&#8243; instead of &#8220;compress&#8221;. The &#8220;compress&#8221; method produces strings that are not valid UTF16 and thus cannot be stored and retrieved from localStorage in IE and Firefox.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Hardik Joshi</title>
+		<link>./../comment-page-1/index.html#comment-2533</link>
+		<dc:creator><![CDATA[Hardik Joshi]]></dc:creator>
+		<pubDate>Sun, 26 Apr 2015 04:25:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2894#comment-2533</guid>
+		<description><![CDATA[Amazing article! Thanks Arvind for refreshing the knowledge about offline storage! :)]]></description>
+		<content:encoded><![CDATA[<p>Amazing article! Thanks Arvind for refreshing the knowledge about offline storage! <img src="./../../wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

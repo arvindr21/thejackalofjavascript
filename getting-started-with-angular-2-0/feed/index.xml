@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:series="http://organizeseries.com/"
+	
+	>
+<channel>
+	<title>Comments on: Getting Started with Angular 2.0</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Knowing is different &#38; Doing is different</description>
+	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.16</generator>
+	<item>
+		<title>By: you</title>
+		<link>./../comment-page-1/index.html#comment-3363</link>
+		<dc:creator><![CDATA[you]]></dc:creator>
+		<pubDate>Sat, 22 Apr 2017 00:03:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-3363</guid>
+		<description><![CDATA[this shit is insane man ! insane 
+la chalitaaaaaaa
+
+@Injectable()
+export class AutocompleteService {
+
+    private autocompleteObserver: any;
+    public autocomplete: any;
+
+    constructor(...) {
+        this.autocompleteObserver = null;
+
+        this.autocomplete = Observable.create(observer =&gt; {
+            this.autocompleteObserver = observer;
+        });
+    }]]></description>
+		<content:encoded><![CDATA[<p>this shit is insane man ! insane<br />
+la chalitaaaaaaa</p>
+<p>@Injectable()<br />
+export class AutocompleteService {</p>
+<p>    private autocompleteObserver: any;<br />
+    public autocomplete: any;</p>
+<p>    constructor(&#8230;) {<br />
+        this.autocompleteObserver = null;</p>
+<p>        this.autocomplete = Observable.create(observer =&gt; {<br />
+            this.autocompleteObserver = observer;<br />
+        });<br />
+    }</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: you</title>
+		<link>./../comment-page-1/index.html#comment-3362</link>
+		<dc:creator><![CDATA[you]]></dc:creator>
+		<pubDate>Sat, 22 Apr 2017 00:02:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-3362</guid>
+		<description><![CDATA[shaaa naa que ver wm la volaaa]]></description>
+		<content:encoded><![CDATA[<p>shaaa naa que ver wm la volaaa</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mack</title>
+		<link>./../comment-page-1/index.html#comment-3341</link>
+		<dc:creator><![CDATA[Mack]]></dc:creator>
+		<pubDate>Fri, 13 Jan 2017 17:44:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-3341</guid>
+		<description><![CDATA[first problem with this tutorial is after git clone the directory structure looks nothing like what is shown here. 2nd problem maybe related to the first is the install of gulp doesn&#039;t work either.
+That&#039;s all the time I&#039;m gonna waste on this.
+Not sure why you created this tutorial as it only serves as a time waster.
+Either get it right or don&#039;t post it. Sheesh.]]></description>
+		<content:encoded><![CDATA[<p>first problem with this tutorial is after git clone the directory structure looks nothing like what is shown here. 2nd problem maybe related to the first is the install of gulp doesn&#8217;t work either.<br />
+That&#8217;s all the time I&#8217;m gonna waste on this.<br />
+Not sure why you created this tutorial as it only serves as a time waster.<br />
+Either get it right or don&#8217;t post it. Sheesh.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: razorree</title>
+		<link>./../comment-page-1/index.html#comment-3290</link>
+		<dc:creator><![CDATA[razorree]]></dc:creator>
+		<pubDate>Wed, 14 Sep 2016 16:03:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-3290</guid>
+		<description><![CDATA[a big mess..... AngularJS2 mixed with JS (JS on a server side ??? )... where is the backend ?  how to use AngularJS2 with a backend stuff (like Java) ?]]></description>
+		<content:encoded><![CDATA[<p>a big mess&#8230;.. AngularJS2 mixed with JS (JS on a server side ??? )&#8230; where is the backend ?  how to use AngularJS2 with a backend stuff (like Java) ?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: bradykelly</title>
+		<link>./../comment-page-1/index.html#comment-3281</link>
+		<dc:creator><![CDATA[bradykelly]]></dc:creator>
+		<pubDate>Fri, 19 Aug 2016 16:12:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-3281</guid>
+		<description><![CDATA[Your directory structure cloned by Git looks nothing like your diagram, and, more importantly, it contains no gulpfile.]]></description>
+		<content:encoded><![CDATA[<p>Your directory structure cloned by Git looks nothing like your diagram, and, more importantly, it contains no gulpfile.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Code Self Study</title>
+		<link>./../comment-page-1/index.html#comment-3103</link>
+		<dc:creator><![CDATA[Code Self Study]]></dc:creator>
+		<pubDate>Mon, 28 Dec 2015 00:25:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-3103</guid>
+		<description><![CDATA[I think that these commands are the same on Windows, Linux, and Mac. The difference is in Python versions.
+
+Python 3:
+python -m http.server
+
+Python 2:
+python -m SimpleHTTPServer]]></description>
+		<content:encoded><![CDATA[<p>I think that these commands are the same on Windows, Linux, and Mac. The difference is in Python versions.</p>
+<p>Python 3:<br />
+python -m http.server</p>
+<p>Python 2:<br />
+python -m SimpleHTTPServer</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Andrei</title>
+		<link>./../comment-page-1/index.html#comment-3093</link>
+		<dc:creator><![CDATA[Andrei]]></dc:creator>
+		<pubDate>Tue, 22 Dec 2015 21:52:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-3093</guid>
+		<description><![CDATA[Gulp fails - error in plugin run-sequence]]></description>
+		<content:encoded><![CDATA[<p>Gulp fails &#8211; error in plugin run-sequence</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Rachit Bhasin</title>
+		<link>./../comment-page-1/index.html#comment-3028</link>
+		<dc:creator><![CDATA[Rachit Bhasin]]></dc:creator>
+		<pubDate>Fri, 30 Oct 2015 14:24:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-3028</guid>
+		<description><![CDATA[I&#039;m getting error &#039;cannot find module &quot;gulp-traceur&quot; &#039; when I run the gulp command. So I ran &#039;npm install --save gulp-traceur&#039;. Now i&#039;m getting &#039;cannot find module &quot;gulp-sourcemaps&quot; &#039;. Is there something that I&#039;m missing? Or i&#039;ll have to install each module one at a time.]]></description>
+		<content:encoded><![CDATA[<p>I&#8217;m getting error &#8216;cannot find module &#8220;gulp-traceur&#8221; &#8216; when I run the gulp command. So I ran &#8216;npm install &#8211;save gulp-traceur&#8217;. Now i&#8217;m getting &#8216;cannot find module &#8220;gulp-sourcemaps&#8221; &#8216;. Is there something that I&#8217;m missing? Or i&#8217;ll have to install each module one at a time.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ramachandran</title>
+		<link>./../comment-page-1/index.html#comment-3003</link>
+		<dc:creator><![CDATA[Ramachandran]]></dc:creator>
+		<pubDate>Fri, 16 Oct 2015 03:56:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-3003</guid>
+		<description><![CDATA[on top of that how come there is NO MATERIAL AVAILABLE ON THE SYSTEM UNDEFINED ERROR issue that comes up? There is no information in the net and it is strange most of them who actually try this code get this error but the poeple who write this article dont get this error? I tried 3 different variations of the same code but it just does not work in any browser at all. What we need is an answer for the RefernceError: System is not defined - how to take care of that]]></description>
+		<content:encoded><![CDATA[<p>on top of that how come there is NO MATERIAL AVAILABLE ON THE SYSTEM UNDEFINED ERROR issue that comes up? There is no information in the net and it is strange most of them who actually try this code get this error but the poeple who write this article dont get this error? I tried 3 different variations of the same code but it just does not work in any browser at all. What we need is an answer for the RefernceError: System is not defined &#8211; how to take care of that</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ramachandran</title>
+		<link>./../comment-page-1/index.html#comment-3002</link>
+		<dc:creator><![CDATA[Ramachandran]]></dc:creator>
+		<pubDate>Fri, 16 Oct 2015 03:51:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-3002</guid>
+		<description><![CDATA[There is something wrong really however i do it i keep getting the system error.. i even went and downloaded es6-shim,js and put it in the folder still get the same error]]></description>
+		<content:encoded><![CDATA[<p>There is something wrong really however i do it i keep getting the system error.. i even went and downloaded es6-shim,js and put it in the folder still get the same error</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jadoti</title>
+		<link>./../comment-page-1/index.html#comment-2930</link>
+		<dc:creator><![CDATA[Jadoti]]></dc:creator>
+		<pubDate>Fri, 28 Aug 2015 23:53:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-2930</guid>
+		<description><![CDATA[I did a fresh pull of the quickstart repository, and when I run gulp it fails on the whole rebuilding of angular2 and such..  It&#039;s throwing errors out of angular2.map and es5build.map... Repulled the repo to make sure it wasn&#039;t anything I did and sure enough it&#039;s the same error... Has something changed since you wrote this article?]]></description>
+		<content:encoded><![CDATA[<p>I did a fresh pull of the quickstart repository, and when I run gulp it fails on the whole rebuilding of angular2 and such..  It&#8217;s throwing errors out of angular2.map and es5build.map&#8230; Repulled the repo to make sure it wasn&#8217;t anything I did and sure enough it&#8217;s the same error&#8230; Has something changed since you wrote this article?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ajay</title>
+		<link>./../comment-page-1/index.html#comment-2906</link>
+		<dc:creator><![CDATA[Ajay]]></dc:creator>
+		<pubDate>Sat, 15 Aug 2015 05:47:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-2906</guid>
+		<description><![CDATA[I am familiar with AngularJS http://www.techstrikers.com/ , part-2 is new for me it&#039;s really good..]]></description>
+		<content:encoded><![CDATA[<p>I am familiar with AngularJS <a href="http://www.techstrikers.com/" rel="nofollow">http://www.techstrikers.com/</a> , part-2 is new for me it&#8217;s really good..</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Stevo</title>
+		<link>./../comment-page-1/index.html#comment-2808</link>
+		<dc:creator><![CDATA[Stevo]]></dc:creator>
+		<pubDate>Fri, 10 Jul 2015 12:04:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-2808</guid>
+		<description><![CDATA[Does not work in Safari 8. Javascript console says &quot;SyntaxError: Cannot use initialiser syntax in a strict mode enumeration.&quot; in es6-shim.js line 4941]]></description>
+		<content:encoded><![CDATA[<p>Does not work in Safari 8. Javascript console says &#8220;SyntaxError: Cannot use initialiser syntax in a strict mode enumeration.&#8221; in es6-shim.js line 4941</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2731</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Sat, 06 Jun 2015 23:14:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-2731</guid>
+		<description><![CDATA[Thanks for sharing. The components look good. ]]></description>
+		<content:encoded><![CDATA[<p>Thanks for sharing. The components look good. </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Torgeir</title>
+		<link>./../comment-page-1/index.html#comment-2730</link>
+		<dc:creator><![CDATA[Torgeir]]></dc:creator>
+		<pubDate>Sat, 06 Jun 2015 19:35:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-2730</guid>
+		<description><![CDATA[I have added some Angular 2.0 sample components here as well if you are interested: http://www.syntaxsuccess.com/viewarticle/angular-2.0-examples]]></description>
+		<content:encoded><![CDATA[<p>I have added some Angular 2.0 sample components here as well if you are interested: <a href="http://www.syntaxsuccess.com/viewarticle/angular-2.0-examples" rel="nofollow">http://www.syntaxsuccess.com/viewarticle/angular-2.0-examples</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Nicky Lenaers</title>
+		<link>./../comment-page-1/index.html#comment-2704</link>
+		<dc:creator><![CDATA[Nicky Lenaers]]></dc:creator>
+		<pubDate>Mon, 01 Jun 2015 21:34:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-2704</guid>
+		<description><![CDATA[Great article really! I think it&#039;s a lot clearer than the 5min tutorial on the angular website. What I&#039;m not getting: what is the purpose of runtime assertion? And what is actually happening behind the scenes at runtime? How does it perform compared to static loading? I would really like to know! Thanks man!]]></description>
+		<content:encoded><![CDATA[<p>Great article really! I think it&#8217;s a lot clearer than the 5min tutorial on the angular website. What I&#8217;m not getting: what is the purpose of runtime assertion? And what is actually happening behind the scenes at runtime? How does it perform compared to static loading? I would really like to know! Thanks man!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2560</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Fri, 01 May 2015 11:34:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-2560</guid>
+		<description><![CDATA[Is es6-shim js file loaded in your page?]]></description>
+		<content:encoded><![CDATA[<p>Is es6-shim js file loaded in your page?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Akshay Pingle</title>
+		<link>./../comment-page-1/index.html#comment-2551</link>
+		<dc:creator><![CDATA[Akshay Pingle]]></dc:creator>
+		<pubDate>Wed, 29 Apr 2015 19:22:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2865#comment-2551</guid>
+		<description><![CDATA[I found Error &quot;Uncaught ReferenceError: System is not defined&quot; in index.html]]></description>
+		<content:encoded><![CDATA[<p>I found Error &#8220;Uncaught ReferenceError: System is not defined&#8221; in index.html</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

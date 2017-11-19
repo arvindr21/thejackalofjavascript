@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:series="http://organizeseries.com/"
+	
+	>
+<channel>
+	<title>Comments on: Pushbots and Cordova &#8211; Easy Push Notifications for your app</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Knowing is different &#38; Doing is different</description>
+	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.16</generator>
+	<item>
+		<title>By: Munib mir</title>
+		<link>./../comment-page-1/index.html#comment-3344</link>
+		<dc:creator><![CDATA[Munib mir]]></dc:creator>
+		<pubDate>Fri, 03 Feb 2017 07:05:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-3344</guid>
+		<description><![CDATA[Any solution for this issue, we facing the same issue]]></description>
+		<content:encoded><![CDATA[<p>Any solution for this issue, we facing the same issue</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Musah Idriss Kofi</title>
+		<link>./../comment-page-1/index.html#comment-3123</link>
+		<dc:creator><![CDATA[Musah Idriss Kofi]]></dc:creator>
+		<pubDate>Mon, 11 Jan 2016 05:37:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-3123</guid>
+		<description><![CDATA[Hi
+
+My name is Musah and i have a pushbots account called - RISING AFRICA
+
+I&#039;m trying to send push notification that will open directly to the post when clicked.
+
+I tried the openURL custom field but that opens with a browser
+
+Also i did articleid, article_id and post_id but all didn&#039;t work.
+
+I have seen all your videos but i&#039;m still stuck.
+
+How do i fix it
+
+A notification that when clicked opens the article directly.
+
+Thank you
+
+Musah]]></description>
+		<content:encoded><![CDATA[<p>Hi</p>
+<p>My name is Musah and i have a pushbots account called &#8211; RISING AFRICA</p>
+<p>I&#8217;m trying to send push notification that will open directly to the post when clicked.</p>
+<p>I tried the openURL custom field but that opens with a browser</p>
+<p>Also i did articleid, article_id and post_id but all didn&#8217;t work.</p>
+<p>I have seen all your videos but i&#8217;m still stuck.</p>
+<p>How do i fix it</p>
+<p>A notification that when clicked opens the article directly.</p>
+<p>Thank you</p>
+<p>Musah</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Vinicius KBÇA</title>
+		<link>./../comment-page-1/index.html#comment-3092</link>
+		<dc:creator><![CDATA[Vinicius KBÇA]]></dc:creator>
+		<pubDate>Mon, 21 Dec 2015 23:44:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-3092</guid>
+		<description><![CDATA[it is possible to perform the direct command in the application (JS code), or only via the command line as in the example. Sorry for the english I&#039;m from Brazil, thank you!]]></description>
+		<content:encoded><![CDATA[<p>it is possible to perform the direct command in the application (JS code), or only via the command line as in the example. Sorry for the english I&#8217;m from Brazil, thank you!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Niklas</title>
+		<link>./../comment-page-1/index.html#comment-3075</link>
+		<dc:creator><![CDATA[Niklas]]></dc:creator>
+		<pubDate>Thu, 26 Nov 2015 16:21:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-3075</guid>
+		<description><![CDATA[Hello
+I have done exakly what it says on the tutorials.
+I have retype the code and api many times..
+
+But no device is register...
+
+Please, what can i do !!!!]]></description>
+		<content:encoded><![CDATA[<p>Hello<br />
+I have done exakly what it says on the tutorials.<br />
+I have retype the code and api many times..</p>
+<p>But no device is register&#8230;</p>
+<p>Please, what can i do !!!!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: f1lander</title>
+		<link>./../comment-page-1/index.html#comment-3001</link>
+		<dc:creator><![CDATA[f1lander]]></dc:creator>
+		<pubDate>Thu, 15 Oct 2015 17:09:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-3001</guid>
+		<description><![CDATA[I have a problem with this plugin, i get this error when a I trying to build android in ionic project ERROR building one of the platforms: Error: /Users/desarrollo/checkApp_beta/platforms/android/cordova/build: Command failed with exit code 1
+
+You may not have the required environment or OS to build this project
+
+
+
+I have all sdk android installed, i founded an error like this, it&#039;s about android.platform v4 related with push plugin facebook, I need your help because I need implement push notifications.]]></description>
+		<content:encoded><![CDATA[<p>I have a problem with this plugin, i get this error when a I trying to build android in ionic project ERROR building one of the platforms: Error: /Users/desarrollo/checkApp_beta/platforms/android/cordova/build: Command failed with exit code 1</p>
+<p>You may not have the required environment or OS to build this project</p>
+<p>I have all sdk android installed, i founded an error like this, it&#8217;s about android.platform v4 related with push plugin facebook, I need your help because I need implement push notifications.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: tridox</title>
+		<link>./../comment-page-1/index.html#comment-2995</link>
+		<dc:creator><![CDATA[tridox]]></dc:creator>
+		<pubDate>Mon, 12 Oct 2015 11:29:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-2995</guid>
+		<description><![CDATA[Hello Arvind, Thanks for your good tutorial. I am new to phonegap . My first mobile that i am trying out is push notification. I searched your article in google and started developing pushnotification app using phonegap. I tried all the steps provided by in this article but still i am unable to see my device in pushbots dashboard. Kindly assist. I need my first app to be successful so that i can proceed further.]]></description>
+		<content:encoded><![CDATA[<p>Hello Arvind, Thanks for your good tutorial. I am new to phonegap . My first mobile that i am trying out is push notification. I searched your article in google and started developing pushnotification app using phonegap. I tried all the steps provided by in this article but still i am unable to see my device in pushbots dashboard. Kindly assist. I need my first app to be successful so that i can proceed further.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mufaddal</title>
+		<link>./../comment-page-1/index.html#comment-2993</link>
+		<dc:creator><![CDATA[Mufaddal]]></dc:creator>
+		<pubDate>Sat, 10 Oct 2015 06:14:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-2993</guid>
+		<description><![CDATA[ok, i figured out the issue, i was trying to upload the apk with different package name on the play store where i had uploaded the com.push.notif.app
+
+
+so creating a new application worked fine.]]></description>
+		<content:encoded><![CDATA[<p>ok, i figured out the issue, i was trying to upload the apk with different package name on the play store where i had uploaded the com.push.notif.app</p>
+<p>so creating a new application worked fine.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mufaddal</title>
+		<link>./../comment-page-1/index.html#comment-2992</link>
+		<dc:creator><![CDATA[Mufaddal]]></dc:creator>
+		<pubDate>Sat, 10 Oct 2015 06:00:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-2992</guid>
+		<description><![CDATA[thanks for the wonderful article, i was successfully able to build and publish the app to google play, until i changed the &quot;cordova create myApp com.push.notif.app testPushApp&quot; while creating app to &quot;cordova create myApp com.mpw.apps.ljapp testPushApp&quot;.
+
+the build and run works fine, but when i sign and upload to Google Play it gives following message
+
+Your APK needs to have the package name com.push.notif.app.]]></description>
+		<content:encoded><![CDATA[<p>thanks for the wonderful article, i was successfully able to build and publish the app to google play, until i changed the &#8220;cordova create myApp com.push.notif.app testPushApp&#8221; while creating app to &#8220;cordova create myApp com.mpw.apps.ljapp testPushApp&#8221;.</p>
+<p>the build and run works fine, but when i sign and upload to Google Play it gives following message</p>
+<p>Your APK needs to have the package name com.push.notif.app.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Fabian Davidson</title>
+		<link>./../comment-page-1/index.html#comment-2919</link>
+		<dc:creator><![CDATA[Fabian Davidson]]></dc:creator>
+		<pubDate>Fri, 21 Aug 2015 03:38:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-2919</guid>
+		<description><![CDATA[PushbotsPlugin.initializeAndroid doesn&#039;t seem to be registreing my device, I am able to get back a token using PushbotsPlugin.getToken , but  I don&#039;t see the device registered on https://pushbots.com/dashboard . I have push notifications set up for 1 application so far , I&#039;m not sure why this one is not working. Any ideas?]]></description>
+		<content:encoded><![CDATA[<p>PushbotsPlugin.initializeAndroid doesn&#8217;t seem to be registreing my device, I am able to get back a token using PushbotsPlugin.getToken , but  I don&#8217;t see the device registered on <a href="https://pushbots.com/dashboard" rel="nofollow">https://pushbots.com/dashboard</a> . I have push notifications set up for 1 application so far , I&#8217;m not sure why this one is not working. Any ideas?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Srikanth Hugar</title>
+		<link>./../comment-page-1/index.html#comment-2905</link>
+		<dc:creator><![CDATA[Srikanth Hugar]]></dc:creator>
+		<pubDate>Fri, 14 Aug 2015 11:08:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-2905</guid>
+		<description><![CDATA[I am using cordova: 5.1.1, ionic:1.0.1 &amp; pushbots:1.2.x.
+
+My pushbots works fine in android, but ios it fails. I hvae done all the configuration and alert is displayed in ios device related to user permission for push notifications. But when i go and check in the pushbots dashboard, device is not registered. What could be the issue here?
+
+I am trying to register the device with code.
+
+if (PushbotsPlugin.isiOS()) {
+                PushbotsPlugin.initializeiOS(&#039;XXXXX_MY_APP_ID_XXXXX&#039;);
+}
+
+When i check the logs from xcode
+
+[Pushbots] You&#039;ve to call :sharedInstanceWithAppId first.
+[Pushbots] :sharedInstanceWithAppId XXXXXXXMY_APPA_ID_XXXXXX.]]></description>
+		<content:encoded><![CDATA[<p>I am using cordova: 5.1.1, ionic:1.0.1 &amp; pushbots:1.2.x.</p>
+<p>My pushbots works fine in android, but ios it fails. I hvae done all the configuration and alert is displayed in ios device related to user permission for push notifications. But when i go and check in the pushbots dashboard, device is not registered. What could be the issue here?</p>
+<p>I am trying to register the device with code.</p>
+<p>if (PushbotsPlugin.isiOS()) {<br />
+                PushbotsPlugin.initializeiOS(&#8216;XXXXX_MY_APP_ID_XXXXX&#8217;);<br />
+}</p>
+<p>When i check the logs from xcode</p>
+<p>[Pushbots] You&#8217;ve to call :sharedInstanceWithAppId first.<br />
+[Pushbots] :sharedInstanceWithAppId XXXXXXXMY_APPA_ID_XXXXXX.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Fabricio Guedes</title>
+		<link>./../comment-page-1/index.html#comment-2798</link>
+		<dc:creator><![CDATA[Fabricio Guedes]]></dc:creator>
+		<pubDate>Fri, 03 Jul 2015 20:00:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-2798</guid>
+		<description><![CDATA[Everything done just right , OS sends push But do not receive ... in the test environment ... paragraph IOS need to have an account paid Developer How ?]]></description>
+		<content:encoded><![CDATA[<p>Everything done just right , OS sends push But do not receive &#8230; in the test environment &#8230; paragraph IOS need to have an account paid Developer How ?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2777</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Sun, 28 Jun 2015 17:21:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-2777</guid>
+		<description><![CDATA[You can try a socket based approach, where you can run a socket server &amp; send a message from your mobile phone to the socket. 
+
+
+If you are not familiar with approach, checkout Firebase.]]></description>
+		<content:encoded><![CDATA[<p>You can try a socket based approach, where you can run a socket server &amp; send a message from your mobile phone to the socket. </p>
+<p>If you are not familiar with approach, checkout Firebase.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Lohith</title>
+		<link>./../comment-page-1/index.html#comment-2767</link>
+		<dc:creator><![CDATA[Lohith]]></dc:creator>
+		<pubDate>Tue, 23 Jun 2015 13:09:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-2767</guid>
+		<description><![CDATA[yes... i just wanted to show Cordova is simple as people like me who know only html, css and basic copy cat java script person can learn this. so i have created a text box with submit button so when i click on it, it should send notification to all of my app users..]]></description>
+		<content:encoded><![CDATA[<p>yes&#8230; i just wanted to show Cordova is simple as people like me who know only html, css and basic copy cat java script person can learn this. so i have created a text box with submit button so when i click on it, it should send notification to all of my app users..</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2766</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Tue, 23 Jun 2015 13:03:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-2766</guid>
+		<description><![CDATA[You mean Native Android (Java) vs. Cordova?]]></description>
+		<content:encoded><![CDATA[<p>You mean Native Android (Java) vs. Cordova?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Lohith</title>
+		<link>./../comment-page-1/index.html#comment-2765</link>
+		<dc:creator><![CDATA[Lohith]]></dc:creator>
+		<pubDate>Tue, 23 Jun 2015 12:55:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-2765</guid>
+		<description><![CDATA[Hi Aravind,
+
+yes i am trying to do a demo project so if it works means i will be able to show it to colleague that instead of using Android application we can go for cordova apps which is very helpful.]]></description>
+		<content:encoded><![CDATA[<p>Hi Aravind,</p>
+<p>yes i am trying to do a demo project so if it works means i will be able to show it to colleague that instead of using Android application we can go for cordova apps which is very helpful.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2764</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Tue, 23 Jun 2015 10:39:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-2764</guid>
+		<description><![CDATA[Why do you want to send a Push notification from a mobile? Any specific use case?]]></description>
+		<content:encoded><![CDATA[<p>Why do you want to send a Push notification from a mobile? Any specific use case?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Lohith</title>
+		<link>./../comment-page-1/index.html#comment-2763</link>
+		<dc:creator><![CDATA[Lohith]]></dc:creator>
+		<pubDate>Tue, 23 Jun 2015 09:56:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-2763</guid>
+		<description><![CDATA[Hi,
+
+Thanks for the great post.
+
+I have done this and its working fine. I am able to send notification through pushbots.com now.
+
+I would like to send push notification from my android device using cordova app
+
+I have a simple app containing text box and submit button. I need to send the message as push notification whenever i submit the button to all those whoever using my app. How can i achieve this.
+
+i have done upto this much.
+1) cordova create hello com.hello.test pushtest
+2) cd hello
+3) cordova platform add android
+4) cordova build android
+5) cordova plugin add C:UserslokiDocumentsPushPlugin-masterPushPlugin-master
+
+plugin added successfully…
+
+I don know how to proceed further. Could you please help me out in sending push notification on click of the submit button. ?
+
+Could you please help me that how i can proceed further.
+
+Eagerly waiting for your reply,
+
+thanks]]></description>
+		<content:encoded><![CDATA[<p>Hi,</p>
+<p>Thanks for the great post.</p>
+<p>I have done this and its working fine. I am able to send notification through pushbots.com now.</p>
+<p>I would like to send push notification from my android device using cordova app</p>
+<p>I have a simple app containing text box and submit button. I need to send the message as push notification whenever i submit the button to all those whoever using my app. How can i achieve this.</p>
+<p>i have done upto this much.<br />
+1) cordova create hello com.hello.test pushtest<br />
+2) cd hello<br />
+3) cordova platform add android<br />
+4) cordova build android<br />
+5) cordova plugin add C:UserslokiDocumentsPushPlugin-masterPushPlugin-master</p>
+<p>plugin added successfully…</p>
+<p>I don know how to proceed further. Could you please help me out in sending push notification on click of the submit button. ?</p>
+<p>Could you please help me that how i can proceed further.</p>
+<p>Eagerly waiting for your reply,</p>
+<p>thanks</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2720</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Thu, 04 Jun 2015 06:38:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2909#comment-2720</guid>
+		<description><![CDATA[Can you see your iPhone, I mean, is there only one iPhone on the dashboard? Also, did you update the Pushbots dashboard with certificate? ]]></description>
+		<content:encoded><![CDATA[<p>Can you see your iPhone, I mean, is there only one iPhone on the dashboard? Also, did you update the Pushbots dashboard with certificate? </p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

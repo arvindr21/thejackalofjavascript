@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:series="http://organizeseries.com/"
+	
+	>
+<channel>
+	<title>Comments on: Getting Started with Phonegap Desktop App (v0.1.1 Beta)</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Knowing is different &#38; Doing is different</description>
+	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.16</generator>
+	<item>
+		<title>By: Ibrahim</title>
+		<link>./../comment-page-1/index.html#comment-3261</link>
+		<dc:creator><![CDATA[Ibrahim]]></dc:creator>
+		<pubDate>Sat, 09 Jul 2016 17:30:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-3261</guid>
+		<description><![CDATA[Thanks very much Arvind.
+I will get back to you after trying it.]]></description>
+		<content:encoded><![CDATA[<p>Thanks very much Arvind.<br />
+I will get back to you after trying it.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-3260</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Sat, 09 Jul 2016 16:49:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-3260</guid>
+		<description><![CDATA[For #1 take a look at : ./../../phonegap-3-cli-setup-mac-windows/index.html
+For #2 take a look at : ./../../phonegap-quick-start/index.html
+Misc : ./../../build-native-installers-using-ionic-cli/]]>/index.html</description>
+		<content:encoded><![CDATA[<p>For #1 take a look at : <a href="./../../phonegap-3-cli-setup-mac-windows/index.html" rel="nofollow">./../../phonegap-3-cli-setup-mac-windows/index.html</a><br />
+For #2 take a look at : <a href="./../../phonegap-quick-start/index.html" rel="nofollow">./../../phonegap-quick-start/index.html</a><br />
+Misc : <a href="./../../build-native-installers-using-ionic-cli/index.html" rel="nofollow">./../../build-native-installers-using-ionic-cli/index.html</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ibrahim</title>
+		<link>./../comment-page-1/index.html#comment-3257</link>
+		<dc:creator><![CDATA[Ibrahim]]></dc:creator>
+		<pubDate>Sat, 09 Jul 2016 15:05:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-3257</guid>
+		<description><![CDATA[How do i go about the cli and for the second option which folder will i upload? do i need any other file
+Thanks]]></description>
+		<content:encoded><![CDATA[<p>How do i go about the cli and for the second option which folder will i upload? do i need any other file<br />
+Thanks</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: tyler mackenzie</title>
+		<link>./../comment-page-1/index.html#comment-3256</link>
+		<dc:creator><![CDATA[tyler mackenzie]]></dc:creator>
+		<pubDate>Sat, 09 Jul 2016 01:22:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-3256</guid>
+		<description><![CDATA[I believe you basically have two options. you can download and use the GhoneGap cli (harder) or use adobe&#039;s PhoneGap Build service (easy) they let you build 1 free app. https://build.phonegap.com/]]></description>
+		<content:encoded><![CDATA[<p>I believe you basically have two options. you can download and use the GhoneGap cli (harder) or use adobe&#8217;s PhoneGap Build service (easy) they let you build 1 free app. <a href="https://build.phonegap.com/" rel="nofollow">https://build.phonegap.com/</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: tyler mackenzie</title>
+		<link>./../comment-page-1/index.html#comment-3255</link>
+		<dc:creator><![CDATA[tyler mackenzie]]></dc:creator>
+		<pubDate>Sat, 09 Jul 2016 01:18:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-3255</guid>
+		<description><![CDATA[Hello, thanks for the great little tutorial. I just have a question about the folder structure that PhoneGap creates. I noticed that it creates html,js,css,etc files in the /www folder, and in /platforms/browser and in /platforms/browser/www. why are the same set of files there 3 times? and if I want to practice making a basic app by editing this default, which files do i need to edit? and which files do i need to upload to PhoneGap Build? thanks!]]></description>
+		<content:encoded><![CDATA[<p>Hello, thanks for the great little tutorial. I just have a question about the folder structure that PhoneGap creates. I noticed that it creates html,js,css,etc files in the /www folder, and in /platforms/browser and in /platforms/browser/www. why are the same set of files there 3 times? and if I want to practice making a basic app by editing this default, which files do i need to edit? and which files do i need to upload to PhoneGap Build? thanks!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ibrahim</title>
+		<link>./../comment-page-1/index.html#comment-3254</link>
+		<dc:creator><![CDATA[Ibrahim]]></dc:creator>
+		<pubDate>Fri, 08 Jul 2016 18:53:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-3254</guid>
+		<description><![CDATA[How do i generate the apk file?]]></description>
+		<content:encoded><![CDATA[<p>How do i generate the apk file?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: deltadan79</title>
+		<link>./../comment-page-1/index.html#comment-3078</link>
+		<dc:creator><![CDATA[deltadan79]]></dc:creator>
+		<pubDate>Wed, 02 Dec 2015 19:34:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-3078</guid>
+		<description><![CDATA[Quick question. After building the app using the desktop version, testing, and it works. Is there a way to package the app for distribution other than the buld.phonegap.com site? I have an app that plays audio from files that are stored within the app itself (rather large) and the build service from phonegap using zips limits the file size of uploaded archives.]]></description>
+		<content:encoded><![CDATA[<p>Quick question. After building the app using the desktop version, testing, and it works. Is there a way to package the app for distribution other than the buld.phonegap.com site? I have an app that plays audio from files that are stored within the app itself (rather large) and the build service from phonegap using zips limits the file size of uploaded archives.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Федор Горский</title>
+		<link>./../comment-page-1/index.html#comment-2929</link>
+		<dc:creator><![CDATA[Федор Горский]]></dc:creator>
+		<pubDate>Fri, 28 Aug 2015 13:19:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-2929</guid>
+		<description><![CDATA[I build it on linux! work fine.
+Here instruction https://openitstudio.ru/blog/18.html]]></description>
+		<content:encoded><![CDATA[<p>I build it on linux! work fine.<br />
+Here instruction <a href="https://openitstudio.ru/blog/18.html" rel="nofollow">https://openitstudio.ru/blog/18.html</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ranjith V</title>
+		<link>./../comment-page-1/index.html#comment-2918</link>
+		<dc:creator><![CDATA[Ranjith V]]></dc:creator>
+		<pubDate>Thu, 20 Aug 2015 07:22:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-2918</guid>
+		<description><![CDATA[Hi , Can i Know how to make Chat App In PhoneGap,Socket ?]]></description>
+		<content:encoded><![CDATA[<p>Hi , Can i Know how to make Chat App In PhoneGap,Socket ?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2868</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Sun, 09 Aug 2015 06:51:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-2868</guid>
+		<description><![CDATA[Is your mobile and your desktop connected to the same wifi network?]]></description>
+		<content:encoded><![CDATA[<p>Is your mobile and your desktop connected to the same wifi network?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: 2-3-34</title>
+		<link>./../comment-page-1/index.html#comment-2820</link>
+		<dc:creator><![CDATA[2-3-34]]></dc:creator>
+		<pubDate>Thu, 16 Jul 2015 03:28:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-2820</guid>
+		<description><![CDATA[my PhoneGap developers app won&#039;t connect with my PhoneGap desktop app. Do you know how it could possibly connect? thank you any help is appreciated.]]></description>
+		<content:encoded><![CDATA[<p>my PhoneGap developers app won&#8217;t connect with my PhoneGap desktop app. Do you know how it could possibly connect? thank you any help is appreciated.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2524</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Fri, 24 Apr 2015 13:40:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-2524</guid>
+		<description><![CDATA[The last I checked this was not added as part of the Phonegap desktop app. You may need to either use Phonegap build or you can use Cordova API to generate the installer.]]></description>
+		<content:encoded><![CDATA[<p>The last I checked this was not added as part of the Phonegap desktop app. You may need to either use Phonegap build or you can use Cordova API to generate the installer.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Sadman Samee Tonmoy</title>
+		<link>./../comment-page-1/index.html#comment-2511</link>
+		<dc:creator><![CDATA[Sadman Samee Tonmoy]]></dc:creator>
+		<pubDate>Thu, 23 Apr 2015 04:01:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-2511</guid>
+		<description><![CDATA[now how to build for release I mean how to port apk for android  or installer for windows phone?]]></description>
+		<content:encoded><![CDATA[<p>now how to build for release I mean how to port apk for android  or installer for windows phone?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2269</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Fri, 27 Feb 2015 11:13:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-2269</guid>
+		<description><![CDATA[Not sure if the Desktop app is build using nwk. If it is so, it would be really cool to see how it performs in realtime! Yeah Linux people have to wait.]]></description>
+		<content:encoded><![CDATA[<p>Not sure if the Desktop app is build using nwk. If it is so, it would be really cool to see how it performs in realtime! Yeah Linux people have to wait.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: YdnasErriep</title>
+		<link>./../comment-page-1/index.html#comment-2268</link>
+		<dc:creator><![CDATA[YdnasErriep]]></dc:creator>
+		<pubDate>Fri, 27 Feb 2015 09:34:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-2268</guid>
+		<description><![CDATA[I saw on phonegap website some pics of bug showing some nodewebkit error messageBut it&#039;s a great new anyway !!
+ but nothing for linux..lol i have to wait to try it!!]]></description>
+		<content:encoded><![CDATA[<p>I saw on phonegap website some pics of bug showing some nodewebkit error messageBut it&#8217;s a great new anyway !!<br />
+ but nothing for linux..lol i have to wait to try it!!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2262</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Thu, 26 Feb 2015 18:11:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-2262</guid>
+		<description><![CDATA[Nope, this is for building mobile hybrid apps using Phonegap API, without the hassle of installing and setting up Phonegap CLI on your machine (&lt;a href=&quot;./../../phonegap-3-cli-setup-mac-windows/&quot;/index.html rel=&quot;nofollow&quot;&gt;PhoneGap 3 CLI Setup on Mac &amp; Windows&lt;/a&gt;)]]></description>
+		<content:encoded><![CDATA[<p>Nope, this is for building mobile hybrid apps using Phonegap API, without the hassle of installing and setting up Phonegap CLI on your machine (<a href="./../../phonegap-3-cli-setup-mac-windows/index.html" rel="nofollow">PhoneGap 3 CLI Setup on Mac &amp; Windows</a>)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: YdnasErriep</title>
+		<link>./../comment-page-1/index.html#comment-2261</link>
+		<dc:creator><![CDATA[YdnasErriep]]></dc:creator>
+		<pubDate>Thu, 26 Feb 2015 18:03:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2762#comment-2261</guid>
+		<description><![CDATA[nice !! it&#039;s just a wrapper for nodeWebkit(nw.js)??]]></description>
+		<content:encoded><![CDATA[<p>nice !! it&#8217;s just a wrapper for nodeWebkit(nw.js)??</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="alexaVerifyID" content="tHZTfJpU56tqERN4vjth74jHqBM"/>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="./xmlrpc.php">
+<!-- <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'> -->
+<link rel="shortcut icon" href="./wp-content/uploads/2014/02/favicon.ico" type="image/x-icon">
+<meta name="keywords" content="Javascript, HTML5, CSS3, ES6, Ecmascript, Hybrid Apps, Mobile Web Development, Desktop Apps, Apps, Arvind R, Arvind Ravulavaru, The Jackal of Javascript">
+<link rel="icon" href="./wp-content/uploads/2014/02/favicon.ico" type="image/x-icon">
+<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'> -->
+<link rel="stylesheet" type="text/css" href="./wp-content/cache/wpfc-minified/61cc3c87f2aa625d55d3026ecc452e96/1511014149index.css" media="all"/>
+<!-- Performance scores of this site is tuned by WP Performance Score Booster plugin v1.5 - http://wordpress.org/plugins/wp-performance-score-booster -->
+<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="1QBi99oBZzn4xisTyRUgPd4BXjQ-6Tu09iK6V_bviIY" />
+<meta name="msvalidate.01" content="33E048D3C4E943B6450230EA909E12C6" />
+<meta name="p:domain_verify" content="662a829c1b5ccc13015f1cc5d00ec7e4" />
+<!-- This site is optimized with the Yoast SEO plugin v3.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Git &amp; GitHub for Beginners | The Jackal of Javascript</title>
+<meta name="description" content="Git &amp; GitHub for Beginners. In today&#039;s collaborative world, it is very essential that one understands the need for a Concurrent Versions System (CVS)."/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="./index.html" />
+<link rel="publisher" href="https://plus.google.com/ArvindRavulavaru"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Git &amp; GitHub for Beginners | The Jackal of Javascript" />
+<meta property="og:description" content="Git &amp; GitHub for Beginners. In today&#039;s collaborative world, it is very essential that one understands the need for a Concurrent Versions System (CVS)." />
+<meta property="og:url" content="./git-and-github-for-beginners/" />
+<meta property="og:site_name" content="The Jackal of Javascript" />
+<meta property="article:publisher" content="https://www.facebook.com/arvindravulavaru" />
+<meta property="article:section" content="Git" />
+<meta property="article:published_time" content="2014-02-27T23:50:17+05:30" />
+<meta property="article:modified_time" content="2014-02-28T01:01:13+05:30" />
+<meta property="og:updated_time" content="2014-02-28T01:01:13+05:30" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/18333fig0105-tn-451x200.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-9.56.17-AM-451x112.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.13.25-AM.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.27.38-AM-451x60.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.30.50-AM-451x101.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.35.59-AM.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.44.15-AM-451x33.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.46.44-AM-451x82.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.55.34-AM-326x300.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-11.12.33-AM-451x50.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-11.16.39-AM-451x99.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-11.25.22-AM-451x87.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/18333fig0106-tn-326x300.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.10.31-PM-451x262.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.12.26-PM-451x258.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.28.05-PM-451x58.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.33.16-PM-252x300.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.38.56-PM-451x84.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.46.43-PM-451x95.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.48.12-PM-451x191.png" />
+<meta property="og:image" content="./wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.57.00-PM-451x197.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Git &amp; GitHub for Beginners. In today&#039;s collaborative world, it is very essential that one understands the need for a Concurrent Versions System (CVS)." />
+<meta name="twitter:title" content="Git &amp; GitHub for Beginners | The Jackal of Javascript" />
+<meta name="twitter:site" content="@arvindr21" />
+<meta name="twitter:image" content="./wp-content/uploads/2014/02/18333fig0105-tn-451x200.png" />
+<meta name="twitter:creator" content="@arvindr21" />
+<!-- / Yoast SEO plugin. -->
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js"}};
+!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='savrix-style.css-css'  href='./wp-content/plugins/savrix-android-market/savrix-style-only-play.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='validate-engine-css-css'  href='./wp-content/plugins/wysija-newsletters/css/validationEngine.jquery.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='crayon-css'  href='./wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='crayon-theme-arduino-ide-css'  href='./wp-content/plugins/crayon-syntax-highlighter/themes/arduino-ide/arduino-ide.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='crayon-font-droid-sans-mono-css'  href='./wp-content/plugins/crayon-syntax-highlighter/fonts/droid-sans-mono.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='orgseries-default-css-css'  href='./wp-content/plugins/organize-series/orgSeries.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='responsive-lightbox-prettyphoto-css'  href='./wp-content/plugins/responsive-lightbox/assets/prettyphoto/css/prettyPhoto.css' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./wp-content/cache/wpfc-minified/9f9f3b5f286a1b327e6bb0fdb1185c24/1511014149index.css" media="all"/>
+<link rel='stylesheet' id='font-awesome-css'  href='//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css' type='text/css' media='screen' />
+<!-- <link rel='stylesheet' id='ssbaFont-css'  href='//fonts.googleapis.com/css?family=Indie+Flower&#038;ver=4.2.16' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='wpfront-notification-bar-css'  href='./wp-content/plugins/wpfront-notification-bar/css/wpfront-notification-bar.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-style-css'  href='./wp-content/themes/sorbet/style.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-source-sans-pro-css'  href='http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext&#038;ver=4.2.16' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-pt-serif-css'  href='http://fonts.googleapis.com/css?family=PT+Serif%3A400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext&#038;ver=4.2.16' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-genericons-css'  href='./wp-content/themes/sorbet/genericons/genericons.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='easy_table_style-css'  href='./wp-content/plugins/easy-table/themes/default/style.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='upprev-css-css'  href='./wp-content/plugins/upprev/styles/upprev.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='jetpack_css-css'  href='./wp-content/plugins/jetpack/css/jetpack.css' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./wp-content/cache/wpfc-minified/3af13bcd925b3eaa358c8ad5070bb07b/1511014148index.css" media="all"/>
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.6 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+__gaTracker('create', 'UA-47881846-1', 'auto');
+__gaTracker('set', 'forceSSL', true);
+__gaTracker('require', 'displayfeatures');
+__gaTracker('send','pageview');
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type="text/javascript">
+var iworks_upprev = { animation: 'flyout', position: 'right', offset_percent: 75, offset_element: '#comments', css_width: 360, css_side: 5, compare: 'simple', url_new_window: 0, ga_track_views: 1, ga_track_clicks: 1, ga_opt_noninteraction: 1, title: 'Git &amp; GitHub for Beginners' };
+</script>
+<script src='./wp-content/cache/wpfc-minified/1f21a7a8ca343ebb57ffeb4ab24afbd9/1511014152index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='./wp-includes/js/jquery/jquery.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-includes/js/jquery/jquery-migrate.min.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/jetpack/modules/related-posts/related-posts.js'></script> -->
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":".\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script src='./wp-content/cache/wpfc-minified/052c748258385b6c23fc6642e73a4285/1511014152index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='./wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/responsive-lightbox/assets/prettyphoto/js/jquery.prettyPhoto.js'></script> -->
+<script type='text/javascript'>
+/* <![CDATA[ */
+var rlArgs = {"script":"prettyphoto","selector":"lightbox","customEvents":"","activeGalleries":"1","animationSpeed":"normal","slideshow":"0","slideshowDelay":"5000","slideshowAutoplay":"0","opacity":"0.75","showTitle":"1","allowResize":"1","allowExpand":"1","width":"1080","height":"720","separator":"\/","theme":"pp_default","horizontalPadding":"20","hideFlash":"0","wmode":"opaque","videoAutoplay":"0","modal":"0","deeplinking":"0","overlayGallery":"1","keyboardShortcuts":"1","social":"0"};
+/* ]]> */
+</script>
+<script src='./wp-content/cache/wpfc-minified/d57c91500961bea5aea0e849cf08f7e7/1511014151index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='./wp-content/plugins/responsive-lightbox/js/front.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/wpfront-notification-bar/jquery-plugins/jquery.c.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/wpfront-notification-bar/js/wpfront-notification-bar.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/upprev/scripts/upprev.js'></script> -->
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<meta name="generator" content="WordPress 4.2.16" />
+<style>
+.scroll-back-to-top-wrapper {
+position: fixed;
+opacity: 0;
+visibility: hidden;
+overflow: hidden;
+text-align: center;
+z-index: 99999999;
+background-color: #777777;
+color: #eeeeee;
+width: 50px;
+height: 48px;
+line-height: 48px;
+right: 30px;
+bottom: 30px;
+padding-top: 2px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+.scroll-back-to-top-wrapper:hover {
+background-color: #888888;
+color: #eeeeee;
+}
+.scroll-back-to-top-wrapper.show {
+visibility:visible;
+cursor:pointer;
+opacity: 1.0;
+}
+.scroll-back-to-top-wrapper i.fa {
+line-height: inherit;
+}
+.scroll-back-to-top-wrapper .fa-lg {
+vertical-align: 0;
+}
+</style><style type="text/css">	.ssba {
+}
+.ssba img
+{
+width: 35px !important;
+padding: 6px;
+border:  0;
+box-shadow: none !important;
+display: inline !important;
+vertical-align: middle;
+}
+.ssba, .ssba a
+{
+text-decoration:none;
+border:0;
+background: none;
+font-family: Indie Flower;
+font-size: 	20px;
+}.ssba_sharecount:after, .ssba_sharecount:before {
+right: 100%;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+}
+.ssba_sharecount:after {
+border-color: rgba(224, 221, 221, 0);
+border-right-color: #f5f5f5;
+border-width: 5px;
+top: 50%;
+margin-top: -5px;
+}
+.ssba_sharecount:before {
+border-color: rgba(85, 94, 88, 0);
+border-right-color: #e0dddd;
+border-width: 6px;
+top: 50%;
+margin-top: -6px;
+}
+.ssba_sharecount {
+font: 11px Arial, Helvetica, sans-serif;
+padding: 5px;
+-khtml-border-radius: 6px;
+-o-border-radius: 6px;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+position: relative;
+border: 1px solid #e0dddd;color: #555e58;
+background: #ffffff;
+}
+.ssba_sharecount:after {
+border-right-color: #ffffff;
+}</style><style id="popup-maker-themes"  type="text/css">/* Popup Theme 2995: Default Theme */
+.popmake-overlay.theme-2995, .popmake-overlay.theme-default-theme { background-color: rgba( 255, 255, 255, 1 ) } 
+.popmake.theme-2995, .popmake.theme-default-theme { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1 ) } 
+.popmake.theme-2995 .popmake-title, .popmake.theme-default-theme .popmake-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: inherit; font-size: 32px; font-style: normal; line-height: 36px } 
+.popmake.theme-2995 .popmake-content, .popmake.theme-default-theme .popmake-content { color: #8c8c8c; font-family: inherit; font-weight: inherit; font-style: normal } 
+.popmake.theme-2995 > .popmake-close, .popmake.theme-default-theme > .popmake-close { height: 20px; width: 20px; left: auto; right: 0px; bottom: auto; top: 0px; padding: 8px; color: #ffffff; font-family: inherit; font-weight: inherit; font-size: 12px; font-style: normal; line-height: 14px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1 ) } 
+</style>
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+<link rel='dns-prefetch' href='//widgets.wp.com'>
+<link rel='dns-prefetch' href='//s0.wp.com'>
+<link rel='dns-prefetch' href='//0.gravatar.com'>
+<link rel='dns-prefetch' href='//1.gravatar.com'>
+<link rel='dns-prefetch' href='//2.gravatar.com'>
+<style type="text/css">
+#upprev_box{bottom:5px;width:360px;right:5px;display:block;right:-415px;display:block;}
+</style>
+</head>
+<body class="single single-post postid-614 single-format-standard right-sidebar">
+<div id="page" class="hfeed site">
+<header id="masthead" class="site-header" role="banner">
+<div class="site-header-wrapper">
+<div class="site-branding">
+<h1 class="site-title"><a href="./index.html" rel="home">The Jackal of Javascript</a></h1>
+<h2 class="site-description">Knowing is different &amp; Doing is different</h2>
+</div>
+<div class="toggles">
+<div id="menu-toggle" class="toggle active" title="Menu"><span class="screen-reader-text">Menu</span></div>
+<div id="search-toggle" class="toggle" title="Search"><span class="screen-reader-text">Search</span></div>
+</div>
+</div>
+</header><!-- #masthead -->
+<div id="menu-toggle-nav" class="panel">
+<nav id="site-navigation" class="main-navigation" role="navigation">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<div class="menu-main-container"><ul id="menu-main" class="menu"><li id="menu-item-2579" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2579"><a href="./index.html">Home</a></li>
+<li id="menu-item-2595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2595"><a href="./portfolio/index.html">About  me</a></li>
+<li id="menu-item-2580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2580"><a href="./history-of-the-web/index.html">History of the Web</a></li>
+<li id="menu-item-2726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2726"><a href="./javascript-101/index.html">Javascript 101</a></li>
+<li id="menu-item-2581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2581"><a href="./contact-request/index.html">Request</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+</div>
+<div id="search-toggle-nav" class="panel">
+<div class="search-wrapper">
+<form role="search" method="get" class="search-form" action="./index.html">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+</label>
+<input type="submit" class="search-submit" value="Search">
+</form>
+</div>
+</div>
+<div id="content" class="site-content">
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<article id="post-614" class="post-614 post type-post status-publish format-standard hentry category-git category-github category-node category-setup category-tutorial">
+<header class="entry-header">
+<h1 class="entry-title">Git &#038; GitHub for Beginners</h1>	</header><!-- .entry-header -->
+<div class="entry-content">
+<!-- Simple Share Buttons Adder (6.1.5) simplesharebuttons.com --><div class="ssba ssba-wrap"><div style="text-align:left"><a href="http://twitter.com/share?url=./git-and-github-for-beginners/&amp;text=Git+%26+GitHub+for+Beginners+From+The+Jackal+of+Javascript+by+%40arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://twitter.com/share?url=./git-and-github-for-beginners/&amp;text=Git+%26+GitHub+for+Beginners+From+The+Jackal+of+Javascript+by+%40arvindr21', '');" data-site="" class="ssba_twitter_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /></noscript></a><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=./git-and-github-for-beginners/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.linkedin.com/shareArticle?mini=true&amp;url=./git-and-github-for-beginners/', '');" data-site="linkedin" class="ssba_linkedin_share ssba_share_link"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="https://plus.google.com/share?url=./git-and-github-for-beginners/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://plus.google.com/share?url=./git-and-github-for-beginners/', '');" data-site="" class="ssba_google_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="http://reddit.com/submit?url=./git-and-github-for-beginners/&amp;title=Git &amp; GitHub for Beginners" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://reddit.com/submit?url=./git-and-github-for-beginners/&amp;title=Git &amp; GitHub for Beginners', '');" data-site="reddit" class="ssba_reddit_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="https://bufferapp.com/add?url=./git-and-github-for-beginners/&amp;text=From The Jackal of Javascript Git &amp; GitHub for Beginners" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://bufferapp.com/add?url=./git-and-github-for-beginners/&amp;text=From The Jackal of Javascript Git &amp; GitHub for Beginners', '');" data-site="buffer" class="ssba_buffer_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /></noscript></a><a href="https://flattr.com/submit/auto?user_id=arvindr21&amp;title=Git &amp; GitHub for Beginners&amp;url=https://flattr.com/profile/arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://flattr.com/submit/auto?user_id=arvindr21&amp;title=Git &amp; GitHub for Beginners&amp;url=https://flattr.com/profile/arvindr21', '');" data-site="flattr" class="ssba_flattr_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /></noscript></a><a data-site="email" class="ssba_email_share" href="./cdn-cgi/l/email-protection/index.html#b18ec2c4d3dbd4d2c58cf6d8c591948387d0dcc18a91f6d8c5f9c4d391d7dec391f3d4d6d8dfdfd4c3c297d0dcc18ad3ded5c88cf7c3dedc91e5d9d491fbd0d2dad0dd91ded791fbd0c7d0c2d2c3d8c1c5948381d9c5c5c18b9e9ec5d9d4dbd0d2dad0ddded7dbd0c7d0c2d2c3d8c1c59fd2dedc9ed6d8c59cd0dfd59cd6d8c5d9c4d39cd7dec39cd3d4d6d8dfdfd4c3c29e"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /></noscript></a><a data-site="print" class="ssba_print ssba_share_link" href="#" onclick="window.print()"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /></noscript></a></div></div><h1 class="disp-none">Git &amp; GitHub for Beginners</h1>
+<p>In today&#8217;s collaborative world, it is very essential that one understands the need for a <a href="http://en.wikipedia.org/wiki/Concurrent_Versions_System" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://en.wikipedia.org/wiki/Concurrent_Versions_System', 'Concurrent Versions System');" title="Wikipedia"  target="_blank">Concurrent Versions System</a> (CVS). A CVS is a simple revision system, that tracks all your changes. Imagine an ecosystem where you and a few other developers are working on a web application &amp; updating html/css &amp; js files asynchronously/separately. When you want to integrate the bits of code, you need to sit side by side and compare notes on what all you have done. What to add, what to remove etc. A Version control system is precisely for this purpose &amp; Git is one such program. GitHub uses git to power itself.</p>
+<h3>Contents</h3>
+<ul class="ls-none" id="to-contents">
+<li><a href="./index.html#history">A Tinge of History</a></li>
+<li><a href="./index.html#jargons">Jargons</a></li>
+<li><a href="./index.html#howGitWorks">Git</a>
+<ul>
+<li><a href="./index.html#howGitWorks">How Git Works</a></li>
+<li><a href="./index.html#setup">Setup Git</a></li>
+<li><a href="./index.html#createLocalRepo">Creating a Repository Locally</a></li>
+<li><a href="./index.html#manageLocalRepo">Managing files &amp; Git</a></li>
+<li><a href="./index.html#branching">Branching</a></li>
+<li><a href="./index.html#mergeBranches">Merging Branches</a></li>
+</ul>
+</li>
+<li><a href="./index.html#github">GitHub</a>
+<ul>
+<li><a href="./index.html#github">What is GitHub</a></li>
+<li><a href="./index.html#githubSetup">GitHub Account &amp; Local setup</a></li>
+<li><a href="./index.html#manageGithub">Create &amp; Manage GitHub repository</a></li>
+<li><a href="./index.html#cloneRepos">Cloning &amp; Working with repos</a></li>
+<li><a href="./index.html#commiting">Committing to GitHub</a></li>
+<li><a href="./index.html#branchingMerging">GitHub Branching &amp; Merging</a></li>
+<li><a href="./index.html#githubPullRequest">GitHub Pull request</a></li>
+</ul>
+</li>
+</ul>
+<p><span id="more-614"></span></p>
+<h2 id="history">A Tinge of History</h2>
+<p>The Linux kernel is an open source software project and was created by Linus Torvalds. During 1991 &#8211; 2002, changes to the kernel were managed by DVCS called BitKeep. In 2005, BitKeep was no more open source, so Linus &amp; the Linux development company had to come with one of their own. The requirements were pretty simple</p>
+<ul>
+<li>Speed</li>
+<li>Simple design</li>
+<li>Strong support for non-linear development (thousands of parallel branches)</li>
+<li>Fully distributed</li>
+<li>Able to handle large projects like the Linux kernel efficiently (speed and data size)</li>
+</ul>
+<p>Thus Git was born in 2005!</p>
+<h2 id="jargons">Jargons</h2>
+<p>When you are working with Git, you may need to be aware of the following terms</p>
+<ul class="ls-none">
+<li><strong>Repository or Repo</strong>
+<ul class="ls-none">
+<li>This is a folder on your server where your project reside. This folder can be on you machine or a remote Git host like Github. This folder is also called as the master branch.</li>
+</ul>
+</li>
+<li><strong>Branch</strong>
+<ul class="ls-none">
+<li>A branch is a copy of the master or your entire repo. Generally, when multiple people are working on the same project, they want to Branch out. Then make changes to the files and merge with the master branch. This makes things easy for both the developers as well as Git.</li>
+</ul>
+</li>
+<li><strong>Checkout</strong>
+<ul class="ls-none">
+<li>This command is used to switch between branches of a repo.</li>
+</ul>
+</li>
+<li><strong>Clone</strong>
+<ul class="ls-none">
+<li>When you want to create a copy of the repo, you checkout the code. This clones the repo into a local location you have provided.</li>
+</ul>
+</li>
+<li><strong>Commit</strong>
+<ul class="ls-none">
+<li>Once you are done with your changes and have tested the code sufficiently in your local, you would want to save the code to Git repo. This will create a Snapshot of your filesystem.</li>
+</ul>
+</li>
+<li><strong>Push</strong>
+<ul class="ls-none">
+<li>Push is specifically for committing files to a remote repository. Lets say you have made changes to your files locally, and committed them. Commit happens on your local repo. If you want to push these changes to a remote repo like GitHub, you would use a push.</li>
+</ul>
+</li>
+<li><strong>Pull</strong>
+<ul class="ls-none">
+<li>When you want to update your local files with the latest files from the remote repo, you would run a Pull. This is more of a update command.</li>
+</ul>
+</li>
+<li><strong>Add</strong>
+<ul class="ls-none">
+<li>If you would like to add a new file you have created to Git, you will let Git know by running the add command. Yes, Git doesn&#8217;t automatically add the files you have created. This command will be used to stage a file before a commit.</li>
+</ul>
+</li>
+<li><strong>Delete</strong>
+<ul class="ls-none">
+<li>This would remove a file/folder from your Git repo locally. Then you can push the changes to remove the file/folder from your remote repo too.</li>
+</ul>
+</li>
+</ul>
+<h2 id="howGitWorks">How Git Works</h2>
+<p>By now, you must got an idea on what Git is. Lets take a close look at what is happening under the hood.</p>
+<p>Imagine, our project has 3 files A,B,C. Our initial commit is to check in all the files. Now we have updated FIle A &amp; FIle C. We check in the changes. As you can see from the image below, File A is tracked as A1 (a newer version of File A) &amp; File C as C1. This is the second revision to the file system, first being the initial commit.</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/18333fig0105-tn.png" data-rel="lightbox-0" title=""><img class="size-medium wp-image-616 aligncenter" alt="18333fig0105-tn" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/18333fig0105-tn-451x200.png?resize=451%2C200" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-616 aligncenter" alt="18333fig0105-tn" src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/18333fig0105-tn-451x200.png?resize=451%2C200" data-recalc-dims="1" /></noscript></a></p>
+<p>What happened here? When you asked Git to check in the changes, Git created a <strong>Snapshot </strong>of your project (in this case, the folder &amp; 3 files inside it). The Snapshot is a mini file system, that tells Git what is the state of each file when a certain commit occurred. To be crude, these details are stored as a new entry to the Git database.</p>
+<p>Unlike other CVS who store data as a list of file based changes across commits, Git stores a snap shot of all the files. To make this a bit more efficient, if files have not changed, Git doesn’t store the file again</p>
+<p>Now, if you refer to the image above, you can see how the files get stored on Git. If the post fix number (A1, A2..) does not change, that mean the file has not changed during that checkin/revision.</p>
+<h2 id="setup">Set up Git</h2>
+<p>Now lets setup git and have some fun!! You can download Git (not GitHub) from <a href="http://git-scm.com/downloads" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://git-scm.com/downloads', 'here');" title="Git"  target="_blank">here</a>. First lets understand what Git is and then lets bring GitHub into the picture. You can download the setup applicable to your operating system. The setup is fairly simple. Once you are done, you can validate the same by</p>
+<div class="table-responsive"><table  style="width:100%; "  class="easy-table easy-table-default" border="0">
+<thead>
+<tr><th >Windows</th>
+<th >Mac/*nix</th>
+</tr>
+</thead>
+<tbody>
+<tr><td >Method 1: Right click on any folder &#8211; you should see a list of Git options attached to your right click menu (like <em>git bash.. </em><em>git diff</em>).</td>
+<td > &#8212;</td>
+</tr>
+<tr><td >Method 2: Open prompt/Git Bash from start and 
+<span id="crayon-5a10410959938906696517" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-i">run</span> <span class="crayon-v">git</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-v">version</span></span></span> </td>
+<td >Open terminal and run 
+<span id="crayon-5a1041095994b143944189" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">git</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-v">version</span></span></span></td>
+</tr>
+</tbody></table></div>
+<p>Awesome!! now we are all setup to get rolling with Git!</p>
+<h2 id="createLocalRepo">Creating a Repository Locally</h2>
+<p><em><strong>PS</strong> : There are a lot of GUI based git tools out there which will do the same tasks we do but via an interface. I want to encourage the usage of command line based interaction so that as UI developers, we are not really dependent on a UI.</em></p>
+<p>First, we will take a look at things locally, then deal with remote Git hosts like GitHub. So, lets create a new folder and call it <em>myRepo. </em>Then,</p>
+<div class="table-responsive"><table  style="width:100%; "  class="easy-table easy-table-default" border="0">
+<thead>
+<tr><th >Windows</th>
+<th >Mac/*nix</th>
+</tr>
+</thead>
+<tbody>
+<tr><td >Right click on the folder &amp; select 'Git bash'</td>
+<td > Open a terminal and CD to the path.</td>
+</tr>
+</tbody></table></div>
+<p>Create a couple of files inside this directory.</p>
+<div class="table-responsive"><table  style="width:100%; "  class="easy-table easy-table-default" border="0">
+<thead>
+<tr><th >Windows</th>
+<th >Mac/*nix</th>
+</tr>
+</thead>
+<tbody>
+<tr><td >Right click on the folder &gt; New &gt; Text Document. Name it 
+<span id="crayon-5a10410959956893140613" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">file1</span><span class="crayon-sy">.</span><span class="crayon-v">txt</span></span></span>  &amp; similarly create one more 
+<span id="crayon-5a1041095995d532249244" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">file2</span><span class="crayon-sy">.</span><span class="crayon-v">txt</span></span></span> </td>
+<td >Open a terminal and CD inside <em>myRepo</em>. Then run 
+<span id="crayon-5a10410959963525265072" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">touch </span><span class="crayon-v">file1</span><span class="crayon-sy">.</span><span class="crayon-i">txt</span> </span></span>  &amp; 
+<span id="crayon-5a1041095996a863363236" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">touch </span><span class="crayon-v">file2</span><span class="crayon-sy">.</span><span class="crayon-i">txt</span>  </span></span></td>
+</tr>
+</tbody></table></div>
+<p>You should see 2 files, when you run list directory 
+<span id="crayon-5a10410959970105364678" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">ls</span></span></span> command.</p>
+<p><em>PS: Windows user, please make sure you are running the commands via Git Bash, as some of commands will not work in the Prompt. </em></p>
+<p>Lets initiate a Git repo here. This will tell Git to start tracking changes to the folder. Run 
+<span id="crayon-5a10410959977663346032" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">init</span></span></span>. You should see a prompt back with the following message</p>
+<p>
+<span id="crayon-5a1041095997d976377625" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">Initialized </span><span class="crayon-e">empty </span><span class="crayon-e">Git </span><span class="crayon-e">repository </span><span class="crayon-st">in</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-v">path</span><span class="crayon-o">/</span><span class="crayon-st">to</span><span class="crayon-o">/</span><span class="crayon-v">myRepo</span><span class="crayon-o">/</span><span class="crayon-sy">.</span><span class="crayon-v">git</span><span class="crayon-o">/</span></span></span></p>
+<p>
+<span id="crayon-5a10410959983149976435" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-sy">.</span><span class="crayon-v">git</span></span></span> is a hidden folder that consists all the meta data for Git to understand whats happening inside this repo. Its best to leave this folder alone.</p>
+<p>Next lets ask Git what the status of the repo is run 
+<span id="crayon-5a10410959989448934645" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">status</span></span></span>. You should see something like this (click to enlarge)</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-9.56.17-AM.png" data-rel="lightbox-1" title=""><img class="size-medium wp-image-632 aligncenter" alt="Screen Shot 2014-02-27 at 9.56.17 AM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-9.56.17-AM-451x112.png?resize=451%2C112" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-632 aligncenter" alt="Screen Shot 2014-02-27 at 9.56.17 AM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-9.56.17-AM-451x112.png?resize=451%2C112" data-recalc-dims="1" /></noscript></a>Git knows that there are 2 files and they are not tracked. The last line is like a hint on what needs to be done next. Now, lets add these files to our repo. Run 
+<span id="crayon-5a10410959991144985640" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-i">git</span> <span class="crayon-i">add</span> <span class="crayon-sy">.</span></span></span> The dot at the end indicated all the files inside the repo. Then run 
+<span id="crayon-5a10410959997670999215" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">status</span></span></span>  again to check the status. You should see something like this</p>
+<p><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.13.25-AM.png" data-rel="lightbox-2" title=""><img class="size-full wp-image-635 aligncenter" alt="Screen Shot 2014-02-27 at 10.13.25 AM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.13.25-AM.png?resize=395%2C154" data-recalc-dims="1" /><noscript><img class="size-full wp-image-635 aligncenter" alt="Screen Shot 2014-02-27 at 10.13.25 AM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.13.25-AM.png?resize=395%2C154" data-recalc-dims="1" /></noscript></a>Now, you can see that git is tracking our files. Lets commit these files as our base revision. Run 
+<span id="crayon-5a1041095999e219636473" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">commit</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">m</span><span class="crayon-h"> </span><span class="crayon-s">"Initial Commit"</span></span></span>. The output would be</p>
+<p><a href="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.27.38-AM.png" data-rel="lightbox-3" title=""><img class="size-medium wp-image-637 aligncenter" alt="Screen Shot 2014-02-27 at 10.27.38 AM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.27.38-AM-451x60.png?resize=451%2C60" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-637 aligncenter" alt="Screen Shot 2014-02-27 at 10.27.38 AM" src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.27.38-AM-451x60.png?resize=451%2C60" data-recalc-dims="1" /></noscript></a></p>
+<h2 id="manageLocalRepo">Managing files &amp; Git</h2>
+<p>Lets open up file1.txt in your favorite text editor. I prefer vim editor (kind of old school). And then lets make some changes. Add the below 2 lines of text</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a104109599a6990568471" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">file1.txt</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+Hello World!!
+Hello Git!!</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a104109599a6990568471-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a104109599a6990568471-2">2</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a104109599a6990568471-1"><span class="crayon-e">Hello </span><span class="crayon-v">World</span><span class="crayon-o">!</span><span class="crayon-o">!</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a104109599a6990568471-2"><span class="crayon-e">Hello </span><span class="crayon-v">Git</span><span class="crayon-o">!</span><span class="crayon-o">!</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0005 seconds] -->
+<p>Save the file and come back to the prompt. now lets run 
+<span id="crayon-5a104109599ac925035654" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">status</span></span></span>. You will see something like this</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.30.50-AM.png" data-rel="lightbox-4" title=""><img class="size-medium wp-image-640 aligncenter" alt="Screen Shot 2014-02-27 at 10.30.50 AM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.30.50-AM-451x101.png?resize=451%2C101" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-640 aligncenter" alt="Screen Shot 2014-02-27 at 10.30.50 AM" src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.30.50-AM-451x101.png?resize=451%2C101" data-recalc-dims="1" /></noscript></a></p>
+<p>Ahhh!! Git found out! It says that you have modified file1.txt. Sweet right?</p>
+<p>Lets see what changes were tracked. Run 
+<span id="crayon-5a104109599b4583619647" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-e">diff </span><span class="crayon-v">master</span></span></span> &amp; Bam!!</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.35.59-AM.png" data-rel="lightbox-5" title=""><img class="size-full wp-image-641 aligncenter" alt="Screen Shot 2014-02-27 at 10.35.59 AM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.35.59-AM.png?resize=434%2C114" data-recalc-dims="1" /><noscript><img class="size-full wp-image-641 aligncenter" alt="Screen Shot 2014-02-27 at 10.35.59 AM" src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.35.59-AM.png?resize=434%2C114" data-recalc-dims="1" /></noscript></a></p>
+<p>This command gives us a list of changes we have made to the file. You can see that we are comparing our file with the master branch. This is always a good practice to view the difference before committing.</p>
+<p>First we need to add the changes to Git or <em>stage the files</em> and then commit. We can do both the steps in one command like  
+<span id="crayon-5a104109599bc819704814" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">commit</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">a</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">m</span><span class="crayon-h"> </span><span class="crayon-s">"updated file1.txt"</span></span></span>, <em>Where <strong>-a</strong> is for adding <strong>-m</strong> is the commit message flag and the text after -m in quotes is the commit message</em>.</p>
+<p>You should see something like this</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.44.15-AM.png" data-rel="lightbox-6" title=""><img class="size-medium wp-image-642 aligncenter" alt="Screen Shot 2014-02-27 at 10.44.15 AM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.44.15-AM-451x33.png?resize=451%2C33" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-642 aligncenter" alt="Screen Shot 2014-02-27 at 10.44.15 AM" src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.44.15-AM-451x33.png?resize=451%2C33" data-recalc-dims="1" /></noscript></a></p>
+<p>Run 
+<span id="crayon-5a104109599c3501370385" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">status</span></span></span> as a sanity test to verify if everything is committed.</p>
+<p>Lets do something really crazy and see what Git does. Create a file called file3.txt. Run git status</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.46.44-AM.png" data-rel="lightbox-7" title=""><img class="size-medium wp-image-643 aligncenter" alt="Screen Shot 2014-02-27 at 10.46.44 AM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.46.44-AM-451x82.png?resize=451%2C82" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-643 aligncenter" alt="Screen Shot 2014-02-27 at 10.46.44 AM" src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.46.44-AM-451x82.png?resize=451%2C82" data-recalc-dims="1" /></noscript></a></p>
+<p>Then lets delete this file 
+<span id="crayon-5a104109599ca782293888" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">rm </span><span class="crayon-v">file3</span><span class="crayon-sy">.</span><span class="crayon-v">txt</span></span></span>. Now when you run git status, it will respond as if  
+<span id="crayon-5a104109599d0565501139" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">file3</span><span class="crayon-sy">.</span><span class="crayon-v">txt</span></span></span> never existed! This shows that unless you add those files to Git repo, it will not be tracked. So, create file3.txt add it to the current repo.</p>
+<p>Windows : Create New File &gt; file3.txt</p>
+<p>Mac : 
+<span id="crayon-5a104109599d7921751926" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">touch </span><span class="crayon-v">file3</span><span class="crayon-sy">.</span><span class="crayon-v">txt</span></span></span></p>
+<p>The 
+<span id="crayon-5a104109599dd025441425" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-e">add </span><span class="crayon-v">file3</span><span class="crayon-sy">.</span><span class="crayon-v">txt</span></span></span>  then 
+<span id="crayon-5a104109599e3791510632" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">commit</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">a</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">m</span><span class="crayon-h"> </span><span class="crayon-s">"Added file3.txt"</span></span></span>. Now for fun, lets run 
+<span id="crayon-5a104109599e9120330917" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">log</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-v">stat</span></span></span> This will show the complete history</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.55.34-AM.png" data-rel="lightbox-8" title=""><img class="size-medium wp-image-644 aligncenter" alt="Screen Shot 2014-02-27 at 10.55.34 AM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.55.34-AM-326x300.png?resize=326%2C300" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-644 aligncenter" alt="Screen Shot 2014-02-27 at 10.55.34 AM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.55.34-AM-326x300.png?resize=326%2C300" data-recalc-dims="1" /></noscript></a></p>
+<p>&nbsp;</p>
+<p><em>PS : Green ++ indicates addition &amp; Red &#8212; indicated removal </em></p>
+<h2 id="branching">Branching</h2>
+<p>We have seen how Git manages the files, when we are working on the same branch. Lets create a new branch and make changes &amp; commit back to the Master. This is going to be a typical work flow when you are collaborating with a team. There will be a base code, you will branch out, make changes to the files &amp; then push it back to the master.</p>
+<p>So, lets create a new branch. Run 
+<span id="crayon-5a104109599f2662685165" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-e">branch </span><span class="crayon-v">myApp</span><span class="crayon-sy">.</span><span class="crayon-i">r2</span> </span></span>. This will create a new branch. Now, lets switch to that branch run 
+<span id="crayon-5a104109599f8005641506" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-e">checkout </span><span class="crayon-v">myApp</span><span class="crayon-sy">.</span><span class="crayon-i">r2</span> </span></span>. We are in the myApp.r2 branch. When you create a new branch, all the files in the master&#8217;s latest commit will get copied to the branch. Lets verify that, run 
+<span id="crayon-5a104109599fe788340418" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">ls</span><span class="crayon-o">-</span><span class="crayon-v">tree</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">r</span><span class="crayon-h"> </span><span class="crayon-v">myApp</span><span class="crayon-sy">.</span><span class="crayon-v">r2</span></span></span> You should see something like this</p>
+<p><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-11.12.33-AM.png" data-rel="lightbox-9" title=""><img class="size-medium wp-image-646 aligncenter" alt="Screen Shot 2014-02-27 at 11.12.33 AM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-11.12.33-AM-451x50.png?resize=451%2C50" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-646 aligncenter" alt="Screen Shot 2014-02-27 at 11.12.33 AM" src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-11.12.33-AM-451x50.png?resize=451%2C50" data-recalc-dims="1" /></noscript></a></p>
+<p>This shows the list of files in your branch. Now lets update file3.txt. Open file3.txt and add the below line</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a10410959a05404290243" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">file3.txt</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+Hi, I am file3.txt from myApp.r2 branch.</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a10410959a05404290243-1">1</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a10410959a05404290243-1"><span class="crayon-v">Hi</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-i">I</span><span class="crayon-h"> </span><span class="crayon-e">am </span><span class="crayon-v">file3</span><span class="crayon-sy">.</span><span class="crayon-e">txt </span><span class="crayon-e">from </span><span class="crayon-v">myApp</span><span class="crayon-sy">.</span><span class="crayon-e">r2 </span><span class="crayon-v">branch</span><span class="crayon-sy">.</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0007 seconds] -->
+<p>save the file and run 
+<span id="crayon-5a10410959a0b851796755" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">status</span></span></span>  to see if the file is modified. Now, lets compare the file3.txt with the base copy in the current branch</p>
+<p><a href="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-11.16.39-AM.png" data-rel="lightbox-10" title=""><img class="size-medium wp-image-647 aligncenter" alt="Screen Shot 2014-02-27 at 11.16.39 AM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-11.16.39-AM-451x99.png?resize=451%2C99" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-647 aligncenter" alt="Screen Shot 2014-02-27 at 11.16.39 AM" src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-11.16.39-AM-451x99.png?resize=451%2C99" data-recalc-dims="1" /></noscript></a></p>
+<p>&nbsp;</p>
+<p>Cool, so we added a new line to file3.txt (captain obvious!!). Lets commit these changes 
+<span id="crayon-5a10410959a13997565696" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">commit</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">a</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">m</span><span class="crayon-h"> </span><span class="crayon-s">"updated file3.txt"</span></span></span>.</p>
+<p>Now lets compare this file with the master and see the difference</p>
+<p><a href="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-11.25.22-AM.png" data-rel="lightbox-11" title=""><img class="size-medium wp-image-648 aligncenter" alt="Screen Shot 2014-02-27 at 11.25.22 AM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-11.25.22-AM-451x87.png?resize=451%2C87" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-648 aligncenter" alt="Screen Shot 2014-02-27 at 11.25.22 AM" src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-11.25.22-AM-451x87.png?resize=451%2C87" data-recalc-dims="1" /></noscript></a></p>
+<p>Awesome!! Now we know how to branch, make changes to our branch and then commit these changes.</p>
+<p><strong>PS</strong> : <em>When you have switched to a certain branch, and navigated to the repo via Finder/Explorer, you will see only the files which are related to the current branch. When you switch to Master, you will see only the files related to Master. This is typically how Git works, storing snapshots! </em></p>
+<h2 id="mergeBranches">Merging Branches</h2>
+<p>Now, our myApp.r2 development is completed. We want to merge our changes with the master.</p>
+<p>First lets see how many branches exits. Run 
+<span id="crayon-5a10410959a1b756213920" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">branch</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">v</span></span></span> . This should list 2 branches, the master and myApp.r2 &amp; there latest commits. Now, Lets merge the changes. Lets move to the master branch 
+<span id="crayon-5a10410959a22301804525" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-e">checkout </span><span class="crayon-v">master</span></span></span>, then 
+<span id="crayon-5a10410959a28980959657" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-e">rebase </span><span class="crayon-v">myApp</span><span class="crayon-sy">.</span><span class="crayon-v">r2</span></span></span>. This will take the changes from myApp.r2 and append them to master without a merge commit. If you want to perform a merge, you can run 
+<span id="crayon-5a10410959a3a611806468" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-e">merge </span><span class="crayon-v">myApp</span><span class="crayon-sy">.</span><span class="crayon-v">r2</span></span></span>. More on rebase vs merge <a href="http://stackoverflow.com/a/804156/1015046" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://stackoverflow.com/a/804156/1015046', 'here');" title="rebase vs merge"  target="_blank">here</a>.</p>
+<p>Now, open file3.txt and you can see the changes in your master!</p>
+<p>So, what did we do all this while?</p>
+<p>We created a local repository, created, updated, deleted files. Then we staged these files by running the 
+<span id="crayon-5a10410959a41981988520" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">add</span></span></span> or 
+<span id="crayon-5a10410959a47503914840" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">commit</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">a</span><span class="crayon-h"> </span><span class="crayon-sy">.</span><span class="crayon-sy">.</span></span></span>. Then we commit these files to our repository.</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/18333fig0106-tn.png" data-rel="lightbox-12" title=""><img class="size-medium wp-image-650 aligncenter" alt="18333fig0106-tn" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/18333fig0106-tn-326x300.png?resize=326%2C300" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-650 aligncenter" alt="18333fig0106-tn" src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/18333fig0106-tn-326x300.png?resize=326%2C300" data-recalc-dims="1" /></noscript></a></p>
+<p>Now, if you want these repository to be hosted remotely, so that everyone can access, you need find a &#8220;Git Hoster&#8221; ergo <strong>GitHub</strong>!!</p>
+<h2 id="github">GitHub</h2>
+<p>Wikipedia</p>
+<blockquote><p><b>GitHub</b> is a <a href="http://en.wikipedia.org/wiki/Shared_web_hosting_service" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://en.wikipedia.org/wiki/Shared_web_hosting_service', 'web-based hosting service');" title="Shared web hosting service">web-based hosting service</a> for software development projects that use the <a href="http://en.wikipedia.org/wiki/Git_(software)" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://en.wikipedia.org/wiki/Git_(software)', 'Git');" title="Git (software)">Git</a> <a href="http://en.wikipedia.org/wiki/Revision_control" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://en.wikipedia.org/wiki/Revision_control', 'revision control');" title="Revision control">revision control</a> system.</p></blockquote>
+<p>It can&#8217;t get simpler than this. The only difference between what we have done so far and what we are going to do from now on with GitHub is that, our repository was in the local but now, it will be hosted remotely.</p>
+<p><strong>TODO</strong></p>
+<p>We will clone a repository on GitHub, branch out, make changes, commit to our local repository, check in to GitHub remote repository and then merge the branch with master. Lets get cracking!</p>
+<h2 id="githubSetup">GitHub Account &amp; Local setup</h2>
+<p>Quick &amp; Dirty</p>
+<ul class="ls-none">
+<li>Step 1 : Navigate to <a href="https://github.com/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/', 'GitHub.com');" target="_blank">GitHub.com</a> and create an account</li>
+<li>Step 2 : You may need to verify your email as well.</li>
+<li>Step 3 : We need the GitHub app/setup for us to manage the repositories from our machine. Navigate to <a href="https://help.github.com/articles/set-up-git" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://help.github.com/articles/set-up-git', 'Downloads');" target="_blank">Downloads</a>, &amp; download the setup.</li>
+<li>Step 4 : Once the setup is completed, you can launch GitHub application &amp; login with your details</li>
+<li>Step 5 : Now, you can see a list of projects that are there in your repository.</li>
+</ul>
+<h2 id="manageGithub">Create &amp; Manage GitHub repository</h2>
+<p>Lets create a new GitHub repository. Navigate to GitHub <a href="https://github.com/new" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/new', 'create page');" title="New"  target="_blank">create page</a> and fill in the repo name. The description is not mandatory, but advisable. You can create private repos incase you need to, but you need to pay for the hosting &amp; services.</p>
+<p>Next let&#8217;s check &#8216;Initialize this repository with a README&#8217;. Click on <em>Add .gitignore</em>, select <em>Node</em>. Then click on <em>Add a license</em> &amp; select <em>MIT.</em> gitignore is a config file, which will let you configure the files that you don&#8217;t want to push to the remote repo. Like log files or node_modules etc. This is helpful when your project is really huge and you are creating a lot of branches.</p>
+<p>So, lets create a new Repo called myNodeApp &amp; fill it like this</p>
+<p><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.10.31-PM.png" data-rel="lightbox-13" title=""><img class="size-medium wp-image-654 aligncenter" alt="Screen Shot 2014-02-27 at 10.10.31 PM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.10.31-PM-451x262.png?resize=451%2C262" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-654 aligncenter" alt="Screen Shot 2014-02-27 at 10.10.31 PM" src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.10.31-PM-451x262.png?resize=451%2C262" data-recalc-dims="1" /></noscript></a>Then click on Create Repository. Your repository is ready! Lets quickly run through the created Repo.</p>
+<p><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.12.26-PM.png" data-rel="lightbox-14" title=""><img class="size-medium wp-image-655 aligncenter" alt="Screen Shot 2014-02-27 at 10.12.26 PM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.12.26-PM-451x258.png?resize=451%2C258" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-655 aligncenter" alt="Screen Shot 2014-02-27 at 10.12.26 PM" src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.12.26-PM-451x258.png?resize=451%2C258" data-recalc-dims="1" /></noscript></a></p>
+<ul>
+<li>The top bar will show the description of the Repo. You can update it accordingly.</li>
+<li>Row 2 shows the status of your repository, like no of commits, contributors etc. This is a quick overview of your repo&#8217;s status.</li>
+<li>On the right hand panel, you will see a few tabs. You can switch through each of them and see what they have to offer. This is pretty straight forward if have worked with any team projects before.</li>
+<li>The setting at the bottom right lets you rename, config &amp; delete your repo. Use this section with caution.</li>
+<li>The bottom right section list your git url &#8211; an alias for your remote repo. And a download button that will download the repo.</li>
+<li>And finally the page center, which will list all the code or rather the files and folders.</li>
+</ul>
+<h2 id="cloneRepos">Cloning &amp; Working with repos</h2>
+<p>Now, lets get this repo to our local and start working on top of it. I will use command line interaction like earlier. Alternatively you can use the github client (which we have downloaded earlier) to do the same.</p>
+<p>Navigate to your favorite folder, where you would like save the remote repo. Then navigate to your repo &amp; copy the clone url from the Right hand side panel. Now, open Terminal/Git Bash and run 
+<span id="crayon-5a10410959a56219400498" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-r">clone</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-e">url </span><span class="crayon-st">to</span><span class="crayon-h"> </span><span class="crayon-v">repo</span><span class="crayon-o">&gt;&gt;</span></span></span>. In my case it will be 
+<span id="crayon-5a10410959a5d249009697" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-r">clone</span> <span class="crayon-v">https</span><span class="crayon-o">:</span><span class="crayon-c">//github.com/arvindr21/myNodeApp.git</span></span></span>. Your output should be like</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.28.05-PM.png" data-rel="lightbox-15" title=""><img class="size-medium wp-image-658 aligncenter" alt="Screen Shot 2014-02-27 at 10.28.05 PM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.28.05-PM-451x58.png?resize=451%2C58" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-658 aligncenter" alt="Screen Shot 2014-02-27 at 10.28.05 PM" src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.28.05-PM-451x58.png?resize=451%2C58" data-recalc-dims="1" /></noscript></a>And, you can CD into the myNodeApp folder. then run 
+<span id="crayon-5a10410959a64922900280" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">ls</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">ltr</span></span></span> to see its contents. This should list the 2 files which we saw on the GitHub (.gitignore is a hidden file).</p>
+<p>Now lets add a few changes to the file. Lets make a simple node app. For that you need Node installed. You can check <a title="Hello Node" href="./hello-node/index.html" target="_blank">this</a> for a quick start.</p>
+<p>Then lets run 
+<span id="crayon-5a10410959a6b459577269" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">npm </span><span class="crayon-v">init</span></span></span>. Hit return till you prompt out like this</p>
+<p><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.33.16-PM.png" data-rel="lightbox-16" title=""><img class="size-medium wp-image-659 aligncenter" alt="Screen Shot 2014-02-27 at 10.33.16 PM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.33.16-PM-252x300.png?resize=252%2C300" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-659 aligncenter" alt="Screen Shot 2014-02-27 at 10.33.16 PM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.33.16-PM-252x300.png?resize=252%2C300" data-recalc-dims="1" /></noscript></a></p>
+<p>Now, lets create a javascript file in the same folder and name it app.js. Add the below contents to it</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a10410959a71395227505" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">app.js</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">JavaScript</span></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+console.log("Hello Git!!");</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a10410959a71395227505-1">1</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a10410959a71395227505-1"><span class="crayon-v">console</span><span class="crayon-sy">.</span><span class="crayon-e">log</span><span class="crayon-sy">(</span><span class="crayon-s">"Hello Git!!"</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0008 seconds] -->
+<p>save the file. Back to terminal/Git Bash &amp; run 
+<span id="crayon-5a10410959a77027513554" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">node </span><span class="crayon-v">app</span><span class="crayon-sy">.</span><span class="crayon-v">js</span></span></span>. You should see a simple <em>Hello Git!! </em>message show up.</p>
+<p>Awesome! our dev is completed and our code is ready to be committed.</p>
+<h2 id="committing">Committing to GitHub</h2>
+<p>Now, lets run 
+<span id="crayon-5a10410959a7d134684043" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">status</span></span></span>, you should see something like this</p>
+<p><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.38.56-PM.png" data-rel="lightbox-17" title=""><img class="size-medium wp-image-660 aligncenter" alt="Screen Shot 2014-02-27 at 10.38.56 PM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.38.56-PM-451x84.png?resize=451%2C84" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-660 aligncenter" alt="Screen Shot 2014-02-27 at 10.38.56 PM" src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.38.56-PM-451x84.png?resize=451%2C84" data-recalc-dims="1" /></noscript></a>Lets stage these files by running 
+<span id="crayon-5a10410959a84936498281" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-i">add</span><span class="crayon-h"> </span><span class="crayon-sy">.</span></span></span> &amp; then 
+<span id="crayon-5a10410959a8a290556040" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">commit</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">m</span><span class="crayon-h"> </span><span class="crayon-s">"Added package.json &amp; app.js"</span></span></span>. Now our local repo is updated with these changes. Now, lets push these changes to our remote repo/GitHub repo. Run 
+<span id="crayon-5a10410959a90940011736" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-e">push </span><span class="crayon-e">origin </span><span class="crayon-v">master</span></span></span> origin is the name of our remote repo. By default, it is named as origin &amp; master is the name of the branch you want to commit the changes to.</p>
+<p>When you run this command, the prompt will ask for your GitHub registered email address &amp; password and then boom!!</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.46.43-PM.png" data-rel="lightbox-18" title=""><img class="size-medium wp-image-661 aligncenter" alt="Screen Shot 2014-02-27 at 10.46.43 PM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.46.43-PM-451x95.png?resize=451%2C95" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-661 aligncenter" alt="Screen Shot 2014-02-27 at 10.46.43 PM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.46.43-PM-451x95.png?resize=451%2C95" data-recalc-dims="1" /></noscript></a></p>
+<p>&nbsp;</p>
+<p>Our code is checked into the remote repo! Lets navigate to our repo page on GitHub. Now, you can see the updated code.</p>
+<p><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.48.12-PM.png" data-rel="lightbox-19" title=""><img class="size-medium wp-image-662 aligncenter" alt="Screen Shot 2014-02-27 at 10.48.12 PM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.48.12-PM-451x191.png?resize=451%2C191" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-662 aligncenter" alt="Screen Shot 2014-02-27 at 10.48.12 PM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.48.12-PM-451x191.png?resize=451%2C191" data-recalc-dims="1" /></noscript></a></p>
+<p>You can see that now commits are 2.</p>
+<h2 id="branchingMerging">GitHub Branching &amp; Merging</h2>
+<p>This is exactly the same as what we have done locally. So, now lets assume that our release 1 is completed &amp; we are starting release 2. Now we need to have a fresh branch to work on those changes. Lets create a new branch.</p>
+<p>Back to Terminal/Prompt and run 
+<span id="crayon-5a10410959a98399352010" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">branch</span></span></span> to see the list of branches. Now lets create one locally and then push it to the remote repo. 
+<span id="crayon-5a10410959a9e842537778" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">checkout</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">b</span><span class="crayon-h"> </span><span class="crayon-v">release2</span></span></span>. This will create a new branch. Now lets push this to the remote repo. Run 
+<span id="crayon-5a10410959aa4436513246" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-e">push </span><span class="crayon-e">origin </span><span class="crayon-v">release2</span></span></span>.</p>
+<p>You can go to your GitHub repo page and see</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.57.00-PM.png" data-rel="lightbox-20" title=""><img class="size-medium wp-image-663 aligncenter" alt="Screen Shot 2014-02-27 at 10.57.00 PM" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.57.00-PM-451x197.png?resize=451%2C197" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-663 aligncenter" alt="Screen Shot 2014-02-27 at 10.57.00 PM" src="http://i2.wp.com/thejackalofjavascript.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-10.57.00-PM-451x197.png?resize=451%2C197" data-recalc-dims="1" /></noscript></a> Branches count is update to 2 &amp; you can see your branch listed in the dropdown.</p>
+<p>Now, lets do some real work. Lets add a node package run 
+<span id="crayon-5a10410959aab011822585" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">npm </span><span class="crayon-e">install </span><span class="crayon-v">express</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-v">save</span><span class="crayon-o">-</span><span class="crayon-v">dev</span></span></span> (you can know more about Node <a title="What is Nodejs" href="./nodejs/index.html" target="_blank">here</a>). This will add an express package to our project. (Don&#8217;t worry, if you did not run something like this before. This operation will take a couple of mins). Now lets run 
+<span id="crayon-5a10410959ab1657559043" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">status</span></span></span>, you should see that only package.json file is updated. But when you run 
+<span id="crayon-5a10410959ab7759968028" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-i">open</span><span class="crayon-h"> </span><span class="crayon-sy">.</span></span></span>  in mac and 
+<span id="crayon-5a10410959abd972578513" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-i">explorer</span><span class="crayon-h"> </span><span class="crayon-sy">.</span></span></span>  in windows, you will see a folder named node_modules, which was not present earlier. But why isn&#8217;t git tracking this folder?</p>
+<p>Because, we have added this to the list of items not to track. You can go to your repo, click on .gitignore file and see that node_modules is listed among other things. If you are familiar with node, this folder is not required to be shipped with the code. Any user can clone your repo and run 
+<span id="crayon-5a10410959ac3476960531" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">npm </span><span class="crayon-v">install</span></span></span> to install the dependencies listed in your package.json. This saves space as well as branching, cloning/downloading time.</p>
+<p>Now lets commit these changes to our release2 branch. Run 
+<span id="crayon-5a10410959ac9435285037" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-i">add</span><span class="crayon-h"> </span><span class="crayon-sy">.</span> </span></span> then 
+<span id="crayon-5a10410959acf798277950" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">commit</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">m</span><span class="crayon-h"> </span><span class="crayon-s">"Added express package"</span></span></span>. It should typically respond with</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a10410959ad5810842401" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+[release2 e08b15c] Added express package
+1 file changed, 4 insertions(+), 1 deletion(-)</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a10410959ad5810842401-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10410959ad5810842401-2">2</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a10410959ad5810842401-1"><span class="crayon-sy">[</span><span class="crayon-e">release2 </span><span class="crayon-v">e08b15c</span><span class="crayon-sy">]</span><span class="crayon-h"> </span><span class="crayon-e">Added </span><span class="crayon-e">express </span><span class="crayon-t">package</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10410959ad5810842401-2"><span class="crayon-h"> </span><span class="crayon-cn">1</span><span class="crayon-h"> </span><span class="crayon-e">file </span><span class="crayon-v">changed</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">4</span><span class="crayon-h"> </span><span class="crayon-e">insertions</span><span class="crayon-sy">(</span><span class="crayon-o">+</span><span class="crayon-sy">)</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">1</span><span class="crayon-h"> </span><span class="crayon-e">deletion</span><span class="crayon-sy">(</span><span class="crayon-o">-</span><span class="crayon-sy">)</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0011 seconds] -->
+<p>Lets push it to the remote branch. Run 
+<span id="crayon-5a10410959adb407989451" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-e">push </span><span class="crayon-e">origin </span><span class="crayon-i">release2</span> </span></span>.</p>
+<p>Awesome!! now lets merge the release2 branch with Master. For that we need to switch to master and then run the merge command.</p>
+<p>Switch to Master 
+<span id="crayon-5a10410959ae1404947045" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-e">checkout </span><span class="crayon-i">master</span> </span></span></p>
+<p>Merge with Master 
+<span id="crayon-5a10410959ae7740149717" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-e">merge </span><span class="crayon-i">release2</span> </span></span></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a10410959aed018181377" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">Output</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+Updating 152969c..e08b15c
+Fast-forward
+package.json | 5 ++++-
+1 file changed, 4 insertions(+), 1 deletion(-)</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a10410959aed018181377-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10410959aed018181377-2">2</div><div class="crayon-num" data-line="crayon-5a10410959aed018181377-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10410959aed018181377-4">4</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a10410959aed018181377-1"><span class="crayon-i">Updating</span><span class="crayon-h"> </span><span class="crayon-cn">152969c..e08b15c</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10410959aed018181377-2"><span class="crayon-v">Fast</span><span class="crayon-o">-</span><span class="crayon-e">forward</span></div><div class="crayon-line" id="crayon-5a10410959aed018181377-3"><span class="crayon-e"> </span><span class="crayon-t">package</span><span class="crayon-sy">.</span><span class="crayon-v">json</span><span class="crayon-h"> </span><span class="crayon-o">|</span><span class="crayon-h"> </span><span class="crayon-cn">5</span><span class="crayon-h"> </span><span class="crayon-o">++</span><span class="crayon-o">++</span><span class="crayon-o">-</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10410959aed018181377-4"><span class="crayon-h"> </span><span class="crayon-cn">1</span><span class="crayon-h"> </span><span class="crayon-e">file </span><span class="crayon-v">changed</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">4</span><span class="crayon-h"> </span><span class="crayon-e">insertions</span><span class="crayon-sy">(</span><span class="crayon-o">+</span><span class="crayon-sy">)</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">1</span><span class="crayon-h"> </span><span class="crayon-e">deletion</span><span class="crayon-sy">(</span><span class="crayon-o">-</span><span class="crayon-sy">)</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0015 seconds] -->
+<p>Neat, now, lets push the changes to the remote repo. Run 
+<span id="crayon-5a10410959af3765724447" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-e">push </span><span class="crayon-e">origin </span><span class="crayon-v">master</span></span></span> After you input your GitHub credentials, you should see a message like this</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a10410959af9379619598" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/arvindr21/myNodeApp.git
+152969c..e08b15c  master -&gt; master</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a10410959af9379619598-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a10410959af9379619598-2">2</div><div class="crayon-num" data-line="crayon-5a10410959af9379619598-3">3</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a10410959af9379619598-1"><span class="crayon-i">Total</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-i">delta</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">)</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-i">reused</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-i">delta</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a10410959af9379619598-2"><span class="crayon-st">To</span><span class="crayon-h"> </span><span class="crayon-v">https</span><span class="crayon-o">:</span><span class="crayon-c">//github.com/arvindr21/myNodeApp.git</span></div><div class="crayon-line" id="crayon-5a10410959af9379619598-3"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-cn">152969c..e08b15c</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">master</span><span class="crayon-h"> </span><span class="crayon-o">-&gt;</span><span class="crayon-h"> </span><span class="crayon-v">master</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0012 seconds] -->
+<p>Thats it, your Branches are merged &amp; saved to the remote repo. You can navigate to your GitHub repo in a browser &amp; checkout the newly added changes to the package.json file.</p>
+<p>There may be times when you will see a conflict with files. Git is graceful enough to append markers in your code/files to indicate the location of conflict. But do review the code thoroughly before committing the resolved files.</p>
+<h2 id="githubPullRequest">GitHub Pull request</h2>
+<p>So far, we have worked on a repo created by us. If you are working on someone else&#8217;s repo, the process will be exactly the same except after you merge and push the changes to the remote repo, the repo owner will receive a pull request stating that changes you have made. Now its up to the author to accept the changes or decline the request. Nonetheless, remaining aspects are same.</p>
+<p>So this was a very basic overview of Git &amp; GitHub. You can explore other options &amp; features at GitHub.</p>
+<hr />
+<p>Thanks for reading! Do comment.<br />
+@arvindr21</p>
+<!-- Simple Share Buttons Adder (6.1.5) simplesharebuttons.com --><div class="ssba ssba-wrap"><div style="text-align:left"><a href="http://twitter.com/share?url=./git-and-github-for-beginners/&amp;text=Git+%26+GitHub+for+Beginners+From+The+Jackal+of+Javascript+by+%40arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://twitter.com/share?url=./git-and-github-for-beginners/&amp;text=Git+%26+GitHub+for+Beginners+From+The+Jackal+of+Javascript+by+%40arvindr21', '');" data-site="" class="ssba_twitter_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /></noscript></a><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=./git-and-github-for-beginners/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.linkedin.com/shareArticle?mini=true&amp;url=./git-and-github-for-beginners/', '');" data-site="linkedin" class="ssba_linkedin_share ssba_share_link"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="https://plus.google.com/share?url=./git-and-github-for-beginners/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://plus.google.com/share?url=./git-and-github-for-beginners/', '');" data-site="" class="ssba_google_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="http://reddit.com/submit?url=./git-and-github-for-beginners/&amp;title=Git &amp; GitHub for Beginners" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://reddit.com/submit?url=./git-and-github-for-beginners/&amp;title=Git &amp; GitHub for Beginners', '');" data-site="reddit" class="ssba_reddit_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="https://bufferapp.com/add?url=./git-and-github-for-beginners/&amp;text=From The Jackal of Javascript Git &amp; GitHub for Beginners" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://bufferapp.com/add?url=./git-and-github-for-beginners/&amp;text=From The Jackal of Javascript Git &amp; GitHub for Beginners', '');" data-site="buffer" class="ssba_buffer_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /></noscript></a><a href="https://flattr.com/submit/auto?user_id=arvindr21&amp;title=Git &amp; GitHub for Beginners&amp;url=https://flattr.com/profile/arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://flattr.com/submit/auto?user_id=arvindr21&amp;title=Git &amp; GitHub for Beginners&amp;url=https://flattr.com/profile/arvindr21', '');" data-site="flattr" class="ssba_flattr_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /></noscript></a><a data-site="email" class="ssba_email_share" href="./cdn-cgi/l/email-protection/index.html#033c707661696660773e446a7723263135626e733823446a774b766123656c71234166646a6d6d66717025626e7338616c677a3e45716c6e23576b662349626068626f236c6523496275627060716a73772631336b777773392c2c776b6669626068626f6c65696275627060716a73772d606c6e2c646a772e626d672e646a776b76612e656c712e6166646a6d6d6671702c"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /></noscript></a><a data-site="print" class="ssba_print ssba_share_link" href="#" onclick="window.print()"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /></noscript></a></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-70838519-614-5a10410a184bb' data-src='//widgets.wp.com/likes/#blog_id=70838519&amp;post_id=614&amp;origin=thejackalofjavascript.com&amp;obj_id=70838519-614-5a10410a184bb' data-name='like-post-frame-70838519-614-5a10410a184bb'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>
+<div class="entry-content">
+</div><!-- .entry-content -->
+<footer class="entry-meta">
+<span class="post-date"><a href="./index.html" title="11:50 pm" rel="bookmark"><time class="entry-date" datetime="2014-02-27T23:50:17+00:00">February 27, 2014</time></a></span><span class="byline"><span class="author vcard"><a class="url fn n" href="./author/arvind-ravulavaru/index.html" title="View all posts by Arvind Ravulavaru" rel="author">Arvind Ravulavaru</a></span></span>					</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+<nav class="navigation post-navigation" role="navigation">
+<h1 class="screen-reader-text">Post navigation</h1>
+<div class="nav-links">
+<div class="nav-previous"><a href="./rotten-tomatoes-jquery-rest-client/index.html" rel="prev"><span class="meta-nav screen-reader-text">&larr;</span></a></div><div class="nav-next"><a href="./github-pages-free-hosting/index.html" rel="next"><span class="meta-nav screen-reader-text">&rarr;</span></a></div>		</div><!-- .nav-links -->
+</nav><!-- .navigation -->
+<div id="disqus_thread">
+<div id="dsq-content">
+<ul id="dsq-comments">
+<li class="comment even thread-even depth-1" id="dsq-comment-32">
+<div id="dsq-comment-header-32" class="dsq-comment-header">
+<cite id="dsq-cite-32">
+<span id="dsq-author-user-32">Karthik</span>
+</cite>
+</div>
+<div id="dsq-comment-body-32" class="dsq-comment-body">
+<div id="dsq-comment-message-32" class="dsq-comment-message"><p>Thanks Arvind, you made my setup easy&#8230;.!</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-2" id="dsq-comment-33">
+<div id="dsq-comment-header-33" class="dsq-comment-header">
+<cite id="dsq-cite-33">
+<span id="dsq-author-user-33">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-33" class="dsq-comment-body">
+<div id="dsq-comment-message-33" class="dsq-comment-message"><p>Glad I could help! Thanks!</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul>
+</div>
+</div>
+<script src="./cdn-cgi/scripts/0e574bed/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+var disqus_url = './git-and-github-for-beginners/';
+var disqus_identifier = '614 ./?p=614';
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = 'thejackalofjavascriptcom';
+var disqus_title = "Git &#038; GitHub for Beginners";
+var disqus_config_custom = window.disqus_config;
+var disqus_config = function () {
+/*
+All currently supported events:
+onReady: fires when everything is ready,
+onNewComment: fires when a new comment is posted,
+onIdentify: fires when user is authenticated
+*/
+this.language = '';
+this.callbacks.onReady.push(function () {
+// sync comments in the background so we don't block the page
+var script = document.createElement('script');
+script.async = true;
+script.src = '?cf_action=sync_comments&post_id=614';
+var firstScript = document.getElementsByTagName('script')[0];
+firstScript.parentNode.insertBefore(script, firstScript);
+});
+if (disqus_config_custom) {
+disqus_config_custom.call(this);
+}
+};
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+</main><!-- #main -->
+</div><!-- #primary -->
+<div id="secondary" class="widget-area" role="complementary">
+<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="./index.html">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+</label>
+<input type="submit" class="search-submit" value="Search">
+</form>
+</aside><aside id="text-2" class="widget widget_text"><h1 class="widget-title">This is me!!</h1>			<div class="textwidget"><style>
+.socl-btn
+{
+padding: 3px;
+background: #f45145;
+border-radius: 3px;
+color: rgba(255, 255, 255, 0.6) !important;
+margin-top: 9px;
+display: inline-block;
+text-align: center;
+width:100%;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+.socl-btn:hover{
+color:#fff !important;
+}
+.lkdin{
+background-image: url(./wp-content/uploads/2014/08/l.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+.gplus{
+background-image: url(./wp-content/uploads/2014/08/g.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+.mongodir{
+background-image: url(./wp-content/uploads/2014/08/m.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+.sitept{
+background-image: url(./wp-content/uploads/2014/08/s.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+</style>
+<img src="./wp-content/uploads/2014/02/030a49b.jpg" alt="Arvind Ravulavaru" style="width: 81px; margin: 0px auto;display: block;border-radius: 45px;"/>
+<br/>
+<label>
+Hello.. I am Arvind Ravulavaru a Full Stack Consultant based out of Hyderabad, India. This blog is my way of giving back to the Javascript Community!</label>
+<br/>
+<div style="text-align:center;" ><a  href="./portfolio/index.html">Know more about me</a></div>
+<br/>
+<div  style="text-align:center;">
+<a href="https://twitter.com/arvindr21" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://twitter.com/arvindr21', 'Follow @arvindr21');" class="twitter-follow-button" data-show-count="false">Follow @arvindr21</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+<iframe src="http://ghbtns.com/github-btn.html?user=arvindr21&type=follow"
+allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe><br/><br/>
+<a href="http://in.linkedin.com/in/arvindravulavaru" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://in.linkedin.com/in/arvindravulavaru', 'Linked In');" target="_blank"  class="socl-btn lkdin">Linked In</a>
+<a href="https://plus.google.com/+ArvindRavulavaru" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://plus.google.com/+ArvindRavulavaru', 'Google Plus');" target="_blank"  class="socl-btn gplus">Google Plus</a><br/>
+<a href="http://blog.mongodirector.com/author/arvindr" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/author/arvindr', 'Mongo Director');" target="_blank"  class="socl-btn mongodir">Mongo Director</a> <a href="http://www.sitepoint.com/author/aravulavaru/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/author/aravulavaru/', 'Site Point');" target="_blank"  class="socl-btn sitept">Site Point</a> <br/><br/>
+<a href="https://paper.li/arvindr21/1409328222#!headlines/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://paper.li/arvindr21/1409328222#!headlines/', 'Chronicles of the Jackal of Javascript');" target="_blank"  class="socl-btn">Chronicles of the Jackal of Javascript</a>
+</div></div>
+</aside><aside id="text-5" class="widget widget_text">			<div class="textwidget"><style>
+.crm-app, .crm-ext
+{
+padding: 9px;
+background: #787878;
+border-radius: 45px;
+color: #EFEFEE !important;
+margin-top: 9px;
+display: inline-block;
+text-align: center;
+}
+</style>
+<a href="https://chrome.google.com/webstore/detail/the-jackal-of-javascript/oiaebkkgbicadojhdipjajkhjkeencdm" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://chrome.google.com/webstore/detail/the-jackal-of-javascript/oiaebkkgbicadojhdipjajkhjkeencdm', 'Chrome App');" target ="_blank" class="crm-app">Chrome App</a>
+<a href="https://chrome.google.com/webstore/detail/the-jackal-of-javascript/dokdjofgoglghfljkpmmkgfpipgcmjme" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://chrome.google.com/webstore/detail/the-jackal-of-javascript/dokdjofgoglghfljkpmmkgfpipgcmjme', 'Chrome Extension');" target ="_blank" class="crm-ext">Chrome Extension</a></div>
+</aside><aside id="text-7" class="widget widget_text"><h1 class="widget-title">Workshops</h1>			<div class="textwidget"><ul>
+<li><a href="http://mean-workshop.herokuapp.com/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://mean-workshop.herokuapp.com', 'o/ M.E.A.N. Workshop');" target="_blank">\o/ M.E.A.N. Workshop</a>
+</li>
+</ul></div>
+</aside><aside id="text-6" class="widget widget_text"><h1 class="widget-title">Presentations</h1>			<div class="textwidget"><ul>
+<li><a href="http://arvindr21.github.io/ng-overview" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/ng-overview', 'Overview of Angularjs');" target="_blank">Overview of Angularjs</a>
+</li>
+<li><a href="http://arvindr21.github.io/howBrowserWorks" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/howBrowserWorks', 'How Browser Works');" target="_blank">How Browser Works</a>
+</li>
+<li><a href="http://arvindr21.github.io/WebComponents" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/WebComponents', 'Web Components');" target="_blank">Web Components</a>
+</li>
+<li><a href="http://arvindr21.github.io/building-n-Scaffolding" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/building-n-Scaffolding', 'Modern UI Build Systems and Scaffolding Tools');" target="_blank">Modern UI Build Systems and Scaffolding Tools</a>
+</li>
+<li><a href="http://arvindr21.github.io/backbonejs" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/backbonejs', 'Backbonejs');" target="_blank">Backbonejs</a>
+</li>
+<li><a href="http://arvindr21.github.io/rwd" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/rwd', 'Responsive Web Design');" target="_blank">Responsive Web Design</a>
+</li>
+</ul></div>
+</aside><aside id="text-3" class="widget widget_text"><h1 class="widget-title">Projects</h1>			<div class="textwidget"><ul><li><a href="./rotten-tomatoes-jquery-rest-client/index.html" target="_blank">Rotten Tomatoes jQuery Rest Client</a>
+</li>
+<li>
+<a href="./uploading-files-made-fun/index.html" target="_blank">blueimp-file-upload-expressjs</a> - A Node Package
+</li>
+<li>
+<a href="http://arvindr21.github.io/lazyboy/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/lazyboy/', 'lazyboy');" target="_blank">lazyboy</a> - Command line laziness redefined
+</li>
+<li>
+<a href="http://arvindr21.github.io/diskDB/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/diskDB/', 'diskDB');" target="_blank">diskDB</a> - A Light Weight Disk based JSON Database - A Node Package
+</li>
+<li>
+<a href="https://github.com/search?utf8=%E2%9C%93&q=user%3Aarvindr21+slush&type=Repositories&ref=searchresults" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/search?utf8=%E2%9C%93&amp;q=user%3Aarvindr21+slush&amp;type=Repositories&amp;ref=searchresults', 'My Slush Generators');" target="_blank">My Slush Generators</a>
+</li>
+<li>
+<a href="https://github.com/search?utf8=%E2%9C%93&q=user%3Aarvindr21+yeoman&type=Repositories&ref=searchresults" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/search?utf8=%E2%9C%93&amp;q=user%3Aarvindr21+yeoman&amp;type=Repositories&amp;ref=searchresults', 'My Yeoman Generators');" target="_blank">My Yeoman Generators</a>
+</li>
+<li>
+<a href="https://github.com/arvindr21/myWebComponents#mywebcomponents" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/arvindr21/myWebComponents#mywebcomponents', 'My Web Components');" target="_blank">My Web Components</a>
+</li>
+<li>
+<a href="http://bower.io/search/?q=owner:arvindr21" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://bower.io/search/?q=owner:arvindr21', 'My Bower Packages');" target="_blank">My Bower Packages</a>
+</li>
+</ul></div>
+</aside><aside id="latestseries-2" class="widget widget_latestseries"><h1 class="widget-title">Series</h1>			<ul>
+<div class="latest-series"><ul><li><a href="./series/a-reminder-app/index.html" class="series-145" title="Ionic, Twilio and Node Scheduler – A Reminder App">Ionic, Twilio and Node Scheduler – A Reminder App</a></li><li><a href="./series/node-webkit-apps/index.html" class="series-150" title="Node Webkit Apps">Node Webkit Apps</a></li><li><a href="./series/rpi/index.html" class="series-148" title="Raspberry Pi">Raspberry Pi</a></li></ul></div>			</ul>
+</aside><aside id="text-4" class="widget widget_text"><h1 class="widget-title">Guest Posts</h1>			<div class="textwidget"><ul>
+<li><a href="http://www.sitepoint.com/building-chat-app-node-webkit-firebase-angularjs/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/building-chat-app-node-webkit-firebase-angularjs/', 'Building a Chat App with node-webkit, Firebase, and AngularJS');" target="_blank">Building a Chat App with node-webkit, Firebase, and AngularJS</a></li>
+<li><a href="http://www.sitepoint.com/creating-sentiment-analysis-application-using-node-js/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/creating-sentiment-analysis-application-using-node-js/', 'Creating a Sentiment Analysis Application Using Node.js');" target="_blank">Creating a Sentiment Analysis Application Using Node.js</a></li>
+<li><a href="http://blog.mongodirector.com/implementing-pagination-with-mongodb-express-js-slush/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/implementing-pagination-with-mongodb-express-js-slush/', 'Implementing pagination with MongoDB, Express.js &amp; Slush');" target="_blank">Implementing pagination with MongoDB, Express.js & Slush</a></li>
+<li><a href="http://www.sitepoint.com/creating-firebase-powered-end-end-ionic-application/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/creating-firebase-powered-end-end-ionic-application/', 'Creating a Firebase Powered End to End Ionic Application');" target="_blank">Creating a Firebase Powered End to End Ionic Application</a></li>
+<li><a href="http://blog.mongodirector.com/getting-started-with-mongodb-and-mongoose/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/getting-started-with-mongodb-and-mongoose/', 'Getting started with MongoDB and Mongoose');" target="_blank">Getting started with MongoDB and Mongoose</a></li>
+<li><a href="http://blog.mongodirector.com/yeoman-mongoose-and-mongodb/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/yeoman-mongoose-and-mongodb/', 'Yeoman, Mongoose and MongoDB');" target="_blank">Yeoman, Mongoose and MongoDB</a></li>
+</ul></div>
+</aside><aside id="views-2" class="widget widget_views"><h1 class="widget-title">Top5 Posts</h1><ul>
+<li><a href="./architecting-a-restful-node-js-app/index.html"  title="Architecting a Secure RESTful Node.js app">Architecting a Secure RESTful Node.js app</a> - 215,318 views</li><li><a href="./getting-started-with-angular-2-0/index.html"  title="Getting Started with Angular 2.0">Getting Started with Angular 2.0</a> - 177,582 views</li><li><a href="./developing-a-mean-app-with-angular-2-0/index.html"  title="Developing a MEAN app with Angular 2.0">Developing a MEAN app with Angular 2.0</a> - 149,713 views</li><li><a href="./getting-started-with-node-webkit-apps/index.html"  title="Node Webkit &ndash; Build Desktop Apps with Node and Web Technologies">Node Webkit &ndash; Build Desktop Apps with Node and Web Technologies</a> - 93,571 views</li><li><a href="./rpi-live-streaming/index.html"  title="Raspberry Pi, Camera and Node.js &ndash; Live Streaming with Websockets #IoT">Raspberry Pi, Camera and Node.js &ndash; Live Streaming with Websockets #IoT</a> - 91,974 views</li></ul>
+</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h1 class="widget-title">Recent Posts</h1>		<ul>
+<li>
+<a href="./learning-ionic/index.html">Learning Ionic</a>
+</li>
+<li>
+<a href="./electron-wordpress-angular-material-an-offline-viewer/index.html">Electron, WordPress &#038; Angular Material &#8211; An Offline Viewer</a>
+</li>
+<li>
+<a href="./developing-a-mean-app-with-angular-2-0/index.html">Developing a MEAN app with Angular 2.0</a>
+</li>
+<li>
+<a href="./pushbots-and-cordova/index.html">Pushbots and Cordova &#8211; Easy Push Notifications for your app</a>
+</li>
+<li>
+<a href="./getting-started-with-client-side-storage/index.html">Getting Started with Client Side Storage</a>
+</li>
+</ul>
+</aside><aside id="categories-2" class="widget widget_categories"><h1 class="widget-title">Categories</h1>		<ul>
+<li class="cat-item cat-item-141"><a href="./architecture/index.html" >Architecture</a> (8)
+</li>
+<li class="cat-item cat-item-3"><a href="./css/index.html" >CSS</a> (9)
+<ul class='children'>
+<li class="cat-item cat-item-5"><a href="./css/css3/index.html" >CSS3</a> (6)
+</li>
+<li class="cat-item cat-item-26"><a href="./css/less/index.html" >LESS</a> (3)
+</li>
+<li class="cat-item cat-item-55"><a href="./css/sass/index.html" >SASS</a> (1)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-117"><a href="./database/index.html" >Database</a> (17)
+<ul class='children'>
+<li class="cat-item cat-item-136"><a href="./database/disk-db/index.html" >Disk DB</a> (6)
+</li>
+<li class="cat-item cat-item-131"><a href="./database/firebase/index.html" >Firebase</a> (4)
+</li>
+<li class="cat-item cat-item-118"><a href="./database/mongodb/index.html" >MongoDB</a> (8)
+<ul class='children'>
+<li class="cat-item cat-item-119"><a href="./database/mongodb/mongolab/index.html" >MongoLab</a> (3)
+</li>
+<li class="cat-item cat-item-123"><a href="./database/mongodb/monk/index.html" >Monk</a> (1)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-125"><a href="./deployments/index.html" >Deployments</a> (4)
+<ul class='children'>
+<li class="cat-item cat-item-126"><a href="./deployments/heroku/index.html" >Heroku</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-135"><a href="./desktop-apps/index.html" >Desktop Apps</a> (8)
+</li>
+<li class="cat-item cat-item-155"><a href="./dna-analysis/index.html" >DNA Analysis</a> (1)
+</li>
+<li class="cat-item cat-item-112"><a href="./es6/index.html" >ECMAScript 6</a> (3)
+</li>
+<li class="cat-item cat-item-162"><a href="./electron-atom-shell/index.html" >Electron (atom shell)</a> (1)
+</li>
+<li class="cat-item cat-item-25"><a href="./frameworks/index.html" >Frameworks</a> (42)
+<ul class='children'>
+<li class="cat-item cat-item-160"><a href="./frameworks/angular-2-0/index.html" >Angular 2.0</a> (2)
+</li>
+<li class="cat-item cat-item-108"><a href="./frameworks/angularjs/index.html" >Angularjs</a> (21)
+</li>
+<li class="cat-item cat-item-132"><a href="./frameworks/backbonejs/index.html" >Backbonejs</a> (1)
+</li>
+<li class="cat-item cat-item-105"><a href="./frameworks/bootstrap/index.html" >Bootstrap</a> (9)
+</li>
+<li class="cat-item cat-item-159"><a href="./frameworks/emberjs/index.html" >Emberjs</a> (1)
+</li>
+<li class="cat-item cat-item-56"><a href="./frameworks/foundation/index.html" >Foundation</a> (3)
+</li>
+<li class="cat-item cat-item-110"><a href="./frameworks/framework7/index.html" >Framework7</a> (1)
+</li>
+<li class="cat-item cat-item-107"><a href="./frameworks/ionic/index.html" >Ionic</a> (11)
+</li>
+<li class="cat-item cat-item-157"><a href="./frameworks/lumx/index.html" >Lumx</a> (1)
+</li>
+<li class="cat-item cat-item-138"><a href="./frameworks/mean/index.html" >MEAN</a> (4)
+</li>
+<li class="cat-item cat-item-116"><a href="./frameworks/meteorjs/index.html" >Meteorjs</a> (1)
+</li>
+<li class="cat-item cat-item-122"><a href="./frameworks/onsen-ui/index.html" >Onsen UI</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-101"><a href="./git/index.html" >Git</a> (12)
+<ul class='children'>
+<li class="cat-item cat-item-102"><a href="./git/github/index.html" >GitHub</a> (10)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-2"><a href="./html/index.html" >HTML</a> (22)
+<ul class='children'>
+<li class="cat-item cat-item-4"><a href="./html/html5/index.html" >HTML5</a> (21)
+<ul class='children'>
+<li class="cat-item cat-item-158"><a href="./html/html5/webrtc/index.html" >WebRTC</a> (1)
+</li>
+<li class="cat-item cat-item-106"><a href="./html/html5/websockets/index.html" >WebSockets</a> (6)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-137"><a href="./intels-app-ui/index.html" >Intel&#039;s App UI</a> (1)
+</li>
+<li class="cat-item cat-item-143"><a href="./iot/index.html" >IoT</a> (6)
+</li>
+<li class="cat-item cat-item-1"><a href="./javascript/index.html" >Javascript</a> (75)
+<ul class='children'>
+<li class="cat-item cat-item-6"><a href="./javascript/jquery/index.html" >jQuery</a> (14)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-151"><a href="./material-design/index.html" >Material Design</a> (3)
+</li>
+<li class="cat-item cat-item-99"><a href="./mobile/index.html" >Mobile</a> (21)
+<ul class='children'>
+<li class="cat-item cat-item-103"><a href="./mobile/android/index.html" >Android</a> (15)
+</li>
+<li class="cat-item cat-item-113"><a href="./mobile/firefox-os/index.html" >Firefox OS</a> (2)
+</li>
+<li class="cat-item cat-item-104"><a href="./mobile/ios/index.html" >iOS</a> (11)
+</li>
+<li class="cat-item cat-item-100"><a href="./mobile/phonegap/index.html" >PhoneGap</a> (16)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-149"><a href="./mqtt/index.html" >MQTT</a> (1)
+</li>
+<li class="cat-item cat-item-163"><a href="./my-books/index.html" >My Books</a> (1)
+</li>
+<li class="cat-item cat-item-45"><a href="./node/index.html" >Node</a> (60)
+<ul class='children'>
+<li class="cat-item cat-item-152"><a href="./node/cli/index.html" >CLI</a> (3)
+</li>
+<li class="cat-item cat-item-121"><a href="./node/expressjs/index.html" >Expressjs</a> (18)
+</li>
+<li class="cat-item cat-item-156"><a href="./node/genome/index.html" >Genome</a> (1)
+</li>
+<li class="cat-item cat-item-62"><a href="./node/grunt/index.html" >Grunt</a> (8)
+</li>
+<li class="cat-item cat-item-124"><a href="./node/koa/index.html" >Koa</a> (1)
+</li>
+<li class="cat-item cat-item-134"><a href="./node/node-webkit/index.html" >Node Webkit</a> (7)
+</li>
+<li class="cat-item cat-item-54"><a href="./node/npm/index.html" >NPM</a> (15)
+</li>
+<li class="cat-item cat-item-120"><a href="./node/restify/index.html" >Restify</a> (3)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-161"><a href="./push-notifications/index.html" >Push Notifications</a> (1)
+</li>
+<li class="cat-item cat-item-59"><a href="./quick-and-dirty/index.html" >Quick and Dirty</a> (42)
+</li>
+<li class="cat-item cat-item-142"><a href="./raspberry-pi/index.html" >Raspberry Pi</a> (9)
+</li>
+<li class="cat-item cat-item-60"><a href="./setup/index.html" >Setup</a> (60)
+</li>
+<li class="cat-item cat-item-61"><a href="./testing/index.html" >Testing</a> (5)
+<ul class='children'>
+<li class="cat-item cat-item-129"><a href="./testing/jasmine/index.html" >Jasmine</a> (1)
+</li>
+<li class="cat-item cat-item-128"><a href="./testing/protractor/index.html" >Protractor</a> (1)
+</li>
+<li class="cat-item cat-item-98"><a href="./testing/test-automation/index.html" >Test Automation</a> (1)
+</li>
+<li class="cat-item cat-item-41"><a href="./testing/tdd/index.html" >Test Driven Developement</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-139"><a href="./third-party-products/index.html" >Third Party Products</a> (4)
+<ul class='children'>
+<li class="cat-item cat-item-140"><a href="./third-party-products/twilio/index.html" >Twilio</a> (4)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-58"><a href="./tutorial/index.html" >Tutorial</a> (79)
+</li>
+<li class="cat-item cat-item-130"><a href="./performance-analysis/index.html" >UI Performance</a> (1)
+</li>
+<li class="cat-item cat-item-109"><a href="./web-components/index.html" >Web Components</a> (3)
+</li>
+<li class="cat-item cat-item-133"><a href="./google-web-starter-kit/index.html" >Web Starter Kit</a> (1)
+</li>
+</ul>
+</aside><aside id="archives-2" class="widget widget_archive"><h1 class="widget-title">Archives</h1>		<ul>
+<li><a href='./2015/07/index.html'>July 2015</a></li>
+<li><a href='./2015/05/index.html'>May 2015</a></li>
+<li><a href='./2015/04/index.html'>April 2015</a></li>
+<li><a href='./2015/03/index.html'>March 2015</a></li>
+<li><a href='./2015/02/index.html'>February 2015</a></li>
+<li><a href='./2015/01/index.html'>January 2015</a></li>
+<li><a href='./2014/12/index.html'>December 2014</a></li>
+<li><a href='./2014/11/index.html'>November 2014</a></li>
+<li><a href='./2014/10/index.html'>October 2014</a></li>
+<li><a href='./2014/09/index.html'>September 2014</a></li>
+<li><a href='./2014/08/index.html'>August 2014</a></li>
+<li><a href='./2014/07/index.html'>July 2014</a></li>
+<li><a href='./2014/06/index.html'>June 2014</a></li>
+<li><a href='./2014/05/index.html'>May 2014</a></li>
+<li><a href='./2014/04/index.html'>April 2014</a></li>
+<li><a href='./2014/03/index.html'>March 2014</a></li>
+<li><a href='./2014/02/index.html'>February 2014</a></li>
+</ul>
+</aside><aside id="wysija-3" class="widget widget_wysija"><h1 class="widget-title">Inform me about new posts</h1><div class="widget_wysija_cont"><div id="msg-form-wysija-3" class="wysija-msg ajax"></div><form id="form-wysija-3" method="post" action="#wysija" class="widget_wysija">
+<p class="wysija-paragraph">
+<label>Email <span class="wysija-required">*</span></label>
+<input type="text" name="wysija[user][email]" class="wysija-input validate[required,custom[email]]" title="Email"  value="" />
+<span class="abs-req">
+<input type="text" name="wysija[user][abs][email]" class="wysija-input validated[abs][email]" value="" />
+</span>
+</p>
+<input class="wysija-submit wysija-submit-field" type="submit" value="Subscribe!" />
+<input type="hidden" name="form_id" value="1" />
+<input type="hidden" name="action" value="save" />
+<input type="hidden" name="controller" value="subscribers" />
+<input type="hidden" value="1" name="wysija-page" />
+<input type="hidden" name="wysija[user_list][list_ids]" value="3" />
+</form></div></aside>	</div><!-- #secondary -->
+	<script>
+var _prum = [['id', '544090ababe53d0e3e76d6ce'],
+['mark', 'firstbyte', (new Date()).getTime()]];
+(function() {
+var s = document.getElementsByTagName('script')[0]
+, p = document.createElement('script');
+p.async = 'async';
+p.src = '//rum-static.pingdom.net/prum.min.js';
+s.parentNode.insertBefore(p, s);
+})();
+</script>
+</div><!-- #content -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info">
+All Rights Reserved
+<span class="sep"> | </span>
+The Jackal of Javascript
+</div><!-- .site-info -->
+<div class="rnd-circle" style="background: black;width: 10px;height: 10px;border-radius: 50%;"></div>
+</footer><!-- #colophon -->
+</div><!-- #page -->
+<script type='text/javascript'><!--
+var seriesdropdown = document.getElementById("orgseries_dropdown");
+if (seriesdropdown) {
+function onSeriesChange() {
+if ( seriesdropdown.options[seriesdropdown.selectedIndex].value != ( 0 || -1 ) ) {
+location.href = "./series/"+seriesdropdown.options[seriesdropdown.selectedIndex].value;
+}
+}
+seriesdropdown.onchange = onSeriesChange;
+}
+--></script>
+<script type="text/javascript">
+// <![CDATA[
+var disqus_shortname = 'thejackalofjavascriptcom';
+(function () {
+var nodes = document.getElementsByTagName('span');
+for (var i = 0, url; i < nodes.length; i++) {
+if (nodes[i].className.indexOf('dsq-postid') != -1) {
+nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+url = nodes[i].parentNode.href.split('#', 1);
+if (url.length == 1) { url = url[0]; }
+else { url = url[1]; }
+nodes[i].parentNode.href = url + '#disqus_thread';
+}
+}
+var s = document.createElement('script'); 
+s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+// ]]>
+</script>
+<div class="scroll-back-to-top-wrapper">
+<span class="scroll-back-to-top-inner">
+<i class="fa fa-2x fa-arrow-circle-up"></i>
+</span>
+</div>
+<style type="text/css">
+#wpfront-notification-bar 
+{
+background: #242d36;
+background: -moz-linear-gradient(top, #242d36 0%, #242d36 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#242d36), color-stop(100%,#242d36));
+background: -webkit-linear-gradient(top, #242d36 0%,#242d36 100%);
+background: -o-linear-gradient(top, #242d36 0%,#242d36 100%);
+background: -ms-linear-gradient(top, #242d36 0%,#242d36 100%);
+background: linear-gradient(to bottom, #242d36 0%, #242d36 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242d36', endColorstr='#242d36',GradientType=0 );
+}
+#wpfront-notification-bar div.wpfront-message
+{
+color: #ffffff;
+}
+#wpfront-notification-bar a.wpfront-button
+{
+background: #f45145;
+background: -moz-linear-gradient(top, #f45145 0%, #f45145 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f45145), color-stop(100%,#f45145));
+background: -webkit-linear-gradient(top, #f45145 0%,#f45145 100%);
+background: -o-linear-gradient(top, #f45145 0%,#f45145 100%);
+background: -ms-linear-gradient(top, #f45145 0%,#f45145 100%);
+background: linear-gradient(to bottom, #f45145 0%, #f45145 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f45145', endColorstr='#f45145',GradientType=0 );
+color: #ffffff;
+}
+#wpfront-notification-bar-open-button
+{
+background-color: #00b7ea;
+}
+#wpfront-notification-bar  div.wpfront-close 
+{
+border: 1px solid #555555;
+background-color: #555555;
+color: #000000;
+}
+#wpfront-notification-bar  div.wpfront-close:hover 
+{
+border: 1px solid #aaaaaa;
+background-color: #aaaaaa;
+}
+</style>
+<div id="wpfront-notification-bar-spacer"  style="display: none;">
+<div id="wpfront-notification-bar-open-button" class="top wpfront-bottom-shadow"></div>
+<div id="wpfront-notification-bar" class="wpfront-fixed">
+<div class="wpfront-close">X</div>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<div class="wpfront-message">
+Learn your way around Ionic framework. Check out Learning Ionic!                     </div>
+<div>
+<a class="wpfront-button" href="https://www.packtpub.com/application-development/learning-ionic/?utm_source=Jkthejackalofjavascript&utm_medium=referral&utm_campaign=1783552603"  target="_blank" >Buy</a>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<style type="text/css">
+.wpfront-message{line-height:27px; vertical-align:baseline !important;}</style>
+<script type="text/javascript">if(typeof wpfront_notification_bar == "function") wpfront_notification_bar({"position":1,"height":0,"fixed_position":"on","animate_delay":0.5,"close_button":true,"button_action_close_bar":false,"auto_close_after":0,"display_after":1,"is_admin_bar_showing":false,"display_open_button":false,"keep_closed":"on","keep_closed_for":1,"position_offset":0,"display_scroll":"on","display_scroll_offset":100});</script><script type='text/javascript' src='./wp-content/plugins/jetpack/modules/photon/photon.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var scrollBackToTop = {"scrollDuration":"500","fadeDuration":"0.5"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./wp-content/plugins/scroll-back-to-top/assets/js/scroll-back-to-top.js'></script>
+<script type='text/javascript' src='./wp-content/plugins/simple-share-buttons-adder/js/ssba.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var viewsCacheL10n = {"admin_ajax_url":".\/wp-admin\/admin-ajax.php","post_id":"614"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./wp-content/plugins/wp-postviews/postviews-cache.js'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js'></script>
+<script type='text/javascript' src='./wp-content/themes/sorbet/js/menus.js'></script>
+<script type='text/javascript' src='./wp-content/themes/sorbet/js/skip-link-focus-fix.js'></script>
+<script type='text/javascript' src='./wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='./wp-content/plugins/lazy-load/js/jquery.sonar.min.js'></script>
+<script type='text/javascript' src='./wp-content/plugins/lazy-load/js/lazy-load.js'></script>
+<script type='text/javascript' src='./wp-content/plugins/jetpack/_inc/postmessage.js'></script>
+<script type='text/javascript' src='./wp-content/plugins/jetpack/_inc/jquery.jetpack-resize.js'></script>
+<script type='text/javascript' src='./wp-content/plugins/jetpack/_inc/jquery.inview.js'></script>
+<script type='text/javascript' src='./wp-content/plugins/jetpack/modules/likes/queuehandler.js'></script>
+<script type='text/javascript' src='./wp-content/plugins/wysija-newsletters/js/validate/languages/jquery.validationEngine-en.js'></script>
+<script type='text/javascript' src='./wp-content/plugins/wysija-newsletters/js/validate/jquery.validationEngine.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wysijaAJAX = {"action":"wysija_ajax","controller":"subscribers","ajaxurl":".\/wp-admin\/admin-ajax.php","loadingTrans":"Loading...","is_rtl":""};
+var wysijaAJAX = {"action":"wysija_ajax","controller":"subscribers","ajaxurl":".\/wp-admin\/admin-ajax.php","loadingTrans":"Loading...","is_rtl":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./wp-content/plugins/wysija-newsletters/js/front-subscribers.js'></script>
+<iframe src='http://widgets.wp.com/likes/master.html?ver=20141028#ver=20141028' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+<script type="text/javascript">
+jQuery.noConflict();
+(function( $ ) {
+$(function() {
+// More code using $ as alias to jQuery
+$("area[href*=#],a[href*=#]:not([href=#]):not([href^='#tab']):not([href^='#quicktab']):not([href^='#pane'])").click(function() {
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+var target = $(this.hash);
+target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+if (target.length) {
+$('html,body').animate({
+scrollTop: target.offset().top - 20  
+},900 ,'easeOutQuint');
+return false;
+}
+}
+});
+});
+})(jQuery);	
+</script>				
+<script type='text/javascript' src='http://stats.wp.com/e-201746.js' async defer></script>
+<script type='text/javascript'>
+_stq = window._stq || [];
+_stq.push([ 'view', {v:'ext',j:'1:3.7',blog:'70838519',post:'614',tz:'5.5',srv:'thejackalofjavascript.com'} ]);
+_stq.push([ 'clickTrackerInit', '70838519', '614' ]);
+</script>
+<div id="upprev_box"><h6>Read previous post:</h6><div class="upprev_excerpt"><h5><a href="./rotten-tomatoes-jquery-rest-client/index.html" rel="Git &amp; GitHub for Beginners">Rotten Tomatoes jQuery Rest Client</a></h5><p>Rotten Tomatoes jQuery Rest Client Recently Rotten Tomatoes has exposed a REST API to access the Movies, DVD &amp; Releases...</p></div><a id="upprev_close" href="#" rel="close">Close</a></div><script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-47881846-1', 'auto');
+ga('send', 'pageview');
+</script>
+<a style="display:none;" href="http://www.alexa.com/siteinfo/./"><script type="text/javascript" src="http://xslt.alexa.com/site_stats/js/t/a?url=./"></script></a>
+</body>
+</html><script>if(document.getElementById('to-contents') == null){ } else {var a = document.getElementById('to-contents').getElementsByTagName('a'); for(var i=0; i< a.length;i++){var b = a[i].getAttribute('href').split('#');if(b.length >=2)a[i].setAttribute('href', '#'+b[1]);}}</script>
+<script>if(typeof jQuery == 'function'){jQuery('.widgetGuts.shortcode h3').html('Inform Me About New Posts')}</script><!-- WP Fastest Cache file was created in 3.83243298531 seconds, on 18-11-17 14:17:48 -->

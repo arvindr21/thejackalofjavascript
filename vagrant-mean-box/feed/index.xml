@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:series="http://organizeseries.com/"
+	
+	>
+<channel>
+	<title>Comments on: M.E.A.N. Stack Development with Vagrant</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Knowing is different &#38; Doing is different</description>
+	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.16</generator>
+	<item>
+		<title>By: FreeSpeech101</title>
+		<link>./../comment-page-1/index.html#comment-3387</link>
+		<dc:creator><![CDATA[FreeSpeech101]]></dc:creator>
+		<pubDate>Mon, 21 Aug 2017 07:29:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-3387</guid>
+		<description><![CDATA[this won&#039;t work. somewhere sudo was used and messes up everything]]></description>
+		<content:encoded><![CDATA[<p>this won&#8217;t work. somewhere sudo was used and messes up everything</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: jatasya</title>
+		<link>./../comment-page-1/index.html#comment-3329</link>
+		<dc:creator><![CDATA[jatasya]]></dc:creator>
+		<pubDate>Wed, 30 Nov 2016 13:05:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-3329</guid>
+		<description><![CDATA[https://github.com/mitchellh/vagrant/issues/5016
+
+solutions in the above link solved the issue for me]]></description>
+		<content:encoded><![CDATA[<p><a href="https://github.com/mitchellh/vagrant/issues/5016" rel="nofollow">https://github.com/mitchellh/vagrant/issues/5016</a></p>
+<p>solutions in the above link solved the issue for me</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: jatasya</title>
+		<link>./../comment-page-1/index.html#comment-3328</link>
+		<dc:creator><![CDATA[jatasya]]></dc:creator>
+		<pubDate>Wed, 30 Nov 2016 12:33:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-3328</guid>
+		<description><![CDATA[I am getting the below error how to resolve it, can anyone help
+
+The box &#039;arvindr21/mean-box&#039; could not be found or
+could not be accessed in the remote catalog. If this is a private
+box on HashiCorp&#039;s Atlas, please verify you&#039;re logged in via
+`vagrant login`. Also, please double-check the name. The expanded
+URL and error message are shown below:
+
+URL: [&quot;https://atlas.hashicorp.com/arvindr21/mean-box&quot;]
+Error: Could not resolve host: atlas.hashicorp.com]]></description>
+		<content:encoded><![CDATA[<p>I am getting the below error how to resolve it, can anyone help</p>
+<p>The box &#8216;arvindr21/mean-box&#8217; could not be found or<br />
+could not be accessed in the remote catalog. If this is a private<br />
+box on HashiCorp&#8217;s Atlas, please verify you&#8217;re logged in via<br />
+<code>vagrant login</code>. Also, please double-check the name. The expanded<br />
+URL and error message are shown below:</p>
+<p>URL: [&#8220;https://atlas.hashicorp.com/arvindr21/mean-box&#8221;]<br />
+Error: Could not resolve host: atlas.hashicorp.com</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Npmer</title>
+		<link>./../comment-page-1/index.html#comment-3323</link>
+		<dc:creator><![CDATA[Npmer]]></dc:creator>
+		<pubDate>Sat, 12 Nov 2016 16:47:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-3323</guid>
+		<description><![CDATA[n/m using a new version of Ubuntu. Works with just &quot;grunt&quot; now. Weird]]></description>
+		<content:encoded><![CDATA[<p>n/m using a new version of Ubuntu. Works with just &#8220;grunt&#8221; now. Weird</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Npmer</title>
+		<link>./../comment-page-1/index.html#comment-3322</link>
+		<dc:creator><![CDATA[Npmer]]></dc:creator>
+		<pubDate>Sat, 12 Nov 2016 16:30:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-3322</guid>
+		<description><![CDATA[Anyone have any idea why grunt -v works for me? Accidentally typed it and it worked]]></description>
+		<content:encoded><![CDATA[<p>Anyone have any idea why grunt -v works for me? Accidentally typed it and it worked</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: lennylux</title>
+		<link>./../comment-page-1/index.html#comment-3216</link>
+		<dc:creator><![CDATA[lennylux]]></dc:creator>
+		<pubDate>Sat, 16 Apr 2016 12:58:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-3216</guid>
+		<description><![CDATA[Hi, 
+I&#039;m trying to use this box, I&#039;m on a mac (latest updates at time of writing) box installed, can ssh in etc.... 
+what I want to do is sync a specific folder....  on my local machine I have /username/Code/Nodejs and I want to map that to /username/vagrant/Code/nodejs. I already use the same principal for a homestead laravel box.
+
+I have uncommented the private network and IP, attempted to map the folder I&#039;d like to sync as above, bix doesnt boot saying can&#039;t fine /username/Code/nodejs....  if I remove my mapping attempt, it boots...  so that is the issue. What am I doing wrong here.
+
+desired result is to map projects to /username/Code/nodejs/project-xyz etc....  
+
+Thanks in advance for any help]]></description>
+		<content:encoded><![CDATA[<p>Hi,<br />
+I&#8217;m trying to use this box, I&#8217;m on a mac (latest updates at time of writing) box installed, can ssh in etc&#8230;.<br />
+what I want to do is sync a specific folder&#8230;.  on my local machine I have /username/Code/Nodejs and I want to map that to /username/vagrant/Code/nodejs. I already use the same principal for a homestead laravel box.</p>
+<p>I have uncommented the private network and IP, attempted to map the folder I&#8217;d like to sync as above, bix doesnt boot saying can&#8217;t fine /username/Code/nodejs&#8230;.  if I remove my mapping attempt, it boots&#8230;  so that is the issue. What am I doing wrong here.</p>
+<p>desired result is to map projects to /username/Code/nodejs/project-xyz etc&#8230;.  </p>
+<p>Thanks in advance for any help</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ben Brink</title>
+		<link>./../comment-page-1/index.html#comment-3214</link>
+		<dc:creator><![CDATA[Ben Brink]]></dc:creator>
+		<pubDate>Wed, 13 Apr 2016 16:49:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-3214</guid>
+		<description><![CDATA[Hi Arvind. I am having the same problem and am new to shell command line/terminal. I&#039;m not sure what you mean by 1. Clean up all the thing you have done so far. Does this mean delete the files in the app folder as seen on the Host machine? Also by Create the .npm folder manually do you simply mean adding a folder with this name in the app folder? Ben]]></description>
+		<content:encoded><![CDATA[<p>Hi Arvind. I am having the same problem and am new to shell command line/terminal. I&#8217;m not sure what you mean by 1. Clean up all the thing you have done so far. Does this mean delete the files in the app folder as seen on the Host machine? Also by Create the .npm folder manually do you simply mean adding a folder with this name in the app folder? Ben</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: 0xCAFEBABE</title>
+		<link>./../comment-page-1/index.html#comment-3124</link>
+		<dc:creator><![CDATA[0xCAFEBABE]]></dc:creator>
+		<pubDate>Tue, 12 Jan 2016 18:26:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-3124</guid>
+		<description><![CDATA[How did you get the synced folders to work properly in your mean-box by default? I&#039;m trying to create one from scratch, and I have to specify &lt;pre&gt;config.vm.synced_folder &quot;.&quot;, &quot;/vagrant&quot;, type: &quot;nfs&quot;&lt;/pre&gt; manually in the Vagrantfile to get it to sync in real-time on OS X. If I package my custom box with these settings, will it work by default if I download and run it somewhere else?]]></description>
+		<content:encoded><![CDATA[<p>How did you get the synced folders to work properly in your mean-box by default? I&#8217;m trying to create one from scratch, and I have to specify </p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5a1084b4a99d5115319925" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+config.vm.synced_folder ".", "/vagrant", type: "nfs"</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a1084b4a99d5115319925-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a1084b4a99d5115319925-1"><span class="crayon-v">config</span><span class="crayon-sy">.</span><span class="crayon-v">vm</span><span class="crayon-sy">.</span><span class="crayon-v">synced</span><span class="crayon-sy">_</span>folder<span class="crayon-h"> </span><span class="crayon-s">"."</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">"/vagrant"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">type</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">"nfs"</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0011 seconds] -->
+<p> manually in the Vagrantfile to get it to sync in real-time on OS X. If I package my custom box with these settings, will it work by default if I download and run it somewhere else?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Alexey Markushin</title>
+		<link>./../comment-page-1/index.html#comment-3094</link>
+		<dc:creator><![CDATA[Alexey Markushin]]></dc:creator>
+		<pubDate>Fri, 25 Dec 2015 23:10:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-3094</guid>
+		<description><![CDATA[Doesn&#039;t work unfortunately =(
+Still says: &quot;Please try running this command again as root/Administrator.&quot;]]></description>
+		<content:encoded><![CDATA[<p>Doesn&#8217;t work unfortunately =(<br />
+Still says: &#8220;Please try running this command again as root/Administrator.&#8221;</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Emmanuel L. Constant</title>
+		<link>./../comment-page-1/index.html#comment-3076</link>
+		<dc:creator><![CDATA[Emmanuel L. Constant]]></dc:creator>
+		<pubDate>Wed, 02 Dec 2015 04:50:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-3076</guid>
+		<description><![CDATA[I getting the following after vagrant up 
+
+default: Warning: Connection timeout. Retrying...
+default: Warning: Connection timeout. Retrying...
+default: Warning: Connection timeout. Retrying...
+default: Warning: Connection timeout. Retrying...
+
+when I do vagrant halt
+
+then vagrant up --debug
+
+it loops on the following:
+
+GuestMemoryBalloon=0
+GuestOSType=&quot;Ubuntu&quot;
+GuestAdditionsRunLevel=0
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+
+
+
+Not sure how to resolve, please assist.]]></description>
+		<content:encoded><![CDATA[<p>I getting the following after vagrant up </p>
+<p>default: Warning: Connection timeout. Retrying&#8230;<br />
+default: Warning: Connection timeout. Retrying&#8230;<br />
+default: Warning: Connection timeout. Retrying&#8230;<br />
+default: Warning: Connection timeout. Retrying&#8230;</p>
+<p>when I do vagrant halt</p>
+<p>then vagrant up &#8211;debug</p>
+<p>it loops on the following:</p>
+<p>GuestMemoryBalloon=0<br />
+GuestOSType=&#8221;Ubuntu&#8221;<br />
+GuestAdditionsRunLevel=0<br />
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000</p>
+<p>Not sure how to resolve, please assist.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Enkia Dev</title>
+		<link>./../comment-page-1/index.html#comment-3007</link>
+		<dc:creator><![CDATA[Enkia Dev]]></dc:creator>
+		<pubDate>Sat, 17 Oct 2015 20:59:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-3007</guid>
+		<description><![CDATA[Did you ever figure out what the issue was? I&#039;m having the same problem.]]></description>
+		<content:encoded><![CDATA[<p>Did you ever figure out what the issue was? I&#8217;m having the same problem.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: lexan</title>
+		<link>./../comment-page-1/index.html#comment-2986</link>
+		<dc:creator><![CDATA[lexan]]></dc:creator>
+		<pubDate>Mon, 05 Oct 2015 14:09:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-2986</guid>
+		<description><![CDATA[Where to see a result after starting NodeJS app?  Thank you.]]></description>
+		<content:encoded><![CDATA[<p>Where to see a result after starting NodeJS app?  Thank you.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2869</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Sun, 09 Aug 2015 06:52:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-2869</guid>
+		<description><![CDATA[Cool. Thanks for sharing!!]]></description>
+		<content:encoded><![CDATA[<p>Cool. Thanks for sharing!!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2862</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Sun, 09 Aug 2015 06:37:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-2862</guid>
+		<description><![CDATA[Thanks! I updated the post.]]></description>
+		<content:encoded><![CDATA[<p>Thanks! I updated the post.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ian Simmons</title>
+		<link>./../comment-page-1/index.html#comment-2829</link>
+		<dc:creator><![CDATA[Ian Simmons]]></dc:creator>
+		<pubDate>Sun, 26 Jul 2015 04:42:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-2829</guid>
+		<description><![CDATA[I had to install git. Looks like it is supposed to be already installed but had to do sudo apt-get install git]]></description>
+		<content:encoded><![CDATA[<p>I had to install git. Looks like it is supposed to be already installed but had to do sudo apt-get install git</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Giorgos Kontopoulos</title>
+		<link>./../comment-page-1/index.html#comment-2819</link>
+		<dc:creator><![CDATA[Giorgos Kontopoulos]]></dc:creator>
+		<pubDate>Wed, 15 Jul 2015 14:29:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-2819</guid>
+		<description><![CDATA[EDIT3 
+
+had to uncomment in vagrantfile
+&lt;blockquote&gt;
+config.vm.network &quot;private_network&quot;, ip: &quot;192.168.33.10&quot;
+&lt;/blockquote&gt;
+
+and do a vagrant reload before 
+192.168.33.10:3000 worked !!!
+
+YAY !!!]]></description>
+		<content:encoded><![CDATA[<p>EDIT3 </p>
+<p>had to uncomment in vagrantfile</p>
+<blockquote><p>
+config.vm.network &#8220;private_network&#8221;, ip: &#8220;192.168.33.10&#8221;
+</p></blockquote>
+<p>and do a vagrant reload before<br />
+192.168.33.10:3000 worked !!!</p>
+<p>YAY !!!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Giorgos Kontopoulos</title>
+		<link>./../comment-page-1/index.html#comment-2818</link>
+		<dc:creator><![CDATA[Giorgos Kontopoulos]]></dc:creator>
+		<pubDate>Wed, 15 Jul 2015 14:22:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-2818</guid>
+		<description><![CDATA[EDIT2: 
+
+gave it another try 
+
+finally had to do this and before I also had to install git that was missing
+
+&lt;blockquote&gt;
+
+sudo apt-get update
+
+sudo apt-get install git
+
+sudo chown -R $(whoami) ~/.npm
+
+&lt;/blockquote&gt;
+
+but running grunt will give this output 
+
+&lt;blockquote&gt;
+
+vagrant@precise32:/vagrant/meanapp$ grunt
+
+Running &quot;jshint:all&quot; (jshint) task
+
+&gt;&gt; 55 files lint free.
+
+Running &quot;csslint:all&quot; (csslint) task
+
+&gt;&gt; 2 files lint free.
+
+Running &quot;concurrent:default&quot; (concurrent) task
+
+Running &quot;nodemon:dev&quot; (nodemon) task
+
+[nodemon] v1.2.1
+
+[nodemon] to restart at any time, enter `rs`
+
+[nodemon] watching: app/views/**/*.* gruntfile.js server.js config/**/*.js app/**/*.js
+
+[nodemon] starting `node --debug server.js`
+
+debugger listening on port 5858
+
+NODE_ENV is not defined! Using default development environment
+
+Running &quot;watch&quot; task
+
+Waiting...
+
+MEAN.JS application started on port 3000
+
+[nodemon] watching 25,322 files - this might cause high cpu usage. To reduce use &quot;--watch&quot;.
+
+&lt;/blockquote&gt;
+
+and visiting locahost:3000 gives nothing 
+
+where should I start debugging  ???
+
+I am on a ubuntu 15.04 host if it makes a difference]]></description>
+		<content:encoded><![CDATA[<p>EDIT2: </p>
+<p>gave it another try </p>
+<p>finally had to do this and before I also had to install git that was missing</p>
+<blockquote>
+<p>sudo apt-get update</p>
+<p>sudo apt-get install git</p>
+<p>sudo chown -R $(whoami) ~/.npm</p>
+</blockquote>
+<p>but running grunt will give this output </p>
+<blockquote>
+<p>vagrant@precise32:/vagrant/meanapp$ grunt</p>
+<p>Running &#8220;jshint:all&#8221; (jshint) task</p>
+<p>&gt;&gt; 55 files lint free.</p>
+<p>Running &#8220;csslint:all&#8221; (csslint) task</p>
+<p>&gt;&gt; 2 files lint free.</p>
+<p>Running &#8220;concurrent:default&#8221; (concurrent) task</p>
+<p>Running &#8220;nodemon:dev&#8221; (nodemon) task</p>
+<p>[nodemon] v1.2.1</p>
+<p>[nodemon] to restart at any time, enter <code>rs</code></p>
+<p>[nodemon] watching: app/views/**/*.* gruntfile.js server.js config/**/*.js app/**/*.js</p>
+<p>[nodemon] starting <code>node --debug server.js</code></p>
+<p>debugger listening on port 5858</p>
+<p>NODE_ENV is not defined! Using default development environment</p>
+<p>Running &#8220;watch&#8221; task</p>
+<p>Waiting&#8230;</p>
+<p>MEAN.JS application started on port 3000</p>
+<p>[nodemon] watching 25,322 files &#8211; this might cause high cpu usage. To reduce use &#8220;&#8211;watch&#8221;.</p>
+</blockquote>
+<p>and visiting locahost:3000 gives nothing </p>
+<p>where should I start debugging  ???</p>
+<p>I am on a ubuntu 15.04 host if it makes a difference</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Giorgos Kontopoulos</title>
+		<link>./../comment-page-1/index.html#comment-2816</link>
+		<dc:creator><![CDATA[Giorgos Kontopoulos]]></dc:creator>
+		<pubDate>Tue, 14 Jul 2015 07:45:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2645#comment-2816</guid>
+		<description><![CDATA[&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;ls -lah /home/vagrant&lt;/code&gt;&lt;/pre&gt;
+
+shows that folder belongs to vagrant user 
+
+but inside everything else belongs to root 
+
+so instead of 2. one can do 
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;mv /home/vagrant/.npm /home/vagrant/.npm_delete&lt;/code&gt;&lt;/pre&gt;
+
+
+
+and then follow to the next steps
+
+EDIT: was very fast to celebrate 
+ended up with following error 
+&lt;blockquote&gt;
+bower angular-resource#~1.2     ENOGIT git is not installed or not in the PATH
+
+npm ERR! meanapp@0.0.1 postinstall: `bower install --config.interactive=false`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the meanapp@0.0.1 postinstall script.
+npm ERR! This is most likely a problem with the meanapp package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     bower install --config.interactive=false
+npm ERR! You can get their info via:
+npm ERR!     npm owner ls meanapp
+npm ERR! There is likely additional logging output above.
+npm ERR! System Linux 3.2.0-23-generic-pae
+npm ERR! command &quot;/usr/bin/node&quot; &quot;/usr/bin/npm&quot; &quot;install&quot;
+npm ERR! cwd /home/vagrant
+npm ERR! node -v v0.10.33
+npm ERR! npm -v 1.4.28
+npm ERR! code ELIFECYCLE
+npm ERR! 
+npm ERR! Additional logging details can be found in:
+npm ERR!     /home/vagrant/npm-debug.log
+npm ERR! not ok code 0
+&lt;/blockquote&gt;
+giving up ]]></description>
+		<content:encoded><![CDATA[<p></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5a1084b4a9ec7261239588" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+ls -lah /home/vagrant</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a1084b4a9ec7261239588-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a1084b4a9ec7261239588-1"><span class="crayon-v">ls</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">lah</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-v">home</span><span class="crayon-o">/</span><span class="crayon-v">vagrant</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0005 seconds] -->
+<p></p>
+<p>shows that folder belongs to vagrant user </p>
+<p>but inside everything else belongs to root </p>
+<p>so instead of 2. one can do</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5a1084b4a9ed0268307809" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+mv /home/vagrant/.npm /home/vagrant/.npm_delete</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a1084b4a9ed0268307809-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a1084b4a9ed0268307809-1"><span class="crayon-v">mv</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-v">home</span><span class="crayon-o">/</span><span class="crayon-v">vagrant</span><span class="crayon-o">/</span><span class="crayon-sy">.</span><span class="crayon-v">npm</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-v">home</span><span class="crayon-o">/</span><span class="crayon-v">vagrant</span><span class="crayon-o">/</span><span class="crayon-sy">.</span><span class="crayon-v">npm_delete</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0006 seconds] -->
+<p></p>
+<p>and then follow to the next steps</p>
+<p>EDIT: was very fast to celebrate<br />
+ended up with following error </p>
+<blockquote><p>
+bower angular-resource#~1.2     ENOGIT git is not installed or not in the PATH</p>
+<p>npm ERR! meanapp@0.0.1 postinstall: <code>bower install --config.interactive=false</code><br />
+npm ERR! Exit status 1<br />
+npm ERR!<br />
+npm ERR! Failed at the meanapp@0.0.1 postinstall script.<br />
+npm ERR! This is most likely a problem with the meanapp package,<br />
+npm ERR! not with npm itself.<br />
+npm ERR! Tell the author that this fails on your system:<br />
+npm ERR!     bower install &#8211;config.interactive=false<br />
+npm ERR! You can get their info via:<br />
+npm ERR!     npm owner ls meanapp<br />
+npm ERR! There is likely additional logging output above.<br />
+npm ERR! System Linux 3.2.0-23-generic-pae<br />
+npm ERR! command &#8220;/usr/bin/node&#8221; &#8220;/usr/bin/npm&#8221; &#8220;install&#8221;<br />
+npm ERR! cwd /home/vagrant<br />
+npm ERR! node -v v0.10.33<br />
+npm ERR! npm -v 1.4.28<br />
+npm ERR! code ELIFECYCLE<br />
+npm ERR!<br />
+npm ERR! Additional logging details can be found in:<br />
+npm ERR!     /home/vagrant/npm-debug.log<br />
+npm ERR! not ok code 0
+</p></blockquote>
+<p>giving up </p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

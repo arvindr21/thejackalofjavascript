@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:series="http://organizeseries.com/"
+	
+	>
+<channel>
+	<title>Comments on: DNA Analysis with Node.js</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Knowing is different &#38; Doing is different</description>
+	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.16</generator>
+	<item>
+		<title>By: Johan Olsen</title>
+		<link>./../comment-page-1/index.html#comment-2953</link>
+		<dc:creator><![CDATA[Johan Olsen]]></dc:creator>
+		<pubDate>Fri, 11 Sep 2015 18:04:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2633#comment-2953</guid>
+		<description><![CDATA[Hi Arvind, thank you for the excellent tutorial. 
+
+I’m trying to follow along with your tutorial but the code is not compiling:
+
+Here is my code:
+
+var dna = require(&#039;dna2json&#039;);
+var JSONStream = require(&#039;JSONStream&#039;);
+var fs = require(&#039;fs&#039;);
+
+fs.createReadStream(&quot;genome_Lilly_Mendel_Mom__Full_20120818003901.txt&#039;&quot;)
+  .pipe(dna.createParser())
+  .pipe(JSONStream.stringify())
+  .pipe(fs.createWriteStream(&quot;genome_Lilly_Mendel_Mom__Full_20120818003901.json”));
+
+is giving this error:
+
+.pipe(dna.createParser())
+          ^
+TypeError: undefined is not a function
+    at Object. (/app/app.js:41:11)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Function.Module.runMain (module.js:501:10)
+    at startup (node.js:129:16)
+    at node.js:814:3
+
+When i look at the source code on github, there is no createParser() function
+
+https://github.com/genomejs/dna2json/blob/master/index.js
+
+I also tried an alternative way:
+
+var txt = fs.readFileSync(&#039;genome_Lilly_Mendel_Mom__Full_20120818003901.txt&#039;);
+dna.parse(txt, function(err, snps){
+  fs.writeFileSync(path.join(__dirname, &#039;genome_Lilly_Mendel_Mom__Full_20120818003901.json&#039;), JSON.stringify(snps));
+});
+
+…But this is also giving an error:
+
+    throw new Error(&#039;DNA must be a string&#039;);
+          ^
+Error: DNA must be a string
+    at Object.module.exports [as parse] (/app/node_modules/dna2json/lib/parse.js:9:11)
+    at Object. (/app/app.js:34:5)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Function.Module.runMain (module.js:501:10)
+    at startup (node.js:129:16)
+    at node.js:814:3
+
+This exception is being thrown by this function in parse.js:
+
+module.exports = function(dna, cb){
+  if (typeof dna !== &#039;string&#039;) {
+    throw new Error(&#039;DNA must be a string&#039;);
+  }
+…
+}
+
+Can you kindly help with this problem. Thanks]]></description>
+		<content:encoded><![CDATA[<p>Hi Arvind, thank you for the excellent tutorial. </p>
+<p>I’m trying to follow along with your tutorial but the code is not compiling:</p>
+<p>Here is my code:</p>
+<p>var dna = require(&#8216;dna2json&#8217;);<br />
+var JSONStream = require(&#8216;JSONStream&#8217;);<br />
+var fs = require(&#8216;fs&#8217;);</p>
+<p>fs.createReadStream(&#8220;genome_Lilly_Mendel_Mom__Full_20120818003901.txt'&#8221;)<br />
+  .pipe(dna.createParser())<br />
+  .pipe(JSONStream.stringify())<br />
+  .pipe(fs.createWriteStream(&#8220;genome_Lilly_Mendel_Mom__Full_20120818003901.json”));</p>
+<p>is giving this error:</p>
+<p>.pipe(dna.createParser())<br />
+          ^<br />
+TypeError: undefined is not a function<br />
+    at Object. (/app/app.js:41:11)<br />
+    at Module._compile (module.js:460:26)<br />
+    at Object.Module._extensions..js (module.js:478:10)<br />
+    at Module.load (module.js:355:32)<br />
+    at Function.Module._load (module.js:310:12)<br />
+    at Function.Module.runMain (module.js:501:10)<br />
+    at startup (node.js:129:16)<br />
+    at node.js:814:3</p>
+<p>When i look at the source code on github, there is no createParser() function</p>
+<p><a href="https://github.com/genomejs/dna2json/blob/master/index.js" rel="nofollow">https://github.com/genomejs/dna2json/blob/master/index.js</a></p>
+<p>I also tried an alternative way:</p>
+<p>var txt = fs.readFileSync(&#8216;genome_Lilly_Mendel_Mom__Full_20120818003901.txt&#8217;);<br />
+dna.parse(txt, function(err, snps){<br />
+  fs.writeFileSync(path.join(__dirname, &#8216;genome_Lilly_Mendel_Mom__Full_20120818003901.json&#8217;), JSON.stringify(snps));<br />
+});</p>
+<p>…But this is also giving an error:</p>
+<p>    throw new Error(&#8216;DNA must be a string&#8217;);<br />
+          ^<br />
+Error: DNA must be a string<br />
+    at Object.module.exports [as parse] (/app/node_modules/dna2json/lib/parse.js:9:11)<br />
+    at Object. (/app/app.js:34:5)<br />
+    at Module._compile (module.js:460:26)<br />
+    at Object.Module._extensions..js (module.js:478:10)<br />
+    at Module.load (module.js:355:32)<br />
+    at Function.Module._load (module.js:310:12)<br />
+    at Function.Module.runMain (module.js:501:10)<br />
+    at startup (node.js:129:16)<br />
+    at node.js:814:3</p>
+<p>This exception is being thrown by this function in parse.js:</p>
+<p>module.exports = function(dna, cb){<br />
+  if (typeof dna !== &#8216;string&#8217;) {<br />
+    throw new Error(&#8216;DNA must be a string&#8217;);<br />
+  }<br />
+…<br />
+}</p>
+<p>Can you kindly help with this problem. Thanks</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2041</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Thu, 08 Jan 2015 18:14:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2633#comment-2041</guid>
+		<description><![CDATA[Great! Thanks! ]]></description>
+		<content:encoded><![CDATA[<p>Great! Thanks! </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Lio</title>
+		<link>./../comment-page-1/index.html#comment-2040</link>
+		<dc:creator><![CDATA[Lio]]></dc:creator>
+		<pubDate>Thu, 08 Jan 2015 18:12:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2633#comment-2040</guid>
+		<description><![CDATA[Amazing. I&#039;m new to Node.js and know nothing about DNA analysis - but your article was fascinating to read. Love how sci-fi this sounds: git clone genotype-boilerplate. Thanks, and I&#039;ll be checking out more of your articles!]]></description>
+		<content:encoded><![CDATA[<p>Amazing. I&#8217;m new to Node.js and know nothing about DNA analysis &#8211; but your article was fascinating to read. Love how sci-fi this sounds: git clone genotype-boilerplate. Thanks, and I&#8217;ll be checking out more of your articles!</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

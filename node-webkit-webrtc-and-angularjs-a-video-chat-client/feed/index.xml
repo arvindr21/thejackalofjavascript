@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:series="http://organizeseries.com/"
+	
+	>
+<channel>
+	<title>Comments on: Node-Webkit, WebRTC and Angularjs &#8211; A Video Chat Client</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Knowing is different &#38; Doing is different</description>
+	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.16</generator>
+	<item>
+		<title>By: lalitha peri</title>
+		<link>./../comment-page-1/index.html#comment-3397</link>
+		<dc:creator><![CDATA[lalitha peri]]></dc:creator>
+		<pubDate>Tue, 26 Sep 2017 07:10:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-3397</guid>
+		<description><![CDATA[App exited with code 0
+[12:34:24] Finished &#039;run&#039; after 2.4 min I&#039;m getting this after launching app and there is no video,only blank scree,Please help me.]]></description>
+		<content:encoded><![CDATA[<p>App exited with code 0<br />
+[12:34:24] Finished &#8216;run&#8217; after 2.4 min I&#8217;m getting this after launching app and there is no video,only blank scree,Please help me.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Abdur Rahman</title>
+		<link>./../comment-page-1/index.html#comment-3251</link>
+		<dc:creator><![CDATA[Abdur Rahman]]></dc:creator>
+		<pubDate>Sat, 18 Jun 2016 10:21:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-3251</guid>
+		<description><![CDATA[I need this for a webapp how do i tweak this ?]]></description>
+		<content:encoded><![CDATA[<p>I need this for a webapp how do i tweak this ?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Hira Shamim</title>
+		<link>./../comment-page-1/index.html#comment-3005</link>
+		<dc:creator><![CDATA[Hira Shamim]]></dc:creator>
+		<pubDate>Sat, 17 Oct 2015 16:17:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-3005</guid>
+		<description><![CDATA[i m very confused dont understant what to do please help me out i want sample code for webrtc first setp by step then iwant to save the time duration of video confrencing please code provide kerain]]></description>
+		<content:encoded><![CDATA[<p>i m very confused dont understant what to do please help me out i want sample code for webrtc first setp by step then iwant to save the time duration of video confrencing please code provide kerain</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Hira Shamim</title>
+		<link>./../comment-page-1/index.html#comment-3004</link>
+		<dc:creator><![CDATA[Hira Shamim]]></dc:creator>
+		<pubDate>Sat, 17 Oct 2015 16:15:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-3004</guid>
+		<description><![CDATA[hi]]></description>
+		<content:encoded><![CDATA[<p>hi</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: cbenjemia</title>
+		<link>./../comment-page-1/index.html#comment-2980</link>
+		<dc:creator><![CDATA[cbenjemia]]></dc:creator>
+		<pubDate>Thu, 01 Oct 2015 11:14:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-2980</guid>
+		<description><![CDATA[hi Thomas, did you find a solution for this pb ?]]></description>
+		<content:encoded><![CDATA[<p>hi Thomas, did you find a solution for this pb ?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: cbenjemia</title>
+		<link>./../comment-page-1/index.html#comment-2979</link>
+		<dc:creator><![CDATA[cbenjemia]]></dc:creator>
+		<pubDate>Thu, 01 Oct 2015 11:02:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-2979</guid>
+		<description><![CDATA[good job !
+
+but there is a pb with &quot;node_remote&quot; &gt;&gt;&gt;&gt; Invalid value for &#039;app.urls[0]: Missing schema separator... :(
+
+is there a fix ?
+
+thanks]]></description>
+		<content:encoded><![CDATA[<p>good job !</p>
+<p>but there is a pb with &#8220;node_remote&#8221; &gt;&gt;&gt;&gt; Invalid value for &#8216;app.urls[0]: Missing schema separator&#8230; <img src="./../../wp-includes/images/smilies/frownie.png" alt=":(" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>is there a fix ?</p>
+<p>thanks</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Thomas David Kehoe</title>
+		<link>./../comment-page-1/index.html#comment-2961</link>
+		<dc:creator><![CDATA[Thomas David Kehoe]]></dc:creator>
+		<pubDate>Fri, 18 Sep 2015 22:01:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-2961</guid>
+		<description><![CDATA[When I run &quot;gulp run&quot; it says &quot;Launching App&quot; and throws an error message: &quot;Invalid value for &#039;app.urls[0]&#039;: Missing schema separator.&quot; See attached screenshot. Any suggestions? I followed the tutorial and ran gulp, slush, wean, etc.]]></description>
+		<content:encoded><![CDATA[<p>When I run &#8220;gulp run&#8221; it says &#8220;Launching App&#8221; and throws an error message: &#8220;Invalid value for &#8216;app.urls[0]': Missing schema separator.&#8221; See attached screenshot. Any suggestions? I followed the tutorial and ran gulp, slush, wean, etc.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2780</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Sun, 28 Jun 2015 17:26:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-2780</guid>
+		<description><![CDATA[Sure, let me give that a try. I will try to write a post on it soon.]]></description>
+		<content:encoded><![CDATA[<p>Sure, let me give that a try. I will try to write a post on it soon.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ankur</title>
+		<link>./../comment-page-1/index.html#comment-2759</link>
+		<dc:creator><![CDATA[Ankur]]></dc:creator>
+		<pubDate>Fri, 19 Jun 2015 10:26:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-2759</guid>
+		<description><![CDATA[Hey Arvind, I have been long struggling to create a peer to peer, audio/video calling hybrid app using phonertc, cordova but have been unsuccessful in doing so. Can you please help me with one?
+9.ankur@gmail.com]]></description>
+		<content:encoded><![CDATA[<p>Hey Arvind, I have been long struggling to create a peer to peer, audio/video calling hybrid app using phonertc, cordova but have been unsuccessful in doing so. Can you please help me with one?<br />
+<a href="mailto:9.ankur@gmail.com">9.ankur@gmail.com</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2749</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Wed, 17 Jun 2015 12:28:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-2749</guid>
+		<description><![CDATA[Hello Chris, you have to build an application around this poc. You need to probably take the peerjs server as base and create features like login, register and then ability for a user to create a chat room and invite friends and then you can implement peerjs video calls there. 
+
+Let me know how it works out. ]]></description>
+		<content:encoded><![CDATA[<p>Hello Chris, you have to build an application around this poc. You need to probably take the peerjs server as base and create features like login, register and then ability for a user to create a chat room and invite friends and then you can implement peerjs video calls there. </p>
+<p>Let me know how it works out. </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: chris1712</title>
+		<link>./../comment-page-1/index.html#comment-2737</link>
+		<dc:creator><![CDATA[chris1712]]></dc:creator>
+		<pubDate>Sat, 13 Jun 2015 23:42:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-2737</guid>
+		<description><![CDATA[Please Arvind, How can I implement or a group chat using your example. I was able to complete this one, I now need to create a room for group video discussions. Thanks a lot.]]></description>
+		<content:encoded><![CDATA[<p>Please Arvind, How can I implement or a group chat using your example. I was able to complete this one, I now need to create a room for group video discussions. Thanks a lot.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2416</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Sun, 05 Apr 2015 02:20:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-2416</guid>
+		<description><![CDATA[Hello Steven, I recommend building a Linux installer on your desktop and then running the generated installer on the pi. 
+
+Thanks. ]]></description>
+		<content:encoded><![CDATA[<p>Hello Steven, I recommend building a Linux installer on your desktop and then running the generated installer on the pi. </p>
+<p>Thanks. </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: steven</title>
+		<link>./../comment-page-1/index.html#comment-2413</link>
+		<dc:creator><![CDATA[steven]]></dc:creator>
+		<pubDate>Sat, 04 Apr 2015 22:13:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-2413</guid>
+		<description><![CDATA[Hi Arvind, 
+
+Thanks for getting back to me and sorry for the late reply. It couldnt find the path the build and it says error code 2 and enoent.
+
+I am still very new with Node JS and i looked up online for what it means but i don&#039;t really get it. 
+
+https://www.dropbox.com/s/o50a5uhkdt03gyr/Photo%202015-04-04%2C%203%2007%2047%20PM.jpg?dl=0
+
+Here is a picture of it.It&#039;s the one on the middle. Do you know what to do with this by any chance ?]]></description>
+		<content:encoded><![CDATA[<p>Hi Arvind, </p>
+<p>Thanks for getting back to me and sorry for the late reply. It couldnt find the path the build and it says error code 2 and enoent.</p>
+<p>I am still very new with Node JS and i looked up online for what it means but i don&#8217;t really get it. </p>
+<p><a href="https://www.dropbox.com/s/o50a5uhkdt03gyr/Photo%202015-04-04%2C%203%2007%2047%20PM.jpg?dl=0" rel="nofollow">https://www.dropbox.com/s/o50a5uhkdt03gyr/Photo%202015-04-04%2C%203%2007%2047%20PM.jpg?dl=0</a></p>
+<p>Here is a picture of it.It&#8217;s the one on the middle. Do you know what to do with this by any chance ?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2401</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Fri, 03 Apr 2015 03:40:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-2401</guid>
+		<description><![CDATA[Hello Steven. Thanks! No, I have not run this on the pi yet. What error are you facing?]]></description>
+		<content:encoded><![CDATA[<p>Hello Steven. Thanks! No, I have not run this on the pi yet. What error are you facing?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: steven</title>
+		<link>./../comment-page-1/index.html#comment-2400</link>
+		<dc:creator><![CDATA[steven]]></dc:creator>
+		<pubDate>Fri, 03 Apr 2015 01:33:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-2400</guid>
+		<description><![CDATA[Hi  Arvind,
+
+This video chat client is nice !!! I tried it few days ago and it works! 
+
+Have you tried running this video chat client on raspberry pi ? im trying to run it on raspberry pi but its giving me some error that i dont know what to do]]></description>
+		<content:encoded><![CDATA[<p>Hi  Arvind,</p>
+<p>This video chat client is nice !!! I tried it few days ago and it works! </p>
+<p>Have you tried running this video chat client on raspberry pi ? im trying to run it on raspberry pi but its giving me some error that i dont know what to do</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2344</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Wed, 18 Mar 2015 19:12:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-2344</guid>
+		<description><![CDATA[Hello Saurav,
+
+Diskdb is not production ready yet. It can be used for prototyping. 
+
+
+I would recommend looking at indexeddb or websql. You can find more info here : https://github.com/nwjs/nw.js/wiki/Save-persistent-data-in-app
+
+
+
+Thanks.]]></description>
+		<content:encoded><![CDATA[<p>Hello Saurav,</p>
+<p>Diskdb is not production ready yet. It can be used for prototyping. </p>
+<p>I would recommend looking at indexeddb or websql. You can find more info here : <a href="https://github.com/nwjs/nw.js/wiki/Save-persistent-data-in-app" rel="nofollow">https://github.com/nwjs/nw.js/wiki/Save-persistent-data-in-app</a></p>
+<p>Thanks.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Saurav Panda</title>
+		<link>./../comment-page-1/index.html#comment-2341</link>
+		<dc:creator><![CDATA[Saurav Panda]]></dc:creator>
+		<pubDate>Wed, 18 Mar 2015 18:54:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-2341</guid>
+		<description><![CDATA[Hi Arvind,
+Is there any problem if we try to install mongodb on the user&#039;s local machine? We need a database in the users local machine to collect some info and do some analytics based upon that data locally. We don&#039;t want to store on the cloud due to the nature of data. 
+We are working on a slightly different approach which is not exactly same as regular cloud model.
+Can mongo not work on desktop app or is there a better alternative to mongo for local storage and local analytics? 
+You have your own diskdb. how will it be for local storage and analytics ?
+Please share your views on best practices to follow for the above situation .]]></description>
+		<content:encoded><![CDATA[<p>Hi Arvind,<br />
+Is there any problem if we try to install mongodb on the user&#8217;s local machine? We need a database in the users local machine to collect some info and do some analytics based upon that data locally. We don&#8217;t want to store on the cloud due to the nature of data.<br />
+We are working on a slightly different approach which is not exactly same as regular cloud model.<br />
+Can mongo not work on desktop app or is there a better alternative to mongo for local storage and local analytics?<br />
+You have your own diskdb. how will it be for local storage and analytics ?<br />
+Please share your views on best practices to follow for the above situation .</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2337</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Wed, 18 Mar 2015 17:47:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2742#comment-2337</guid>
+		<description><![CDATA[So here is the thing Venkatesh, 
+
+
+1. This is a stand alone desktop app, expecting this app to install MongoDB on user&#039;s machine may not be the right approach
+2. Use Mongolab or AWS to host your mongodb and get the data at runtime from the nwk app.
+3. If the nwk app is not connected to the server, you need to gracefully fallback.
+4. Use expressjs as your server layer to fetch the data from remotely hosted MongoDB as how you would normally in a web app. You can use mongojs for interacting with the remote DB and expose a route in the nwk express app so that your client can interact with it. 
+
+
+Let me know if you still have questions.
+
+
+Thanks,
+Arvind.]]></description>
+		<content:encoded><![CDATA[<p>So here is the thing Venkatesh, </p>
+<p>1. This is a stand alone desktop app, expecting this app to install MongoDB on user&#8217;s machine may not be the right approach<br />
+2. Use Mongolab or AWS to host your mongodb and get the data at runtime from the nwk app.<br />
+3. If the nwk app is not connected to the server, you need to gracefully fallback.<br />
+4. Use expressjs as your server layer to fetch the data from remotely hosted MongoDB as how you would normally in a web app. You can use mongojs for interacting with the remote DB and expose a route in the nwk express app so that your client can interact with it. </p>
+<p>Let me know if you still have questions.</p>
+<p>Thanks,<br />
+Arvind.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

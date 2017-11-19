@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:series="http://organizeseries.com/"
+	
+	>
+<channel>
+	<title>Comments on: Raspberry Pi, Node.js and Twilio &#8211; Is It Raining Arvind? #IoT</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Knowing is different &#38; Doing is different</description>
+	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.16</generator>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2272</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Sat, 28 Feb 2015 03:24:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2519#comment-2272</guid>
+		<description><![CDATA[Hello Олег П,  for sending sms, Twilio rates apply and for receiving sms your service provider rates apply. ]]></description>
+		<content:encoded><![CDATA[<p>Hello Олег П,  for sending sms, Twilio rates apply and for receiving sms your service provider rates apply. </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Олег П</title>
+		<link>./../comment-page-1/index.html#comment-2270</link>
+		<dc:creator><![CDATA[Олег П]]></dc:creator>
+		<pubDate>Sat, 28 Feb 2015 00:21:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2519#comment-2270</guid>
+		<description><![CDATA[Aravind, how is sent sms, is it free for any mobile operator?]]></description>
+		<content:encoded><![CDATA[<p>Aravind, how is sent sms, is it free for any mobile operator?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-2028</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Tue, 06 Jan 2015 03:29:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2519#comment-2028</guid>
+		<description><![CDATA[Thanks Ganesan. ]]></description>
+		<content:encoded><![CDATA[<p>Thanks Ganesan. </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ganesan S</title>
+		<link>./../comment-page-1/index.html#comment-2027</link>
+		<dc:creator><![CDATA[Ganesan S]]></dc:creator>
+		<pubDate>Tue, 06 Jan 2015 03:26:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2519#comment-2027</guid>
+		<description><![CDATA[Nice application.  Well done Arvind.]]></description>
+		<content:encoded><![CDATA[<p>Nice application.  Well done Arvind.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-1882</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Mon, 24 Nov 2014 07:45:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2519#comment-1882</guid>
+		<description><![CDATA[LOL.. It is not now :D]]></description>
+		<content:encoded><![CDATA[<p>LOL.. It is not now 😀</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Pratap Raj</title>
+		<link>./../comment-page-1/index.html#comment-1881</link>
+		<dc:creator><![CDATA[Pratap Raj]]></dc:creator>
+		<pubDate>Mon, 24 Nov 2014 07:37:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2519#comment-1881</guid>
+		<description><![CDATA[Hey Arvind is it raining now ?]]></description>
+		<content:encoded><![CDATA[<p>Hey Arvind is it raining now ?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

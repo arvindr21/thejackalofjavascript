@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:series="http://organizeseries.com/"
+	
+	>
+<channel>
+	<title>Comments on: Developing a MEAN app with Angular 2.0</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Knowing is different &#38; Doing is different</description>
+	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.16</generator>
+	<item>
+		<title>By: ravi</title>
+		<link>./../comment-page-1/index.html#comment-3372</link>
+		<dc:creator><![CDATA[ravi]]></dc:creator>
+		<pubDate>Thu, 01 Jun 2017 07:12:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3372</guid>
+		<description><![CDATA[Uncaught ReferenceError: System is not defined]]></description>
+		<content:encoded><![CDATA[<p>Uncaught ReferenceError: System is not defined</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Andrè Driesel</title>
+		<link>./../comment-page-1/index.html#comment-3332</link>
+		<dc:creator><![CDATA[Andrè Driesel]]></dc:creator>
+		<pubDate>Thu, 15 Dec 2016 10:48:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3332</guid>
+		<description><![CDATA[Getting this error:
+EXCEPTION: self.parent.context.deleteTodo is not a function
+is there any update needed?]]></description>
+		<content:encoded><![CDATA[<p>Getting this error:<br />
+EXCEPTION: self.parent.context.deleteTodo is not a function<br />
+is there any update needed?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Peter David Carter</title>
+		<link>./../comment-page-1/index.html#comment-3310</link>
+		<dc:creator><![CDATA[Peter David Carter]]></dc:creator>
+		<pubDate>Mon, 10 Oct 2016 00:51:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3310</guid>
+		<description><![CDATA[Should we really need Express.js given that Angular2 has built-in http, routing and rest functions? This seems more like an Angular1, MEAN stack approach applied to a technology that really shouldn&#039;t need so many intermediate stages -- stages which are likely to come at the cost of increased complexity, if not necessarily decreased performance or increased server load (that&#039;s going to depend on the exact implementation, of course...
+
+I&#039;m also concerned about how this setup might deal with observables, and if it will properly utilise their potential in the way we certainly should be if we are going to push web technology to the next level, and not be content with another 5, 10, 15 years of the same old functionality underneath the same old Twitter Bootstrap frontend.
+
+So far I&#039;ve only seen this tutorial and one for Postgres connected through Rails, both of which seem suboptimal solutions given the versatility and efficiencies that Angular2 has seemed to promise in its inception, and if we are to see a real competitor, if not outright replacement, to React, and to the in-browser VM technologies which seem as prevalent as ever.]]></description>
+		<content:encoded><![CDATA[<p>Should we really need Express.js given that Angular2 has built-in http, routing and rest functions? This seems more like an Angular1, MEAN stack approach applied to a technology that really shouldn&#8217;t need so many intermediate stages &#8212; stages which are likely to come at the cost of increased complexity, if not necessarily decreased performance or increased server load (that&#8217;s going to depend on the exact implementation, of course&#8230;</p>
+<p>I&#8217;m also concerned about how this setup might deal with observables, and if it will properly utilise their potential in the way we certainly should be if we are going to push web technology to the next level, and not be content with another 5, 10, 15 years of the same old functionality underneath the same old Twitter Bootstrap frontend.</p>
+<p>So far I&#8217;ve only seen this tutorial and one for Postgres connected through Rails, both of which seem suboptimal solutions given the versatility and efficiencies that Angular2 has seemed to promise in its inception, and if we are to see a real competitor, if not outright replacement, to React, and to the in-browser VM technologies which seem as prevalent as ever.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: satendra chaudhary</title>
+		<link>./../comment-page-1/index.html#comment-3289</link>
+		<dc:creator><![CDATA[satendra chaudhary]]></dc:creator>
+		<pubDate>Wed, 07 Sep 2016 12:36:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3289</guid>
+		<description><![CDATA[When I import &#039;xhr-factory.es6&#039; into my services, I am facing some error: error TS2314: Generic type &#039;Promise&#039; requires 1 type argument(s).]]></description>
+		<content:encoded><![CDATA[<p>When I import &#8216;xhr-factory.es6&#8242; into my services, I am facing some error: error TS2314: Generic type &#8216;Promise&#8217; requires 1 type argument(s).</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: will</title>
+		<link>./../comment-page-1/index.html#comment-3278</link>
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 16 Aug 2016 22:17:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3278</guid>
+		<description><![CDATA[same error]]></description>
+		<content:encoded><![CDATA[<p>same error</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: will</title>
+		<link>./../comment-page-1/index.html#comment-3279</link>
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 16 Aug 2016 22:17:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3279</guid>
+		<description><![CDATA[got localhost/:16 Uncaught ReferenceError: System is not defined]]></description>
+		<content:encoded><![CDATA[<p>got localhost/:16 Uncaught ReferenceError: System is not defined</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: will</title>
+		<link>./../comment-page-1/index.html#comment-3277</link>
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 16 Aug 2016 22:16:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3277</guid>
+		<description><![CDATA[and same problem ....]]></description>
+		<content:encoded><![CDATA[<p>and same problem &#8230;.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Vasiliy Ivanov</title>
+		<link>./../comment-page-1/index.html#comment-3274</link>
+		<dc:creator><![CDATA[Vasiliy Ivanov]]></dc:creator>
+		<pubDate>Wed, 10 Aug 2016 10:42:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3274</guid>
+		<description><![CDATA[Same problem]]></description>
+		<content:encoded><![CDATA[<p>Same problem</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Moiz Kachwala</title>
+		<link>./../comment-page-1/index.html#comment-3264</link>
+		<dc:creator><![CDATA[Moiz Kachwala]]></dc:creator>
+		<pubDate>Wed, 13 Jul 2016 16:45:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3264</guid>
+		<description><![CDATA[You can try this Angular2 MEAN with Angular, Mongo and Typescript
+https://github.com/moizKachwala/Angular2-express-mongo-gulp-node-typescript]]></description>
+		<content:encoded><![CDATA[<p>You can try this Angular2 MEAN with Angular, Mongo and Typescript<br />
+<a href="https://github.com/moizKachwala/Angular2-express-mongo-gulp-node-typescript" rel="nofollow">https://github.com/moizKachwala/Angular2-express-mongo-gulp-node-typescript</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Aleksandr Poltarjonok</title>
+		<link>./../comment-page-1/index.html#comment-3231</link>
+		<dc:creator><![CDATA[Aleksandr Poltarjonok]]></dc:creator>
+		<pubDate>Mon, 09 May 2016 22:21:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3231</guid>
+		<description><![CDATA[Updated to last Angular 2 https://github.com/Codenator81/ng2do-mean-app]]></description>
+		<content:encoded><![CDATA[<p>Updated to last Angular 2 <a href="https://github.com/Codenator81/ng2do-mean-app" rel="nofollow">https://github.com/Codenator81/ng2do-mean-app</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ashish Gupta</title>
+		<link>./../comment-page-1/index.html#comment-3230</link>
+		<dc:creator><![CDATA[Ashish Gupta]]></dc:creator>
+		<pubDate>Mon, 09 May 2016 13:53:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3230</guid>
+		<description><![CDATA[Hi Arvind,
+I have one easy question,
+1) are we rendering the page from server side as i have seen this video https://angularu.com/VideoSession/2015sf/angular-2-server-rendering ,for the better performance and easy loading.
+
+2) If that so How to use preboot library .
+as the Angular2.0 its very responsive so we can render it from server side,if you have any idea please share.
+thank for your good totorial is very good .]]></description>
+		<content:encoded><![CDATA[<p>Hi Arvind,<br />
+I have one easy question,<br />
+1) are we rendering the page from server side as i have seen this video <a href="https://angularu.com/VideoSession/2015sf/angular-2-server-rendering" rel="nofollow">https://angularu.com/VideoSession/2015sf/angular-2-server-rendering</a> ,for the better performance and easy loading.</p>
+<p>2) If that so How to use preboot library .<br />
+as the Angular2.0 its very responsive so we can render it from server side,if you have any idea please share.<br />
+thank for your good totorial is very good .</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: williwaw</title>
+		<link>./../comment-page-1/index.html#comment-3202</link>
+		<dc:creator><![CDATA[williwaw]]></dc:creator>
+		<pubDate>Tue, 15 Mar 2016 18:57:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3202</guid>
+		<description><![CDATA[I&#039;m getting the same errors.]]></description>
+		<content:encoded><![CDATA[<p>I&#8217;m getting the same errors.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Marc</title>
+		<link>./../comment-page-1/index.html#comment-3199</link>
+		<dc:creator><![CDATA[Marc]]></dc:creator>
+		<pubDate>Sun, 13 Mar 2016 18:38:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3199</guid>
+		<description><![CDATA[same here..]]></description>
+		<content:encoded><![CDATA[<p>same here..</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: NichoDiaz</title>
+		<link>./../comment-page-1/index.html#comment-3195</link>
+		<dc:creator><![CDATA[NichoDiaz]]></dc:creator>
+		<pubDate>Thu, 10 Mar 2016 03:14:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3195</guid>
+		<description><![CDATA[Did you ever figure this out? I have the same problem.]]></description>
+		<content:encoded><![CDATA[<p>Did you ever figure this out? I have the same problem.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: NichoDiaz</title>
+		<link>./../comment-page-1/index.html#comment-3196</link>
+		<dc:creator><![CDATA[NichoDiaz]]></dc:creator>
+		<pubDate>Thu, 10 Mar 2016 03:14:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3196</guid>
+		<description><![CDATA[Did you ever figure this out? I have the same problem. It appears to be a common issue... Running on osx]]></description>
+		<content:encoded><![CDATA[<p>Did you ever figure this out? I have the same problem. It appears to be a common issue&#8230; Running on osx</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: JUNIOR FERREIRA</title>
+		<link>./../comment-page-1/index.html#comment-3182</link>
+		<dc:creator><![CDATA[JUNIOR FERREIRA]]></dc:creator>
+		<pubDate>Tue, 01 Mar 2016 21:59:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3182</guid>
+		<description><![CDATA[I am a reader of the blog and like it a lot , the post was actually really speak but lacked the mongoDB , or this project does not have access to bank?]]></description>
+		<content:encoded><![CDATA[<p>I am a reader of the blog and like it a lot , the post was actually really speak but lacked the mongoDB , or this project does not have access to bank?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Yaseen Llies Meridja</title>
+		<link>./../comment-page-1/index.html#comment-3026</link>
+		<dc:creator><![CDATA[Yaseen Llies Meridja]]></dc:creator>
+		<pubDate>Thu, 29 Oct 2015 09:42:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3026</guid>
+		<description><![CDATA[Thanks that&#039;s a great talk which I haven&#039;t seen yet.
+After making the comment above I went digging further and found the AngularConnect videos of last week, so I watched the keynote:
+https://youtu.be/UxjgUjVpe24
+
+So in summary there are a few big projects that are already migrating to Angular2 and since I am starting on small greenfield project I thought, yeah what the heck why not give Angular2 a shot.]]></description>
+		<content:encoded><![CDATA[<p>Thanks that&#8217;s a great talk which I haven&#8217;t seen yet.<br />
+After making the comment above I went digging further and found the AngularConnect videos of last week, so I watched the keynote:<br />
+<a href="https://youtu.be/UxjgUjVpe24" rel="nofollow">https://youtu.be/UxjgUjVpe24</a></p>
+<p>So in summary there are a few big projects that are already migrating to Angular2 and since I am starting on small greenfield project I thought, yeah what the heck why not give Angular2 a shot.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Arvind Ravulavaru</title>
+		<link>./../comment-page-1/index.html#comment-3025</link>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+		<pubDate>Wed, 28 Oct 2015 15:30:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2937#comment-3025</guid>
+		<description><![CDATA[Take a look at : https://www.youtube.com/watch?v=aHGmj_fqPLE]]></description>
+		<content:encoded><![CDATA[<p>Take a look at : <a href="https://www.youtube.com/watch?v=aHGmj_fqPLE" rel="nofollow">https://www.youtube.com/watch?v=aHGmj_fqPLE</a></p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

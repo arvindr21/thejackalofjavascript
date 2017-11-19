@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="alexaVerifyID" content="tHZTfJpU56tqERN4vjth74jHqBM"/>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="./../xmlrpc.php">
+<!-- <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'> -->
+<link rel="shortcut icon" href="./../wp-content/uploads/2014/02/favicon.ico" type="image/x-icon">
+<meta name="keywords" content="Javascript, HTML5, CSS3, ES6, Ecmascript, Hybrid Apps, Mobile Web Development, Desktop Apps, Apps, Arvind R, Arvind Ravulavaru, The Jackal of Javascript">
+<link rel="icon" href="./../wp-content/uploads/2014/02/favicon.ico" type="image/x-icon">
+<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'> -->
+<link rel="stylesheet" type="text/css" href="./../wp-content/cache/wpfc-minified/61cc3c87f2aa625d55d3026ecc452e96/1511014149index.css" media="all"/>
+<!-- Performance scores of this site is tuned by WP Performance Score Booster plugin v1.5 - http://wordpress.org/plugins/wp-performance-score-booster -->
+<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="1QBi99oBZzn4xisTyRUgPd4BXjQ-6Tu09iK6V_bviIY" />
+<meta name="msvalidate.01" content="33E048D3C4E943B6450230EA909E12C6" />
+<meta name="p:domain_verify" content="662a829c1b5ccc13015f1cc5d00ec7e4" />
+<!-- This site is optimized with the Yoast SEO plugin v3.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>M.E.A.N. Stack Development with Vagrant</title>
+<meta name="description" content="Recently I started using Vagrant for one of my clients. The requirement was to have a unified working environment for all the developers"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="./index.html" />
+<link rel="publisher" href="https://plus.google.com/ArvindRavulavaru"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="M.E.A.N. Stack Development with Vagrant" />
+<meta property="og:description" content="Recently I started using Vagrant for one of my clients. The requirement was to have a unified working environment for all the developers" />
+<meta property="og:url" content="./vagrant-mean-box/" />
+<meta property="og:site_name" content="The Jackal of Javascript" />
+<meta property="article:publisher" content="https://www.facebook.com/arvindravulavaru" />
+<meta property="article:section" content="Angularjs" />
+<meta property="article:published_time" content="2015-01-13T17:03:58+05:30" />
+<meta property="article:modified_time" content="2015-08-09T12:07:40+05:30" />
+<meta property="og:updated_time" content="2015-08-09T12:07:40+05:30" />
+<meta property="og:image" content="./wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-3.53.58-pm-439x300.png" />
+<meta property="og:image" content="./wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-3.57.14-pm-451x148.png" />
+<meta property="og:image" content="./wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-2.50.51-pm-354x300.png" />
+<meta property="og:image" content="./wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-2.55.28-pm-451x154.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Recently I started using Vagrant for one of my clients. The requirement was to have a unified working environment for all the developers" />
+<meta name="twitter:title" content="M.E.A.N. Stack Development with Vagrant" />
+<meta name="twitter:site" content="@arvindr21" />
+<meta name="twitter:image" content="./wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-3.53.58-pm-439x300.png" />
+<meta name="twitter:creator" content="@arvindr21" />
+<!-- / Yoast SEO plugin. -->
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js"}};
+!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='savrix-style.css-css'  href='./wp-content/plugins/savrix-android-market/savrix-style-only-play.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='validate-engine-css-css'  href='./wp-content/plugins/wysija-newsletters/css/validationEngine.jquery.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='crayon-css'  href='./wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='crayon-theme-arduino-ide-css'  href='./wp-content/plugins/crayon-syntax-highlighter/themes/arduino-ide/arduino-ide.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='crayon-font-droid-sans-mono-css'  href='./wp-content/plugins/crayon-syntax-highlighter/fonts/droid-sans-mono.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='orgseries-default-css-css'  href='./wp-content/plugins/organize-series/orgSeries.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='responsive-lightbox-prettyphoto-css'  href='./wp-content/plugins/responsive-lightbox/assets/prettyphoto/css/prettyPhoto.css' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./../wp-content/cache/wpfc-minified/9f9f3b5f286a1b327e6bb0fdb1185c24/1511014149index.css" media="all"/>
+<link rel='stylesheet' id='font-awesome-css'  href='//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css' type='text/css' media='screen' />
+<!-- <link rel='stylesheet' id='ssbaFont-css'  href='//fonts.googleapis.com/css?family=Indie+Flower&#038;ver=4.2.16' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='wpfront-notification-bar-css'  href='./wp-content/plugins/wpfront-notification-bar/css/wpfront-notification-bar.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-style-css'  href='./wp-content/themes/sorbet/style.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-source-sans-pro-css'  href='http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext&#038;ver=4.2.16' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-pt-serif-css'  href='http://fonts.googleapis.com/css?family=PT+Serif%3A400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext&#038;ver=4.2.16' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sorbet-genericons-css'  href='./wp-content/themes/sorbet/genericons/genericons.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='easy_table_style-css'  href='./wp-content/plugins/easy-table/themes/default/style.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='upprev-css-css'  href='./wp-content/plugins/upprev/styles/upprev.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='jetpack_css-css'  href='./wp-content/plugins/jetpack/css/jetpack.css' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./../wp-content/cache/wpfc-minified/3af13bcd925b3eaa358c8ad5070bb07b/1511014148index.css" media="all"/>
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.6 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+__gaTracker('create', 'UA-47881846-1', 'auto');
+__gaTracker('set', 'forceSSL', true);
+__gaTracker('require', 'displayfeatures');
+__gaTracker('send','pageview');
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type="text/javascript">
+var iworks_upprev = { animation: 'flyout', position: 'right', offset_percent: 75, offset_element: '#comments', css_width: 360, css_side: 5, compare: 'simple', url_new_window: 0, ga_track_views: 1, ga_track_clicks: 1, ga_opt_noninteraction: 1, title: 'M.E.A.N. Stack Development with Vagrant' };
+</script>
+<script src='./../wp-content/cache/wpfc-minified/1f21a7a8ca343ebb57ffeb4ab24afbd9/1511014152index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='./wp-includes/js/jquery/jquery.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-includes/js/jquery/jquery-migrate.min.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/jetpack/modules/related-posts/related-posts.js'></script> -->
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":".\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script src='./../wp-content/cache/wpfc-minified/052c748258385b6c23fc6642e73a4285/1511014152index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='./wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/responsive-lightbox/assets/prettyphoto/js/jquery.prettyPhoto.js'></script> -->
+<script type='text/javascript'>
+/* <![CDATA[ */
+var rlArgs = {"script":"prettyphoto","selector":"lightbox","customEvents":"","activeGalleries":"1","animationSpeed":"normal","slideshow":"0","slideshowDelay":"5000","slideshowAutoplay":"0","opacity":"0.75","showTitle":"1","allowResize":"1","allowExpand":"1","width":"1080","height":"720","separator":"\/","theme":"pp_default","horizontalPadding":"20","hideFlash":"0","wmode":"opaque","videoAutoplay":"0","modal":"0","deeplinking":"0","overlayGallery":"1","keyboardShortcuts":"1","social":"0"};
+/* ]]> */
+</script>
+<script src='./../wp-content/cache/wpfc-minified/d57c91500961bea5aea0e849cf08f7e7/1511014151index.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='./wp-content/plugins/responsive-lightbox/js/front.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/wpfront-notification-bar/jquery-plugins/jquery.c.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/wpfront-notification-bar/js/wpfront-notification-bar.js'></script> -->
+<!-- <script type='text/javascript' src='./wp-content/plugins/upprev/scripts/upprev.js'></script> -->
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<meta name="generator" content="WordPress 4.2.16" />
+<style>
+.scroll-back-to-top-wrapper {
+position: fixed;
+opacity: 0;
+visibility: hidden;
+overflow: hidden;
+text-align: center;
+z-index: 99999999;
+background-color: #777777;
+color: #eeeeee;
+width: 50px;
+height: 48px;
+line-height: 48px;
+right: 30px;
+bottom: 30px;
+padding-top: 2px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+.scroll-back-to-top-wrapper:hover {
+background-color: #888888;
+color: #eeeeee;
+}
+.scroll-back-to-top-wrapper.show {
+visibility:visible;
+cursor:pointer;
+opacity: 1.0;
+}
+.scroll-back-to-top-wrapper i.fa {
+line-height: inherit;
+}
+.scroll-back-to-top-wrapper .fa-lg {
+vertical-align: 0;
+}
+</style><style type="text/css">	.ssba {
+}
+.ssba img
+{
+width: 35px !important;
+padding: 6px;
+border:  0;
+box-shadow: none !important;
+display: inline !important;
+vertical-align: middle;
+}
+.ssba, .ssba a
+{
+text-decoration:none;
+border:0;
+background: none;
+font-family: Indie Flower;
+font-size: 	20px;
+}.ssba_sharecount:after, .ssba_sharecount:before {
+right: 100%;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+}
+.ssba_sharecount:after {
+border-color: rgba(224, 221, 221, 0);
+border-right-color: #f5f5f5;
+border-width: 5px;
+top: 50%;
+margin-top: -5px;
+}
+.ssba_sharecount:before {
+border-color: rgba(85, 94, 88, 0);
+border-right-color: #e0dddd;
+border-width: 6px;
+top: 50%;
+margin-top: -6px;
+}
+.ssba_sharecount {
+font: 11px Arial, Helvetica, sans-serif;
+padding: 5px;
+-khtml-border-radius: 6px;
+-o-border-radius: 6px;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+position: relative;
+border: 1px solid #e0dddd;color: #555e58;
+background: #ffffff;
+}
+.ssba_sharecount:after {
+border-right-color: #ffffff;
+}</style><style id="popup-maker-themes"  type="text/css">/* Popup Theme 2995: Default Theme */
+.popmake-overlay.theme-2995, .popmake-overlay.theme-default-theme { background-color: rgba( 255, 255, 255, 1 ) } 
+.popmake.theme-2995, .popmake.theme-default-theme { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1 ) } 
+.popmake.theme-2995 .popmake-title, .popmake.theme-default-theme .popmake-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: inherit; font-size: 32px; font-style: normal; line-height: 36px } 
+.popmake.theme-2995 .popmake-content, .popmake.theme-default-theme .popmake-content { color: #8c8c8c; font-family: inherit; font-weight: inherit; font-style: normal } 
+.popmake.theme-2995 > .popmake-close, .popmake.theme-default-theme > .popmake-close { height: 20px; width: 20px; left: auto; right: 0px; bottom: auto; top: 0px; padding: 8px; color: #ffffff; font-family: inherit; font-weight: inherit; font-size: 12px; font-style: normal; line-height: 14px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1 ) } 
+</style>
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+<link rel='dns-prefetch' href='//widgets.wp.com'>
+<link rel='dns-prefetch' href='//s0.wp.com'>
+<link rel='dns-prefetch' href='//0.gravatar.com'>
+<link rel='dns-prefetch' href='//1.gravatar.com'>
+<link rel='dns-prefetch' href='//2.gravatar.com'>
+<style type="text/css">
+#upprev_box{bottom:5px;width:360px;right:5px;display:block;right:-415px;display:block;}
+</style>
+</head>
+<body class="single single-post postid-2645 single-format-standard right-sidebar">
+<div id="page" class="hfeed site">
+<header id="masthead" class="site-header" role="banner">
+<div class="site-header-wrapper">
+<div class="site-branding">
+<h1 class="site-title"><a href="./../index.html" rel="home">The Jackal of Javascript</a></h1>
+<h2 class="site-description">Knowing is different &amp; Doing is different</h2>
+</div>
+<div class="toggles">
+<div id="menu-toggle" class="toggle active" title="Menu"><span class="screen-reader-text">Menu</span></div>
+<div id="search-toggle" class="toggle" title="Search"><span class="screen-reader-text">Search</span></div>
+</div>
+</div>
+</header><!-- #masthead -->
+<div id="menu-toggle-nav" class="panel">
+<nav id="site-navigation" class="main-navigation" role="navigation">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<div class="menu-main-container"><ul id="menu-main" class="menu"><li id="menu-item-2579" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2579"><a href="./../index.html">Home</a></li>
+<li id="menu-item-2595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2595"><a href="./../portfolio/index.html">About  me</a></li>
+<li id="menu-item-2580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2580"><a href="./../history-of-the-web/index.html">History of the Web</a></li>
+<li id="menu-item-2726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2726"><a href="./../javascript-101/index.html">Javascript 101</a></li>
+<li id="menu-item-2581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2581"><a href="./../contact-request/index.html">Request</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+</div>
+<div id="search-toggle-nav" class="panel">
+<div class="search-wrapper">
+<form role="search" method="get" class="search-form" action="./../index.html">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+</label>
+<input type="submit" class="search-submit" value="Search">
+</form>
+</div>
+</div>
+<div id="content" class="site-content">
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<article id="post-2645" class="post-2645 post type-post status-publish format-standard hentry category-angularjs category-cli category-deployments category-expressjs category-frameworks category-grunt category-javascript category-mean category-mongodb category-node category-npm category-quick-and-dirty category-setup category-tutorial">
+<header class="entry-header">
+<h1 class="entry-title">M.E.A.N. Stack Development with Vagrant</h1>	</header><!-- .entry-header -->
+<div class="entry-content">
+<!-- Simple Share Buttons Adder (6.1.5) simplesharebuttons.com --><div class="ssba ssba-wrap"><div style="text-align:left"><a href="http://twitter.com/share?url=./vagrant-mean-box/&amp;text=M.E.A.N.+Stack+Development+with+Vagrant+From+The+Jackal+of+Javascript+by+%40arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://twitter.com/share?url=./vagrant-mean-box/&amp;text=M.E.A.N.+Stack+Development+with+Vagrant+From+The+Jackal+of+Javascript+by+%40arvindr21', '');" data-site="" class="ssba_twitter_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /></noscript></a><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=./vagrant-mean-box/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.linkedin.com/shareArticle?mini=true&amp;url=./vagrant-mean-box/', '');" data-site="linkedin" class="ssba_linkedin_share ssba_share_link"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">1</span><a href="https://plus.google.com/share?url=./vagrant-mean-box/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://plus.google.com/share?url=./vagrant-mean-box/', '');" data-site="" class="ssba_google_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="http://reddit.com/submit?url=./vagrant-mean-box/&amp;title=M.E.A.N. Stack Development with Vagrant" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://reddit.com/submit?url=./vagrant-mean-box/&amp;title=M.E.A.N. Stack Development with Vagrant', '');" data-site="reddit" class="ssba_reddit_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="https://bufferapp.com/add?url=./vagrant-mean-box/&amp;text=From The Jackal of Javascript M.E.A.N. Stack Development with Vagrant" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://bufferapp.com/add?url=./vagrant-mean-box/&amp;text=From The Jackal of Javascript M.E.A.N. Stack Development with Vagrant', '');" data-site="buffer" class="ssba_buffer_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /></noscript></a><a href="https://flattr.com/submit/auto?user_id=arvindr21&amp;title=M.E.A.N. Stack Development with Vagrant&amp;url=https://flattr.com/profile/arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://flattr.com/submit/auto?user_id=arvindr21&amp;title=M.E.A.N. Stack Development with Vagrant&amp;url=https://flattr.com/profile/arvindr21', '');" data-site="flattr" class="ssba_flattr_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /></noscript></a><a data-site="email" class="ssba_email_share" href="./../cdn-cgi/l/email-protection/index.html#201f5355424a4543541d6d0e650e610e6e0e00735441434b00644556454c4f504d454e5400574954480076414752414e5406414d501b424f44591d66524f4d00744845006a41434b414c004f46006a415641534352495054051210485454501a0f0f5448454a41434b414c4f464a4156415343524950540e434f4d0f56414752414e540d4d45414e0d424f580f"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /></noscript></a><a data-site="print" class="ssba_print ssba_share_link" href="#" onclick="window.print()"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /></noscript></a></div></div><blockquote><p>If you are new to MEAN, I would recommend checking out my <a href="http://mean-workshop.herokuapp.com/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://mean-workshop.herokuapp.com', 'MEAN Workshop');" title="MEAN Workshop"  target="_blank">MEAN Workshop</a>.</p>
+<p>Also checkout my tutorial <a title="MEAN stack – A Hands on Tutorial" href="./../mean-stack-hands-on-tutorial/index.html" target="_blank">MEAN stack &#8211; A Hands on Tutorial</a></p></blockquote>
+<p>Recently I started using Vagrant for one of my clients. The requirement was to have a unified working environment for all the developers, so that they can focus more on code and less on the onboarding and setup. So, I built a Vagrant box that is ready to be used for M.E.A.N. Stack development.</p>
+<p>If you are new to Vagrant take a look at</p>
+<p style="text-align: center;">
+<!-- iframe plugin v.4.2 wordpress.org/plugins/iframe/ -->
+<iframe width="640" height="360" src="//www.youtube.com/embed/FSxS6iPJMFw?rel=0" frameborder="0" allowfullscreen scrolling="yes" class="iframe-class"></iframe>
+</p>
+<p style="text-align: left;">In this post, I will show how to consume the <a href="https://atlas.hashicorp.com/arvindr21/boxes/mean-box" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://atlas.hashicorp.com/arvindr21/boxes/mean-box', 'mean-box');" title="mean-box"  target="_blank">mean-box</a> I have created as is and get started with M.E.A.N. development. Later in the post, I will also show how you can build a customized version of your own Vagrant box and then share it with your team.</p>
+<p>So, let us get started.</p>
+<h2><span id="more-2645"></span>Setup Vagrant</h2>
+<p>Before we start working with Vagrant mean-box, we need to setup the environment. First, you need either Virtualbox or Vmware software installed on your machine. The mean-box I have created works on virtual box only as of today. I will add more providers later on. So, we will download Virtualbox from <a href="https://www.virtualbox.org/wiki/Downloads" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.virtualbox.org/wiki/Downloads', 'here');" title="Virtual box download"  target="_blank">here</a>. Pick the one appropriate for your OS.</p>
+<p>Once that is done, we will download Vagrant. You can head to their <a href="https://www.vagrantup.com/downloads.html" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.vagrantup.com/downloads.html', 'download page');" title="Download page"  target="_blank">download page</a> and download an appropriate version for your OS.</p>
+<p>Once the above steps are done, we are good to get started.</p>
+<h2>Common Vagrant commands</h2>
+<p>If you are new Vagrant, below are a few commands that will help you get started</p>
+<div class="table-responsive"><table  style="width:100%; "  class="easy-table easy-table-default" border="0">
+<thead>
+<tr><th >Command</th>
+<th > Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td >
+<span id="crayon-5a1040f616ac6903888985" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">vagrant </span><span class="crayon-e">box </span><span class="crayon-v">list</span></span></span> </td>
+<td > List all Vagrant boxes installed on your machine</td>
+</tr>
+<tr><td >
+<span id="crayon-5a1040f616af5248300980" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">vagrant </span><span class="crayon-e">init </span><span class="crayon-v">xxx</span></span></span> </td>
+<td > Adds a new Vagrant box with the name <em>xxx</em></td>
+</tr>
+<tr><td >
+<span id="crayon-5a1040f616aff093969908" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">vagrant </span><span class="crayon-v">up</span></span></span> </td>
+<td > Boots the Vagrant box</td>
+</tr>
+<tr><td >
+<span id="crayon-5a1040f616b08408968999" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">vagrant </span><span class="crayon-v">ssh</span></span></span> </td>
+<td > Connect to the Vagrant box via SSH</td>
+</tr>
+<tr><td >
+<span id="crayon-5a1040f616b11022375246" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">vagrant </span><span class="crayon-v">reload</span></span></span> </td>
+<td >If you have updated the Vagrantfile, you need to reload the VM to reflect the changes. This commands does precisely that.</td>
+</tr>
+<tr><td >
+<span id="crayon-5a1040f616b19099981928" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">vagrant </span><span class="crayon-v">halt</span></span></span> </td>
+<td > Stops the Vagrant box</td>
+</tr>
+<tr><td >
+<span id="crayon-5a1040f616b22862088213" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">vagrant </span><span class="crayon-v">destroy</span></span></span> </td>
+<td > Remove the Vagrant instance from your machine (<em>All data in the VM will be lost</em>)</td>
+</tr>
+</tbody></table></div>
+<p>For the remaining commands you can refer <a href="http://docs.vagrantup.com/v2/cli/index.html" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://docs.vagrantup.com/v2/cli/index.html', 'here');" title="Vagrant CLI"  target="_blank">here</a>.</p>
+<h2>Consume mean-box</h2>
+<p>First, we will take a look as how we can consume an existing Vagrant box. Create a new folder named <em>myVagrantMeanApp</em>. Open a new terminal/prompt here and run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616b2b452585862" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">vagrant </span><span class="crayon-e">init </span><span class="crayon-v">arvindr21</span><span class="crayon-o">/</span><span class="crayon-v">mean</span><span class="crayon-o">-</span><span class="crayon-v">box</span></span></span></p>
+<p>If you have setup everything correctly, you should see a new <em>Vagrantfile</em> file created at the root of the folder.</p>
+<p>Now, to download the M.E.A.N. stack installed Ubuntu VM, all you need to do is run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616b33606786237" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">vagrant </span><span class="crayon-v">up</span></span></span></p>
+<p>This will download the VM and setup it up on your machine. This is a one time download. And from next time onwards, the VM will be set up from a local cache. The mean-box VM is around 700mb, so it may take upto 2 hours to download depending on your internet connection.</p>
+<p>Once the setup is done, you will see a screen like</p>
+<p><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-3.53.58-pm.png" data-rel="lightbox-0" title=""><img class="size-medium wp-image-2653 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-3.53.58-pm-439x300.png?resize=439%2C300" alt="Screen Shot 2015-01-13 at 3.53.58 pm" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2653 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-3.53.58-pm-439x300.png?resize=439%2C300" alt="Screen Shot 2015-01-13 at 3.53.58 pm" data-recalc-dims="1" /></noscript></a></p>
+<p>To login into your mean-box, we will ssh using the below command</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616b3d077266926" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">vagrant </span><span class="crayon-v">ssh</span></span></span></p>
+<p>And you should see</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-3.57.14-pm.png" data-rel="lightbox-1" title=""><img class="size-medium wp-image-2654 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-3.57.14-pm-451x148.png?resize=451%2C148" alt="Screen Shot 2015-01-13 at 3.57.14 pm" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2654 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-3.57.14-pm-451x148.png?resize=451%2C148" alt="Screen Shot 2015-01-13 at 3.57.14 pm" data-recalc-dims="1" /></noscript></a></p>
+<p>Now, we can validate the Node installation. Run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616b4f786013133" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">node</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">v</span></span></span></p>
+<p>And you should see the node version. To validate the MongoDB installation, Run,</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616b58042791236" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">mongo</span></span></span></p>
+<p>This should start the Native MongoDB shell. You can validate the version of MongoDB by running</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616b60012230166" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">db</span><span class="crayon-sy">.</span><span class="crayon-e">version</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></span></span></p>
+<p>inside the shell.</p>
+<p><em>PS : We have a MongoDB auto boot script installed, so this will care of starting MongoDB when you start your VM.</em></p>
+<h2>Shared folders</h2>
+<p>One of the key feature of Vagrant is that it can keep the files in sync between the host machine and the VM. This is a very powerful feature when we are working in a collaborative environment.</p>
+<p>To see how powerful this is, we will scaffold a new MEAN project inside the VM and try to access it from the host machine.</p>
+<p>Once you have ssh&#8217;d into the VM, run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616b69384946987" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">cd</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-v">vagrant</span></span></span></p>
+<p>This folder is always kept in sync with the <em>myVagrantMeanApp</em> folder. To test, lets us create a new folder. Run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616b73836286952" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">mkdir </span><span class="crayon-v">myMEANApp</span></span></span></p>
+<p>If you list the files in the current directory by running 
+<span id="crayon-5a1040f616b7d267887393" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">ls</span></span></span> you will see a new folder and when you go back to your finder/explorer and see inside the <em>myVagrantMeanApp </em>folder, you will see the same folder present. This folder will always be in sync between the machines.</p>
+<p>Now, back to the VM, we will scaffold a new MEANjs app. Run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616b87848561995" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">cd </span><span class="crayon-i">myMEANApp</span> </span></span></p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616b91254253507" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">yo </span><span class="crayon-v">meanjs</span></span></span></p>
+<p>You can fill out the questions and a new MEAN app will be scaffolded for you. And you can see that the scaffolded files are available outside the VM as well.</p>
+<p>You can test your newly scaffolded MEANjs app by running</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616b9b643881612" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">grunt</span></span></span></p>
+<p>This will start the server on port 3000. And from your host machine, you can run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616ba4722791396" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">http</span><span class="crayon-o">:</span><span class="crayon-c">//localhost:3000</span></span></span></p>
+<p>And you should be able to see the project. Now you can minimize the terminal, make changes to your code on your host machine and your changes will be reflected on the webpage!</p>
+<p>Simple and easy development platform.</p>
+<h3>Project, Teams and Vagrant</h3>
+<p>This is where things get interesting. Now that we have an isolated dev environment, we need some way to save the project along with VM. This way teams can collaborate with each other using an existing CVS system like Git at the same time execute the code inside the VM without much effort.</p>
+<h4>Publish Project</h4>
+<p>When we setup the project for the first time, we will set it up as below</p>
+<ul>
+<li>Follow all the steps till now to generate a MEANjs code base.</li>
+<li>Update your Vagrantfile as below</li>
+</ul>
+<p></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a1040f616bae349638748" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title">Vagrantfile</span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">Ruby</span></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure(2) do |config|
+# The most common configuration options are documented and commented below.
+# For a complete reference, please see the online documentation at
+# https://docs.vagrantup.com.
+# Every Vagrant development environment requires a box. You can search for
+# boxes at https://atlas.hashicorp.com/search.
+config.vm.box = "arvindr21/mean-box"
+# Disable automatic box update checking. If you disable this, then
+# boxes will only be checked for updates when the user runs
+# `vagrant box outdated`. This is not recommended.
+# config.vm.box_check_update = false
+# Create a forwarded port mapping which allows access to a specific port
+# within the machine from a port on the host machine. In the example below,
+# accessing "localhost:8080" will access port 80 on the guest machine.
+# config.vm.network "forwarded_port", guest: 80, host: 8080
+# Create a private network, which allows host-only access to the machine
+# using a specific IP.
+config.vm.network "private_network", ip: "11.12.13.14"
+# Create a public network, which generally matched to bridged network.
+# Bridged networks make the machine appear as another physical device on
+# your network.
+# config.vm.network "public_network"
+# Share an additional folder to the guest VM. The first argument is
+# the path on the host to the actual folder. The second argument is
+# the path on the guest to mount the folder. And the optional third
+# argument is a set of non-required options.
+config.vm.synced_folder "myMEANApp", "/vagrant/myMEANApp"
+# Provider-specific configuration so you can fine-tune various
+# backing providers for Vagrant. These expose provider-specific options.
+# Example for VirtualBox:
+#
+# config.vm.provider "virtualbox" do |vb|
+#   # Display the VirtualBox GUI when booting the machine
+#   vb.gui = true
+#
+#   # Customize the amount of memory on the VM:
+#   vb.memory = "1024"
+# end
+#
+# View the documentation for the provider you are using for more
+# information on available options.
+# Define a Vagrant Push strategy for pushing to Atlas. Other push strategies
+# such as FTP and Heroku are also available. See the documentation at
+# https://docs.vagrantup.com/v2/push/atlas.html for more information.
+# config.push.define "atlas" do |push|
+#   push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"
+# end
+# Enable provisioning with a shell script. Additional provisioners such as
+# Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
+# documentation for more information about their specific syntax and use.
+# config.vm.provision "shell", inline: &lt;&lt;-SHELL
+#   sudo apt-get update
+#   sudo apt-get install -y apache2
+# SHELL
+end</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-2">2</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-4">4</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-6">6</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-8">8</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-10">10</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-12">12</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-14">14</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-16">16</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-18">18</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-20">20</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-22">22</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-24">24</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-25">25</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-26">26</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-27">27</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-28">28</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-29">29</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-30">30</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-31">31</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-32">32</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-33">33</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-34">34</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-35">35</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-36">36</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-37">37</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-38">38</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-39">39</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-40">40</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-41">41</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-42">42</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-43">43</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-44">44</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-45">45</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-46">46</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-47">47</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-48">48</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-49">49</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-50">50</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-51">51</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-52">52</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-53">53</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-54">54</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-55">55</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-56">56</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-57">57</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-58">58</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-59">59</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-60">60</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-61">61</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-62">62</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-63">63</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-64">64</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-65">65</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-66">66</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-67">67</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-68">68</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-69">69</div><div class="crayon-num crayon-striped-num" data-line="crayon-5a1040f616bae349638748-70">70</div><div class="crayon-num" data-line="crayon-5a1040f616bae349638748-71">71</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a1040f616bae349638748-1"><span class="crayon-c"># -*- mode: ruby -*-</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-2"><span class="crayon-c"># vi: set ft=ruby :</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-3">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-4"><span class="crayon-c"># All Vagrant configuration is done below. The "2" in Vagrant.configure</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-5"><span class="crayon-c"># configures the configuration version (we support older styles for</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-6"><span class="crayon-c"># backwards compatibility). Please don't change it unless you know what</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-7"><span class="crayon-c"># you're doing.</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-8"><span class="crayon-v">Vagrant</span><span class="crayon-sy">.</span><span class="crayon-e">configure</span><span class="crayon-sy">(</span><span class="crayon-cn">2</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">do</span><span class="crayon-h"> </span><span class="crayon-o">|</span><span class="crayon-v">config</span><span class="crayon-o">|</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-9"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># The most common configuration options are documented and commented below.</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-10"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># For a complete reference, please see the online documentation at</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-11"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># https://docs.vagrantup.com.</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-12">&nbsp;</div><div class="crayon-line" id="crayon-5a1040f616bae349638748-13"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># Every Vagrant development environment requires a box. You can search for</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-14"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># boxes at https://atlas.hashicorp.com/search.</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-15"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">config</span><span class="crayon-sy">.</span><span class="crayon-v">vm</span><span class="crayon-sy">.</span><span class="crayon-v">box</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"arvindr21/mean-box"</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-16">&nbsp;</div><div class="crayon-line" id="crayon-5a1040f616bae349638748-17"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># Disable automatic box update checking. If you disable this, then</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-18"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># boxes will only be checked for updates when the user runs</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-19"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># `vagrant box outdated`. This is not recommended.</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-20"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># config.vm.box_check_update = false</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-21">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-22"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># Create a forwarded port mapping which allows access to a specific port</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-23"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># within the machine from a port on the host machine. In the example below,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-24"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># accessing "localhost:8080" will access port 80 on the guest machine.</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-25"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># config.vm.network "forwarded_port", guest: 80, host: 8080</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-26">&nbsp;</div><div class="crayon-line" id="crayon-5a1040f616bae349638748-27"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># Create a private network, which allows host-only access to the machine</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-28"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># using a specific IP.</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-29"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">config</span><span class="crayon-sy">.</span><span class="crayon-v">vm</span><span class="crayon-sy">.</span><span class="crayon-i">network</span><span class="crayon-h"> </span><span class="crayon-s">"private_network"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">ip</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">"11.12.13.14"</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-30">&nbsp;</div><div class="crayon-line" id="crayon-5a1040f616bae349638748-31"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># Create a public network, which generally matched to bridged network.</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-32"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># Bridged networks make the machine appear as another physical device on</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-33"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># your network.</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-34"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># config.vm.network "public_network"</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-35">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-36"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># Share an additional folder to the guest VM. The first argument is</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-37"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># the path on the host to the actual folder. The second argument is</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-38"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># the path on the guest to mount the folder. And the optional third</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-39"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># argument is a set of non-required options.</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-40"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">config</span><span class="crayon-sy">.</span><span class="crayon-v">vm</span><span class="crayon-sy">.</span><span class="crayon-v">synced</span><span class="crayon-sy">_</span>folder<span class="crayon-h"> </span><span class="crayon-s">"myMEANApp"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">"/vagrant/myMEANApp"</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-41">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-42"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># Provider-specific configuration so you can fine-tune various</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-43"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># backing providers for Vagrant. These expose provider-specific options.</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-44"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># Example for VirtualBox:</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-45"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">#</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-46"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># config.vm.provider "virtualbox" do |vb|</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-47"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">#&nbsp;&nbsp; # Display the VirtualBox GUI when booting the machine</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-48"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">#&nbsp;&nbsp; vb.gui = true</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-49"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">#</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-50"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">#&nbsp;&nbsp; # Customize the amount of memory on the VM:</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-51"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">#&nbsp;&nbsp; vb.memory = "1024"</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-52"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># end</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-53"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">#</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-54"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># View the documentation for the provider you are using for more</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-55"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># information on available options.</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-56">&nbsp;</div><div class="crayon-line" id="crayon-5a1040f616bae349638748-57"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># Define a Vagrant Push strategy for pushing to Atlas. Other push strategies</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-58"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># such as FTP and Heroku are also available. See the documentation at</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-59"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># https://docs.vagrantup.com/v2/push/atlas.html for more information.</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-60"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># config.push.define "atlas" do |push|</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-61"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">#&nbsp;&nbsp; push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-62"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># end</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-63">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-64"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># Enable provisioning with a shell script. Additional provisioners such as</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-65"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-66"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># documentation for more information about their specific syntax and use.</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-67"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># config.vm.provision "shell", inline: &lt;&lt;-SHELL</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-68"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">#&nbsp;&nbsp; sudo apt-get update</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-69"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">#&nbsp;&nbsp; sudo apt-get install -y apache2</span></div><div class="crayon-line crayon-striped-line" id="crayon-5a1040f616bae349638748-70"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c"># SHELL</span></div><div class="crayon-line" id="crayon-5a1040f616bae349638748-71"><span class="crayon-st">end</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0067 seconds] -->
+<p>Notice line 40, where we have added the mapping between a folder on host machine with a mapping on the VM. Also notice, we have updated line 29 to use a fancy IP address for this box. This will be helpful when you have multiple development environments.</p>
+<ul>
+<li>From the host machine, init a new CVS repo inside the <em>myVagrantMeanApp</em>. In case you are using Git, you can run the following</li>
+</ul>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616bc6797132329" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-v">init</span><span class="crayon-h"> </span><span class="crayon-o">&amp;&amp;</span><span class="crayon-h"> </span><span class="crayon-e">git </span><span class="crayon-v">add</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">A</span></span></span></p>
+<p>This will init a new git project and add all the files. Files include the Vagrantfile and our MEANjs code base. Next, you can push this code to the repo.</p>
+<h4>Consume project</h4>
+<p>Now, when a new team member comes, s/he needs to follow the below steps to setup the project</p>
+<ul>
+<li>Download and setup Virtualbox and Vagrant</li>
+<li>Create a folder where the code needs to be downloaded
+<p style="text-align: left;">
+<span id="crayon-5a1040f616be7547492149" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">git </span><span class="crayon-e">pull </span><span class="crayon-v">https</span><span class="crayon-o">:</span><span class="crayon-c">//link.to/repo </span></span></span> &#8211; This will download the project setup</p>
+</li>
+<li>
+<p style="text-align: left;">Run 
+<span id="crayon-5a1040f616bf3342389258" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">vagrant </span><span class="crayon-v">up</span></span></span> &#8211; this will download the mean-box VM and install it. After that, it will map the project folder on the host machine to the one inside VM</p>
+</li>
+</ul>
+<p>And now you can ssh into the VM, run 
+<span id="crayon-5a1040f616bfc938918224" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">npm </span><span class="crayon-v">install</span></span></span> inside the <em>/vagrant/myMEANApp.</em></p>
+<p>And then you can start the project by running</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616c05358155045" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">grunt</span></span></span></p>
+<p>Very powerful right?</p>
+<h2>Create a custom M.E.A.N. Stack Vagrant box</h2>
+<p>If you are impressed with the above box and want to create one for your own team, you can do so very easily. We will be building our VM on top of <a href="https://atlas.hashicorp.com/hashicorp/boxes/precise32" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://atlas.hashicorp.com/hashicorp/boxes/precise32', 'hashicorp/precise32');" title="hashicorp/precise32"  target="_blank">hashicorp/precise32</a>. You can also use the 64bit flavor, upto your needs.</p>
+<p>Create a new folder named <em>my-mean-box</em>. We will be creating the VM box in this folder. Open a new terminal/prompt here. To setup the base VM, run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616c0f523488244" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">vagrant </span><span class="crayon-e">init </span><span class="crayon-v">hashicorp</span><span class="crayon-o">/</span><span class="crayon-v">precise32</span></span></span></p>
+<p>Next, download and setup the VM, run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616c17372752879" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">vagrant </span><span class="crayon-v">up</span></span></span></p>
+<p>Your terminal/prompt should reflect the below if your setup was successful</p>
+<p><a href="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-2.50.51-pm.png" data-rel="lightbox-2" title=""><img class="size-medium wp-image-2651 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-2.50.51-pm-354x300.png?resize=354%2C300" alt="Screen Shot 2015-01-13 at 2.50.51 pm" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2651 aligncenter" src="http://i1.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-2.50.51-pm-354x300.png?resize=354%2C300" alt="Screen Shot 2015-01-13 at 2.50.51 pm" data-recalc-dims="1" /></noscript></a></p>
+<p>Next, we will ssh into the VM, run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616c20265301951" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">vagrant </span><span class="crayon-v">ssh</span></span></span></p>
+<p>And you should see</p>
+<p><a href="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-2.55.28-pm.png" data-rel="lightbox-3" title=""><img class="size-medium wp-image-2652 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-2.55.28-pm-451x154.png?resize=451%2C154" alt="Screen Shot 2015-01-13 at 2.55.28 pm" data-recalc-dims="1" /><noscript><img class="size-medium wp-image-2652 aligncenter" src="http://i0.wp.com/thejackalofjavascript.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-13-at-2.55.28-pm-451x154.png?resize=451%2C154" alt="Screen Shot 2015-01-13 at 2.55.28 pm" data-recalc-dims="1" /></noscript></a></p>
+<p>We are inside the VM now. Next, we will install the components needed for M.E.A.N. stack development.</p>
+<h3>Git</h3>
+<p>To install git run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616c28787829233" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">sudo </span><span class="crayon-v">apt</span><span class="crayon-o">-</span><span class="crayon-e">get </span><span class="crayon-i">install</span> <span class="crayon-v">git</span></span></span></p>
+<h3>Node.js</h3>
+<p>Run the following commands one after the other</p>
+<ul>
+<li>
+<span id="crayon-5a1040f616c2f314617788" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">sudo </span><span class="crayon-v">apt</span><span class="crayon-o">-</span><span class="crayon-e">get </span><span class="crayon-v">update</span></span></span></li>
+<li>
+<span id="crayon-5a1040f616c36005321352" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">sudo </span><span class="crayon-v">apt</span><span class="crayon-o">-</span><span class="crayon-e">get </span><span class="crayon-v">install</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">y</span><span class="crayon-h"> </span><span class="crayon-v">python</span><span class="crayon-o">-</span><span class="crayon-v">software</span><span class="crayon-o">-</span><span class="crayon-e">properties </span><span class="crayon-i">python</span><span class="crayon-h"> </span><span class="crayon-v">g</span><span class="crayon-o">++</span><span class="crayon-h"> </span><span class="crayon-v">make</span></span></span></li>
+<li>
+<span id="crayon-5a1040f616c3c673808834" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">sudo </span><span class="crayon-v">add</span><span class="crayon-o">-</span><span class="crayon-v">apt</span><span class="crayon-o">-</span><span class="crayon-e">repository </span><span class="crayon-v">ppa</span><span class="crayon-o">:</span><span class="crayon-v">chris</span><span class="crayon-o">-</span><span class="crayon-v">lea</span><span class="crayon-o">/</span><span class="crayon-v">node</span><span class="crayon-sy">.</span><span class="crayon-v">js</span></span></span></li>
+<li>
+<span id="crayon-5a1040f616c48111116989" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">sudo </span><span class="crayon-v">apt</span><span class="crayon-o">-</span><span class="crayon-e">get </span><span class="crayon-v">update</span></span></span></li>
+<li>
+<span id="crayon-5a1040f616c50060789651" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">sudo </span><span class="crayon-v">apt</span><span class="crayon-o">-</span><span class="crayon-e">get </span><span class="crayon-e">install </span><span class="crayon-v">nodejs</span></span></span></li>
+</ul>
+<p>This will take care of Node.js installation. To verify, you can run</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616c59398626134" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">node</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">v</span> </span></span></p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616c60345914382" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">npm</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">v</span></span></span></p>
+<h3>MongoDB</h3>
+<p>Run the following commands one after the other</p>
+<ul>
+<li>
+<span id="crayon-5a1040f616c69593706188" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">sudo </span><span class="crayon-v">apt</span><span class="crayon-o">-</span><span class="crayon-e">key </span><span class="crayon-v">adv</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-e">keyserver </span><span class="crayon-v">hkp</span><span class="crayon-o">:</span><span class="crayon-c">//keyserver.ubuntu.com:80 --recv 7F0CEB10</span></span></span></li>
+<li>
+<span id="crayon-5a1040f616c71197960848" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-i">echo</span><span class="crayon-h"> </span><span class="crayon-s">'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen'</span><span class="crayon-h"> </span><span class="crayon-o">|</span><span class="crayon-h"> </span><span class="crayon-e">sudo </span><span class="crayon-v">tee</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-v">etc</span><span class="crayon-o">/</span><span class="crayon-v">apt</span><span class="crayon-o">/</span><span class="crayon-v">sources</span><span class="crayon-sy">.</span><span class="crayon-v">list</span><span class="crayon-sy">.</span><span class="crayon-v">d</span><span class="crayon-o">/</span><span class="crayon-v">mongodb</span><span class="crayon-sy">.</span><span class="crayon-v">list</span></span></span></li>
+<li>
+<span id="crayon-5a1040f616c79598301136" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">sudo </span><span class="crayon-v">apt</span><span class="crayon-o">-</span><span class="crayon-e">get </span><span class="crayon-v">update</span></span></span></li>
+<li>
+<span id="crayon-5a1040f616c81037367445" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">sudo </span><span class="crayon-v">apt</span><span class="crayon-o">-</span><span class="crayon-e">get </span><span class="crayon-v">install</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">y</span><span class="crayon-h"> </span><span class="crayon-v">mongodb</span><span class="crayon-o">-</span><span class="crayon-v">org</span></span></span></li>
+</ul>
+<p>This will take care of MongoDB. You can verify the installation by running</p>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616c8a482862433" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">mongo</span></span></span></p>
+<p>and you should be able to access MongoDB collections via this shell.</p>
+<p>This is pretty much you need to build a M.E.A.N. stack application. If you want, you can add Node.js CLI tools like Yeoman, Grunt, Gulp, Bower etc.. This way, your team member consuming your VM, can start working on it as is.</p>
+<p>Also, you can install MEAN.io or MEANjs.org packages on your VM before distribution. This way, your team can directly work on your project without wasting time on the installation of the scaffolding tools.</p>
+<p>Personally I prefer MEANjs.org to MEAN.io for <a href="http://stackoverflow.com/a/24932110/1015046" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://stackoverflow.com/a/24932110/1015046', 'several reasons');" title="MEAN.io vs MEANjs.org"  target="_blank">several reasons</a>. You can install any package as you like. I will use MEANjs.org for this post.</p>
+<h3>Install Node.js tools</h3>
+<p style="text-align: center;">
+<span id="crayon-5a1040f616c95032712983" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">sudo </span><span class="crayon-e">npm </span><span class="crayon-v">install</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">g</span><span class="crayon-h"> </span><span class="crayon-e">bower </span><span class="crayon-v">grunt</span><span class="crayon-o">-</span><span class="crayon-e">cli </span><span class="crayon-e">yo </span><span class="crayon-v">generator</span><span class="crayon-o">-</span><span class="crayon-v">meanjs</span></span></span></p>
+<p>And bam!! your distributable VM is ready.</p>
+<h2>Package and Distribute VM</h2>
+<p>Now, we will package and distribute this VM. You can navigate to <a href="https://atlas.hashicorp.com/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://atlas.hashicorp.com/', 'Atlas');" title="Atlas"  target="_blank">Atlas</a> a.k.a Vagrant cloud, where you can share your VM.</p>
+<p>Create an account and Sign In. Once you are logged in, you can see how you can share a VM. You can follow the below steps as well to achieve the same</p>
+<ol>
+<li>Package your VM. Run 
+<span id="crayon-5a1040f616c9e651129081" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-droid-sans-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">vagrant </span><span class="crayon-t">package</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-e">output </span><span class="crayon-v">mean</span><span class="crayon-o">-</span><span class="crayon-v">box</span><span class="crayon-sy">.</span><span class="crayon-v">box</span></span></span>. This will create a new .box file.</li>
+<li><a href="https://atlas.hashicorp.com/boxes/new" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://atlas.hashicorp.com/boxes/new', 'Create a new box ');" title="New"  target="_blank">Create a new box </a>on the Atlas. Provide the details as required and click create. You can also make this VM private, so only you and your team can access it.</li>
+<li>On the next screen, enter the version number (0.1) and description and create version</li>
+<li>On the next screen, select create provider and enter Virtualbox.</li>
+<li>Finally upload the .box file we created on step 1</li>
+</ol>
+<p>After the file uploads, you need to edit the version and release the package. Then only it will be available for others to consume.</p>
+<p>And on how to use your VM, refer <strong>Consume mean-box</strong> topic above.</p>
+<p>A simple and powerful way to port your development environment.</p>
+<p>Hope this post gave you an idea on how to work with Vagrant and MEAN stack.</p>
+<hr />
+<p>Thanks for reading! Do comment.<br />
+@arvindr21</p>
+<!-- Simple Share Buttons Adder (6.1.5) simplesharebuttons.com --><div class="ssba ssba-wrap"><div style="text-align:left"><a href="http://twitter.com/share?url=./vagrant-mean-box/&amp;text=M.E.A.N.+Stack+Development+with+Vagrant+From+The+Jackal+of+Javascript+by+%40arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://twitter.com/share?url=./vagrant-mean-box/&amp;text=M.E.A.N.+Stack+Development+with+Vagrant+From+The+Jackal+of+Javascript+by+%40arvindr21', '');" data-site="" class="ssba_twitter_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/twitter.png?w=646" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter" data-recalc-dims="1" /></noscript></a><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=./vagrant-mean-box/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.linkedin.com/shareArticle?mini=true&amp;url=./vagrant-mean-box/', '');" data-site="linkedin" class="ssba_linkedin_share ssba_share_link"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/linkedin.png?w=646" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">1</span><a href="https://plus.google.com/share?url=./vagrant-mean-box/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://plus.google.com/share?url=./vagrant-mean-box/', '');" data-site="" class="ssba_google_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /><noscript><img src="http://i2.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/google.png?w=646" title="Google+" class="ssba ssba-img" alt="Share on Google+" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="http://reddit.com/submit?url=./vagrant-mean-box/&amp;title=M.E.A.N. Stack Development with Vagrant" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://reddit.com/submit?url=./vagrant-mean-box/&amp;title=M.E.A.N. Stack Development with Vagrant', '');" data-site="reddit" class="ssba_reddit_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/reddit.png?w=646" title="Reddit" class="ssba ssba-img" alt="Share on Reddit" data-recalc-dims="1" /></noscript></a><span class="ssba_sharecount">0</span><a href="https://bufferapp.com/add?url=./vagrant-mean-box/&amp;text=From The Jackal of Javascript M.E.A.N. Stack Development with Vagrant" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://bufferapp.com/add?url=./vagrant-mean-box/&amp;text=From The Jackal of Javascript M.E.A.N. Stack Development with Vagrant', '');" data-site="buffer" class="ssba_buffer_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /><noscript><img src="http://i1.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/buffer.png?w=646" title="Buffer" class="ssba ssba-img" alt="Buffer this page" data-recalc-dims="1" /></noscript></a><a href="https://flattr.com/submit/auto?user_id=arvindr21&amp;title=M.E.A.N. Stack Development with Vagrant&amp;url=https://flattr.com/profile/arvindr21" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://flattr.com/submit/auto?user_id=arvindr21&amp;title=M.E.A.N. Stack Development with Vagrant&amp;url=https://flattr.com/profile/arvindr21', '');" data-site="flattr" class="ssba_flattr_share"   target="_blank"  rel="nofollow"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/flattr.png?w=646" title="Flattr" class="ssba ssba-img" alt="Flattr the author" data-recalc-dims="1" /></noscript></a><a data-site="email" class="ssba_email_share" href="./../cdn-cgi/l/email-protection/index.html#caf5b9bfa8a0afa9bef787e48fe48be484e4ea99beaba9a1ea8eafbcafa6a5baa7afa4beeabda3bea2ea9cabadb8aba4beecaba7baf1a8a5aeb3f78cb8a5a7ea9ea2afea80aba9a1aba6eaa5acea80abbcabb9a9b8a3babeeff8faa2bebebaf0e5e5bea2afa0aba9a1aba6a5aca0abbcabb9a9b8a3babee4a9a5a7e5bcabadb8aba4bee7a7afaba4e7a8a5b2e5"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/email.png?w=646" title="Email" class="ssba ssba-img" alt="Email this to someone" data-recalc-dims="1" /></noscript></a><a data-site="print" class="ssba_print ssba_share_link" href="#" onclick="window.print()"><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /><noscript><img src="http://i0.wp.com/thejackalofjavascript.com/wp-content/plugins/simple-share-buttons-adder/buttons/somacro/print.png?w=646" title="Print" class="ssba ssba-img" alt="Print this page" data-recalc-dims="1" /></noscript></a></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-70838519-2645-5a1040f6d425e' data-src='//widgets.wp.com/likes/#blog_id=70838519&amp;post_id=2645&amp;origin=thejackalofjavascript.com&amp;obj_id=70838519-2645-5a1040f6d425e' data-name='like-post-frame-70838519-2645-5a1040f6d425e'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>
+<div class="entry-content">
+</div><!-- .entry-content -->
+<footer class="entry-meta">
+<span class="post-date"><a href="./index.html" title="5:03 pm" rel="bookmark"><time class="entry-date" datetime="2015-01-13T17:03:58+00:00">January 13, 2015</time></a></span><span class="byline"><span class="author vcard"><a class="url fn n" href="./../author/arvind-ravulavaru/index.html" title="View all posts by Arvind Ravulavaru" rel="author">Arvind Ravulavaru</a></span></span>					</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+<nav class="navigation post-navigation" role="navigation">
+<h1 class="screen-reader-text">Post navigation</h1>
+<div class="nav-links">
+<div class="nav-previous"><a href="./../dna-analysis-node-js/index.html" rel="prev"><span class="meta-nav screen-reader-text">&larr;</span></a></div><div class="nav-next"><a href="./../lon/index.html" rel="next"><span class="meta-nav screen-reader-text">&rarr;</span></a></div>		</div><!-- .nav-links -->
+</nav><!-- .navigation -->
+<div id="disqus_thread">
+<div id="dsq-content">
+<ul id="dsq-comments">
+<li class="comment even thread-even depth-1" id="dsq-comment-3387">
+<div id="dsq-comment-header-3387" class="dsq-comment-header">
+<cite id="dsq-cite-3387">
+<span id="dsq-author-user-3387">FreeSpeech101</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3387" class="dsq-comment-body">
+<div id="dsq-comment-message-3387" class="dsq-comment-message"><p>this won&#8217;t work. somewhere sudo was used and messes up everything</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-3328">
+<div id="dsq-comment-header-3328" class="dsq-comment-header">
+<cite id="dsq-cite-3328">
+<span id="dsq-author-user-3328">jatasya</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3328" class="dsq-comment-body">
+<div id="dsq-comment-message-3328" class="dsq-comment-message"><p>I am getting the below error how to resolve it, can anyone help</p>
+<p>The box &#8216;arvindr21/mean-box&#8217; could not be found or<br />
+could not be accessed in the remote catalog. If this is a private<br />
+box on HashiCorp&#8217;s Atlas, please verify you&#8217;re logged in via<br />
+<code>vagrant login</code>. Also, please double-check the name. The expanded<br />
+URL and error message are shown below:</p>
+<p>URL: [&#8220;https://atlas.hashicorp.com/arvindr21/mean-box&#8221;]<br />
+Error: Could not resolve host: atlas.hashicorp.com</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-3329">
+<div id="dsq-comment-header-3329" class="dsq-comment-header">
+<cite id="dsq-cite-3329">
+<span id="dsq-author-user-3329">jatasya</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3329" class="dsq-comment-body">
+<div id="dsq-comment-message-3329" class="dsq-comment-message"><p><a href="https://github.com/mitchellh/vagrant/issues/5016" onclick="__gaTracker('send', 'event', 'outbound-comment', 'https://github.com/mitchellh/vagrant/issues/5016', 'https://github.com/mitchellh/vagrant/issues/5016');" rel="nofollow">https://github.com/mitchellh/vagrant/issues/5016</a></p>
+<p>solutions in the above link solved the issue for me</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="dsq-comment-3322">
+<div id="dsq-comment-header-3322" class="dsq-comment-header">
+<cite id="dsq-cite-3322">
+<span id="dsq-author-user-3322">Npmer</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3322" class="dsq-comment-body">
+<div id="dsq-comment-message-3322" class="dsq-comment-message"><p>Anyone have any idea why grunt -v works for me? Accidentally typed it and it worked</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-3323">
+<div id="dsq-comment-header-3323" class="dsq-comment-header">
+<cite id="dsq-cite-3323">
+<span id="dsq-author-user-3323">Npmer</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3323" class="dsq-comment-body">
+<div id="dsq-comment-message-3323" class="dsq-comment-message"><p>n/m using a new version of Ubuntu. Works with just &#8220;grunt&#8221; now. Weird</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-3216">
+<div id="dsq-comment-header-3216" class="dsq-comment-header">
+<cite id="dsq-cite-3216">
+<span id="dsq-author-user-3216">lennylux</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3216" class="dsq-comment-body">
+<div id="dsq-comment-message-3216" class="dsq-comment-message"><p>Hi,<br />
+I&#8217;m trying to use this box, I&#8217;m on a mac (latest updates at time of writing) box installed, can ssh in etc&#8230;.<br />
+what I want to do is sync a specific folder&#8230;.  on my local machine I have /username/Code/Nodejs and I want to map that to /username/vagrant/Code/nodejs. I already use the same principal for a homestead laravel box.</p>
+<p>I have uncommented the private network and IP, attempted to map the folder I&#8217;d like to sync as above, bix doesnt boot saying can&#8217;t fine /username/Code/nodejs&#8230;.  if I remove my mapping attempt, it boots&#8230;  so that is the issue. What am I doing wrong here.</p>
+<p>desired result is to map projects to /username/Code/nodejs/project-xyz etc&#8230;.  </p>
+<p>Thanks in advance for any help</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="dsq-comment-3124">
+<div id="dsq-comment-header-3124" class="dsq-comment-header">
+<cite id="dsq-cite-3124">
+<span id="dsq-author-user-3124">0xCAFEBABE</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3124" class="dsq-comment-body">
+<div id="dsq-comment-message-3124" class="dsq-comment-message"><p>How did you get the synced folders to work properly in your mean-box by default? I&#8217;m trying to create one from scratch, and I have to specify </p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a1040f6195c2336578328" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+config.vm.synced_folder ".", "/vagrant", type: "nfs"</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a1040f6195c2336578328-1">1</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a1040f6195c2336578328-1"><span class="crayon-v">config</span><span class="crayon-sy">.</span><span class="crayon-v">vm</span><span class="crayon-sy">.</span><span class="crayon-v">synced</span><span class="crayon-sy">_</span>folder<span class="crayon-h"> </span><span class="crayon-s">"."</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">"/vagrant"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">type</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-s">"nfs"</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0008 seconds] -->
+<p> manually in the Vagrantfile to get it to sync in real-time on OS X. If I package my custom box with these settings, will it work by default if I download and run it somewhere else?</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-3076">
+<div id="dsq-comment-header-3076" class="dsq-comment-header">
+<cite id="dsq-cite-3076">
+<span id="dsq-author-user-3076">Emmanuel L. Constant</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3076" class="dsq-comment-body">
+<div id="dsq-comment-message-3076" class="dsq-comment-message"><p>I getting the following after vagrant up </p>
+<p>default: Warning: Connection timeout. Retrying&#8230;<br />
+default: Warning: Connection timeout. Retrying&#8230;<br />
+default: Warning: Connection timeout. Retrying&#8230;<br />
+default: Warning: Connection timeout. Retrying&#8230;</p>
+<p>when I do vagrant halt</p>
+<p>then vagrant up &#8211;debug</p>
+<p>it loops on the following:</p>
+<p>GuestMemoryBalloon=0<br />
+GuestOSType=&#8221;Ubuntu&#8221;<br />
+GuestAdditionsRunLevel=0<br />
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000</p>
+<p>Not sure how to resolve, please assist.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="dsq-comment-2986">
+<div id="dsq-comment-header-2986" class="dsq-comment-header">
+<cite id="dsq-cite-2986">
+http://youtu.be/GzgHLpuV4B0                <span id="dsq-author-user-2986">lexan</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2986" class="dsq-comment-body">
+<div id="dsq-comment-message-2986" class="dsq-comment-message"><p>Where to see a result after starting NodeJS app?  Thank you.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-2829">
+<div id="dsq-comment-header-2829" class="dsq-comment-header">
+<cite id="dsq-cite-2829">
+<span id="dsq-author-user-2829">Ian Simmons</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2829" class="dsq-comment-body">
+<div id="dsq-comment-message-2829" class="dsq-comment-message"><p>I had to install git. Looks like it is supposed to be already installed but had to do sudo apt-get install git</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-2862">
+<div id="dsq-comment-header-2862" class="dsq-comment-header">
+<cite id="dsq-cite-2862">
+./                <span id="dsq-author-user-2862">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2862" class="dsq-comment-body">
+<div id="dsq-comment-message-2862" class="dsq-comment-message"><p>Thanks! I updated the post.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="dsq-comment-2673">
+<div id="dsq-comment-header-2673" class="dsq-comment-header">
+<cite id="dsq-cite-2673">
+<span id="dsq-author-user-2673">disqus_FopfdixnPz</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2673" class="dsq-comment-body">
+<div id="dsq-comment-message-2673" class="dsq-comment-message"><p>I&#8217;m getting a permission error when trying to run &#8216;yo meanjs&#8217; as described in the shared folders section. I am on a windows machine so I am using the command line from Git for Windows since that includes an ssh executable (but I&#8217;ve run vagrant ssh so everything at this point should be running on the box and not impacted by being on windows machine host). When I run yo meanjs it walks me through the questions and then as it goes through the install and some of the create components, such as create bower.json, (at least I&#8217;m assuming it&#8217;s some since it hits an error I don&#8217;t know exactly how far through the install/create process it is) it errors out on this:</p>
+<p>npm WARN package.json <a href="./../cdn-cgi/l/email-protection/index.html" class="__cf_email__" data-cfemail="c7b3a2b4b3f687f7e9f7e9f6">[email&#160;protected]</a> No repository field.</p>
+<p>npm ERR! Error: EACCES, mkdir &#8216;/home/vagrant/.npm/async/0.9.2&#8242;</p>
+<p>npm ERR!  { [Error: EACCES, mkdir &#8216;/home/vagrant/.npm/async/0.9.2&#8242;]</p>
+<p>npm ERR!   errno: 3,</p>
+<p>npm ERR!   code: &#8216;EACCES&#8217;,</p>
+<p>npm ERR!   path: &#8216;/home/vagrant/.npm/async/0.9.2&#8242;,</p>
+<p>npm ERR!   parent: &#8216;test1&#8242; }</p>
+<p>npm ERR!</p>
+<p>npm ERR! Please try running this command again as root/Administrator.</p>
+<p>npm ERR! System Linux 3.2.0-23-generic-pae</p>
+<p>npm ERR! command &#8220;/usr/bin/node&#8221; &#8220;/usr/bin/npm&#8221; &#8220;install&#8221;</p>
+<p>npm ERR! cwd /vagrant/myMeanApp</p>
+<p>npm ERR! node -v v0.10.33</p>
+<p>npm ERR! npm -v 1.4.28</p>
+<p>npm ERR! path /home/vagrant/.npm/async/0.9.2</p>
+<p>npm ERR! code EACCES</p>
+<p>npm ERR! errno 3</p>
+<p>npm ERR! stack Error: EACCES, mkdir &#8216;/home/vagrant/.npm/async/0.9.2&#8242;</p>
+<p>npm ERR!</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="dsq-comment-2685">
+<div id="dsq-comment-header-2685" class="dsq-comment-header">
+<cite id="dsq-cite-2685">
+./                <span id="dsq-author-user-2685">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2685" class="dsq-comment-body">
+<div id="dsq-comment-message-2685" class="dsq-comment-message"><p>This looks like a permission issues. Try the following</p>
+<p>1. Clean up all the things you have done so far.<br />
+2. Head to <code>/home/vagrant</code> and delete the <code>.npm</code> folder.<br />
+3. Create the <code>.npm</code> folder manually<br />
+4. Run <code>npm install bower grunt-cli</code><br />
+5. Then run <code>yo meanjs</code></p>
+<p>Let me know if it works. Thanks.</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-3" id="dsq-comment-2689">
+<div id="dsq-comment-header-2689" class="dsq-comment-header">
+<cite id="dsq-cite-2689">
+<span id="dsq-author-user-2689">disqus_FopfdixnPz</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2689" class="dsq-comment-body">
+<div id="dsq-comment-message-2689" class="dsq-comment-message"><p>I&#8217;m still hitting a permission error:</p>
+<p><a href="./../cdn-cgi/l/email-protection/index.html" class="__cf_email__" data-cfemail="c4b2a5a3b6a5aab084b4b6a1a7adb7a1f7f6">[email&#160;protected]</a>:~$ cd /vagrant<br />
+<a href="./../cdn-cgi/l/email-protection/index.html" class="__cf_email__" data-cfemail="6016010712010e1420101205030913055352">[email&#160;protected]</a>:/vagrant$ mkdir .npm<br />
+<a href="./../cdn-cgi/l/email-protection/index.html" class="__cf_email__" data-cfemail="681e090f1a09061c28181a0d0b011b0d5b5a">[email&#160;protected]</a>:/vagrant$ npm install bower grunt-cli<br />
+npm ERR! Error: EACCES, mkdir &#8216;/home/vagrant/.npm/abbrev/1.0.7&#8242;<br />
+npm ERR!  { [Error: EACCES, mkdir &#8216;/home/vagrant/.npm/abbrev/1.0.7&#8242;]<br />
+npm ERR!   errno: 3,<br />
+npm ERR!   code: &#8216;EACCES&#8217;,<br />
+npm ERR!   path: &#8216;/home/vagrant/.npm/abbrev/1.0.7&#8242;,<br />
+npm ERR!   parent: &#8216;nopt&#8217; }<br />
+npm ERR!<br />
+npm ERR! Please try running this command again as root/Administrator.<br />
+npm ERR! System Linux 3.2.0-23-generic-pae<br />
+npm ERR! command &#8220;/usr/bin/node&#8221; &#8220;/usr/bin/npm&#8221; &#8220;install&#8221; &#8220;bower&#8221; &#8220;grunt-cli&#8221;<br />
+npm ERR! cwd /vagrant<br />
+npm ERR! node -v v0.10.33<br />
+npm ERR! npm -v 1.4.28<br />
+npm ERR! path /home/vagrant/.npm/abbrev/1.0.7<br />
+npm ERR! code EACCES<br />
+npm ERR! errno 3<br />
+npm ERR! stack Error: EACCES, mkdir &#8216;/home/vagrant/.npm/abbrev/1.0.7&#8242;<br />
+npm ERR! not ok code 0</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-4" id="dsq-comment-2690">
+<div id="dsq-comment-header-2690" class="dsq-comment-header">
+<cite id="dsq-cite-2690">
+./                <span id="dsq-author-user-2690">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2690" class="dsq-comment-body">
+<div id="dsq-comment-message-2690" class="dsq-comment-message"><p>Are you using the default ssh user? Or you have created a user of your own for ssh? </p>
+<p>Also can try setting explicit permission to the .npm folder? </p>
+<p>Thanks. </p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt depth-4" id="dsq-comment-3007">
+<div id="dsq-comment-header-3007" class="dsq-comment-header">
+<cite id="dsq-cite-3007">
+<span id="dsq-author-user-3007">Enkia Dev</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3007" class="dsq-comment-body">
+<div id="dsq-comment-message-3007" class="dsq-comment-message"><p>Did you ever figure out what the issue was? I&#8217;m having the same problem.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment even depth-3" id="dsq-comment-2816">
+<div id="dsq-comment-header-2816" class="dsq-comment-header">
+<cite id="dsq-cite-2816">
+http://n3t.gr                <span id="dsq-author-user-2816">Giorgos Kontopoulos</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2816" class="dsq-comment-body">
+<div id="dsq-comment-message-2816" class="dsq-comment-message"><p></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a1040f619ac9835843114" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+ls -lah /home/vagrant</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a1040f619ac9835843114-1">1</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a1040f619ac9835843114-1"><span class="crayon-v">ls</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">lah</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-v">home</span><span class="crayon-o">/</span><span class="crayon-v">vagrant</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0004 seconds] -->
+<p></p>
+<p>shows that folder belongs to vagrant user </p>
+<p>but inside everything else belongs to root </p>
+<p>so instead of 2. one can do</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<div id="crayon-5a1040f619ad3152181108" class="crayon-syntax crayon-theme-arduino-ide crayon-font-droid-sans-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings=" show" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+mv /home/vagrant/.npm /home/vagrant/.npm_delete</textarea></div>
+<div class="crayon-main" style="">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums" data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5a1040f619ad3152181108-1">1</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a1040f619ad3152181108-1"><span class="crayon-v">mv</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-v">home</span><span class="crayon-o">/</span><span class="crayon-v">vagrant</span><span class="crayon-o">/</span><span class="crayon-sy">.</span><span class="crayon-v">npm</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-v">home</span><span class="crayon-o">/</span><span class="crayon-v">vagrant</span><span class="crayon-o">/</span><span class="crayon-sy">.</span><span class="crayon-v">npm_delete</span></div></div></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- [Format Time: 0.0006 seconds] -->
+<p></p>
+<p>and then follow to the next steps</p>
+<p>EDIT: was very fast to celebrate<br />
+ended up with following error </p>
+<blockquote><p>
+bower angular-resource#~1.2     ENOGIT git is not installed or not in the PATH</p>
+<p>npm ERR! <a href="./../cdn-cgi/l/email-protection/index.html" class="__cf_email__" data-cfemail="19747c7877786969592937293728">[email&#160;protected]</a> postinstall: <code>bower install --config.interactive=false</code><br />
+npm ERR! Exit status 1<br />
+npm ERR!<br />
+npm ERR! Failed at the <a href="./../cdn-cgi/l/email-protection/index.html" class="__cf_email__" data-cfemail="335e56525d52434373031d031d02">[email&#160;protected]</a> postinstall script.<br />
+npm ERR! This is most likely a problem with the meanapp package,<br />
+npm ERR! not with npm itself.<br />
+npm ERR! Tell the author that this fails on your system:<br />
+npm ERR!     bower install &#8211;config.interactive=false<br />
+npm ERR! You can get their info via:<br />
+npm ERR!     npm owner ls meanapp<br />
+npm ERR! There is likely additional logging output above.<br />
+npm ERR! System Linux 3.2.0-23-generic-pae<br />
+npm ERR! command &#8220;/usr/bin/node&#8221; &#8220;/usr/bin/npm&#8221; &#8220;install&#8221;<br />
+npm ERR! cwd /home/vagrant<br />
+npm ERR! node -v v0.10.33<br />
+npm ERR! npm -v 1.4.28<br />
+npm ERR! code ELIFECYCLE<br />
+npm ERR!<br />
+npm ERR! Additional logging details can be found in:<br />
+npm ERR!     /home/vagrant/npm-debug.log<br />
+npm ERR! not ok code 0
+</p></blockquote>
+<p>giving up </p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt depth-3" id="dsq-comment-2818">
+<div id="dsq-comment-header-2818" class="dsq-comment-header">
+<cite id="dsq-cite-2818">
+http://n3t.gr                <span id="dsq-author-user-2818">Giorgos Kontopoulos</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2818" class="dsq-comment-body">
+<div id="dsq-comment-message-2818" class="dsq-comment-message"><p>EDIT2: </p>
+<p>gave it another try </p>
+<p>finally had to do this and before I also had to install git that was missing</p>
+<blockquote>
+<p>sudo apt-get update</p>
+<p>sudo apt-get install git</p>
+<p>sudo chown -R $(whoami) ~/.npm</p>
+</blockquote>
+<p>but running grunt will give this output </p>
+<blockquote>
+<p><a href="./../cdn-cgi/l/email-protection/index.html" class="__cf_email__" data-cfemail="f284939580939c86b2828097919b8197c1c0">[email&#160;protected]</a>:/vagrant/meanapp$ grunt</p>
+<p>Running &#8220;jshint:all&#8221; (jshint) task</p>
+<p>&gt;&gt; 55 files lint free.</p>
+<p>Running &#8220;csslint:all&#8221; (csslint) task</p>
+<p>&gt;&gt; 2 files lint free.</p>
+<p>Running &#8220;concurrent:default&#8221; (concurrent) task</p>
+<p>Running &#8220;nodemon:dev&#8221; (nodemon) task</p>
+<p>[nodemon] v1.2.1</p>
+<p>[nodemon] to restart at any time, enter <code>rs</code></p>
+<p>[nodemon] watching: app/views/**/*.* gruntfile.js server.js config/**/*.js app/**/*.js</p>
+<p>[nodemon] starting <code>node --debug server.js</code></p>
+<p>debugger listening on port 5858</p>
+<p>NODE_ENV is not defined! Using default development environment</p>
+<p>Running &#8220;watch&#8221; task</p>
+<p>Waiting&#8230;</p>
+<p>MEAN.JS application started on port 3000</p>
+<p>[nodemon] watching 25,322 files &#8211; this might cause high cpu usage. To reduce use &#8220;&#8211;watch&#8221;.</p>
+</blockquote>
+<p>and visiting locahost:3000 gives nothing </p>
+<p>where should I start debugging  ???</p>
+<p>I am on a ubuntu 15.04 host if it makes a difference</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even depth-3" id="dsq-comment-2819">
+<div id="dsq-comment-header-2819" class="dsq-comment-header">
+<cite id="dsq-cite-2819">
+http://n3t.gr                <span id="dsq-author-user-2819">Giorgos Kontopoulos</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2819" class="dsq-comment-body">
+<div id="dsq-comment-message-2819" class="dsq-comment-message"><p>EDIT3 </p>
+<p>had to uncomment in vagrantfile</p>
+<blockquote><p>
+config.vm.network &#8220;private_network&#8221;, ip: &#8220;192.168.33.10&#8221;
+</p></blockquote>
+<p>and do a vagrant reload before<br />
+192.168.33.10:3000 worked !!!</p>
+<p>YAY !!!</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-4" id="dsq-comment-2869">
+<div id="dsq-comment-header-2869" class="dsq-comment-header">
+<cite id="dsq-cite-2869">
+./                <span id="dsq-author-user-2869">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2869" class="dsq-comment-body">
+<div id="dsq-comment-message-2869" class="dsq-comment-message"><p>Cool. Thanks for sharing!!</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment even depth-5" id="dsq-comment-3214">
+<div id="dsq-comment-header-3214" class="dsq-comment-header">
+<cite id="dsq-cite-3214">
+<span id="dsq-author-user-3214">Ben Brink</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3214" class="dsq-comment-body">
+<div id="dsq-comment-message-3214" class="dsq-comment-message"><p>Hi Arvind. I am having the same problem and am new to shell command line/terminal. I&#8217;m not sure what you mean by 1. Clean up all the thing you have done so far. Does this mean delete the files in the app folder as seen on the Host machine? Also by Create the .npm folder manually do you simply mean adding a folder with this name in the app folder? Ben</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt depth-3" id="dsq-comment-3094">
+<div id="dsq-comment-header-3094" class="dsq-comment-header">
+<cite id="dsq-cite-3094">
+<span id="dsq-author-user-3094">Alexey Markushin</span>
+</cite>
+</div>
+<div id="dsq-comment-body-3094" class="dsq-comment-body">
+<div id="dsq-comment-message-3094" class="dsq-comment-message"><p>Doesn&#8217;t work unfortunately =(<br />
+Still says: &#8220;Please try running this command again as root/Administrator.&#8221;</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-2326">
+<div id="dsq-comment-header-2326" class="dsq-comment-header">
+<cite id="dsq-cite-2326">
+<span id="dsq-author-user-2326">Patrick Meaney</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2326" class="dsq-comment-body">
+<div id="dsq-comment-message-2326" class="dsq-comment-message"><p>Arvind, thanks a ton for sharing your knowledge and your VM!  I am already a fan&#8211; I bookmarked your webpage and I look forward to discovering more gems of knowledge here.</p>
+</div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-2" id="dsq-comment-2327">
+<div id="dsq-comment-header-2327" class="dsq-comment-header">
+<cite id="dsq-cite-2327">
+./                <span id="dsq-author-user-2327">Arvind Ravulavaru</span>
+</cite>
+</div>
+<div id="dsq-comment-body-2327" class="dsq-comment-body">
+<div id="dsq-comment-message-2327" class="dsq-comment-message"><p>Thanks Patrick.</p>
+</div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul>
+</div>
+</div>
+<script src="./../cdn-cgi/scripts/0e574bed/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+var disqus_url = './vagrant-mean-box/';
+var disqus_identifier = '2645 ./?p=2645';
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = 'thejackalofjavascriptcom';
+var disqus_title = "M.E.A.N. Stack Development with Vagrant";
+var disqus_config_custom = window.disqus_config;
+var disqus_config = function () {
+/*
+All currently supported events:
+onReady: fires when everything is ready,
+onNewComment: fires when a new comment is posted,
+onIdentify: fires when user is authenticated
+*/
+this.language = '';
+this.callbacks.onReady.push(function () {
+// sync comments in the background so we don't block the page
+var script = document.createElement('script');
+script.async = true;
+script.src = '?cf_action=sync_comments&post_id=2645';
+var firstScript = document.getElementsByTagName('script')[0];
+firstScript.parentNode.insertBefore(script, firstScript);
+});
+if (disqus_config_custom) {
+disqus_config_custom.call(this);
+}
+};
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+</main><!-- #main -->
+</div><!-- #primary -->
+<div id="secondary" class="widget-area" role="complementary">
+<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="./../index.html">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+</label>
+<input type="submit" class="search-submit" value="Search">
+</form>
+</aside><aside id="text-2" class="widget widget_text"><h1 class="widget-title">This is me!!</h1>			<div class="textwidget"><style>
+.socl-btn
+{
+padding: 3px;
+background: #f45145;
+border-radius: 3px;
+color: rgba(255, 255, 255, 0.6) !important;
+margin-top: 9px;
+display: inline-block;
+text-align: center;
+width:100%;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+.socl-btn:hover{
+color:#fff !important;
+}
+.lkdin{
+background-image: url(./../wp-content/uploads/2014/08/l.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+.gplus{
+background-image: url(./../wp-content/uploads/2014/08/g.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+.mongodir{
+background-image: url(./../wp-content/uploads/2014/08/m.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+.sitept{
+background-image: url(./../wp-content/uploads/2014/08/s.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+</style>
+<img src="./../wp-content/uploads/2014/02/030a49b.jpg" alt="Arvind Ravulavaru" style="width: 81px; margin: 0px auto;display: block;border-radius: 45px;"/>
+<br/>
+<label>
+Hello.. I am Arvind Ravulavaru a Full Stack Consultant based out of Hyderabad, India. This blog is my way of giving back to the Javascript Community!</label>
+<br/>
+<div style="text-align:center;" ><a  href="./../portfolio/index.html">Know more about me</a></div>
+<br/>
+<div  style="text-align:center;">
+<a href="https://twitter.com/arvindr21" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://twitter.com/arvindr21', 'Follow @arvindr21');" class="twitter-follow-button" data-show-count="false">Follow @arvindr21</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+<iframe src="http://ghbtns.com/github-btn.html?user=arvindr21&type=follow"
+allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe><br/><br/>
+<a href="http://in.linkedin.com/in/arvindravulavaru" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://in.linkedin.com/in/arvindravulavaru', 'Linked In');" target="_blank"  class="socl-btn lkdin">Linked In</a>
+<a href="https://plus.google.com/+ArvindRavulavaru" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://plus.google.com/+ArvindRavulavaru', 'Google Plus');" target="_blank"  class="socl-btn gplus">Google Plus</a><br/>
+<a href="http://blog.mongodirector.com/author/arvindr" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/author/arvindr', 'Mongo Director');" target="_blank"  class="socl-btn mongodir">Mongo Director</a> <a href="http://www.sitepoint.com/author/aravulavaru/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/author/aravulavaru/', 'Site Point');" target="_blank"  class="socl-btn sitept">Site Point</a> <br/><br/>
+<a href="https://paper.li/arvindr21/1409328222#!headlines/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://paper.li/arvindr21/1409328222#!headlines/', 'Chronicles of the Jackal of Javascript');" target="_blank"  class="socl-btn">Chronicles of the Jackal of Javascript</a>
+</div></div>
+</aside><aside id="text-5" class="widget widget_text">			<div class="textwidget"><style>
+.crm-app, .crm-ext
+{
+padding: 9px;
+background: #787878;
+border-radius: 45px;
+color: #EFEFEE !important;
+margin-top: 9px;
+display: inline-block;
+text-align: center;
+}
+</style>
+<a href="https://chrome.google.com/webstore/detail/the-jackal-of-javascript/oiaebkkgbicadojhdipjajkhjkeencdm" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://chrome.google.com/webstore/detail/the-jackal-of-javascript/oiaebkkgbicadojhdipjajkhjkeencdm', 'Chrome App');" target ="_blank" class="crm-app">Chrome App</a>
+<a href="https://chrome.google.com/webstore/detail/the-jackal-of-javascript/dokdjofgoglghfljkpmmkgfpipgcmjme" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://chrome.google.com/webstore/detail/the-jackal-of-javascript/dokdjofgoglghfljkpmmkgfpipgcmjme', 'Chrome Extension');" target ="_blank" class="crm-ext">Chrome Extension</a></div>
+</aside><aside id="text-7" class="widget widget_text"><h1 class="widget-title">Workshops</h1>			<div class="textwidget"><ul>
+<li><a href="http://mean-workshop.herokuapp.com/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://mean-workshop.herokuapp.com', 'o/ M.E.A.N. Workshop');" target="_blank">\o/ M.E.A.N. Workshop</a>
+</li>
+</ul></div>
+</aside><aside id="text-6" class="widget widget_text"><h1 class="widget-title">Presentations</h1>			<div class="textwidget"><ul>
+<li><a href="http://arvindr21.github.io/ng-overview" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/ng-overview', 'Overview of Angularjs');" target="_blank">Overview of Angularjs</a>
+</li>
+<li><a href="http://arvindr21.github.io/howBrowserWorks" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/howBrowserWorks', 'How Browser Works');" target="_blank">How Browser Works</a>
+</li>
+<li><a href="http://arvindr21.github.io/WebComponents" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/WebComponents', 'Web Components');" target="_blank">Web Components</a>
+</li>
+<li><a href="http://arvindr21.github.io/building-n-Scaffolding" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/building-n-Scaffolding', 'Modern UI Build Systems and Scaffolding Tools');" target="_blank">Modern UI Build Systems and Scaffolding Tools</a>
+</li>
+<li><a href="http://arvindr21.github.io/backbonejs" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/backbonejs', 'Backbonejs');" target="_blank">Backbonejs</a>
+</li>
+<li><a href="http://arvindr21.github.io/rwd" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/rwd', 'Responsive Web Design');" target="_blank">Responsive Web Design</a>
+</li>
+</ul></div>
+</aside><aside id="text-3" class="widget widget_text"><h1 class="widget-title">Projects</h1>			<div class="textwidget"><ul><li><a href="./../rotten-tomatoes-jquery-rest-client/index.html" target="_blank">Rotten Tomatoes jQuery Rest Client</a>
+</li>
+<li>
+<a href="./../uploading-files-made-fun/index.html" target="_blank">blueimp-file-upload-expressjs</a> - A Node Package
+</li>
+<li>
+<a href="http://arvindr21.github.io/lazyboy/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/lazyboy/', 'lazyboy');" target="_blank">lazyboy</a> - Command line laziness redefined
+</li>
+<li>
+<a href="http://arvindr21.github.io/diskDB/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://arvindr21.github.io/diskDB/', 'diskDB');" target="_blank">diskDB</a> - A Light Weight Disk based JSON Database - A Node Package
+</li>
+<li>
+<a href="https://github.com/search?utf8=%E2%9C%93&q=user%3Aarvindr21+slush&type=Repositories&ref=searchresults" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/search?utf8=%E2%9C%93&amp;q=user%3Aarvindr21+slush&amp;type=Repositories&amp;ref=searchresults', 'My Slush Generators');" target="_blank">My Slush Generators</a>
+</li>
+<li>
+<a href="https://github.com/search?utf8=%E2%9C%93&q=user%3Aarvindr21+yeoman&type=Repositories&ref=searchresults" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/search?utf8=%E2%9C%93&amp;q=user%3Aarvindr21+yeoman&amp;type=Repositories&amp;ref=searchresults', 'My Yeoman Generators');" target="_blank">My Yeoman Generators</a>
+</li>
+<li>
+<a href="https://github.com/arvindr21/myWebComponents#mywebcomponents" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/arvindr21/myWebComponents#mywebcomponents', 'My Web Components');" target="_blank">My Web Components</a>
+</li>
+<li>
+<a href="http://bower.io/search/?q=owner:arvindr21" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://bower.io/search/?q=owner:arvindr21', 'My Bower Packages');" target="_blank">My Bower Packages</a>
+</li>
+</ul></div>
+</aside><aside id="latestseries-2" class="widget widget_latestseries"><h1 class="widget-title">Series</h1>			<ul>
+<div class="latest-series"><ul><li><a href="./../series/a-reminder-app/index.html" class="series-145" title="Ionic, Twilio and Node Scheduler – A Reminder App">Ionic, Twilio and Node Scheduler – A Reminder App</a></li><li><a href="./../series/node-webkit-apps/index.html" class="series-150" title="Node Webkit Apps">Node Webkit Apps</a></li><li><a href="./../series/rpi/index.html" class="series-148" title="Raspberry Pi">Raspberry Pi</a></li></ul></div>			</ul>
+</aside><aside id="text-4" class="widget widget_text"><h1 class="widget-title">Guest Posts</h1>			<div class="textwidget"><ul>
+<li><a href="http://www.sitepoint.com/building-chat-app-node-webkit-firebase-angularjs/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/building-chat-app-node-webkit-firebase-angularjs/', 'Building a Chat App with node-webkit, Firebase, and AngularJS');" target="_blank">Building a Chat App with node-webkit, Firebase, and AngularJS</a></li>
+<li><a href="http://www.sitepoint.com/creating-sentiment-analysis-application-using-node-js/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/creating-sentiment-analysis-application-using-node-js/', 'Creating a Sentiment Analysis Application Using Node.js');" target="_blank">Creating a Sentiment Analysis Application Using Node.js</a></li>
+<li><a href="http://blog.mongodirector.com/implementing-pagination-with-mongodb-express-js-slush/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/implementing-pagination-with-mongodb-express-js-slush/', 'Implementing pagination with MongoDB, Express.js &amp; Slush');" target="_blank">Implementing pagination with MongoDB, Express.js & Slush</a></li>
+<li><a href="http://www.sitepoint.com/creating-firebase-powered-end-end-ionic-application/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.sitepoint.com/creating-firebase-powered-end-end-ionic-application/', 'Creating a Firebase Powered End to End Ionic Application');" target="_blank">Creating a Firebase Powered End to End Ionic Application</a></li>
+<li><a href="http://blog.mongodirector.com/getting-started-with-mongodb-and-mongoose/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/getting-started-with-mongodb-and-mongoose/', 'Getting started with MongoDB and Mongoose');" target="_blank">Getting started with MongoDB and Mongoose</a></li>
+<li><a href="http://blog.mongodirector.com/yeoman-mongoose-and-mongodb/" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://blog.mongodirector.com/yeoman-mongoose-and-mongodb/', 'Yeoman, Mongoose and MongoDB');" target="_blank">Yeoman, Mongoose and MongoDB</a></li>
+</ul></div>
+</aside><aside id="views-2" class="widget widget_views"><h1 class="widget-title">Top5 Posts</h1><ul>
+<li><a href="./../architecting-a-restful-node-js-app/index.html"  title="Architecting a Secure RESTful Node.js app">Architecting a Secure RESTful Node.js app</a> - 215,318 views</li><li><a href="./../getting-started-with-angular-2-0/index.html"  title="Getting Started with Angular 2.0">Getting Started with Angular 2.0</a> - 177,582 views</li><li><a href="./../developing-a-mean-app-with-angular-2-0/index.html"  title="Developing a MEAN app with Angular 2.0">Developing a MEAN app with Angular 2.0</a> - 149,713 views</li><li><a href="./../getting-started-with-node-webkit-apps/index.html"  title="Node Webkit &ndash; Build Desktop Apps with Node and Web Technologies">Node Webkit &ndash; Build Desktop Apps with Node and Web Technologies</a> - 93,571 views</li><li><a href="./../rpi-live-streaming/index.html"  title="Raspberry Pi, Camera and Node.js &ndash; Live Streaming with Websockets #IoT">Raspberry Pi, Camera and Node.js &ndash; Live Streaming with Websockets #IoT</a> - 91,974 views</li></ul>
+</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h1 class="widget-title">Recent Posts</h1>		<ul>
+<li>
+<a href="./../learning-ionic/index.html">Learning Ionic</a>
+</li>
+<li>
+<a href="./../electron-wordpress-angular-material-an-offline-viewer/index.html">Electron, WordPress &#038; Angular Material &#8211; An Offline Viewer</a>
+</li>
+<li>
+<a href="./../developing-a-mean-app-with-angular-2-0/index.html">Developing a MEAN app with Angular 2.0</a>
+</li>
+<li>
+<a href="./../pushbots-and-cordova/index.html">Pushbots and Cordova &#8211; Easy Push Notifications for your app</a>
+</li>
+<li>
+<a href="./../getting-started-with-client-side-storage/index.html">Getting Started with Client Side Storage</a>
+</li>
+</ul>
+</aside><aside id="categories-2" class="widget widget_categories"><h1 class="widget-title">Categories</h1>		<ul>
+<li class="cat-item cat-item-141"><a href="./../architecture/index.html" >Architecture</a> (8)
+</li>
+<li class="cat-item cat-item-3"><a href="./../css/index.html" >CSS</a> (9)
+<ul class='children'>
+<li class="cat-item cat-item-5"><a href="./../css/css3/index.html" >CSS3</a> (6)
+</li>
+<li class="cat-item cat-item-26"><a href="./../css/less/index.html" >LESS</a> (3)
+</li>
+<li class="cat-item cat-item-55"><a href="./../css/sass/index.html" >SASS</a> (1)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-117"><a href="./../database/index.html" >Database</a> (17)
+<ul class='children'>
+<li class="cat-item cat-item-136"><a href="./../database/disk-db/index.html" >Disk DB</a> (6)
+</li>
+<li class="cat-item cat-item-131"><a href="./../database/firebase/index.html" >Firebase</a> (4)
+</li>
+<li class="cat-item cat-item-118"><a href="./../database/mongodb/index.html" >MongoDB</a> (8)
+<ul class='children'>
+<li class="cat-item cat-item-119"><a href="./../database/mongodb/mongolab/index.html" >MongoLab</a> (3)
+</li>
+<li class="cat-item cat-item-123"><a href="./../database/mongodb/monk/index.html" >Monk</a> (1)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-125"><a href="./../deployments/index.html" >Deployments</a> (4)
+<ul class='children'>
+<li class="cat-item cat-item-126"><a href="./../deployments/heroku/index.html" >Heroku</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-135"><a href="./../desktop-apps/index.html" >Desktop Apps</a> (8)
+</li>
+<li class="cat-item cat-item-155"><a href="./../dna-analysis/index.html" >DNA Analysis</a> (1)
+</li>
+<li class="cat-item cat-item-112"><a href="./../es6/index.html" >ECMAScript 6</a> (3)
+</li>
+<li class="cat-item cat-item-162"><a href="./../electron-atom-shell/index.html" >Electron (atom shell)</a> (1)
+</li>
+<li class="cat-item cat-item-25"><a href="./../frameworks/index.html" >Frameworks</a> (42)
+<ul class='children'>
+<li class="cat-item cat-item-160"><a href="./../frameworks/angular-2-0/index.html" >Angular 2.0</a> (2)
+</li>
+<li class="cat-item cat-item-108"><a href="./../frameworks/angularjs/index.html" >Angularjs</a> (21)
+</li>
+<li class="cat-item cat-item-132"><a href="./../frameworks/backbonejs/index.html" >Backbonejs</a> (1)
+</li>
+<li class="cat-item cat-item-105"><a href="./../frameworks/bootstrap/index.html" >Bootstrap</a> (9)
+</li>
+<li class="cat-item cat-item-159"><a href="./../frameworks/emberjs/index.html" >Emberjs</a> (1)
+</li>
+<li class="cat-item cat-item-56"><a href="./../frameworks/foundation/index.html" >Foundation</a> (3)
+</li>
+<li class="cat-item cat-item-110"><a href="./../frameworks/framework7/index.html" >Framework7</a> (1)
+</li>
+<li class="cat-item cat-item-107"><a href="./../frameworks/ionic/index.html" >Ionic</a> (11)
+</li>
+<li class="cat-item cat-item-157"><a href="./../frameworks/lumx/index.html" >Lumx</a> (1)
+</li>
+<li class="cat-item cat-item-138"><a href="./../frameworks/mean/index.html" >MEAN</a> (4)
+</li>
+<li class="cat-item cat-item-116"><a href="./../frameworks/meteorjs/index.html" >Meteorjs</a> (1)
+</li>
+<li class="cat-item cat-item-122"><a href="./../frameworks/onsen-ui/index.html" >Onsen UI</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-101"><a href="./../git/index.html" >Git</a> (12)
+<ul class='children'>
+<li class="cat-item cat-item-102"><a href="./../git/github/index.html" >GitHub</a> (10)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-2"><a href="./../html/index.html" >HTML</a> (22)
+<ul class='children'>
+<li class="cat-item cat-item-4"><a href="./../html/html5/index.html" >HTML5</a> (21)
+<ul class='children'>
+<li class="cat-item cat-item-158"><a href="./../html/html5/webrtc/index.html" >WebRTC</a> (1)
+</li>
+<li class="cat-item cat-item-106"><a href="./../html/html5/websockets/index.html" >WebSockets</a> (6)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-137"><a href="./../intels-app-ui/index.html" >Intel&#039;s App UI</a> (1)
+</li>
+<li class="cat-item cat-item-143"><a href="./../iot/index.html" >IoT</a> (6)
+</li>
+<li class="cat-item cat-item-1"><a href="./../javascript/index.html" >Javascript</a> (75)
+<ul class='children'>
+<li class="cat-item cat-item-6"><a href="./../javascript/jquery/index.html" >jQuery</a> (14)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-151"><a href="./../material-design/index.html" >Material Design</a> (3)
+</li>
+<li class="cat-item cat-item-99"><a href="./../mobile/index.html" >Mobile</a> (21)
+<ul class='children'>
+<li class="cat-item cat-item-103"><a href="./../mobile/android/index.html" >Android</a> (15)
+</li>
+<li class="cat-item cat-item-113"><a href="./../mobile/firefox-os/index.html" >Firefox OS</a> (2)
+</li>
+<li class="cat-item cat-item-104"><a href="./../mobile/ios/index.html" >iOS</a> (11)
+</li>
+<li class="cat-item cat-item-100"><a href="./../mobile/phonegap/index.html" >PhoneGap</a> (16)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-149"><a href="./../mqtt/index.html" >MQTT</a> (1)
+</li>
+<li class="cat-item cat-item-163"><a href="./../my-books/index.html" >My Books</a> (1)
+</li>
+<li class="cat-item cat-item-45"><a href="./../node/index.html" >Node</a> (60)
+<ul class='children'>
+<li class="cat-item cat-item-152"><a href="./../node/cli/index.html" >CLI</a> (3)
+</li>
+<li class="cat-item cat-item-121"><a href="./../node/expressjs/index.html" >Expressjs</a> (18)
+</li>
+<li class="cat-item cat-item-156"><a href="./../node/genome/index.html" >Genome</a> (1)
+</li>
+<li class="cat-item cat-item-62"><a href="./../node/grunt/index.html" >Grunt</a> (8)
+</li>
+<li class="cat-item cat-item-124"><a href="./../node/koa/index.html" >Koa</a> (1)
+</li>
+<li class="cat-item cat-item-134"><a href="./../node/node-webkit/index.html" >Node Webkit</a> (7)
+</li>
+<li class="cat-item cat-item-54"><a href="./../node/npm/index.html" >NPM</a> (15)
+</li>
+<li class="cat-item cat-item-120"><a href="./../node/restify/index.html" >Restify</a> (3)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-161"><a href="./../push-notifications/index.html" >Push Notifications</a> (1)
+</li>
+<li class="cat-item cat-item-59"><a href="./../quick-and-dirty/index.html" >Quick and Dirty</a> (42)
+</li>
+<li class="cat-item cat-item-142"><a href="./../raspberry-pi/index.html" >Raspberry Pi</a> (9)
+</li>
+<li class="cat-item cat-item-60"><a href="./../setup/index.html" >Setup</a> (60)
+</li>
+<li class="cat-item cat-item-61"><a href="./../testing/index.html" >Testing</a> (5)
+<ul class='children'>
+<li class="cat-item cat-item-129"><a href="./../testing/jasmine/index.html" >Jasmine</a> (1)
+</li>
+<li class="cat-item cat-item-128"><a href="./../testing/protractor/index.html" >Protractor</a> (1)
+</li>
+<li class="cat-item cat-item-98"><a href="./../testing/test-automation/index.html" >Test Automation</a> (1)
+</li>
+<li class="cat-item cat-item-41"><a href="./../testing/tdd/index.html" >Test Driven Developement</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-139"><a href="./../third-party-products/index.html" >Third Party Products</a> (4)
+<ul class='children'>
+<li class="cat-item cat-item-140"><a href="./../third-party-products/twilio/index.html" >Twilio</a> (4)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-58"><a href="./../tutorial/index.html" >Tutorial</a> (79)
+</li>
+<li class="cat-item cat-item-130"><a href="./../performance-analysis/index.html" >UI Performance</a> (1)
+</li>
+<li class="cat-item cat-item-109"><a href="./../web-components/index.html" >Web Components</a> (3)
+</li>
+<li class="cat-item cat-item-133"><a href="./../google-web-starter-kit/index.html" >Web Starter Kit</a> (1)
+</li>
+</ul>
+</aside><aside id="archives-2" class="widget widget_archive"><h1 class="widget-title">Archives</h1>		<ul>
+<li><a href='./../2015/07/index.html'>July 2015</a></li>
+<li><a href='./../2015/05/index.html'>May 2015</a></li>
+<li><a href='./../2015/04/index.html'>April 2015</a></li>
+<li><a href='./../2015/03/index.html'>March 2015</a></li>
+<li><a href='./../2015/02/index.html'>February 2015</a></li>
+<li><a href='./../2015/01/index.html'>January 2015</a></li>
+<li><a href='./../2014/12/index.html'>December 2014</a></li>
+<li><a href='./../2014/11/index.html'>November 2014</a></li>
+<li><a href='./../2014/10/index.html'>October 2014</a></li>
+<li><a href='./../2014/09/index.html'>September 2014</a></li>
+<li><a href='./../2014/08/index.html'>August 2014</a></li>
+<li><a href='./../2014/07/index.html'>July 2014</a></li>
+<li><a href='./../2014/06/index.html'>June 2014</a></li>
+<li><a href='./../2014/05/index.html'>May 2014</a></li>
+<li><a href='./../2014/04/index.html'>April 2014</a></li>
+<li><a href='./../2014/03/index.html'>March 2014</a></li>
+<li><a href='./../2014/02/index.html'>February 2014</a></li>
+</ul>
+</aside><aside id="wysija-3" class="widget widget_wysija"><h1 class="widget-title">Inform me about new posts</h1><div class="widget_wysija_cont"><div id="msg-form-wysija-3" class="wysija-msg ajax"></div><form id="form-wysija-3" method="post" action="#wysija" class="widget_wysija">
+<p class="wysija-paragraph">
+<label>Email <span class="wysija-required">*</span></label>
+<input type="text" name="wysija[user][email]" class="wysija-input validate[required,custom[email]]" title="Email"  value="" />
+<span class="abs-req">
+<input type="text" name="wysija[user][abs][email]" class="wysija-input validated[abs][email]" value="" />
+</span>
+</p>
+<input class="wysija-submit wysija-submit-field" type="submit" value="Subscribe!" />
+<input type="hidden" name="form_id" value="1" />
+<input type="hidden" name="action" value="save" />
+<input type="hidden" name="controller" value="subscribers" />
+<input type="hidden" value="1" name="wysija-page" />
+<input type="hidden" name="wysija[user_list][list_ids]" value="3" />
+</form></div></aside>	</div><!-- #secondary -->
+	<script>
+var _prum = [['id', '544090ababe53d0e3e76d6ce'],
+['mark', 'firstbyte', (new Date()).getTime()]];
+(function() {
+var s = document.getElementsByTagName('script')[0]
+, p = document.createElement('script');
+p.async = 'async';
+p.src = '//rum-static.pingdom.net/prum.min.js';
+s.parentNode.insertBefore(p, s);
+})();
+</script>
+</div><!-- #content -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info">
+All Rights Reserved
+<span class="sep"> | </span>
+The Jackal of Javascript
+</div><!-- .site-info -->
+<div class="rnd-circle" style="background: black;width: 10px;height: 10px;border-radius: 50%;"></div>
+</footer><!-- #colophon -->
+</div><!-- #page -->
+<script type='text/javascript'><!--
+var seriesdropdown = document.getElementById("orgseries_dropdown");
+if (seriesdropdown) {
+function onSeriesChange() {
+if ( seriesdropdown.options[seriesdropdown.selectedIndex].value != ( 0 || -1 ) ) {
+location.href = "./series/"+seriesdropdown.options[seriesdropdown.selectedIndex].value;
+}
+}
+seriesdropdown.onchange = onSeriesChange;
+}
+--></script>
+<script type="text/javascript">
+// <![CDATA[
+var disqus_shortname = 'thejackalofjavascriptcom';
+(function () {
+var nodes = document.getElementsByTagName('span');
+for (var i = 0, url; i < nodes.length; i++) {
+if (nodes[i].className.indexOf('dsq-postid') != -1) {
+nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+url = nodes[i].parentNode.href.split('#', 1);
+if (url.length == 1) { url = url[0]; }
+else { url = url[1]; }
+nodes[i].parentNode.href = url + '#disqus_thread';
+}
+}
+var s = document.createElement('script'); 
+s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+// ]]>
+</script>
+<div class="scroll-back-to-top-wrapper">
+<span class="scroll-back-to-top-inner">
+<i class="fa fa-2x fa-arrow-circle-up"></i>
+</span>
+</div>
+<style type="text/css">
+#wpfront-notification-bar 
+{
+background: #242d36;
+background: -moz-linear-gradient(top, #242d36 0%, #242d36 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#242d36), color-stop(100%,#242d36));
+background: -webkit-linear-gradient(top, #242d36 0%,#242d36 100%);
+background: -o-linear-gradient(top, #242d36 0%,#242d36 100%);
+background: -ms-linear-gradient(top, #242d36 0%,#242d36 100%);
+background: linear-gradient(to bottom, #242d36 0%, #242d36 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242d36', endColorstr='#242d36',GradientType=0 );
+}
+#wpfront-notification-bar div.wpfront-message
+{
+color: #ffffff;
+}
+#wpfront-notification-bar a.wpfront-button
+{
+background: #f45145;
+background: -moz-linear-gradient(top, #f45145 0%, #f45145 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f45145), color-stop(100%,#f45145));
+background: -webkit-linear-gradient(top, #f45145 0%,#f45145 100%);
+background: -o-linear-gradient(top, #f45145 0%,#f45145 100%);
+background: -ms-linear-gradient(top, #f45145 0%,#f45145 100%);
+background: linear-gradient(to bottom, #f45145 0%, #f45145 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f45145', endColorstr='#f45145',GradientType=0 );
+color: #ffffff;
+}
+#wpfront-notification-bar-open-button
+{
+background-color: #00b7ea;
+}
+#wpfront-notification-bar  div.wpfront-close 
+{
+border: 1px solid #555555;
+background-color: #555555;
+color: #000000;
+}
+#wpfront-notification-bar  div.wpfront-close:hover 
+{
+border: 1px solid #aaaaaa;
+background-color: #aaaaaa;
+}
+</style>
+<div id="wpfront-notification-bar-spacer"  style="display: none;">
+<div id="wpfront-notification-bar-open-button" class="top wpfront-bottom-shadow"></div>
+<div id="wpfront-notification-bar" class="wpfront-fixed">
+<div class="wpfront-close">X</div>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<div class="wpfront-message">
+Learn your way around Ionic framework. Check out Learning Ionic!                     </div>
+<div>
+<a class="wpfront-button" href="https://www.packtpub.com/application-development/learning-ionic/?utm_source=Jkthejackalofjavascript&utm_medium=referral&utm_campaign=1783552603"  target="_blank" >Buy</a>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<style type="text/css">
+.wpfront-message{line-height:27px; vertical-align:baseline !important;}</style>
+<script type="text/javascript">if(typeof wpfront_notification_bar == "function") wpfront_notification_bar({"position":1,"height":0,"fixed_position":"on","animate_delay":0.5,"close_button":true,"button_action_close_bar":false,"auto_close_after":0,"display_after":1,"is_admin_bar_showing":false,"display_open_button":false,"keep_closed":"on","keep_closed_for":1,"position_offset":0,"display_scroll":"on","display_scroll_offset":100});</script><script type='text/javascript' src='./../wp-content/plugins/jetpack/modules/photon/photon.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var scrollBackToTop = {"scrollDuration":"500","fadeDuration":"0.5"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./../wp-content/plugins/scroll-back-to-top/assets/js/scroll-back-to-top.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/simple-share-buttons-adder/js/ssba.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var viewsCacheL10n = {"admin_ajax_url":".\/wp-admin\/admin-ajax.php","post_id":"2645"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./../wp-content/plugins/wp-postviews/postviews-cache.js'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js'></script>
+<script type='text/javascript' src='./../wp-content/themes/sorbet/js/menus.js'></script>
+<script type='text/javascript' src='./../wp-content/themes/sorbet/js/skip-link-focus-fix.js'></script>
+<script type='text/javascript' src='./../wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/lazy-load/js/jquery.sonar.min.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/lazy-load/js/lazy-load.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/jetpack/_inc/postmessage.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/jetpack/_inc/jquery.jetpack-resize.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/jetpack/_inc/jquery.inview.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/jetpack/modules/likes/queuehandler.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/wysija-newsletters/js/validate/languages/jquery.validationEngine-en.js'></script>
+<script type='text/javascript' src='./../wp-content/plugins/wysija-newsletters/js/validate/jquery.validationEngine.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wysijaAJAX = {"action":"wysija_ajax","controller":"subscribers","ajaxurl":".\/wp-admin\/admin-ajax.php","loadingTrans":"Loading...","is_rtl":""};
+var wysijaAJAX = {"action":"wysija_ajax","controller":"subscribers","ajaxurl":".\/wp-admin\/admin-ajax.php","loadingTrans":"Loading...","is_rtl":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./../wp-content/plugins/wysija-newsletters/js/front-subscribers.js'></script>
+<iframe src='http://widgets.wp.com/likes/master.html?ver=20141028#ver=20141028' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+<script type="text/javascript">
+jQuery.noConflict();
+(function( $ ) {
+$(function() {
+// More code using $ as alias to jQuery
+$("area[href*=#],a[href*=#]:not([href=#]):not([href^='#tab']):not([href^='#quicktab']):not([href^='#pane'])").click(function() {
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+var target = $(this.hash);
+target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+if (target.length) {
+$('html,body').animate({
+scrollTop: target.offset().top - 20  
+},900 ,'easeOutQuint');
+return false;
+}
+}
+});
+});
+})(jQuery);	
+</script>				
+<script type='text/javascript' src='http://stats.wp.com/e-201746.js' async defer></script>
+<script type='text/javascript'>
+_stq = window._stq || [];
+_stq.push([ 'view', {v:'ext',j:'1:3.7',blog:'70838519',post:'2645',tz:'5.5',srv:'thejackalofjavascript.com'} ]);
+_stq.push([ 'clickTrackerInit', '70838519', '2645' ]);
+</script>
+<div id="upprev_box"><h6>Read previous post:</h6><div class="upprev_excerpt"><h5><a href="./../dna-analysis-node-js/index.html" rel="M.E.A.N. Stack Development with Vagrant">DNA Analysis with Node.js</a></h5><p>Have you ever wondered why we are the way we are? I certainly did many times. And this one time...</p></div><a id="upprev_close" href="#" rel="close">Close</a></div><script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-47881846-1', 'auto');
+ga('send', 'pageview');
+</script>
+<a style="display:none;" href="http://www.alexa.com/siteinfo/./"><script type="text/javascript" src="http://xslt.alexa.com/site_stats/js/t/a?url=./"></script></a>
+</body>
+</html><script>if(document.getElementById('to-contents') == null){ } else {var a = document.getElementById('to-contents').getElementsByTagName('a'); for(var i=0; i< a.length;i++){var b = a[i].getAttribute('href').split('#');if(b.length >=2)a[i].setAttribute('href', '#'+b[1]);}}</script>
+<script>if(typeof jQuery == 'function'){jQuery('.widgetGuts.shortcode h3').html('Inform Me About New Posts')}</script><!-- WP Fastest Cache file was created in 3.34720396996 seconds, on 18-11-17 14:17:29 -->

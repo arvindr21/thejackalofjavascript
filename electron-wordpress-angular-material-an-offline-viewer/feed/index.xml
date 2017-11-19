@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:series="http://organizeseries.com/"
+	
+	>
+<channel>
+	<title>Comments on: Electron, WordPress &amp; Angular Material &#8211; An Offline Viewer</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Knowing is different &#38; Doing is different</description>
+	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.16</generator>
+	<item>
+		<title>By: Travis Reynolds</title>
+		<link>./../comment-page-1/index.html#comment-3316</link>
+		<dc:creator><![CDATA[Travis Reynolds]]></dc:creator>
+		<pubDate>Tue, 25 Oct 2016 13:19:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2955#comment-3316</guid>
+		<description><![CDATA[I also have an issue -  https://uploads.disquscdn.com/images/d909cb2475a08a7d1d1265780166fd96952fe8eeae7683d24b96c47998ce2b0d.png 
+
+what do i need to do to resolve this please?
+
+(running windows 10)]]></description>
+		<content:encoded><![CDATA[<p>I also have an issue &#8211;  <a href="https://uploads.disquscdn.com/images/d909cb2475a08a7d1d1265780166fd96952fe8eeae7683d24b96c47998ce2b0d.png" rel="nofollow">https://uploads.disquscdn.com/images/d909cb2475a08a7d1d1265780166fd96952fe8eeae7683d24b96c47998ce2b0d.png</a> </p>
+<p>what do i need to do to resolve this please?</p>
+<p>(running windows 10)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Olivier@creativconflans.fr</title>
+		<link>./../comment-page-1/index.html#comment-3315</link>
+		<dc:creator><![CDATA[Olivier@creativconflans.fr]]></dc:creator>
+		<pubDate>Mon, 24 Oct 2016 12:21:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2955#comment-3315</guid>
+		<description><![CDATA[[14533:1024/141541:INFO:CONSOLE(31)] &quot;The DB Path [/Users/Utilisateur/Sites/wordpress-offline-viewer/app/server/db] does not seem to be valid. Recheck the path and try again&quot;, source: /Users/Utilisateur/Sites/wordpress-offline-viewer/node_modules/diskdb/lib/diskdb.js]]></description>
+		<content:encoded><![CDATA[<p>[14533:1024/141541:INFO:CONSOLE(31)] &#8220;The DB Path [/Users/Utilisateur/Sites/wordpress-offline-viewer/app/server/db] does not seem to be valid. Recheck the path and try again&#8221;, source: /Users/Utilisateur/Sites/wordpress-offline-viewer/node_modules/diskdb/lib/diskdb.js</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Olivier@creativconflans.fr</title>
+		<link>./../comment-page-1/index.html#comment-3314</link>
+		<dc:creator><![CDATA[Olivier@creativconflans.fr]]></dc:creator>
+		<pubDate>Mon, 24 Oct 2016 12:20:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2955#comment-3314</guid>
+		<description><![CDATA[Hello, Sorry ... I have a many error ... :( Your project is amazing :D]]></description>
+		<content:encoded><![CDATA[<p>Hello, Sorry &#8230; I have a many error &#8230; <img src="./../../wp-includes/images/smilies/frownie.png" alt=":(" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Your project is amazing 😀</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Fake_of_Silva</title>
+		<link>./../comment-page-1/index.html#comment-3034</link>
+		<dc:creator><![CDATA[Fake_of_Silva]]></dc:creator>
+		<pubDate>Tue, 10 Nov 2015 15:35:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2955#comment-3034</guid>
+		<description><![CDATA[Hello, I&#039;m having some issues with this project. The error log is from the project from your github:
+
+Failed to load resource: net::ERR_FILE_NOT_FOUND file:///C:/workspace/offlineview/app/client/lib/highlightjs/highlight.pack.js
+
+module.js:326 Uncaught Error: Cannot find module &#039;angular&#039;
+
+angular.js:68 Uncaught Error: [$injector:modulerr] Failed to instantiate module OfflineViewer due to:
+
+Error: [$injector:modulerr] Failed to instantiate module hljs due to:
+
+Error: [$injector:nomod] Module &#039;hljs&#039; is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+
+http://errors.angularjs.org/1.4.7/$injector/nomod?p0=hljs
+
+    at file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:68:12
+
+    at file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:1986:17
+
+    at ensure (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:1910:38)
+
+    at module (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:1984:14)
+
+    at file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4390:22
+
+    at forEach (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:336:20)
+
+    at loadModules (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4374:5)
+
+    at file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4391:40
+
+    at forEach (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:336:20)
+
+    at loadModules (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4374:5)
+
+http://errors.angularjs.org/1.4.7/$injector/modulerr?p0=hljs&amp;p1=Error%3A%20…space%2Fofflineview%2Fapp%2Fclient%2Flib%2Fangular%2Fangular.js%3A4374%3A5)
+
+    at file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:68:12
+
+    at file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4413:15
+
+    at forEach (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:336:20)
+
+    at loadModules (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4374:5)
+
+    at file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4391:40
+
+    at forEach (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:336:20)
+
+    at loadModules (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4374:5)
+
+    at createInjector (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4299:11)
+
+    at doBootstrap (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:1657:20)
+
+    at Object.bootstrap (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:1678:12)
+
+http://errors.angularjs.org/1.4.7/$injector/modulerr?p0=OfflineViewer&amp;p1=Er…pace%2Fofflineview%2Fapp%2Fclient%2Flib%2Fangular%2Fangular.js%3A1678%3A12)]]></description>
+		<content:encoded><![CDATA[<p>Hello, I&#8217;m having some issues with this project. The error log is from the project from your github:</p>
+<p>Failed to load resource: net::ERR_FILE_NOT_FOUND file:///C:/workspace/offlineview/app/client/lib/highlightjs/highlight.pack.js</p>
+<p>module.js:326 Uncaught Error: Cannot find module &#8216;angular&#8217;</p>
+<p>angular.js:68 Uncaught Error: [$injector:modulerr] Failed to instantiate module OfflineViewer due to:</p>
+<p>Error: [$injector:modulerr] Failed to instantiate module hljs due to:</p>
+<p>Error: [$injector:nomod] Module &#8216;hljs&#8217; is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.</p>
+<p><a href="http://errors.angularjs.org/1.4.7/$injector/nomod?p0=hljs" rel="nofollow">http://errors.angularjs.org/1.4.7/$injector/nomod?p0=hljs</a></p>
+<p>    at file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:68:12</p>
+<p>    at file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:1986:17</p>
+<p>    at ensure (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:1910:38)</p>
+<p>    at module (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:1984:14)</p>
+<p>    at file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4390:22</p>
+<p>    at forEach (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:336:20)</p>
+<p>    at loadModules (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4374:5)</p>
+<p>    at file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4391:40</p>
+<p>    at forEach (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:336:20)</p>
+<p>    at loadModules (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4374:5)</p>
+<p><a href="http://errors.angularjs.org/1.4.7/$injector/modulerr?p0=hljs&#038;p1=Error%3A%20…space%2Fofflineview%2Fapp%2Fclient%2Flib%2Fangular%2Fangular.js%3A4374%3A5" rel="nofollow">http://errors.angularjs.org/1.4.7/$injector/modulerr?p0=hljs&#038;p1=Error%3A%20…space%2Fofflineview%2Fapp%2Fclient%2Flib%2Fangular%2Fangular.js%3A4374%3A5</a>)</p>
+<p>    at file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:68:12</p>
+<p>    at file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4413:15</p>
+<p>    at forEach (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:336:20)</p>
+<p>    at loadModules (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4374:5)</p>
+<p>    at file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4391:40</p>
+<p>    at forEach (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:336:20)</p>
+<p>    at loadModules (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4374:5)</p>
+<p>    at createInjector (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:4299:11)</p>
+<p>    at doBootstrap (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:1657:20)</p>
+<p>    at Object.bootstrap (file:///C:/workspace/offlineview/app/client/lib/angular/angular.js:1678:12)</p>
+<p><a href="http://errors.angularjs.org/1.4.7/$injector/modulerr?p0=OfflineViewer&#038;p1=Er…pace%2Fofflineview%2Fapp%2Fclient%2Flib%2Fangular%2Fangular.js%3A1678%3A12" rel="nofollow">http://errors.angularjs.org/1.4.7/$injector/modulerr?p0=OfflineViewer&#038;p1=Er…pace%2Fofflineview%2Fapp%2Fclient%2Flib%2Fangular%2Fangular.js%3A1678%3A12</a>)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Sami</title>
+		<link>./../comment-page-1/index.html#comment-2987</link>
+		<dc:creator><![CDATA[Sami]]></dc:creator>
+		<pubDate>Tue, 06 Oct 2015 09:07:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2955#comment-2987</guid>
+		<description><![CDATA[Very nice tutorial thank you very much for sharing .]]></description>
+		<content:encoded><![CDATA[<p>Very nice tutorial thank you very much for sharing .</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Robert Cox</title>
+		<link>./../comment-page-1/index.html#comment-2824</link>
+		<dc:creator><![CDATA[Robert Cox]]></dc:creator>
+		<pubDate>Tue, 21 Jul 2015 16:47:00 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=2955#comment-2824</guid>
+		<description><![CDATA[bravo man, this is incredible as always.]]></description>
+		<content:encoded><![CDATA[<p>bravo man, this is incredible as always.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

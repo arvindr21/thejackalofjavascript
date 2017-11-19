@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:series="http://organizeseries.com/"
+	>
+
+<channel>
+	<title>The Jackal of Javascript</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Knowing is different &#38; Doing is different</description>
+	<lastBuildDate>Sun, 09 Aug 2015 06:37:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.16</generator>
+	<item>
+		<title>Learning Ionic</title>
+		<link>./../learning-ionic/index.html</link>
+		<comments>./../learning-ionic/index.html#comments</comments>
+		<pubDate>Sun, 26 Jul 2015 06:14:49 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[Ionic]]></category>
+		<category><![CDATA[My Books]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=3034</guid>
+		<description><![CDATA[<p>For the past 3 months, I was involved in a writing an awesome book on Ionic, thanks to Packt Publishing. This book is part of a learning series, where the main goal of the book was to introduce developers to Ionic and get them acquainted with it. This books consist of 9 chapters and an appendix. They are as [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../learning-ionic/index.html">Learning Ionic</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../learning-ionic/feed/index.html</wfw:commentRss>
+		<slash:comments>22</slash:comments>
+		</item>
+		<item>
+		<title>Electron, WordPress &amp; Angular Material &#8211; An Offline Viewer</title>
+		<link>./../electron-wordpress-angular-material-an-offline-viewer/index.html</link>
+		<comments>./../electron-wordpress-angular-material-an-offline-viewer/index.html#comments</comments>
+		<pubDate>Thu, 28 May 2015 08:08:11 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[Angularjs]]></category>
+		<category><![CDATA[Architecture]]></category>
+		<category><![CDATA[Desktop Apps]]></category>
+		<category><![CDATA[Disk DB]]></category>
+		<category><![CDATA[Electron (atom shell)]]></category>
+		<category><![CDATA[Frameworks]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Material Design]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[Setup]]></category>
+		<category><![CDATA[Tutorial]]></category>
+		<category><![CDATA[WebSockets]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2955</guid>
+		<description><![CDATA[<p>Imagine that you are at the airport, waiting for your flight and you hear a couple of guys sitting behind talking about Nodejs, Angularjs, MongoDB and you being a full stack developer and blogger start eves dropping. And all of sudden one guy mentions.. &#8220;Dude, you should totally check out this awesome blog.. It is [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../electron-wordpress-angular-material-an-offline-viewer/index.html">Electron, WordPress &#038; Angular Material &#8211; An Offline Viewer</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../electron-wordpress-angular-material-an-offline-viewer/feed/index.html</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Developing a MEAN app with Angular 2.0</title>
+		<link>./../developing-a-mean-app-with-angular-2-0/index.html</link>
+		<comments>./../developing-a-mean-app-with-angular-2-0/index.html#comments</comments>
+		<pubDate>Wed, 29 Apr 2015 09:29:20 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[Angular 2.0]]></category>
+		<category><![CDATA[Architecture]]></category>
+		<category><![CDATA[Expressjs]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[MEAN]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[Quick and Dirty]]></category>
+		<category><![CDATA[Setup]]></category>
+		<category><![CDATA[Tutorial]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2937</guid>
+		<description><![CDATA[<p>I know, I know it is too early to be building end to end apps with Angular 2.0, but I got so excited after looking at ng2-express-starter by my dear friend Antonio Fernandes. I was like, If we can integrate an Angular 2.0 app with an Express app, we can definitely add the MongoDB layer to make [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../developing-a-mean-app-with-angular-2-0/index.html">Developing a MEAN app with Angular 2.0</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../developing-a-mean-app-with-angular-2-0/feed/index.html</wfw:commentRss>
+		<slash:comments>32</slash:comments>
+		</item>
+		<item>
+		<title>Pushbots and Cordova &#8211; Easy Push Notifications for your app</title>
+		<link>./../pushbots-and-cordova/index.html</link>
+		<comments>./../pushbots-and-cordova/index.html#comments</comments>
+		<pubDate>Mon, 27 Apr 2015 10:12:07 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[PhoneGap]]></category>
+		<category><![CDATA[Push Notifications]]></category>
+		<category><![CDATA[Quick and Dirty]]></category>
+		<category><![CDATA[Setup]]></category>
+		<category><![CDATA[Tutorial]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2909</guid>
+		<description><![CDATA[<p>A few days ago Francisco Merino requested a post for implementing push notifications for a Phonegap/Cordova app. He was looking for a simple solution to start off. So, here is the post. In this post, we will be sending push notifications to a device using the Pushbots dashboard as well from its Nodejs API. Pushbots&#8217;s notification service is pretty simple to [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../pushbots-and-cordova/index.html">Pushbots and Cordova &#8211; Easy Push Notifications for your app</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../pushbots-and-cordova/feed/index.html</wfw:commentRss>
+		<slash:comments>34</slash:comments>
+		</item>
+		<item>
+		<title>Getting Started with Client Side Storage</title>
+		<link>./../getting-started-with-client-side-storage/index.html</link>
+		<comments>./../getting-started-with-client-side-storage/index.html#comments</comments>
+		<pubDate>Sun, 19 Apr 2015 09:34:50 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[Bootstrap]]></category>
+		<category><![CDATA[HTML]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Quick and Dirty]]></category>
+		<category><![CDATA[Tutorial]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2894</guid>
+		<description><![CDATA[<p>In this post, we will take a look at various client side storage solutions and how to work with them. We are going to cover the following Cookies Web Storage API Session Storage Local Storage String Compression IndexedDB Next Steps You can find the completed code in the below examples here. Cookies There was a [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../getting-started-with-client-side-storage/index.html">Getting Started with Client Side Storage</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../getting-started-with-client-side-storage/feed/index.html</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+		<item>
+		<title>Ionic Framework, Cordova and File API &#8211; A Media Player App</title>
+		<link>./../ionic-framework-cordova-and-file-api-a-media-player-app/index.html</link>
+		<comments>./../ionic-framework-cordova-and-file-api-a-media-player-app/index.html#comments</comments>
+		<pubDate>Mon, 30 Mar 2015 05:50:19 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Ionic]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[PhoneGap]]></category>
+		<category><![CDATA[Quick and Dirty]]></category>
+		<category><![CDATA[Setup]]></category>
+		<category><![CDATA[Tutorial]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2859</guid>
+		<description><![CDATA[<p>Yves Bamani requested a post to build a media player app using Ionic Framework and Cordova. The mediaPlayer app will show a player interface and a couple of buttons. The user can browse through the filesystem and pick a file to play. The initial request was to play both Audio and Video files inline. But I was [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../ionic-framework-cordova-and-file-api-a-media-player-app/index.html">Ionic Framework, Cordova and File API &#8211; A Media Player App</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../ionic-framework-cordova-and-file-api-a-media-player-app/feed/index.html</wfw:commentRss>
+		<slash:comments>44</slash:comments>
+		</item>
+		<item>
+		<title>Getting Started with Angular 2.0</title>
+		<link>./../getting-started-with-angular-2-0/index.html</link>
+		<comments>./../getting-started-with-angular-2-0/index.html#comments</comments>
+		<pubDate>Mon, 23 Mar 2015 06:37:56 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[Angular 2.0]]></category>
+		<category><![CDATA[ECMAScript 6]]></category>
+		<category><![CDATA[Frameworks]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Quick and Dirty]]></category>
+		<category><![CDATA[Setup]]></category>
+		<category><![CDATA[Tutorial]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2865</guid>
+		<description><![CDATA[<p>Recently Angularjs team has launched a 5 mins quick start tutorial on getting started with Angular 2.0. I have taken the same tutorial (with minor changes) and explained it below. There are a lot of blanks to be filled, but this is my first attempt at Angular 2.0. You can find the source code for [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../getting-started-with-angular-2-0/index.html">Getting Started with Angular 2.0</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../getting-started-with-angular-2-0/feed/index.html</wfw:commentRss>
+		<slash:comments>24</slash:comments>
+		</item>
+		<item>
+		<title>Getting Started with ngCordova</title>
+		<link>./../getting-started-with-ngcordova/index.html</link>
+		<comments>./../getting-started-with-ngcordova/index.html#comments</comments>
+		<pubDate>Sun, 08 Mar 2015 17:22:03 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Angularjs]]></category>
+		<category><![CDATA[Frameworks]]></category>
+		<category><![CDATA[Ionic]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[Onsen UI]]></category>
+		<category><![CDATA[PhoneGap]]></category>
+		<category><![CDATA[Quick and Dirty]]></category>
+		<category><![CDATA[Setup]]></category>
+		<category><![CDATA[Tutorial]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2823</guid>
+		<description><![CDATA[<p>In this post, we will take a quick dip into ngCordova and Ionic Framework. We will take a look at setting up ngCordova with IonicFramework, add adding a few cordova plugins and testing it out on a device. This post is not limited to IonicFramework. You can use the same knowledge with Onsen UI or [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../getting-started-with-ngcordova/index.html">Getting Started with ngCordova</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../getting-started-with-ngcordova/feed/index.html</wfw:commentRss>
+		<slash:comments>42</slash:comments>
+		</item>
+		<item>
+		<title>Emberjs &#8211; A hands on Tutorial</title>
+		<link>./../emberjs-a-hands-on-tutorial/index.html</link>
+		<comments>./../emberjs-a-hands-on-tutorial/index.html#comments</comments>
+		<pubDate>Fri, 06 Mar 2015 17:02:38 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[Emberjs]]></category>
+		<category><![CDATA[Frameworks]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Tutorial]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2787</guid>
+		<description><![CDATA[<p>This is a hands on tutorial on Emberjs. We will be covering most of the Ember concepts, so that you can start building Ambitious web apps. The app which we are going to build is an Online Pizza Store. We will be working with various aspects of Ember in bringing this project to life. The [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../emberjs-a-hands-on-tutorial/index.html">Emberjs &#8211; A hands on Tutorial</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../emberjs-a-hands-on-tutorial/feed/index.html</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Getting Started with Phonegap Desktop App (v0.1.1 Beta)</title>
+		<link>./../getting-started-with-phonegap-desktop-app-v0-1-1-beta/index.html</link>
+		<comments>./../getting-started-with-phonegap-desktop-app-v0-1-1-beta/index.html#comments</comments>
+		<pubDate>Thu, 26 Feb 2015 08:45:19 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[PhoneGap]]></category>
+		<category><![CDATA[Quick and Dirty]]></category>
+		<category><![CDATA[Setup]]></category>
+		<category><![CDATA[Tutorial]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2762</guid>
+		<description><![CDATA[<p>In this post, we will take a look at building Mobile Hybrid application using the new Phonegaps&#8217;s Desktop App. We will download the installer, setup a hello world project and deploy it to our mobile and test it. A quick sneak peek on how the Phonegap Desktop App works So, let us get started. Why Phonegap Desktop App? [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../getting-started-with-phonegap-desktop-app-v0-1-1-beta/index.html">Getting Started with Phonegap Desktop App (v0.1.1 Beta)</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../getting-started-with-phonegap-desktop-app-v0-1-1-beta/feed/index.html</wfw:commentRss>
+		<slash:comments>17</slash:comments>
+		</item>
+		<item>
+		<title>Node-Webkit, WebRTC and Angularjs &#8211; A Video Chat Client</title>
+		<link>./../node-webkit-webrtc-and-angularjs-a-video-chat-client/index.html</link>
+		<comments>./../node-webkit-webrtc-and-angularjs-a-video-chat-client/index.html#comments</comments>
+		<pubDate>Mon, 23 Feb 2015 07:19:00 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[Angularjs]]></category>
+		<category><![CDATA[Architecture]]></category>
+		<category><![CDATA[Deployments]]></category>
+		<category><![CDATA[Desktop Apps]]></category>
+		<category><![CDATA[Heroku]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Lumx]]></category>
+		<category><![CDATA[Material Design]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[Node Webkit]]></category>
+		<category><![CDATA[Quick and Dirty]]></category>
+		<category><![CDATA[Tutorial]]></category>
+		<category><![CDATA[WebRTC]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2742</guid>
+		<description><![CDATA[<p>This post is part 7 of 7 in the series Node Webkit AppsCouple of days ago Saurav Panda requested a tutorial on building a video chat application using Node-webkit and WebRTC. So, here it goes. Smooth and easy right! As mentioned in the video, this client is built using Node-webkit, WebRTC and Peerjs. We will leverage the power [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../node-webkit-webrtc-and-angularjs-a-video-chat-client/index.html">Node-Webkit, WebRTC and Angularjs &#8211; A Video Chat Client</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../node-webkit-webrtc-and-angularjs-a-video-chat-client/feed/index.html</wfw:commentRss>
+		<slash:comments>55</slash:comments>
+	
+		<series:name><![CDATA[Node Webkit Apps]]></series:name>
+	</item>
+		<item>
+		<title>Ionic Framework, Cordova and Yeoman &#8211; Loved One Notifier</title>
+		<link>./../lon/index.html</link>
+		<comments>./../lon/index.html#comments</comments>
+		<pubDate>Sun, 25 Jan 2015 07:51:35 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[Android]]></category>
+		<category><![CDATA[Angularjs]]></category>
+		<category><![CDATA[Ionic]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[PhoneGap]]></category>
+		<category><![CDATA[Setup]]></category>
+		<category><![CDATA[Tutorial]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2670</guid>
+		<description><![CDATA[<p>My good friend Jayesh came to me asking if we can build an app that sends out a message to a few contacts when the battery goes below a certain level. Kind of like a notification that your battery is about to die. I liked the Idea and wanted to try this out using Cordova. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../lon/index.html">Ionic Framework, Cordova and Yeoman &#8211; Loved One Notifier</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../lon/feed/index.html</wfw:commentRss>
+		<slash:comments>20</slash:comments>
+		</item>
+		<item>
+		<title>M.E.A.N. Stack Development with Vagrant</title>
+		<link>./../vagrant-mean-box/index.html</link>
+		<comments>./../vagrant-mean-box/index.html#comments</comments>
+		<pubDate>Tue, 13 Jan 2015 11:33:58 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[Angularjs]]></category>
+		<category><![CDATA[CLI]]></category>
+		<category><![CDATA[Deployments]]></category>
+		<category><![CDATA[Expressjs]]></category>
+		<category><![CDATA[Frameworks]]></category>
+		<category><![CDATA[Grunt]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[MEAN]]></category>
+		<category><![CDATA[MongoDB]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[NPM]]></category>
+		<category><![CDATA[Quick and Dirty]]></category>
+		<category><![CDATA[Setup]]></category>
+		<category><![CDATA[Tutorial]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2645</guid>
+		<description><![CDATA[<p>If you are new to MEAN, I would recommend checking out my MEAN Workshop. Also checkout my tutorial MEAN stack &#8211; A Hands on Tutorial Recently I started using Vagrant for one of my clients. The requirement was to have a unified working environment for all the developers, so that they can focus more on code [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../vagrant-mean-box/index.html">M.E.A.N. Stack Development with Vagrant</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../vagrant-mean-box/feed/index.html</wfw:commentRss>
+		<slash:comments>24</slash:comments>
+		</item>
+		<item>
+		<title>DNA Analysis with Node.js</title>
+		<link>./../dna-analysis-node-js/index.html</link>
+		<comments>./../dna-analysis-node-js/index.html#comments</comments>
+		<pubDate>Fri, 02 Jan 2015 14:14:53 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[CLI]]></category>
+		<category><![CDATA[DNA Analysis]]></category>
+		<category><![CDATA[Genome]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[Tutorial]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2633</guid>
+		<description><![CDATA[<p>Have you ever wondered why we are the way we are? I certainly did many times. And this one time I got really aggressive and started googling about it. And stumbled upon a DNA and from there a Genome. If you didn&#8217;t already know what a Genome is, take a look at this This video [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../dna-analysis-node-js/index.html">DNA Analysis with Node.js</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../dna-analysis-node-js/feed/index.html</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Getting Started with Esprima</title>
+		<link>./../getting-started-esprima/index.html</link>
+		<comments>./../getting-started-esprima/index.html#comments</comments>
+		<pubDate>Sun, 21 Dec 2014 18:48:59 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Setup]]></category>
+		<category><![CDATA[Tutorial]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2607</guid>
+		<description><![CDATA[<p>Thanks to two awesome people (Nick and Andy), for introducing me to Esprima. If you have never heard about Esprima, here is a quick intro. Esprima is a high performance, standard-compliant ECMAScript parser written in ECMAScript In simple words, Esprima is a Javascript parser. It reads a string that consists of Javascript code and makes sense of [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../getting-started-esprima/index.html">Getting Started with Esprima</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../getting-started-esprima/feed/index.html</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Re-Architecting a Firebase app to work with Node.js and MongoDB</title>
+		<link>./../re-architecting-a-firebase-app-in-node/index.html</link>
+		<comments>./../re-architecting-a-firebase-app-in-node/index.html#comments</comments>
+		<pubDate>Fri, 12 Dec 2014 17:10:09 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[Architecture]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[Expressjs]]></category>
+		<category><![CDATA[Firebase]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[MongoDB]]></category>
+		<category><![CDATA[MongoLab]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[Setup]]></category>
+		<category><![CDATA[Tutorial]]></category>
+		<category><![CDATA[WebSockets]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2567</guid>
+		<description><![CDATA[<p>In the last few days, I have see people worrying about two major problems. One of which is what is going to happen when Angular 2.0 releases and next one is how to migrate an existing Firebase code to a Node.js/MongoDB platform. I am not going to answer problem one, as I don&#8217;t know what is going [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../re-architecting-a-firebase-app-in-node/index.html">Re-Architecting a Firebase app to work with Node.js and MongoDB</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../re-architecting-a-firebase-app-in-node/feed/index.html</wfw:commentRss>
+		<slash:comments>27</slash:comments>
+		</item>
+		<item>
+		<title>Text Based Adventure Games with Node.js</title>
+		<link>./../text-based-adventure-games/index.html</link>
+		<comments>./../text-based-adventure-games/index.html#comments</comments>
+		<pubDate>Sat, 06 Dec 2014 07:20:14 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[CLI]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[Setup]]></category>
+		<category><![CDATA[Tutorial]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2546</guid>
+		<description><![CDATA[<p>Coming from a fraternity of GTA and Age of Empires, text based games were a new twist to my gaming world. I was not aware that such a thing as a text based game existed till Sheldon Cooper introduced it (#geek). I Googled and found the emulator online and without much effort, I was hooked to it. I keep playing the game [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../text-based-adventure-games/index.html">Text Based Adventure Games with Node.js</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../text-based-adventure-games/feed/index.html</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+		<item>
+		<title>Raspberry Pi, Node.js and Twilio &#8211; Is It Raining Arvind? #IoT</title>
+		<link>./../rpi-is-it-raining-arvind/index.html</link>
+		<comments>./../rpi-is-it-raining-arvind/index.html#comments</comments>
+		<pubDate>Sun, 23 Nov 2014 14:24:30 +0000</pubDate>
+		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
+				<category><![CDATA[IoT]]></category>
+		<category><![CDATA[jQuery]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[Node]]></category>
+		<category><![CDATA[Quick and Dirty]]></category>
+		<category><![CDATA[Raspberry Pi]]></category>
+		<category><![CDATA[Tutorial]]></category>
+		<category><![CDATA[Twilio]]></category>
+
+		<guid isPermaLink="false">./../index.html?p=2519</guid>
+		<description><![CDATA[<p>This post is part 9 of 9 in the series Raspberry PiUsually my mom dries the clothes on the terrace and whenever I am at home she keeps asking me to look outside and tell her if it raining or not. Literally every half an hour or every time she hears a swoosh or a [&#8230;]</p>
+<p>The post <a rel="nofollow" href="./../rpi-is-it-raining-arvind/index.html">Raspberry Pi, Node.js and Twilio &#8211; Is It Raining Arvind? #IoT</a> appeared first on <a rel="nofollow" href="./../index.html">The Jackal of Javascript</a>.</p>
+]]></description>
+		<wfw:commentRss>./../rpi-is-it-raining-arvind/feed/index.html</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+	
+		<series:name><![CDATA[Raspberry Pi]]></series:name>
+	</item>
+	</channel>
+</rss>
