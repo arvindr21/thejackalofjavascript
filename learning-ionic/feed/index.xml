@@ -8,8 +8,8 @@
 	>
 <channel>
 	<title>Comments on: Learning Ionic</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/learning-ionic/feed/" rel="self" type="application/rss+xml" />
+	<link>/learning-ionic/</link>
 	<description>Knowing is different &#38; Doing is different</description>
 	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
@@ -17,60 +17,60 @@
 	<generator>http://wordpress.org/?v=4.2.16</generator>
 	<item>
 		<title>By: Pavan Alapati</title>
-		<link>./../comment-page-1/index.html#comment-3147</link>
+		<link>/learning-ionic/comment-page-1/#comment-3147</link>
 		<dc:creator><![CDATA[Pavan Alapati]]></dc:creator>
 		<pubDate>Mon, 01 Feb 2016 11:16:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-3147</guid>
-		<description><![CDATA[hi Arvind, you blogs are really userfully. we have one problem.We are mobile app developer.We can developled group chat application using cordova-Firebase.But we are stuggeled for one to one chat Please guide to us .We alredy flowed  ./../../node-webkit-firebase-simple-social-authentication/index.html . But it&#039;s related desktop app Please help to us]]></description>
-		<content:encoded><![CDATA[<p>hi Arvind, you blogs are really userfully. we have one problem.We are mobile app developer.We can developled group chat application using cordova-Firebase.But we are stuggeled for one to one chat Please guide to us .We alredy flowed  <a href="./../../node-webkit-firebase-simple-social-authentication/index.html" rel="nofollow">./../../node-webkit-firebase-simple-social-authentication/index.html</a> . But it&#8217;s related desktop app Please help to us</p>
+		<guid isPermaLink="false">/?p=3034#comment-3147</guid>
+		<description><![CDATA[hi Arvind, you blogs are really userfully. we have one problem.We are mobile app developer.We can developled group chat application using cordova-Firebase.But we are stuggeled for one to one chat Please guide to us .We alredy flowed  /node-webkit-firebase-simple-social-authentication/ . But it&#039;s related desktop app Please help to us]]></description>
+		<content:encoded><![CDATA[<p>hi Arvind, you blogs are really userfully. we have one problem.We are mobile app developer.We can developled group chat application using cordova-Firebase.But we are stuggeled for one to one chat Please guide to us .We alredy flowed  <a href="/node-webkit-firebase-simple-social-authentication/" rel="nofollow">/node-webkit-firebase-simple-social-authentication/</a> . But it&#8217;s related desktop app Please help to us</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-3140</link>
+		<link>/learning-ionic/comment-page-1/#comment-3140</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Thu, 28 Jan 2016 02:42:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-3140</guid>
+		<guid isPermaLink="false">/?p=3034#comment-3140</guid>
 		<description><![CDATA[Thanks for pointing out. You can find the server code here https://github.com/learning-ionic/Chapter-6/tree/master/server]]></description>
 		<content:encoded><![CDATA[<p>Thanks for pointing out. You can find the server code here <a href="https://github.com/learning-ionic/Chapter-6/tree/master/server" rel="nofollow">https://github.com/learning-ionic/Chapter-6/tree/master/server</a></p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Whatheheckman .</title>
-		<link>./../comment-page-1/index.html#comment-3139</link>
+		<link>/learning-ionic/comment-page-1/#comment-3139</link>
 		<dc:creator><![CDATA[Whatheheckman .]]></dc:creator>
 		<pubDate>Thu, 28 Jan 2016 00:07:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-3139</guid>
+		<guid isPermaLink="false">/?p=3034#comment-3139</guid>
 		<description><![CDATA[On page 190 when setting up the server for the Bookstore App. It says to download and unzip the server code from &quot;https://github.com/arvindr21/ionic-book-store-server&quot;. This page leads to a 404 and I don&#039;t see the necessary code anywhere else on our GitHub profile. Is there somewhere else I can get this?]]></description>
 		<content:encoded><![CDATA[<p>On page 190 when setting up the server for the Bookstore App. It says to download and unzip the server code from &#8220;https://github.com/arvindr21/ionic-book-store-server&#8221;. This page leads to a 404 and I don&#8217;t see the necessary code anywhere else on our GitHub profile. Is there somewhere else I can get this?</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Lucas Corrêa Braz</title>
-		<link>./../comment-page-1/index.html#comment-3073</link>
+		<link>/learning-ionic/comment-page-1/#comment-3073</link>
 		<dc:creator><![CDATA[Lucas Corrêa Braz]]></dc:creator>
 		<pubDate>Wed, 25 Nov 2015 13:39:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-3073</guid>
+		<guid isPermaLink="false">/?p=3034#comment-3073</guid>
 		<description><![CDATA[The app runs in the browser and cell phone, with ionic serve and ionic run Android. But with ionic upload, The app remains loading and never ends.]]></description>
 		<content:encoded><![CDATA[<p>The app runs in the browser and cell phone, with ionic serve and ionic run Android. But with ionic upload, The app remains loading and never ends.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-3072</link>
+		<link>/learning-ionic/comment-page-1/#comment-3072</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Wed, 25 Nov 2015 02:19:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-3072</guid>
+		<guid isPermaLink="false">/?p=3034#comment-3072</guid>
 		<description><![CDATA[It should technically. What errors are you facing?]]></description>
 		<content:encoded><![CDATA[<p>It should technically. What errors are you facing?</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Lucas Corrêa Braz</title>
-		<link>./../comment-page-1/index.html#comment-3071</link>
+		<link>/learning-ionic/comment-page-1/#comment-3071</link>
 		<dc:creator><![CDATA[Lucas Corrêa Braz]]></dc:creator>
 		<pubDate>Tue, 24 Nov 2015 23:35:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-3071</guid>
+		<guid isPermaLink="false">/?p=3034#comment-3071</guid>
 		<description><![CDATA[my doubt is:
 
 
@@ -85,10 +85,10 @@ thanks for all]]></description>
 	</item>
 	<item>
 		<title>By: Lucas Corrêa Braz</title>
-		<link>./../comment-page-1/index.html#comment-3070</link>
+		<link>/learning-ionic/comment-page-1/#comment-3070</link>
 		<dc:creator><![CDATA[Lucas Corrêa Braz]]></dc:creator>
 		<pubDate>Sat, 21 Nov 2015 13:59:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-3070</guid>
+		<guid isPermaLink="false">/?p=3034#comment-3070</guid>
 		<description><![CDATA[Hi Arvind, first of all congratulations for the excelent book, and for second, is there a forum or any especifc place to post doubts for book issues?
 
 
@@ -99,10 +99,10 @@ regards]]></description>
 	</item>
 	<item>
 		<title>By: Imade Sudiarsa</title>
-		<link>./../comment-page-1/index.html#comment-3069</link>
+		<link>/learning-ionic/comment-page-1/#comment-3069</link>
 		<dc:creator><![CDATA[Imade Sudiarsa]]></dc:creator>
 		<pubDate>Sat, 21 Nov 2015 01:31:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-3069</guid>
+		<guid isPermaLink="false">/?p=3034#comment-3069</guid>
 		<description><![CDATA[try to buy your book from packt, but the 50% disc code not work. 
 please fix this, or send me the correct code.]]></description>
 		<content:encoded><![CDATA[<p>try to buy your book from packt, but the 50% disc code not work.<br />
@@ -111,30 +111,30 @@ please fix this, or send me the correct code.</p>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-3062</link>
+		<link>/learning-ionic/comment-page-1/#comment-3062</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Thu, 19 Nov 2015 01:52:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-3062</guid>
+		<guid isPermaLink="false">/?p=3034#comment-3062</guid>
 		<description><![CDATA[Can you please raise this issue on Github? Thanks. ]]></description>
 		<content:encoded><![CDATA[<p>Can you please raise this issue on Github? Thanks. </p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Tejaswi Rana</title>
-		<link>./../comment-page-1/index.html#comment-3059</link>
+		<link>/learning-ionic/comment-page-1/#comment-3059</link>
 		<dc:creator><![CDATA[Tejaswi Rana]]></dc:creator>
 		<pubDate>Wed, 18 Nov 2015 22:56:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-3059</guid>
+		<guid isPermaLink="false">/?p=3034#comment-3059</guid>
 		<description><![CDATA[I&#039;m stuck in running the chat app. I get to the ChatDetailCtrl and $scope.chatToUser is null. I don&#039;t understand. I cleared all the online users in firebase, restarted the app, logged in with my gmail account, got to the DashCtrl. When I log the user key it shows what is currently in firebase. Once I click the arrow to take me to the ChatDetailCtrl it stops there. Well obviously there is no &quot;other&quot; user to begin with. So the application logic is flawed. I don&#039;t understand how you were able to run in the book. I checked all your sources too.]]></description>
 		<content:encoded><![CDATA[<p>I&#8217;m stuck in running the chat app. I get to the ChatDetailCtrl and $scope.chatToUser is null. I don&#8217;t understand. I cleared all the online users in firebase, restarted the app, logged in with my gmail account, got to the DashCtrl. When I log the user key it shows what is currently in firebase. Once I click the arrow to take me to the ChatDetailCtrl it stops there. Well obviously there is no &#8220;other&#8221; user to begin with. So the application logic is flawed. I don&#8217;t understand how you were able to run in the book. I checked all your sources too.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: alsosweet</title>
-		<link>./../comment-page-1/index.html#comment-2968</link>
+		<link>/learning-ionic/comment-page-1/#comment-2968</link>
 		<dc:creator><![CDATA[alsosweet]]></dc:creator>
 		<pubDate>Tue, 22 Sep 2015 07:32:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-2968</guid>
+		<guid isPermaLink="false">/?p=3034#comment-2968</guid>
 		<description><![CDATA[hi ,
 in page 149,why the title is hiden unless you refresh it
 thanks]]></description>
@@ -145,10 +145,10 @@ thanks</p>
 	</item>
 	<item>
 		<title>By: sunyuhang</title>
-		<link>./../comment-page-1/index.html#comment-2947</link>
+		<link>/learning-ionic/comment-page-1/#comment-2947</link>
 		<dc:creator><![CDATA[sunyuhang]]></dc:creator>
 		<pubDate>Tue, 08 Sep 2015 20:51:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-2947</guid>
+		<guid isPermaLink="false">/?p=3034#comment-2947</guid>
 		<description><![CDATA[Great Book!  Please help on a couple of questions:
 1: Why do you use broadcast events instead of calling functions directly. For example, in controllers.js, you can call addToCard directly. 
 2: Could you please shed some light on backgrond process?]]></description>
@@ -159,10 +159,10 @@ thanks</p>
 	</item>
 	<item>
 		<title>By: Magnus Melwin</title>
-		<link>./../comment-page-1/index.html#comment-2934</link>
+		<link>/learning-ionic/comment-page-1/#comment-2934</link>
 		<dc:creator><![CDATA[Magnus Melwin]]></dc:creator>
 		<pubDate>Wed, 02 Sep 2015 20:20:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-2934</guid>
+		<guid isPermaLink="false">/?p=3034#comment-2934</guid>
 		<description><![CDATA[Hey there Arvind, its a good book - worth every cent - just finished reading it.  Hope many more to come.
 
 Would love to have a section on handling whitespace in json parsing .   Its seems to be quite missed on as a topic everywhere.   say for example - how would you handle a json like { &quot;FULLNAME&quot; , &quot;John Smith&quot;} , in ionic it gives me a blank when I try to print it out {{FULLNAME)}} in a view , unless I remove the space in &quot;John Smith&quot;
@@ -175,20 +175,20 @@ Mel]]></description>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2923</link>
+		<link>/learning-ionic/comment-page-1/#comment-2923</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Mon, 24 Aug 2015 19:04:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-2923</guid>
-		<description><![CDATA[Thanks wilson. Take a look at : ./../../architecting-a-restful-node-js-app/index.html#comment-1761481232]]></description>
-		<content:encoded><![CDATA[<p>Thanks wilson. Take a look at : <a href="./../../architecting-a-restful-node-js-app/index.html#comment-1761481232" rel="nofollow">./../../architecting-a-restful-node-js-app/index.html#comment-1761481232</a></p>
+		<guid isPermaLink="false">/?p=3034#comment-2923</guid>
+		<description><![CDATA[Thanks wilson. Take a look at : /architecting-a-restful-node-js-app/#comment-1761481232]]></description>
+		<content:encoded><![CDATA[<p>Thanks wilson. Take a look at : <a href="/architecting-a-restful-node-js-app/#comment-1761481232" rel="nofollow">/architecting-a-restful-node-js-app/#comment-1761481232</a></p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: wilsonfpz</title>
-		<link>./../comment-page-1/index.html#comment-2922</link>
+		<link>/learning-ionic/comment-page-1/#comment-2922</link>
 		<dc:creator><![CDATA[wilsonfpz]]></dc:creator>
 		<pubDate>Mon, 24 Aug 2015 16:30:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-2922</guid>
+		<guid isPermaLink="false">/?p=3034#comment-2922</guid>
 		<description><![CDATA[great book! in page 204, I saw a line 
 		
 	
@@ -207,30 +207,30 @@ return config &#124;&#124; $q.when(config); Could you explain it more? thanks]]>
 	</item>
 	<item>
 		<title>By: Naveen Bellary</title>
-		<link>./../comment-page-1/index.html#comment-2915</link>
+		<link>/learning-ionic/comment-page-1/#comment-2915</link>
 		<dc:creator><![CDATA[Naveen Bellary]]></dc:creator>
 		<pubDate>Tue, 18 Aug 2015 09:22:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-2915</guid>
+		<guid isPermaLink="false">/?p=3034#comment-2915</guid>
 		<description><![CDATA[I have a requirement similar to a task mgmt app, when ever a user creates a task all the users assigned to should get notified. What should i be using for this?]]></description>
 		<content:encoded><![CDATA[<p>I have a requirement similar to a task mgmt app, when ever a user creates a task all the users assigned to should get notified. What should i be using for this?</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2914</link>
+		<link>/learning-ionic/comment-page-1/#comment-2914</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Tue, 18 Aug 2015 07:52:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-2914</guid>
+		<guid isPermaLink="false">/?p=3034#comment-2914</guid>
 		<description><![CDATA[That app uses Firebase. You can check out the code from the github link. ]]></description>
 		<content:encoded><![CDATA[<p>That app uses Firebase. You can check out the code from the github link. </p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Naveen Bellary</title>
-		<link>./../comment-page-1/index.html#comment-2913</link>
+		<link>/learning-ionic/comment-page-1/#comment-2913</link>
 		<dc:creator><![CDATA[Naveen Bellary]]></dc:creator>
 		<pubDate>Tue, 18 Aug 2015 07:48:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=3034#comment-2913</guid>
+		<guid isPermaLink="false">/?p=3034#comment-2913</guid>
 		<description><![CDATA[The messaging app which you have demonstrated in the book don&#039;t use push notifications sending message to only a particular device Id? 
 
 Can I use Push plugin for this purpose?]]></description>

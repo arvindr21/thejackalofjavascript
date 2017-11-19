@@ -8,8 +8,8 @@
 	>
 <channel>
 	<title>Comments on: Ionic Framework, Cordova and Yeoman &#8211; Loved One Notifier</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/lon/feed/" rel="self" type="application/rss+xml" />
+	<link>/lon/</link>
 	<description>Knowing is different &#38; Doing is different</description>
 	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
@@ -17,70 +17,70 @@
 	<generator>http://wordpress.org/?v=4.2.16</generator>
 	<item>
 		<title>By: Sharvind Rao</title>
-		<link>./../comment-page-1/index.html#comment-2834</link>
+		<link>/lon/comment-page-1/#comment-2834</link>
 		<dc:creator><![CDATA[Sharvind Rao]]></dc:creator>
 		<pubDate>Thu, 30 Jul 2015 09:09:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2834</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2834</guid>
 		<description><![CDATA[Thanks Arvind Ravulavaru]]></description>
 		<content:encoded><![CDATA[<p>Thanks Arvind Ravulavaru</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2833</link>
+		<link>/lon/comment-page-1/#comment-2833</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Thu, 30 Jul 2015 05:48:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2833</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2833</guid>
 		<description><![CDATA[No, not the one shown here. You need to add a background plugin like https://github.com/phpsa/cbsp and it should do fine.]]></description>
 		<content:encoded><![CDATA[<p>No, not the one shown here. You need to add a background plugin like <a href="https://github.com/phpsa/cbsp" rel="nofollow">https://github.com/phpsa/cbsp</a> and it should do fine.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Sharvind Rao</title>
-		<link>./../comment-page-1/index.html#comment-2832</link>
+		<link>/lon/comment-page-1/#comment-2832</link>
 		<dc:creator><![CDATA[Sharvind Rao]]></dc:creator>
 		<pubDate>Thu, 30 Jul 2015 05:42:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2832</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2832</guid>
 		<description><![CDATA[Will this app works if I completely close the app (from the background)  ?]]></description>
 		<content:encoded><![CDATA[<p>Will this app works if I completely close the app (from the background)  ?</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2582</link>
+		<link>/lon/comment-page-1/#comment-2582</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Wed, 06 May 2015 08:24:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2582</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2582</guid>
 		<description><![CDATA[Thanks Miguel!]]></description>
 		<content:encoded><![CDATA[<p>Thanks Miguel!</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Miguel Olave</title>
-		<link>./../comment-page-1/index.html#comment-2577</link>
+		<link>/lon/comment-page-1/#comment-2577</link>
 		<dc:creator><![CDATA[Miguel Olave]]></dc:creator>
 		<pubDate>Tue, 05 May 2015 21:00:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2577</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2577</guid>
 		<description><![CDATA[Excelent tutorial to kick start! Thanks!]]></description>
 		<content:encoded><![CDATA[<p>Excelent tutorial to kick start! Thanks!</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2531</link>
+		<link>/lon/comment-page-1/#comment-2531</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Sun, 26 Apr 2015 02:54:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2531</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2531</guid>
 		<description><![CDATA[The sms object is made available globally when you run  &lt;code&gt;phonegap local plugin add https://github.com/aharris88/phonegap-sms-plugin.git&lt;/code&gt;.]]></description>
 		<content:encoded><![CDATA[<p>The sms object is made available globally when you run  <code>phonegap local plugin add https://github.com/aharris88/phonegap-sms-plugin.git</code>.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Daniel</title>
-		<link>./../comment-page-1/index.html#comment-2530</link>
+		<link>/lon/comment-page-1/#comment-2530</link>
 		<dc:creator><![CDATA[Daniel]]></dc:creator>
 		<pubDate>Sat, 25 Apr 2015 00:01:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2530</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2530</guid>
 		<description><![CDATA[Thanks for sharing. It helps me a lot.
 I have a quick question In the controllers.js at line 80:
 
@@ -95,50 +95,50 @@ I have a quick question In the controllers.js at line 80:</p>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2494</link>
+		<link>/lon/comment-page-1/#comment-2494</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Sat, 18 Apr 2015 04:34:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2494</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2494</guid>
 		<description><![CDATA[Thanks, Yup it is around 5 MB, may be I need to optimize the assets. That should help the size i guess.]]></description>
 		<content:encoded><![CDATA[<p>Thanks, Yup it is around 5 MB, may be I need to optimize the assets. That should help the size i guess.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: ram</title>
-		<link>./../comment-page-1/index.html#comment-2491</link>
+		<link>/lon/comment-page-1/#comment-2491</link>
 		<dc:creator><![CDATA[ram]]></dc:creator>
 		<pubDate>Thu, 16 Apr 2015 19:15:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2491</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2491</guid>
 		<description><![CDATA[Hey i just saw that ur app size is ~5 Mb .Dont you think this is too big for an app with less functionality. Is it because we use yeomen ?. FYI an awesome app]]></description>
 		<content:encoded><![CDATA[<p>Hey i just saw that ur app size is ~5 Mb .Dont you think this is too big for an app with less functionality. Is it because we use yeomen ?. FYI an awesome app</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Omid Hezaveh</title>
-		<link>./../comment-page-1/index.html#comment-2208</link>
+		<link>/lon/comment-page-1/#comment-2208</link>
 		<dc:creator><![CDATA[Omid Hezaveh]]></dc:creator>
 		<pubDate>Mon, 23 Feb 2015 11:25:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2208</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2208</guid>
 		<description><![CDATA[Cool!]]></description>
 		<content:encoded><![CDATA[<p>Cool!</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2203</link>
+		<link>/lon/comment-page-1/#comment-2203</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Mon, 23 Feb 2015 10:16:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2203</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2203</guid>
 		<description><![CDATA[Thanks, Sure you can. The code is open sourced.]]></description>
 		<content:encoded><![CDATA[<p>Thanks, Sure you can. The code is open sourced.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Guilherme Morais</title>
-		<link>./../comment-page-1/index.html#comment-2193</link>
+		<link>/lon/comment-page-1/#comment-2193</link>
 		<dc:creator><![CDATA[Guilherme Morais]]></dc:creator>
 		<pubDate>Sun, 22 Feb 2015 15:43:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2193</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2193</guid>
 		<description><![CDATA[Hi, nice post. Thanks for sharing..
 Can I test on a Iphone??]]></description>
 		<content:encoded><![CDATA[<p>Hi, nice post. Thanks for sharing..<br />
@@ -147,10 +147,10 @@ Can I test on a Iphone??</p>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2102</link>
+		<link>/lon/comment-page-1/#comment-2102</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Sun, 25 Jan 2015 16:47:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2102</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2102</guid>
 		<description><![CDATA[Well, the Yeoman generator forces a better development workflow when compared with Ionic CLI. 
 
 
@@ -161,50 +161,50 @@ In the ionic generator, you work inside the &lt;code&gt;www&lt;/code&gt; directo
 	</item>
 	<item>
 		<title>By: chandramuralis</title>
-		<link>./../comment-page-1/index.html#comment-2101</link>
+		<link>/lon/comment-page-1/#comment-2101</link>
 		<dc:creator><![CDATA[chandramuralis]]></dc:creator>
 		<pubDate>Sun, 25 Jan 2015 16:42:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2101</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2101</guid>
 		<description><![CDATA[Nothing specific... just wondering if you find anything special with the Ionic-generator...]]></description>
 		<content:encoded><![CDATA[<p>Nothing specific&#8230; just wondering if you find anything special with the Ionic-generator&#8230;</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2099</link>
+		<link>/lon/comment-page-1/#comment-2099</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Sun, 25 Jan 2015 15:39:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2099</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2099</guid>
 		<description><![CDATA[It is good. Are you looking for anything specific?]]></description>
 		<content:encoded><![CDATA[<p>It is good. Are you looking for anything specific?</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: chandramuralis</title>
-		<link>./../comment-page-1/index.html#comment-2098</link>
+		<link>/lon/comment-page-1/#comment-2098</link>
 		<dc:creator><![CDATA[chandramuralis]]></dc:creator>
 		<pubDate>Sun, 25 Jan 2015 15:30:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2098</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2098</guid>
 		<description><![CDATA[What is your opinion on using Ionic-generator?]]></description>
 		<content:encoded><![CDATA[<p>What is your opinion on using Ionic-generator?</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2096</link>
+		<link>/lon/comment-page-1/#comment-2096</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Sun, 25 Jan 2015 14:36:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2096</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2096</guid>
 		<description><![CDATA[Thanks Chandramurali. Yes you could use it and it does the job pretty well. The one I shared above is an alternative.]]></description>
 		<content:encoded><![CDATA[<p>Thanks Chandramurali. Yes you could use it and it does the job pretty well. The one I shared above is an alternative.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2097</link>
+		<link>/lon/comment-page-1/#comment-2097</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Sun, 25 Jan 2015 14:36:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2670#comment-2097</guid>
+		<guid isPermaLink="false">/?p=2670#comment-2097</guid>
 		<description><![CDATA[Thanks to Jayesh!]]></description>
 		<content:encoded><![CDATA[<p>Thanks to Jayesh!</p>
 ]]></content:encoded>

@@ -8,8 +8,8 @@
 	>
 <channel>
 	<title>Comments on: Emberjs &#8211; A hands on Tutorial</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/emberjs-a-hands-on-tutorial/feed/" rel="self" type="application/rss+xml" />
+	<link>/emberjs-a-hands-on-tutorial/</link>
 	<description>Knowing is different &#38; Doing is different</description>
 	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
@@ -17,20 +17,20 @@
 	<generator>http://wordpress.org/?v=4.2.16</generator>
 	<item>
 		<title>By: nemo b</title>
-		<link>./../comment-page-1/index.html#comment-3012</link>
+		<link>/emberjs-a-hands-on-tutorial/comment-page-1/#comment-3012</link>
 		<dc:creator><![CDATA[nemo b]]></dc:creator>
 		<pubDate>Thu, 22 Oct 2015 02:25:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2787#comment-3012</guid>
+		<guid isPermaLink="false">/?p=2787#comment-3012</guid>
 		<description><![CDATA[I&#039;m surprised your comment hasn&#039;t gotten more attention. I struggled with this step for a solid 10 min before thinking to look in the comments section. Thank you!]]></description>
 		<content:encoded><![CDATA[<p>I&#8217;m surprised your comment hasn&#8217;t gotten more attention. I struggled with this step for a solid 10 min before thinking to look in the comments section. Thank you!</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Alistair Buckle</title>
-		<link>./../comment-page-1/index.html#comment-2998</link>
+		<link>/emberjs-a-hands-on-tutorial/comment-page-1/#comment-2998</link>
 		<dc:creator><![CDATA[Alistair Buckle]]></dc:creator>
 		<pubDate>Tue, 13 Oct 2015 20:22:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2787#comment-2998</guid>
+		<guid isPermaLink="false">/?p=2787#comment-2998</guid>
 		<description><![CDATA[Really enjoying this tutorial - thanks!
 
 
@@ -49,10 +49,10 @@ and in the Testimonials view:
 	</item>
 	<item>
 		<title>By: Alistair Buckle</title>
-		<link>./../comment-page-1/index.html#comment-2997</link>
+		<link>/emberjs-a-hands-on-tutorial/comment-page-1/#comment-2997</link>
 		<dc:creator><![CDATA[Alistair Buckle]]></dc:creator>
 		<pubDate>Tue, 13 Oct 2015 19:46:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2787#comment-2997</guid>
+		<guid isPermaLink="false">/?p=2787#comment-2997</guid>
 		<description><![CDATA[I&#039;m new to Ember too but it looks like there was a problem with ArrayController.extend(), possibly because ArrayController is deprecated or removed in Ember. I sorted the model using a Controller instead:
 
 App.IndexController = Ember.Controller.extend
@@ -78,10 +78,10 @@ App.IndexController = Ember.Controller.extend
 	</item>
 	<item>
 		<title>By: Vickie Eileen Allen</title>
-		<link>./../comment-page-1/index.html#comment-2956</link>
+		<link>/emberjs-a-hands-on-tutorial/comment-page-1/#comment-2956</link>
 		<dc:creator><![CDATA[Vickie Eileen Allen]]></dc:creator>
 		<pubDate>Mon, 14 Sep 2015 11:10:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2787#comment-2956</guid>
+		<guid isPermaLink="false">/?p=2787#comment-2956</guid>
 		<description><![CDATA[I am very new to Ember - when I get to sorting the list of colours - I follow the tutorial exactly but I get an Uncaught TypeError: Cannot read property &#039;extend&#039; of undefined(anonymous function) @ app.js:15
 
 
@@ -96,20 +96,20 @@ Vickie]]></description>
 	</item>
 	<item>
 		<title>By: vishal giri</title>
-		<link>./../comment-page-1/index.html#comment-2937</link>
+		<link>/emberjs-a-hands-on-tutorial/comment-page-1/#comment-2937</link>
 		<dc:creator><![CDATA[vishal giri]]></dc:creator>
 		<pubDate>Sat, 05 Sep 2015 07:22:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2787#comment-2937</guid>
+		<guid isPermaLink="false">/?p=2787#comment-2937</guid>
 		<description><![CDATA[Thanks Arvind Great work.]]></description>
 		<content:encoded><![CDATA[<p>Thanks Arvind Great work.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Levi Taule</title>
-		<link>./../comment-page-1/index.html#comment-2928</link>
+		<link>/emberjs-a-hands-on-tutorial/comment-page-1/#comment-2928</link>
 		<dc:creator><![CDATA[Levi Taule]]></dc:creator>
 		<pubDate>Fri, 28 Aug 2015 07:21:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2787#comment-2928</guid>
+		<guid isPermaLink="false">/?p=2787#comment-2928</guid>
 		<description><![CDATA[An excellent &quot;quick dive-in&quot; article which persuaded me to use EmberJS in my current project.]]></description>
 		<content:encoded><![CDATA[<p>An excellent &#8220;quick dive-in&#8221; article which persuaded me to use EmberJS in my current project.</p>
 ]]></content:encoded>

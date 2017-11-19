@@ -10,7 +10,7 @@ div.play-store-container {
 
 div.play-store-container #top-play-store{
 	height: 12px;
-	background-image: url(./images/top-market.jpg);
+	background-image: url(/wp-content/plugins/savrix-android-market/images/top-market.jpg);
 	background-position: left top;
 	margin:0 auto;
 	padding: 0;
@@ -23,7 +23,7 @@ div.play-store-container #top-play-store{
 div.play-store-table {
 	border:0px;
 	/*overflow:hidden;*/
-	background-image: url(./images/background.jpg);
+	background-image: url(/wp-content/plugins/savrix-android-market/images/background.jpg);
 	background-position: left top;
 	margin:0 auto;
 	padding: 6px 0 6px 0;
@@ -127,12 +127,12 @@ div.stars-container{
 	padding-top:3px;
 }
 div.tiny-star{
-	background:url(./images/star-empty.png);
+	background:url(/wp-content/plugins/savrix-android-market/images/star-empty.png);
 	height: 14px;
 	width: 69px;
 }
 div.current-rating{
-	background:url(./images/star-full.png);
+	background:url(/wp-content/plugins/savrix-android-market/images/star-full.png);
 	height:14px;
 }
 

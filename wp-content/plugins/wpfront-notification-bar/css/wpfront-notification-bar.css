@@ -123,7 +123,7 @@
 #wpfront-notification-bar-open-button.top 
 {
     top: 0px;
-    background-image: url(./../images/arrow_down.png);
+    background-image: url(/wp-content/plugins/wpfront-notification-bar/images/arrow_down.png);
     background-position: top center;
     border-top: 0px;
     
@@ -138,7 +138,7 @@
 #wpfront-notification-bar-open-button.bottom 
 {
     bottom: 0px;
-    background-image: url(./../images/arrow_up.png);
+    background-image: url(/wp-content/plugins/wpfront-notification-bar/images/arrow_up.png);
     background-position: bottom center;
     border-bottom: 0px;
     

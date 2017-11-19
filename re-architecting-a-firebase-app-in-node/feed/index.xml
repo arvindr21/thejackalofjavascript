@@ -8,8 +8,8 @@
 	>
 <channel>
 	<title>Comments on: Re-Architecting a Firebase app to work with Node.js and MongoDB</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/re-architecting-a-firebase-app-in-node/feed/" rel="self" type="application/rss+xml" />
+	<link>/re-architecting-a-firebase-app-in-node/</link>
 	<description>Knowing is different &#38; Doing is different</description>
 	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
@@ -17,100 +17,100 @@
 	<generator>http://wordpress.org/?v=4.2.16</generator>
 	<item>
 		<title>By: Sarang</title>
-		<link>./../comment-page-1/index.html#comment-3382</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-3382</link>
 		<dc:creator><![CDATA[Sarang]]></dc:creator>
 		<pubDate>Wed, 26 Jul 2017 08:38:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-3382</guid>
+		<guid isPermaLink="false">/?p=2567#comment-3382</guid>
 		<description><![CDATA[Why am i getting a  var p = Proxy.create({ TypeError: Proxy.create is not a function]]></description>
 		<content:encoded><![CDATA[<p>Why am i getting a  var p = Proxy.create({ TypeError: Proxy.create is not a function</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Rodrigo Mantica</title>
-		<link>./../comment-page-1/index.html#comment-3381</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-3381</link>
 		<dc:creator><![CDATA[Rodrigo Mantica]]></dc:creator>
 		<pubDate>Tue, 18 Jul 2017 00:04:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-3381</guid>
+		<guid isPermaLink="false">/?p=2567#comment-3381</guid>
 		<description><![CDATA[Here&#039;s a link to my Ionic 3 version of this tutorial: http://www.manticarodrigo.com/2017/04/07/re-arquitecting-firebase/]]></description>
 		<content:encoded><![CDATA[<p>Here&#8217;s a link to my Ionic 3 version of this tutorial: <a href="http://www.manticarodrigo.com/2017/04/07/re-arquitecting-firebase/" rel="nofollow">http://www.manticarodrigo.com/2017/04/07/re-arquitecting-firebase/</a></p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Rodrigo Mantica</title>
-		<link>./../comment-page-1/index.html#comment-3366</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-3366</link>
 		<dc:creator><![CDATA[Rodrigo Mantica]]></dc:creator>
 		<pubDate>Mon, 01 May 2017 00:40:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-3366</guid>
+		<guid isPermaLink="false">/?p=2567#comment-3366</guid>
 		<description><![CDATA[I created a fork with a version for Ionic 3 (Angular 4). It&#039;s almost working, except for an issue with Observable being null after getting todos, so component can&#039;t access the data. But it is printing fine in the console.]]></description>
 		<content:encoded><![CDATA[<p>I created a fork with a version for Ionic 3 (Angular 4). It&#8217;s almost working, except for an issue with Observable being null after getting todos, so component can&#8217;t access the data. But it is printing fine in the console.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Tyler Angert</title>
-		<link>./../comment-page-1/index.html#comment-3365</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-3365</link>
 		<dc:creator><![CDATA[Tyler Angert]]></dc:creator>
 		<pubDate>Sun, 30 Apr 2017 02:09:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-3365</guid>
+		<guid isPermaLink="false">/?p=2567#comment-3365</guid>
 		<description><![CDATA[have you found any issues with it in hindsight?]]></description>
 		<content:encoded><![CDATA[<p>have you found any issues with it in hindsight?</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Franklin Rincon</title>
-		<link>./../comment-page-1/index.html#comment-3312</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-3312</link>
 		<dc:creator><![CDATA[Franklin Rincon]]></dc:creator>
 		<pubDate>Sun, 16 Oct 2016 04:43:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-3312</guid>
+		<guid isPermaLink="false">/?p=2567#comment-3312</guid>
 		<description><![CDATA[Thanks to share Arvin, you&#039;re a crack!]]></description>
 		<content:encoded><![CDATA[<p>Thanks to share Arvin, you&#8217;re a crack!</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: William Vega</title>
-		<link>./../comment-page-1/index.html#comment-3200</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-3200</link>
 		<dc:creator><![CDATA[William Vega]]></dc:creator>
 		<pubDate>Sun, 13 Mar 2016 22:21:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-3200</guid>
+		<guid isPermaLink="false">/?p=2567#comment-3200</guid>
 		<description><![CDATA[Can this be done using loopback.js and strongloop arc?]]></description>
 		<content:encoded><![CDATA[<p>Can this be done using loopback.js and strongloop arc?</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Getulio Romão C. Jr</title>
-		<link>./../comment-page-1/index.html#comment-3177</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-3177</link>
 		<dc:creator><![CDATA[Getulio Romão C. Jr]]></dc:creator>
 		<pubDate>Thu, 25 Feb 2016 18:10:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-3177</guid>
+		<guid isPermaLink="false">/?p=2567#comment-3177</guid>
 		<description><![CDATA[You could just go with loopback since your backend needs most an API and you would have offline sync and real time.]]></description>
 		<content:encoded><![CDATA[<p>You could just go with loopback since your backend needs most an API and you would have offline sync and real time.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: rory cawley</title>
-		<link>./../comment-page-1/index.html#comment-3053</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-3053</link>
 		<dc:creator><![CDATA[rory cawley]]></dc:creator>
 		<pubDate>Sat, 14 Nov 2015 12:28:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-3053</guid>
+		<guid isPermaLink="false">/?p=2567#comment-3053</guid>
 		<description><![CDATA[love this]]></description>
 		<content:encoded><![CDATA[<p>love this</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: wbarahona</title>
-		<link>./../comment-page-1/index.html#comment-2507</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-2507</link>
 		<dc:creator><![CDATA[wbarahona]]></dc:creator>
 		<pubDate>Tue, 21 Apr 2015 16:49:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-2507</guid>
+		<guid isPermaLink="false">/?p=2567#comment-2507</guid>
 		<description><![CDATA[Yes, I will keep in mind that, I just wanted a functional example to expand... I will report back any issues, thanks.]]></description>
 		<content:encoded><![CDATA[<p>Yes, I will keep in mind that, I just wanted a functional example to expand&#8230; I will report back any issues, thanks.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2505</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-2505</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Tue, 21 Apr 2015 02:34:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-2505</guid>
+		<guid isPermaLink="false">/?p=2567#comment-2505</guid>
 		<description><![CDATA[Thanks wbarahona. But do keep in mind that this setup is experimental. I have not used this setup in a live project, so use with caution. 
 
 
@@ -125,30 +125,30 @@ Thanks.]]></description>
 	</item>
 	<item>
 		<title>By: wbarahona</title>
-		<link>./../comment-page-1/index.html#comment-2502</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-2502</link>
 		<dc:creator><![CDATA[wbarahona]]></dc:creator>
 		<pubDate>Mon, 20 Apr 2015 22:36:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-2502</guid>
+		<guid isPermaLink="false">/?p=2567#comment-2502</guid>
 		<description><![CDATA[This is simple and sweet, I followed the steps et voila it works, now I have a foundation on how to build a real time app, and detach from firebase sir. Many kudos for you from Honduras :)]]></description>
-		<content:encoded><![CDATA[<p>This is simple and sweet, I followed the steps et voila it works, now I have a foundation on how to build a real time app, and detach from firebase sir. Many kudos for you from Honduras <img src="./../../wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+		<content:encoded><![CDATA[<p>This is simple and sweet, I followed the steps et voila it works, now I have a foundation on how to build a real time app, and detach from firebase sir. Many kudos for you from Honduras <img src="/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2302</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-2302</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Wed, 11 Mar 2015 11:45:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-2302</guid>
+		<guid isPermaLink="false">/?p=2567#comment-2302</guid>
 		<description><![CDATA[Great! Thanks. ]]></description>
 		<content:encoded><![CDATA[<p>Great! Thanks. </p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: fares</title>
-		<link>./../comment-page-1/index.html#comment-2301</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-2301</link>
 		<dc:creator><![CDATA[fares]]></dc:creator>
 		<pubDate>Wed, 11 Mar 2015 09:26:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-2301</guid>
+		<guid isPermaLink="false">/?p=2567#comment-2301</guid>
 		<description><![CDATA[Thanks, that is what I was looking for.
 And it works.]]></description>
 		<content:encoded><![CDATA[<p>Thanks, that is what I was looking for.<br />
@@ -157,43 +157,43 @@ And it works.</p>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2293</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-2293</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Fri, 06 Mar 2015 03:24:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-2293</guid>
-		<description><![CDATA[You can check out this post : ./../../architecting-a-restful-node-js-app/index.html It shows how to manage jwt on the client side as well as creation on server side. 
+		<guid isPermaLink="false">/?p=2567#comment-2293</guid>
+		<description><![CDATA[You can check out this post : /architecting-a-restful-node-js-app/ It shows how to manage jwt on the client side as well as creation on server side. 
 
 Let me know if you are looking for some other solution. Thanks.  ]]></description>
-		<content:encoded><![CDATA[<p>You can check out this post : <a href="./../../architecting-a-restful-node-js-app/index.html" rel="nofollow">./../../architecting-a-restful-node-js-app/index.html</a> It shows how to manage jwt on the client side as well as creation on server side. </p>
+		<content:encoded><![CDATA[<p>You can check out this post : <a href="/architecting-a-restful-node-js-app/" rel="nofollow">/architecting-a-restful-node-js-app/</a> It shows how to manage jwt on the client side as well as creation on server side. </p>
 <p>Let me know if you are looking for some other solution. Thanks.  </p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: fares</title>
-		<link>./../comment-page-1/index.html#comment-2291</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-2291</link>
 		<dc:creator><![CDATA[fares]]></dc:creator>
 		<pubDate>Thu, 05 Mar 2015 23:27:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-2291</guid>
+		<guid isPermaLink="false">/?p=2567#comment-2291</guid>
 		<description><![CDATA[i mean maintaining the session with jwt token / cookie.]]></description>
 		<content:encoded><![CDATA[<p>i mean maintaining the session with jwt token / cookie.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2286</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-2286</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Thu, 05 Mar 2015 17:38:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-2286</guid>
+		<guid isPermaLink="false">/?p=2567#comment-2286</guid>
 		<description><![CDATA[Thanks fares. You mean the initial login to the app when the network is down? or How do we maintain a session on the client side?]]></description>
 		<content:encoded><![CDATA[<p>Thanks fares. You mean the initial login to the app when the network is down? or How do we maintain a session on the client side?</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: fares</title>
-		<link>./../comment-page-1/index.html#comment-2284</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-2284</link>
 		<dc:creator><![CDATA[fares]]></dc:creator>
 		<pubDate>Thu, 05 Mar 2015 12:15:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-2284</guid>
+		<guid isPermaLink="false">/?p=2567#comment-2284</guid>
 		<description><![CDATA[how would you deal with authentication
 thank you for this tutorial. it helped me a lot!]]></description>
 		<content:encoded><![CDATA[<p>how would you deal with authentication<br />
@@ -202,10 +202,10 @@ thank you for this tutorial. it helped me a lot!</p>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2243</link>
+		<link>/re-architecting-a-firebase-app-in-node/comment-page-1/#comment-2243</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Wed, 25 Feb 2015 04:53:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2567#comment-2243</guid>
+		<guid isPermaLink="false">/?p=2567#comment-2243</guid>
 		<description><![CDATA[Thanks Michel. I did look at rethinkdb a few day ago. But does it have a client side counterpart?]]></description>
 		<content:encoded><![CDATA[<p>Thanks Michel. I did look at rethinkdb a few day ago. But does it have a client side counterpart?</p>
 ]]></content:encoded>

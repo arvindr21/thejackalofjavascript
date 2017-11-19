@@ -8,8 +8,8 @@
 	>
 <channel>
 	<title>Comments on: Ionic Framework, Cordova and File API &#8211; A Media Player App</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/ionic-framework-cordova-and-file-api-a-media-player-app/feed/" rel="self" type="application/rss+xml" />
+	<link>/ionic-framework-cordova-and-file-api-a-media-player-app/</link>
 	<description>Knowing is different &#38; Doing is different</description>
 	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
@@ -17,20 +17,20 @@
 	<generator>http://wordpress.org/?v=4.2.16</generator>
 	<item>
 		<title>By: Felipe de Castro</title>
-		<link>./../comment-page-1/index.html#comment-3339</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3339</link>
 		<dc:creator><![CDATA[Felipe de Castro]]></dc:creator>
 		<pubDate>Tue, 10 Jan 2017 18:43:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3339</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3339</guid>
 		<description><![CDATA[I want to know about it too]]></description>
 		<content:encoded><![CDATA[<p>I want to know about it too</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: adedeji92</title>
-		<link>./../comment-page-1/index.html#comment-3327</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3327</link>
 		<dc:creator><![CDATA[adedeji92]]></dc:creator>
 		<pubDate>Tue, 29 Nov 2016 17:37:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3327</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3327</guid>
 		<description><![CDATA[Hi, Nice article , c an we have a way to add music controller(Like next, previous and 
 play/pause) in the notification bar. any help? Attached image is an 
 example
@@ -43,20 +43,20 @@ example<br />
 	</item>
 	<item>
 		<title>By: Carinha que mora logo ali</title>
-		<link>./../comment-page-1/index.html#comment-3308</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3308</link>
 		<dc:creator><![CDATA[Carinha que mora logo ali]]></dc:creator>
 		<pubDate>Wed, 05 Oct 2016 14:55:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3308</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3308</guid>
 		<description><![CDATA[no working more, this plugins is outdated.]]></description>
 		<content:encoded><![CDATA[<p>no working more, this plugins is outdated.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: elyptik</title>
-		<link>./../comment-page-1/index.html#comment-3305</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3305</link>
 		<dc:creator><![CDATA[elyptik]]></dc:creator>
 		<pubDate>Mon, 26 Sep 2016 14:47:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3305</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3305</guid>
 		<description><![CDATA[Hello !
 First thank you for your tutorial it&#039;s still working at the moment ! 
 I have a question, can we add more than one music in the player ? 
@@ -72,32 +72,32 @@ I will explain, I want that user put a lot of music and chose which one play. I 
 	</item>
 	<item>
 		<title>By: hanie</title>
-		<link>./../comment-page-1/index.html#comment-3284</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3284</link>
 		<dc:creator><![CDATA[hanie]]></dc:creator>
 		<pubDate>Sun, 21 Aug 2016 10:35:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3284</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3284</guid>
 		<description><![CDATA[great:)thanks a lot for your article :)
 It work correctly on android 5 but in my android 4.1 it doesn&#039;t work so i think cordova not work on less version .am i right ?]]></description>
-		<content:encoded><![CDATA[<p>great:)thanks a lot for your article <img src="./../../wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br />
+		<content:encoded><![CDATA[<p>great:)thanks a lot for your article <img src="/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br />
 It work correctly on android 5 but in my android 4.1 it doesn&#8217;t work so i think cordova not work on less version .am i right ?</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: hanie</title>
-		<link>./../comment-page-1/index.html#comment-3282</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3282</link>
 		<dc:creator><![CDATA[hanie]]></dc:creator>
 		<pubDate>Sat, 20 Aug 2016 09:26:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3282</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3282</guid>
 		<description><![CDATA[hi.i downloaded your code project in Git. I run program in my phone (Samsung S 2+) but the browse page remains blank . i added `` to config.xml but until it hasn&#039;t work.thank you for help me]]></description>
 		<content:encoded><![CDATA[<p>hi.i downloaded your code project in Git. I run program in my phone (Samsung S 2+) but the browse page remains blank . i added <code></code> to config.xml but until it hasn&#8217;t work.thank you for help me</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Sao Thien Hat</title>
-		<link>./../comment-page-1/index.html#comment-3236</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3236</link>
 		<dc:creator><![CDATA[Sao Thien Hat]]></dc:creator>
 		<pubDate>Tue, 24 May 2016 15:27:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3236</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3236</guid>
 		<description><![CDATA[Hi Arvind,
 
 Thank you for your tutorial :). I wonder that is it possible to display image during playing an audio on full screen mode ? I try put image for bgImage with image in project such as: bgImage: &quot;img/myImage.jpg&quot; but it seem not work. Only bgColor working. 
@@ -109,30 +109,30 @@ Do I need have any special configuration to do that ?</p>
 	</item>
 	<item>
 		<title>By: santosh</title>
-		<link>./../comment-page-1/index.html#comment-3225</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3225</link>
 		<dc:creator><![CDATA[santosh]]></dc:creator>
 		<pubDate>Tue, 03 May 2016 13:23:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3225</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3225</guid>
 		<description><![CDATA[hi i can play audo files in it but not video files please help]]></description>
 		<content:encoded><![CDATA[<p>hi i can play audo files in it but not video files please help</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: santosh</title>
-		<link>./../comment-page-1/index.html#comment-3224</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3224</link>
 		<dc:creator><![CDATA[santosh]]></dc:creator>
 		<pubDate>Tue, 03 May 2016 13:18:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3224</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3224</guid>
 		<description><![CDATA[try this &quot;cordova plugin add cordova-plugin-media&quot;]]></description>
 		<content:encoded><![CDATA[<p>try this &#8220;cordova plugin add cordova-plugin-media&#8221;</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Vinicius Coimbra</title>
-		<link>./../comment-page-1/index.html#comment-3151</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3151</link>
 		<dc:creator><![CDATA[Vinicius Coimbra]]></dc:creator>
 		<pubDate>Tue, 02 Feb 2016 15:59:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3151</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3151</guid>
 		<description><![CDATA[Hi Arvind, 
 
 I don&#039;t know what i&#039;m doing wrong. I cloned your project in github, installed all dependencies for the project, put the &quot;&quot; in config.xml to works in my Moto G2, but always when i try to play some music in my device, it doesn&#039;t work. My player never load and there is no callback to see log or errors :/]]></description>
@@ -142,10 +142,10 @@ I don&#039;t know what i&#039;m doing wrong. I cloned your project in github, in
 	</item>
 	<item>
 		<title>By: shashwatee</title>
-		<link>./../comment-page-1/index.html#comment-3150</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3150</link>
 		<dc:creator><![CDATA[shashwatee]]></dc:creator>
 		<pubDate>Tue, 02 Feb 2016 12:11:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3150</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3150</guid>
 		<description><![CDATA[I am trying to auto-play the next song automatically from the folder. Can you please share the code which you have added.How exactly can i pull up the next song??
 
 Its urgent....]]></description>
@@ -155,10 +155,10 @@ Its urgent....]]></description>
 	</item>
 	<item>
 		<title>By: shashwatee</title>
-		<link>./../comment-page-1/index.html#comment-3149</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3149</link>
 		<dc:creator><![CDATA[shashwatee]]></dc:creator>
 		<pubDate>Tue, 02 Feb 2016 12:05:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3149</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3149</guid>
 		<description><![CDATA[I am trying to auto-play the next song automatically from the folder. Can you please share the code which you have added.
 Its urgent....]]></description>
 		<content:encoded><![CDATA[<p>I am trying to auto-play the next song automatically from the folder. Can you please share the code which you have added.<br />
@@ -167,10 +167,10 @@ Its urgent&#8230;.</p>
 	</item>
 	<item>
 		<title>By: Abraham</title>
-		<link>./../comment-page-1/index.html#comment-3146</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3146</link>
 		<dc:creator><![CDATA[Abraham]]></dc:creator>
 		<pubDate>Fri, 29 Jan 2016 13:16:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3146</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3146</guid>
 		<description><![CDATA[Hi! thanks for your blog and this post, very useful.
 But i have a problem which is going me crazy.
 I&#039;ve made a project with your code but &quot;getDuration()&quot; call return me -1 every time, so the progress bar doesn&#039;t work. 
@@ -194,20 +194,20 @@ thanks in advance!</p>
 	</item>
 	<item>
 		<title>By: Mirko Scavazzin</title>
-		<link>./../comment-page-1/index.html#comment-3128</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3128</link>
 		<dc:creator><![CDATA[Mirko Scavazzin]]></dc:creator>
 		<pubDate>Fri, 15 Jan 2016 09:27:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3128</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3128</guid>
 		<description><![CDATA[Same issue here, using Android in Sony Xperia M2.]]></description>
 		<content:encoded><![CDATA[<p>Same issue here, using Android in Sony Xperia M2.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: jetmiller</title>
-		<link>./../comment-page-1/index.html#comment-3126</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3126</link>
 		<dc:creator><![CDATA[jetmiller]]></dc:creator>
 		<pubDate>Wed, 13 Jan 2016 21:41:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3126</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3126</guid>
 		<description><![CDATA[I have the same problem...
 samsung s2, android 5.1.1]]></description>
 		<content:encoded><![CDATA[<p>I have the same problem&#8230;<br />
@@ -216,20 +216,20 @@ samsung s2, android 5.1.1</p>
 	</item>
 	<item>
 		<title>By: Arvind Chakraborty</title>
-		<link>./../comment-page-1/index.html#comment-3090</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3090</link>
 		<dc:creator><![CDATA[Arvind Chakraborty]]></dc:creator>
 		<pubDate>Wed, 16 Dec 2015 18:10:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3090</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3090</guid>
 		<description><![CDATA[Hey great tutorial but the browse page remains blank on my phone :( ..any clue ? phone model : Asus Zenfone 2 ZE551ML]]></description>
-		<content:encoded><![CDATA[<p>Hey great tutorial but the browse page remains blank on my phone <img src="./../../wp-includes/images/smilies/frownie.png" alt=":(" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ..any clue ? phone model : Asus Zenfone 2 ZE551ML</p>
+		<content:encoded><![CDATA[<p>Hey great tutorial but the browse page remains blank on my phone <img src="/wp-includes/images/smilies/frownie.png" alt=":(" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ..any clue ? phone model : Asus Zenfone 2 ZE551ML</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Rajesh</title>
-		<link>./../comment-page-1/index.html#comment-3077</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3077</link>
 		<dc:creator><![CDATA[Rajesh]]></dc:creator>
 		<pubDate>Wed, 02 Dec 2015 08:51:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3077</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3077</guid>
 		<description><![CDATA[video files is not playing.......whops we can not play this file..
 why?
 And mine question is also: how we can access mobiles video players for opening a video file which is hosted in my website..
@@ -242,10 +242,10 @@ please help</p>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-3067</link>
+		<link>/ionic-framework-cordova-and-file-api-a-media-player-app/comment-page-1/#comment-3067</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Thu, 19 Nov 2015 15:21:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2859#comment-3067</guid>
+		<guid isPermaLink="false">/?p=2859#comment-3067</guid>
 		<description><![CDATA[Try adding the Cordova media plugin : cordova plugin add org.apache.cordova.media]]></description>
 		<content:encoded><![CDATA[<p>Try adding the Cordova media plugin : cordova plugin add org.apache.cordova.media</p>
 ]]></content:encoded>

@@ -8,8 +8,8 @@
 	>
 <channel>
 	<title>Comments on: Getting Started with ngCordova</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/getting-started-with-ngcordova/feed/" rel="self" type="application/rss+xml" />
+	<link>/getting-started-with-ngcordova/</link>
 	<description>Knowing is different &#38; Doing is different</description>
 	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
@@ -17,20 +17,20 @@
 	<generator>http://wordpress.org/?v=4.2.16</generator>
 	<item>
 		<title>By: Manikanta</title>
-		<link>./../comment-page-1/index.html#comment-3334</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-3334</link>
 		<dc:creator><![CDATA[Manikanta]]></dc:creator>
 		<pubDate>Wed, 21 Dec 2016 10:04:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-3334</guid>
+		<guid isPermaLink="false">/?p=2823#comment-3334</guid>
 		<description><![CDATA[device id not working can anyone help ???]]></description>
 		<content:encoded><![CDATA[<p>device id not working can anyone help ???</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: h2o</title>
-		<link>./../comment-page-1/index.html#comment-3246</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-3246</link>
 		<dc:creator><![CDATA[h2o]]></dc:creator>
 		<pubDate>Sat, 11 Jun 2016 07:28:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-3246</guid>
+		<guid isPermaLink="false">/?p=2823#comment-3246</guid>
 		<description><![CDATA[I just tried this example project, but i have issues on Android.
 Especially with the SQLite plugin.
 When I select the SQLite from the side menu, it displays the previously selected menu and
@@ -49,80 +49,80 @@ Where is the problem?</p>
 	</item>
 	<item>
 		<title>By: Geo</title>
-		<link>./../comment-page-1/index.html#comment-3208</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-3208</link>
 		<dc:creator><![CDATA[Geo]]></dc:creator>
 		<pubDate>Fri, 01 Apr 2016 20:41:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-3208</guid>
+		<guid isPermaLink="false">/?p=2823#comment-3208</guid>
 		<description><![CDATA[And $cordovaBarcodeScanner ?????]]></description>
 		<content:encoded><![CDATA[<p>And $cordovaBarcodeScanner ?????</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Siva</title>
-		<link>./../comment-page-1/index.html#comment-3206</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-3206</link>
 		<dc:creator><![CDATA[Siva]]></dc:creator>
 		<pubDate>Thu, 24 Mar 2016 18:02:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-3206</guid>
+		<guid isPermaLink="false">/?p=2823#comment-3206</guid>
 		<description><![CDATA[Excellent Information !!]]></description>
 		<content:encoded><![CDATA[<p>Excellent Information !!</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Neha</title>
-		<link>./../comment-page-1/index.html#comment-3133</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-3133</link>
 		<dc:creator><![CDATA[Neha]]></dc:creator>
 		<pubDate>Sat, 23 Jan 2016 10:07:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-3133</guid>
+		<guid isPermaLink="false">/?p=2823#comment-3133</guid>
 		<description><![CDATA[I get this issue  Error: device is not defined. it bugs me.Can you tell me how to get rid of it and get this work properly]]></description>
 		<content:encoded><![CDATA[<p>I get this issue  Error: device is not defined. it bugs me.Can you tell me how to get rid of it and get this work properly</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Mark Aurit</title>
-		<link>./../comment-page-1/index.html#comment-3129</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-3129</link>
 		<dc:creator><![CDATA[Mark Aurit]]></dc:creator>
 		<pubDate>Thu, 21 Jan 2016 23:35:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-3129</guid>
+		<guid isPermaLink="false">/?p=2823#comment-3129</guid>
 		<description><![CDATA[Would have been great to see an example of changing of processing (such as changing the template) based on the device orientation (portrait vs landscape)]]></description>
 		<content:encoded><![CDATA[<p>Would have been great to see an example of changing of processing (such as changing the template) based on the device orientation (portrait vs landscape)</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Pedro Sacramento</title>
-		<link>./../comment-page-1/index.html#comment-2959</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-2959</link>
 		<dc:creator><![CDATA[Pedro Sacramento]]></dc:creator>
 		<pubDate>Wed, 16 Sep 2015 21:07:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-2959</guid>
+		<guid isPermaLink="false">/?p=2823#comment-2959</guid>
 		<description><![CDATA[I just would like to say thank you, and that this is one of the best tutorials I&#039;ve ever seen in my ~18 years of programming experience. I&#039;m talking seriously. Congratulations for such an effort, I&#039;m sure that it took a long time to write it so clearly and with so many details. Thank you again.]]></description>
 		<content:encoded><![CDATA[<p>I just would like to say thank you, and that this is one of the best tutorials I&#8217;ve ever seen in my ~18 years of programming experience. I&#8217;m talking seriously. Congratulations for such an effort, I&#8217;m sure that it took a long time to write it so clearly and with so many details. Thank you again.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: delijati</title>
-		<link>./../comment-page-1/index.html#comment-2952</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-2952</link>
 		<dc:creator><![CDATA[delijati]]></dc:creator>
 		<pubDate>Fri, 11 Sep 2015 08:46:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-2952</guid>
+		<guid isPermaLink="false">/?p=2823#comment-2952</guid>
 		<description><![CDATA[&quot;// sometimes binding does not work! :/&quot; this comment fixed a bug , i was struggling for some days :D]]></description>
 		<content:encoded><![CDATA[<p>&#8220;// sometimes binding does not work! :/&#8221; this comment fixed a bug , i was struggling for some days 😀</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: 文壮 刘</title>
-		<link>./../comment-page-1/index.html#comment-2951</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-2951</link>
 		<dc:creator><![CDATA[文壮 刘]]></dc:creator>
 		<pubDate>Fri, 11 Sep 2015 08:38:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-2951</guid>
+		<guid isPermaLink="false">/?p=2823#comment-2951</guid>
 		<description><![CDATA[Great Tutorial, but I have a question with Camera, when I run this app in my phone(Android 5.1)，and select a pic or took a pic, and then the app was waiting and waiting, couldn&#039;t go to “Image Cropping”.]]></description>
 		<content:encoded><![CDATA[<p>Great Tutorial, but I have a question with Camera, when I run this app in my phone(Android 5.1)，and select a pic or took a pic, and then the app was waiting and waiting, couldn&#8217;t go to “Image Cropping”.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Gaurav Bansal</title>
-		<link>./../comment-page-1/index.html#comment-2936</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-2936</link>
 		<dc:creator><![CDATA[Gaurav Bansal]]></dc:creator>
 		<pubDate>Thu, 03 Sep 2015 18:33:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-2936</guid>
+		<guid isPermaLink="false">/?p=2823#comment-2936</guid>
 		<description><![CDATA[Great Post!!!!
 But i am facing issue in creating apk of this app, Can you please explain how we create apk of this app? or which folder need to deploy it on adobe phonegap?]]></description>
 		<content:encoded><![CDATA[<p>Great Post!!!!<br />
@@ -131,20 +131,20 @@ But i am facing issue in creating apk of this app, Can you please explain how we
 	</item>
 	<item>
 		<title>By: Richard Bown</title>
-		<link>./../comment-page-1/index.html#comment-2927</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-2927</link>
 		<dc:creator><![CDATA[Richard Bown]]></dc:creator>
 		<pubDate>Wed, 26 Aug 2015 07:13:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-2927</guid>
+		<guid isPermaLink="false">/?p=2823#comment-2927</guid>
 		<description><![CDATA[Great post and good introduction to a really interesting and useful platform.]]></description>
 		<content:encoded><![CDATA[<p>Great post and good introduction to a really interesting and useful platform.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Josh Hicks</title>
-		<link>./../comment-page-1/index.html#comment-2916</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-2916</link>
 		<dc:creator><![CDATA[Josh Hicks]]></dc:creator>
 		<pubDate>Tue, 18 Aug 2015 17:10:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-2916</guid>
+		<guid isPermaLink="false">/?p=2823#comment-2916</guid>
 		<description><![CDATA[Yes.  Here&#039;s my stack overflow question about it: http://stackoverflow.com/questions/32056322/cordovafile-method-does-nothing-when-called  
 I really can&#039;t seem to get the plugin methods to fire.]]></description>
 		<content:encoded><![CDATA[<p>Yes.  Here&#8217;s my stack overflow question about it: <a href="http://stackoverflow.com/questions/32056322/cordovafile-method-does-nothing-when-called" rel="nofollow">http://stackoverflow.com/questions/32056322/cordovafile-method-does-nothing-when-called</a><br />
@@ -153,60 +153,60 @@ I really can&#8217;t seem to get the plugin methods to fire.</p>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2909</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-2909</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Tue, 18 Aug 2015 03:48:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-2909</guid>
+		<guid isPermaLink="false">/?p=2823#comment-2909</guid>
 		<description><![CDATA[Are you facing any specific issue while using the API? ]]></description>
 		<content:encoded><![CDATA[<p>Are you facing any specific issue while using the API? </p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Josh Hicks</title>
-		<link>./../comment-page-1/index.html#comment-2908</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-2908</link>
 		<dc:creator><![CDATA[Josh Hicks]]></dc:creator>
 		<pubDate>Mon, 17 Aug 2015 15:41:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-2908</guid>
+		<guid isPermaLink="false">/?p=2823#comment-2908</guid>
 		<description><![CDATA[Kind of.  I&#039;m really looking for a tutorial on how to use the ngCordova methods like &quot;writeFile()&quot; or &quot;createDir()&quot; in my controllers.  For example when you click a save button the &quot;writeFile()&quot; function could be called, saving the $scope data to a json file on the device.]]></description>
 		<content:encoded><![CDATA[<p>Kind of.  I&#8217;m really looking for a tutorial on how to use the ngCordova methods like &#8220;writeFile()&#8221; or &#8220;createDir()&#8221; in my controllers.  For example when you click a save button the &#8220;writeFile()&#8221; function could be called, saving the $scope data to a json file on the device.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2904</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-2904</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Thu, 13 Aug 2015 20:48:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-2904</guid>
-		<description><![CDATA[Like ./../../ionic-framework-cordova-and-file-api-a-media-player-app/index.html ? ]]></description>
-		<content:encoded><![CDATA[<p>Like <a href="./../../ionic-framework-cordova-and-file-api-a-media-player-app/index.html" rel="nofollow">./../../ionic-framework-cordova-and-file-api-a-media-player-app/index.html</a> ? </p>
+		<guid isPermaLink="false">/?p=2823#comment-2904</guid>
+		<description><![CDATA[Like /ionic-framework-cordova-and-file-api-a-media-player-app/ ? ]]></description>
+		<content:encoded><![CDATA[<p>Like <a href="/ionic-framework-cordova-and-file-api-a-media-player-app/" rel="nofollow">/ionic-framework-cordova-and-file-api-a-media-player-app/</a> ? </p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Josh Hicks</title>
-		<link>./../comment-page-1/index.html#comment-2903</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-2903</link>
 		<dc:creator><![CDATA[Josh Hicks]]></dc:creator>
 		<pubDate>Thu, 13 Aug 2015 20:46:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-2903</guid>
+		<guid isPermaLink="false">/?p=2823#comment-2903</guid>
 		<description><![CDATA[What I meant to say is: do you have any tutorials about using the $codovaFile plugin?]]></description>
 		<content:encoded><![CDATA[<p>What I meant to say is: do you have any tutorials about using the $codovaFile plugin?</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2901</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-2901</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Thu, 13 Aug 2015 14:31:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-2901</guid>
+		<guid isPermaLink="false">/?p=2823#comment-2901</guid>
 		<description><![CDATA[Thanks Josh. File plugin to read files?]]></description>
 		<content:encoded><![CDATA[<p>Thanks Josh. File plugin to read files?</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Josh Hicks</title>
-		<link>./../comment-page-1/index.html#comment-2900</link>
+		<link>/getting-started-with-ngcordova/comment-page-1/#comment-2900</link>
 		<dc:creator><![CDATA[Josh Hicks]]></dc:creator>
 		<pubDate>Thu, 13 Aug 2015 13:23:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2823#comment-2900</guid>
+		<guid isPermaLink="false">/?p=2823#comment-2900</guid>
 		<description><![CDATA[wow, using that $scope.apply() to update the $scope just saved my life!!!  Thanks for the awesome tutorial.  Do you have any for the ngCordova File plugin?]]></description>
 		<content:encoded><![CDATA[<p>wow, using that $scope.apply() to update the $scope just saved my life!!!  Thanks for the awesome tutorial.  Do you have any for the ngCordova File plugin?</p>
 ]]></content:encoded>

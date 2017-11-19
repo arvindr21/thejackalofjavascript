@@ -2534,7 +2534,7 @@ display:none !important;
 
 .vid
 {
-background: url('./../../uploads/2014/02/video.png') no-repeat 0px 0px;
+background: url('/wp-content/uploads/2014/02/video.png') no-repeat 0px 0px;
 position: absolute;
 margin-top: 8px;
 }

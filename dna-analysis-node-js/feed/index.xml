@@ -8,8 +8,8 @@
 	>
 <channel>
 	<title>Comments on: DNA Analysis with Node.js</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/dna-analysis-node-js/feed/" rel="self" type="application/rss+xml" />
+	<link>/dna-analysis-node-js/</link>
 	<description>Knowing is different &#38; Doing is different</description>
 	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
@@ -17,10 +17,10 @@
 	<generator>http://wordpress.org/?v=4.2.16</generator>
 	<item>
 		<title>By: Johan Olsen</title>
-		<link>./../comment-page-1/index.html#comment-2953</link>
+		<link>/dna-analysis-node-js/comment-page-1/#comment-2953</link>
 		<dc:creator><![CDATA[Johan Olsen]]></dc:creator>
 		<pubDate>Fri, 11 Sep 2015 18:04:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2633#comment-2953</guid>
+		<guid isPermaLink="false">/?p=2633#comment-2953</guid>
 		<description><![CDATA[Hi Arvind, thank you for the excellent tutorial. 
 
 I’m trying to follow along with your tutorial but the code is not compiling:
@@ -140,20 +140,20 @@ Error: DNA must be a string<br />
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-2041</link>
+		<link>/dna-analysis-node-js/comment-page-1/#comment-2041</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Thu, 08 Jan 2015 18:14:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2633#comment-2041</guid>
+		<guid isPermaLink="false">/?p=2633#comment-2041</guid>
 		<description><![CDATA[Great! Thanks! ]]></description>
 		<content:encoded><![CDATA[<p>Great! Thanks! </p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Lio</title>
-		<link>./../comment-page-1/index.html#comment-2040</link>
+		<link>/dna-analysis-node-js/comment-page-1/#comment-2040</link>
 		<dc:creator><![CDATA[Lio]]></dc:creator>
 		<pubDate>Thu, 08 Jan 2015 18:12:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2633#comment-2040</guid>
+		<guid isPermaLink="false">/?p=2633#comment-2040</guid>
 		<description><![CDATA[Amazing. I&#039;m new to Node.js and know nothing about DNA analysis - but your article was fascinating to read. Love how sci-fi this sounds: git clone genotype-boilerplate. Thanks, and I&#039;ll be checking out more of your articles!]]></description>
 		<content:encoded><![CDATA[<p>Amazing. I&#8217;m new to Node.js and know nothing about DNA analysis &#8211; but your article was fascinating to read. Love how sci-fi this sounds: git clone genotype-boilerplate. Thanks, and I&#8217;ll be checking out more of your articles!</p>
 ]]></content:encoded>

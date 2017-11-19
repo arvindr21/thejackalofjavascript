@@ -80,7 +80,7 @@
 }
 #upprev_close
 {
-    background: #fff url(./close.gif) no-repeat 0;
+    background: #fff url(/wp-content/plugins/upprev/styles/close.gif) no-repeat 0;
     border: none;
     display: block;
     height: 13px;

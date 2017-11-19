@@ -8,8 +8,8 @@
 	>
 <channel>
 	<title>Comments on: Text Based Adventure Games with Node.js</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/text-based-adventure-games/feed/" rel="self" type="application/rss+xml" />
+	<link>/text-based-adventure-games/</link>
 	<description>Knowing is different &#38; Doing is different</description>
 	<lastBuildDate>Fri, 17 Nov 2017 20:09:00 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
@@ -17,30 +17,30 @@
 	<generator>http://wordpress.org/?v=4.2.16</generator>
 	<item>
 		<title>By: Fernando</title>
-		<link>./../comment-page-1/index.html#comment-3141</link>
+		<link>/text-based-adventure-games/comment-page-1/#comment-3141</link>
 		<dc:creator><![CDATA[Fernando]]></dc:creator>
 		<pubDate>Thu, 28 Jan 2016 02:43:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2546#comment-3141</guid>
+		<guid isPermaLink="false">/?p=2546#comment-3141</guid>
 		<description><![CDATA[Okay, maybe I missed it, but this just shows a game developer how to write a JSON file for the game. Was there any section that helped with say initializing the entire game? Can that be found in the downloaded data?]]></description>
 		<content:encoded><![CDATA[<p>Okay, maybe I missed it, but this just shows a game developer how to write a JSON file for the game. Was there any section that helped with say initializing the entire game? Can that be found in the downloaded data?</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-1949</link>
+		<link>/text-based-adventure-games/comment-page-1/#comment-1949</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Fri, 12 Dec 2014 17:20:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2546#comment-1949</guid>
+		<guid isPermaLink="false">/?p=2546#comment-1949</guid>
 		<description><![CDATA[Interesting! Thanks for sharing Les.]]></description>
 		<content:encoded><![CDATA[<p>Interesting! Thanks for sharing Les.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Les Orchard</title>
-		<link>./../comment-page-1/index.html#comment-1948</link>
+		<link>/text-based-adventure-games/comment-page-1/#comment-1948</link>
 		<dc:creator><![CDATA[Les Orchard]]></dc:creator>
 		<pubDate>Fri, 12 Dec 2014 16:41:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2546#comment-1948</guid>
+		<guid isPermaLink="false">/?p=2546#comment-1948</guid>
 		<description><![CDATA[You might be interested in Parchment, which runs a lot of text adventures past and present in JS:
 
 https://code.google.com/p/parchment/
@@ -53,40 +53,40 @@ Also, check out iplayif.com to see Parchment in action]]></description>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-1947</link>
+		<link>/text-based-adventure-games/comment-page-1/#comment-1947</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Fri, 12 Dec 2014 14:42:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2546#comment-1947</guid>
+		<guid isPermaLink="false">/?p=2546#comment-1947</guid>
 		<description><![CDATA[Thanks for sharing Greg. The game sounds interesting! Do you have a script I can use? or would you like to contribute Dusk as a game script to the cli engine?. This will be a great addition to the adventure games stack.  -- Thanks.]]></description>
 		<content:encoded><![CDATA[<p>Thanks for sharing Greg. The game sounds interesting! Do you have a script I can use? or would you like to contribute Dusk as a game script to the cli engine?. This will be a great addition to the adventure games stack.  &#8212; Thanks.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Greg</title>
-		<link>./../comment-page-1/index.html#comment-1946</link>
+		<link>/text-based-adventure-games/comment-page-1/#comment-1946</link>
 		<dc:creator><![CDATA[Greg]]></dc:creator>
 		<pubDate>Fri, 12 Dec 2014 14:36:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2546#comment-1946</guid>
+		<guid isPermaLink="false">/?p=2546#comment-1946</guid>
 		<description><![CDATA[Here is a Javascript text adventure murder mystery I made awhile ago: dusk.incompl.com ]]></description>
 		<content:encoded><![CDATA[<p>Here is a Javascript text adventure murder mystery I made awhile ago: dusk.incompl.com </p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: Arvind Ravulavaru</title>
-		<link>./../comment-page-1/index.html#comment-1943</link>
+		<link>/text-based-adventure-games/comment-page-1/#comment-1943</link>
 		<dc:creator><![CDATA[Arvind Ravulavaru]]></dc:creator>
 		<pubDate>Wed, 10 Dec 2014 02:38:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2546#comment-1943</guid>
+		<guid isPermaLink="false">/?p=2546#comment-1943</guid>
 		<description><![CDATA[Great! Thanks &amp; glad I could be of help. ]]></description>
 		<content:encoded><![CDATA[<p>Great! Thanks &amp; glad I could be of help. </p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>By: SundaraPandyan SA</title>
-		<link>./../comment-page-1/index.html#comment-1941</link>
+		<link>/text-based-adventure-games/comment-page-1/#comment-1941</link>
 		<dc:creator><![CDATA[SundaraPandyan SA]]></dc:creator>
 		<pubDate>Tue, 09 Dec 2014 20:10:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=2546#comment-1941</guid>
+		<guid isPermaLink="false">/?p=2546#comment-1941</guid>
 		<description><![CDATA[I am obsessed about your blog especially NodeJS stuff... matches perfectly what I was looking for!]]></description>
 		<content:encoded><![CDATA[<p>I am obsessed about your blog especially NodeJS stuff&#8230; matches perfectly what I was looking for!</p>
 ]]></content:encoded>
